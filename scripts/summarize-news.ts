@@ -1,5 +1,6 @@
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { normalizedArticleSchema } from "@/lib/news/contracts/normalized-schema";
+import { createOpenAiSummarizer } from "@/lib/news/summarize/openai-summarizer";
 import { summarizeArticles } from "@/lib/news/summarize/summarize-articles";
 import {
   newsArtifactPaths,
@@ -8,6 +9,12 @@ import {
 } from "@/lib/storage/news-artifact-store";
 
 export async function runSummarizeNews() {
+  const apiKey = process.env.OPENAI_API_KEY;
+
+  if (!apiKey) {
+    throw new Error("Missing OPENAI_API_KEY. Set it before running the summarize step.");
+  }
+
   const candidate = await readJsonArtifact<{
     counts: {
       fetched: number;
@@ -22,21 +29,27 @@ export async function runSummarizeNews() {
     normalizedArticleSchema.parse(article),
   );
 
-  const summarizedArticles = await summarizeArticles(normalizedArticles, async () => {
-    throw new Error("No live summarizer configured yet.");
-  });
+  const summarizedArticles = await summarizeArticles(
+    normalizedArticles,
+    createOpenAiSummarizer(apiKey),
+  );
+
+  const summarizedWithAi = summarizedArticles.filter(
+    (article) => article.summaryType === "ai",
+  ).length;
+  const fallbackSummaries = summarizedArticles.length - summarizedWithAi;
 
   const dataset = buildProcessedDataset({
     generatedAt: new Date().toISOString(),
-    source: "Local scaffold pipeline",
+    source: "NewsAPI + OpenAI pipeline",
     articles: summarizedArticles,
     counts: {
       fetched: candidate.counts.fetched,
       normalized: candidate.counts.normalized,
       dropped: candidate.counts.dropped,
       deduped: candidate.counts.deduped,
-      summarizedWithAi: 0,
-      fallbackSummaries: summarizedArticles.length,
+      summarizedWithAi,
+      fallbackSummaries,
       finalArticles: summarizedArticles.length,
     },
   });

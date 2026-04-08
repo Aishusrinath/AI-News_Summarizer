@@ -20,6 +20,8 @@ A small end-to-end class project that fetches recent news, processes it into val
 
 The UI can still run from committed processed JSON without these secrets. Pipeline scripts should fail fast if the live integration is enabled but the required env vars are missing.
 
+Create a local `.env.local` or set shell env vars before running the live pipeline. A starter template is provided in `.env.example`.
+
 ## Key Commands
 
 ```bash
@@ -37,10 +39,29 @@ npm run pipeline:process
 npm run pipeline:summarize
 ```
 
+## Running With Real Data
+
+To replace the demo dataset with live article URLs and AI summaries:
+
+```powershell
+$env:NEWS_API_KEY="your_newsapi_key"
+$env:OPENAI_API_KEY="your_openai_api_key"
+
+cmd /c .\node_modules\.bin\tsx.cmd scripts\fetch-news.ts
+cmd /c .\node_modules\.bin\tsx.cmd scripts\process-news.ts
+cmd /c .\node_modules\.bin\tsx.cmd scripts\summarize-news.ts
+```
+
+This will update:
+
+- `data/raw/latest.json`
+- `data/tmp/candidate-articles.json`
+- `data/processed/articles.json`
+
+After that, the UI should render real source article URLs instead of the placeholder `example.com` links from the scaffold dataset.
+
 ## Demo Notes And Limitations
 
-- The current scaffold ships with a sample processed dataset for UI and test development
-- The fetch step still needs to be connected to a real news API
-- The summarizer adapter exists, but the scaffold pipeline currently writes fallback summaries until a live provider is configured
+- The project ships with a sample processed dataset for UI and test development until you run the live pipeline
 - Data may be up to 24 hours old for the assignment version, and the UI shows a visible `Last updated` timestamp
 - Summary wording should remain honest about excerpt-based input when full article text is unavailable
