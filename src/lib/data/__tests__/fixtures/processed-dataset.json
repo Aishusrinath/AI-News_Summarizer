@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-04-07T14:00:00.000Z",
+  "source": "Fixture dataset",
+  "categories": ["general", "technology", "business"],
+  "counts": {
+    "fetched": 3,
+    "normalized": 3,
+    "dropped": 0,
+    "deduped": 3,
+    "summarizedWithAi": 2,
+    "fallbackSummaries": 1,
+    "finalArticles": 3
+  },
+  "articles": [
+    {
+      "id": "fixture-1",
+      "slug": "fixture-story-fixture1",
+      "title": "Fixture story",
+      "sourceName": "Fixture Source",
+      "publishedAt": "2026-04-07T12:00:00.000Z",
+      "category": "general",
+      "url": "https://example.com/fixture-story",
+      "summary": "A deterministic summary for testing.",
+      "summaryType": "ai"
+    }
+  ]
+}

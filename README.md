@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI News Summarizer
 
-## Getting Started
+## Project Purpose
 
-First, run the development server:
+A small end-to-end class project that fetches recent news, processes it into validated JSON artifacts, generates concise AI summaries, and displays the results in a Next.js UI. The app presents summaries as a convenience layer over third-party reporting and always links back to the original article.
+
+## Architecture Overview
+
+- Offline pipeline writes raw and processed JSON artifacts outside `src/`
+- One canonical committed dataset lives at `data/processed/articles.json`
+- The Next.js UI reads processed JSON directly in server-side data loaders
+- Category filtering uses URL search params
+- Article detail pages resolve by route-safe `slug`, while data identity stays on canonical `id`
+- If AI summarization fails, the pipeline falls back to a shorter extractive summary instead of breaking the run
+
+## Setup And Env Vars
+
+- `NEWS_API_KEY`: required once a live news provider is connected
+- `OPENAI_API_KEY`: required once live AI summarization is connected
+
+The UI can still run from committed processed JSON without these secrets. Pipeline scripts should fail fast if the live integration is enabled but the required env vars are missing.
+
+## Key Commands
 
 ```bash
+npm run pipeline
+npm run test
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Optional debugging commands:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run pipeline:fetch
+npm run pipeline:process
+npm run pipeline:summarize
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Demo Notes And Limitations
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The current scaffold ships with a sample processed dataset for UI and test development
+- The fetch step still needs to be connected to a real news API
+- The summarizer adapter exists, but the scaffold pipeline currently writes fallback summaries until a live provider is configured
+- Data may be up to 24 hours old for the assignment version, and the UI shows a visible `Last updated` timestamp
+- Summary wording should remain honest about excerpt-based input when full article text is unavailable

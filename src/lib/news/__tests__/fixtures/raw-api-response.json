@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "articles": [
+    {
+      "source": { "id": null, "name": "Tech Ledger" },
+      "author": "B. Writer",
+      "title": "New battery breakthrough could reduce charging times",
+      "description": "Researchers say a prototype battery design showed faster charging during lab tests.",
+      "url": "https://example.com/technology/battery-breakthrough",
+      "urlToImage": "https://images.example.com/battery.jpg",
+      "publishedAt": "2026-04-07T10:30:00.000Z",
+      "content": "The research team said the prototype maintained stability while reaching faster charging benchmarks in controlled tests.",
+      "category": "technology"
+    }
+  ]
+}

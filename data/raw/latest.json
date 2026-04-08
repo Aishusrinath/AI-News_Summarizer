@@ -1,0 +1,38 @@
+{
+  "status": "ok",
+  "articles": [
+    {
+      "source": { "id": null, "name": "World Wire" },
+      "author": "A. Reporter",
+      "title": "Global markets open higher after fresh earnings reports",
+      "description": "Stocks rose in early trading as investors reacted to company results and inflation signals.",
+      "url": "https://example.com/business/global-markets-open-higher",
+      "urlToImage": "https://images.example.com/markets.jpg",
+      "publishedAt": "2026-04-07T12:00:00.000Z",
+      "content": "Stocks in several regions moved higher after a new round of earnings reports. Traders also watched incoming inflation data.",
+      "category": "business"
+    },
+    {
+      "source": { "id": null, "name": "Tech Ledger" },
+      "author": "B. Writer",
+      "title": "New battery breakthrough could reduce charging times",
+      "description": "Researchers say a prototype battery design showed faster charging during lab tests.",
+      "url": "https://example.com/technology/battery-breakthrough",
+      "urlToImage": "https://images.example.com/battery.jpg",
+      "publishedAt": "2026-04-07T10:30:00.000Z",
+      "content": "The research team said the prototype maintained stability while reaching faster charging benchmarks in controlled tests.",
+      "category": "technology"
+    },
+    {
+      "source": { "id": null, "name": "Daily Brief" },
+      "author": "C. Desk",
+      "title": "City transit service expands weekend operations",
+      "description": "Officials said the schedule change is aimed at improving access for riders during peak weekend hours.",
+      "url": "https://example.com/general/city-transit-service-expands-weekend-operations",
+      "urlToImage": null,
+      "publishedAt": "2026-04-07T08:15:00.000Z",
+      "content": "Transit officials announced longer operating windows on weekends and said they will monitor ridership after the change.",
+      "category": "general"
+    }
+  ]
+}
