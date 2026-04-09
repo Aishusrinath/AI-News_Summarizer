@@ -3,16 +3,16 @@
   "articles": [
     {
       "source": {
-        "id": "cnn",
-        "name": "CNN"
+        "id": "axios",
+        "name": "Axios"
       },
-      "author": "Michael Rios, Eyad Kourdi, Lauren Said-Moorhouse, Ellis Kim, Sophia Saifi, Max Saltman, Elise Hammond, Maureen Chowdhury, Rebekah Riess, Nina Giraldo, Matt Egan, Annie Grayer, Dana Karni, Zeena Saifi, Kylie Atwood, Catherine Nicholls, Michelle Velez, Sharon Braithwaite, Tal Shalev, Betsy Klein, Jennifer Hansler, Nadeen Ebrahim, Sarah Tamimi, Joseph Ataman, Becky Anderson, Aileen Graef, Jim Sciutto, Alayna Treene, Helen Regan, Laura Sharman, Chris Isidore, Nic Robertson, Billy Stockwell, Oliver Sherwood, Hanna Ziady, Brad Lendon, Lex Harvey, Jessie Yeung, John Liu, Tim Lister, Satish Cheney, Ally Barnard, Mohammed Tawfeeq, Christopher Lamb, Sarah Ferris, Kit Maher",
-      "title": "Live updates: Trump threatens ‘a whole civilization will die tonight’ ahead of his Iran deadline - CNN",
-      "description": "Trump’s warning comes ahead of his 8 p.m. ET deadline for Iran to make a deal, as the US also struck military targets on Iran’s strategic Kharg Island. Follow live news updates.",
-      "url": "https://www.cnn.com/2026/04/07/world/live-news/iran-war-trump-us-israel",
-      "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/2026-03-09t133829z-1021977946-rc211kaxtlru-rtrmadp-3-iran-crisis-oil-kharg-20260326130902169.JPG?c=16x9&q=w_800,c_fill",
-      "publishedAt": "2026-04-07T20:17:00Z",
-      "content": "Israels military has expressed its regret after a Tehran synagogue was damaged by a missile strike earlier Tuesday.\r\nThe Israel Defense Forces said it had received reports indicating a nearby synagog… [+1432 chars]",
+      "author": "Dave Lawler, Barak Ravid",
+      "title": "U.S. AND IRAN AGREE TO 2-WEEK CEASEFIRE - Axios",
+      "description": "The announcement came hours before Trump's deadline to launch massive strikes.",
+      "url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan",
+      "urlToImage": "https://images.axios.com/LvbfTl_8-e75siDSwHE6imyb8pI=/0x272:6663x4019/1366x768/2026/04/07/1775592201726.jpeg",
+      "publishedAt": "2026-04-08T04:04:34Z",
+      "content": "<ul><li>That two-week period is to be used to negotiate a larger agreement to potentially end the war.</li><li>The U.S. and Iran are expected to hold peace talks on Friday in Islamabad, two sources f… [+4084 chars]",
       "category": "general"
     },
     {
@@ -25,107 +25,191 @@
       "description": null,
       "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-07-2026",
       "urlToImage": null,
-      "publishedAt": "2026-04-07T19:28:00Z",
+      "publishedAt": "2026-04-08T03:53:00Z",
       "content": null,
       "category": "general"
     },
     {
       "source": {
-        "id": null,
-        "name": "Goheels.com"
+        "id": "politico",
+        "name": "Politico"
       },
-      "author": null,
-      "title": "Carolina Hires Michael Malone As Men’s Basketball Head Coach - University of North Carolina Athletics",
-      "description": "Michael Malone , a 24-year NBA coaching veteran who led the Denver Nuggets to a world championship title in 2023, is the University of North Carolina's next ...",
-      "url": "https://goheels.com/news/2026/4/7/mens-basketball-carolina-hires-michael-malone-as-mens-basketball-head-coach",
-      "urlToImage": "https://images.sidearmdev.com/resize?url=https%3A%2F%2Fdxbhsrqyrr690.cloudfront.net%2Fsidearm.nextgen.sites%2Func.sidearmsports.com%2Fimages%2F2026%2F4%2F6%2FWelcome_Coach_Malone_HORIZONTAL.jpg&width=1600&type=jpeg",
-      "publishedAt": "2026-04-07T18:41:29Z",
+      "author": "Andrew Howard",
+      "title": "Republican Clay Fuller wins special election to replace Marjorie Taylor Greene - Politico",
+      "description": "But his narrower-than-expected victory is still giving Democrats reason to celebrate.",
+      "url": "https://www.politico.com/news/2026/04/07/clay-fuller-wins-special-election-marjorie-taylor-greene-00863221",
+      "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2Fc5%2F46%2F66d207574956a23544f38b466f16%2Fgettyimages-2269645450-edit.jpg",
+      "publishedAt": "2026-04-08T02:16:44Z",
+      "content": "That continues a broader trend since Trump returned to office last year: Democrats have regularly overperformed in races up and down the ballot, from gubernatorial contests and House special election… [+828 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "",
+      "title": "Telehealth abortion will remain available for now, after a federal judge's ruling - NPR",
+      "description": "The abortion pill mifepristone must undergo a safety review by the FDA, the judge said. Louisiana's case seeking to ban its use through telemedicine will proceed after that review.",
+      "url": "https://www.npr.org/2026/04/07/nx-s1-5776946/telehealth-abortion-louisiana-federal-court-mifepristone",
+      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+625/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0b%2F36%2F877452bb444eb66f51bf5cbd093f%2Fgettyimages-2115237708.jpg",
+      "publishedAt": "2026-04-08T01:52:15Z",
+      "content": "A federal judge in Louisiana ruled Tuesday that access to a drug used in abortions can remain as it is nationally for the moment. But the 37-page ruling by Judge David C. Joseph is far from an endors… [+6909 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": "entertainment-weekly",
+        "name": "Entertainment Weekly"
+      },
+      "author": "https://www.facebook.com/entertainmentweekly",
+      "title": "Aubrey Plaza expecting first child with 'Girls' star Christopher Abbott - Entertainment Weekly",
+      "description": "Aubrey Plaza is expecting her first child! The beloved 'Parks and Rec' alum is having a baby with Christopher Abbott, her costar from the 2020 psychological drama 'Black Bear.'",
+      "url": "https://ew.com/aubrey-plaza-expecting-first-child-with-christopher-abbott-11945192",
+      "urlToImage": "https://ew.com/thmb/mC5Bkl0hoEtDUjTkbgimn6d_1lw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Aubrey-Plaza-Christopher-Abbott-040726-755bcef6888e4adda022da8af34daccb.jpg",
+      "publishedAt": "2026-04-08T01:28:43Z",
+      "content": "Aubrey Plaza is going to become a mom!\r\nThe Parks and Recreationstar is expecting her first child with the actor Christopher Abbott, with whom she starred in the 2020 psychological drama Black Bear.\r… [+1755 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": "associated-press",
+        "name": "Associated Press"
+      },
+      "author": "Jack Brook",
+      "title": "Wife of US soldier released from federal immigration detention - AP News",
+      "description": "The wife of a U.S. Army staff sergeant has been released from a federal immigration detention facility where she spent nearly a week after being taken into custody inside a Louisiana military base. The detention of 22-year-old newlywed Annie Ramos, who was bo…",
+      "url": "https://apnews.com/article/army-soldier-immigration-wife-d1fe382267b3fee20d68eda0dddda42a",
+      "urlToImage": "https://dims.apnews.com/dims4/default/6169443/2147483647/strip/true/crop/2485x1656+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F72%2F3d%2F48d637205d842434e5e079818765%2F3e74d7a96f244ca9b8b833f790d8241a",
+      "publishedAt": "2026-04-08T00:59:00Z",
+      "content": "NEW ORLEANS (AP) The wife of a U.S. soldier was released Tuesday from a federal immigration detention facility where she had spent nearly a week after being taken into custody on a Louisiana military… [+3030 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Honolulu Star-Advertiser"
+      },
+      "author": "Nina Wu",
+      "title": "DOH, CDC investigating rise in strep cases in West Hawaii - Honolulu Star-Advertiser",
+      "description": "The Hawaii Department of Health says it is investigating high rates of strep infection in West Hawaii over the past few months.",
+      "url": "https://www.staradvertiser.com/2026/04/07/breaking-news/doh-cdc-investigating-rise-in-strep-cases-in-west-hawaii/",
+      "urlToImage": "https://www.staradvertiser.com/wp-content/uploads/2026/04/web1_20260407_brk_doh01.jpg",
+      "publishedAt": "2026-04-08T00:31:10Z",
+      "content": "The Hawaii Department of Health says it is investigating high rates of strep infection in West Hawaii over the past few months.\r\nDOH said a local physician identified a higher-than-expected number of… [+2580 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNBC"
+      },
+      "author": "Justina Lee, Lee Ying Shan",
+      "title": "South Korea stocks lead gains in Asia as oil prices plunge after U.S.-Iran ceasefire deal - CNBC",
+      "description": "Asia-Pacific markets opened higher after President Donald Trump said he agreed to suspend planned attacks on Iranian infrastructure for two weeks.",
+      "url": "https://www.cnbc.com/2026/04/08/asia-markets-today-trump-iran-war-kospi-nikkei-225-oil-hang-seng-index.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108223387-1762730856669-gettyimages-2196909643-13102024_tokyo_053.jpeg?v=1762731043&w=1920&h=1080",
+      "publishedAt": "2026-04-07T23:46:37Z",
+      "content": "Asia-Pacific markets rallied on Wednesday after U.S. President Donald Trump said he had agreed to suspend planned attacks on Iranian infrastructure for two weeks.\r\nThe move was \"subject to the Islami… [+2018 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nintendo Life"
+      },
+      "author": "Liam Doolan",
+      "title": "Nickelodeon's All-Star Cast Returns To The Tennis Court Next Month - nintendolife.com",
+      "description": "Move aside, Mario Tennis",
+      "url": "https://www.nintendolife.com/news/2026/04/nickelodeons-all-star-cast-returns-to-the-tennis-court-next-month",
+      "urlToImage": "https://images.nintendolife.com/a5745b937ac58/large.jpg",
+      "publishedAt": "2026-04-07T23:45:00Z",
+      "content": "Reminds me of those Nickelodeon Flash games that used to be on their website. Whether or not that's a compliment is up to you.\r\nOh, and @Anti-Matter, in 2019 Nickelodeon's parent company at the time,… [+942 chars]",
+      "category": "technology"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "BGR"
+      },
+      "author": "Krishi Chowdhary",
+      "title": "4 '80s Inspired Retro Gadgets You Can Find On Amazon - bgr.com",
+      "description": "There are many retro-inspired gadgets on Amazon, such as typewriter-style keyboards, '80s-style mics, and even CD players styled as record players.",
+      "url": "https://www.bgr.com/2137868/80s-inspired-amazon-gadgets/",
+      "urlToImage": "https://www.bgr.com/img/gallery/80s-inspired-amazon-gadgets/l-intro-1775068300.jpg",
+      "publishedAt": "2026-04-07T23:17:00Z",
+      "content": "CDs marked a revolutionary upgrade from vinyl records by providing more storage, having better sound quality, and being more compact than their larger counterparts did; as such, CDs were one of the b… [+1521 chars]",
+      "category": "technology"
+    },
+    {
+      "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "author": "Samuel Axon",
+      "title": "Valve brings native Steam Link app to Apple's Vision Pro - Ars Technica",
+      "description": "New app can replace third-party options that were jankier to use.",
+      "url": "https://arstechnica.com/gaming/2026/04/valve-brings-native-steam-link-app-to-apples-vision-pro/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2024/02/Vision-Pro-HMD-1152x648.jpeg",
+      "publishedAt": "2026-04-07T22:21:21Z",
       "content": null,
-      "category": "general"
+      "category": "technology"
     },
     {
       "source": {
-        "id": "the-washington-post",
-        "name": "The Washington Post"
+        "id": "the-verge",
+        "name": "The Verge"
       },
-      "author": "Elahe Izadi",
-      "title": "London music festival canceled after Britain bans headliner Kanye West - The Washington Post",
-      "description": "The Wireless Festival was canceled after Britain’s Home Office denied Kanye West entry over his past antisemitic statements.",
-      "url": "https://www.washingtonpost.com/entertainment/music/2026/04/07/kanye-west-wireless-festival-canceled/",
-      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/VII663K4YP6SLCW47SYUZSRAVA.jpg&w=1440",
-      "publishedAt": "2026-04-07T18:27:51Z",
-      "content": "A music festival in Britain has been forced to cancel after the government barred headliner Ye, the rapper formerly known as Kanye West, from entering the country, organizers said in a statement Tues… [+3 chars]",
-      "category": "general"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Democracydocket.com"
-      },
-      "author": null,
-      "title": "Acting attorney general: Trump has ‘right’ to order investigations into his enemies - Democracy Docket",
-      "description": "Trump fired former Attorney General Bondi last week for failing to prosecute his enemies.",
-      "url": "https://www.democracydocket.com/news-alerts/acting-attorney-general-todd-blanche-trump-duty-right-order-investigations/",
-      "urlToImage": "https://www.democracydocket.com/wp-content/uploads/2026/04/GettyImages-2270250842-scaled.jpg",
-      "publishedAt": "2026-04-07T18:24:09Z",
-      "content": "In his first press conference as acting attorney general, Todd Blanche said Tuesday that President Donald Trump has a right and duty to order the Department of Justice (DOJ) to investigate his politi… [+2621 chars]",
-      "category": "general"
+      "author": "Sheena Vasani",
+      "title": "Nothing’s noise-canceling CMF Buds 2A are down to $19.99 for the rest of today - The Verge",
+      "description": "Thanks to a lightning deal at Amazon, Nothing’s CMF Buds 2A — which offer ANC and a host of more premium features — are on sale for a mere $19.99 ($29 off).",
+      "url": "https://www.theverge.com/gadgets/908409/nothing-cmf-buds-2a-earbuds-amazon-lightning-deal-sale",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/CMF-Buds-2a-in-Dark-Grey.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+      "publishedAt": "2026-04-07T22:16:21Z",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nThe budget-friendly earbuds offer a transparency mode, an adjustable EQ, and plenty of other premium features.\r\nThe budget-friendly earbuds offer a transparency … [+2846 chars]",
+      "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "KSL.com"
+        "name": "9to5google.com"
       },
-      "author": "Reuters",
-      "title": "Delta Air hikes checked baggage fees as jet fuel prices soar - KSL.com",
-      "description": "Delta Air Lines said on Tuesday it will raise fees for ​checked bags on domestic and select short-haul international routes, as airlines seek to offset soaring jet fuel costs linked ‌to tensions in the Middle East.",
-      "url": "https://www.ksl.com/article/51478252/delta-air-hikes-checked-baggage-fees-as-jet-fuel-prices-soar",
-      "urlToImage": "https://img.ksl.com/slc/3151/315160/31516074.JPG?filter=kslv2/responsive_story_lg",
-      "publishedAt": "2026-04-07T18:14:28Z",
-      "content": "ATLANTA Delta Air Lines said on Tuesday it will raise fees for checked bags on domestic and select short-haul international routes, as airlines seek to offset soaring jet fuel costs linked to escalat… [+1399 chars]",
-      "category": "general"
+      "author": "Abner Li",
+      "title": "Gemini overlay and Gemini Live start rolling out big Android redesign [Gallery] - 9to5Google",
+      "description": "After redesigns in February and March, Google is rolling out another big revamp for the Gemini overlay and Gemini Live.",
+      "url": "http://9to5google.com/2026/04/07/gemini-live-redesign-android/",
+      "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/03/gemini-android-app-icon.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+      "publishedAt": "2026-04-07T20:44:00Z",
+      "content": "After redesigns in February and March, Google is rolling out another big revamp for the Gemini overlay and Gemini Live. These visual updates are arriving in surprisingly quick succession.\r\nLast month… [+1614 chars]",
+      "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "Deadline"
+        "name": "Inc."
       },
-      "author": "Denise Petski",
-      "title": "‘The Boys’ Casts The Worm & Teenage Kix For Fifth & Final Season - Deadline",
-      "description": "As the The Boys winds down with its upcoming fifth and final season, which premieres tomorrow, we'll be seeing some key characters in the mix.",
-      "url": "http://deadline.com/2026/04/the-boys-casts-the-worm-teenage-kix-final-season-1236783572/",
-      "urlToImage": "https://deadline.com/wp-content/uploads/2026/04/The-Boys-season-5.jpg?w=1024",
-      "publishedAt": "2026-04-07T18:00:00Z",
-      "content": "As the The Boyswinds down with its upcoming fifth and final season, which premieres tomorrow, we’ll be seeing some new key characters in the mix. Ely Henry (NCIS: Origins) has joined the cast as new … [+2973 chars]",
-      "category": "general"
-    },
-    {
-      "source": {
-        "id": "the-washington-post",
-        "name": "The Washington Post"
-      },
-      "author": "Isaac Arnsdorf, Sammy Westfall, Tara Copp",
-      "title": "U.S. strikes Iran’s Kharg Island as Trump warns ‘a whole civilization will die tonight’ - The Washington Post",
-      "description": "The president said Iran must open the Strait of Hormuz by 8 p.m. Eastern or face destruction. The White House said it would not use nuclear weapons.",
-      "url": "https://www.washingtonpost.com/world/2026/04/07/trump-us-iran-war-threat/",
-      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/OEQQ4LJW74ESIUBMXQKT34NGF4.JPG&w=1440",
-      "publishedAt": "2026-04-07T17:53:54Z",
-      "content": "President Donald Trump threatened to wipe out a whole civilization if Irans leaders dont agree to his terms to open the Strait of Hormuz tonight, prompting Iran to call off talks and his political op… [+68 chars]",
-      "category": "general"
+      "author": "Amaya Nichole",
+      "title": "500 Million Windows PCs Are About to Become Unsafe—Now There's a Free Upgrade to Keep Them Running - inc.com",
+      "description": "Microsoft left Windows 10 users with older hardware behind. Google has a free and convenient fix.",
+      "url": "https://www.inc.com/amaya-nichole/500-million-windows-pcs-are-about-to-become-unsafe-now-theres-a-free-upgrade-to-keep-them-running/91328113",
+      "urlToImage": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/04/GettyImages-482300538.jpg",
+      "publishedAt": "2026-04-07T20:33:59Z",
+      "content": "A half-billion Windows 10 users are facing fresh security risks in the wake of Microsoft dropping its support for the operating system. But Google just announced a practicaland freesolution to keep t… [+1582 chars]",
+      "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "NBCSports.com"
+        "name": "Kotaku"
       },
-      "author": "Josh Alper",
-      "title": "John Harbaugh: I think prospects are high Dexter Lawrence remains with Giants - nbcsports.com",
-      "description": "Defensive tackle Dexter Lawrence requested a trade this week, but Giants head coach John Harbaugh thinks the team will be able to work out a solution that keeps Lawrence on the roster.",
-      "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/john-harbaugh-i-think-prospects-are-high-dexter-lawrence-remains-with-giants",
-      "urlToImage": "https://nbcsports.brightspotcdn.com/dims4/default/562165c/2147483647/strip/true/crop/5820x3274+0+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fnbc-sports-production-nbc-sports.s3.us-east-1.amazonaws.com%2Fbrightspot%2F09%2F94%2Fbc4017434e7284b944f542c88f10%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2240188880",
-      "publishedAt": "2026-04-07T17:51:02Z",
-      "content": "Defensive tackle Dexter Lawrence requested a trade this week, but Giants head coach John Harbaugh thinks the team will be able to work out a solution that keeps Lawrence on the roster. \r\nLawrence is … [+1088 chars]",
-      "category": "general"
+      "author": "Zack Zwiezen",
+      "title": "New PS5 Dashboard Update Leaks And Damn, Sony, That Looks Good - Kotaku",
+      "description": "The PlayStation 5 home menu is about to get a lot easier to navigate, according to a beta tester",
+      "url": "https://kotaku.com/new-ps5-dashboard-update-leaks-and-damn-sony-that-looks-good-2000685452",
+      "urlToImage": "https://kotaku.com/app/uploads/2025/08/PS5-grid.jpg",
+      "publishedAt": "2026-04-07T20:01:39Z",
+      "content": "A new PlayStation 5 home menu layout is seemingly being tested by Sony, and it looks pretty dang snazzy, moving system apps and the PSN Store icons to a top row for easy navigation.\r\nAs first shared … [+1499 chars]",
+      "category": "technology"
     },
     {
       "source": {
@@ -144,141 +228,43 @@
     {
       "source": {
         "id": null,
-        "name": "Pokemon.com"
+        "name": "Digitalfoundry.net"
       },
-      "author": null,
-      "title": "Play! Pokémon Rules and Resources Updated for Q1 2026 - Pokemon.com",
-      "description": "Check out the latest updates to your go-to rules and resource documents.",
-      "url": "https://www.pokemon.com/us/pokemon-news/play-pokemon-rules-and-resources-updated-for-q1-2026",
-      "urlToImage": "https://www.pokemon.com/static-assets/content-assets/cms2/img/attend-events/_tiles/2026/rules-resources/q1/play-pokemon-169.png",
-      "publishedAt": "2026-04-07T18:48:25Z",
-      "content": "The Play! Pokémon rules and resources are periodically reviewed to maintain competitive balance in the Championship Series. The documents have been updated to reflect the latest review in Q1 2026, an… [+2780 chars]",
+      "author": "Oliver Mackenzie",
+      "title": "Review: Cyberpunk 2077's PS5 Pro Patch Goes Heavy On RT And Performance Upgrades - Digital Foundry",
+      "description": "Three new modes, backed by the new PSSR.",
+      "url": "https://www.digitalfoundry.net/reviews/cyberpunk-2077s-ps5-pro-patch-goes-heavy-on-rt-and-performance-upgrades",
+      "urlToImage": "https://images.digitalfoundry.net/a2f5aa6285d23/large.jpg",
+      "publishedAt": "2026-04-07T19:47:00Z",
+      "content": "Oliver and Alex sit down to compare notes on the three new modes found in the PS5 Pro upgrade for Cyberpunk 2077.\r\nCyberpunk 2077 has to be one of the most covered games across Digital Foundry histor… [+9703 chars]",
       "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "9to5google.com"
+        "name": "Wccftech"
       },
-      "author": "Abner Li",
-      "title": "Android 16 April update rolling out: Pixel UI, app crash fixes - 9to5Google",
-      "description": "Google is rolling out the April 2026 security patch for Android 16 QPR3 on the Pixel 6, 6 Pro, 6a,...",
-      "url": "http://9to5google.com/2026/04/07/android-16-april-update-pixel/",
-      "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/04/Pixel-10a-Obsidian-3.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
-      "publishedAt": "2026-04-07T18:06:00Z",
-      "content": "Google is rolling out the April 2026 security patch for Android 16 QPR3 on the Pixel 6, 6 Pro, 6a, 7, 7 Pro, 7a, Tablet, Fold, 8, 8 Pro, 8a, 9, 9 Pro, 9 Pro XL, 9 Pro Fold, 9a, Pixel 10, Pixel 10 Pro… [+2688 chars]",
+      "author": "Sebastian Castellanos",
+      "title": "NVIDIA DLSS 5 — Everything We Know So Far About NVIDIA’s Latest Neural Rendering Technology - Wccftech",
+      "description": "NVIDIA's DLSS 5 is set to launch Fall 2026, offering real-time neural rendering for photoreal graphics on RTX 50 Series GPUs.",
+      "url": "https://wccftech.com/roundup/nvidia-dlss-5/",
+      "urlToImage": "https://cdn.wccftech.com/wp-content/uploads/2026/04/DLSS-5-1920x1073.jpg",
+      "publishedAt": "2026-04-07T19:44:00Z",
+      "content": "DLSS 5 marks the next major evolution of NVIDIAs neural rendering journey, pushing beyond temporal upscaling, frame generation, and machine learning-based ray tracing denoising into fully AI-enhanced… [+7879 chars]",
       "category": "technology"
     },
     {
       "source": {
-        "id": null,
-        "name": "Pure Xbox"
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
       },
-      "author": "Fraser Gilbert",
-      "title": "The First Reviews Are Going Live For Starfield's Terran Armada Expansion - Pure Xbox",
-      "description": "Is it worth grabbing the new DLC?",
-      "url": "https://www.purexbox.com/news/2026/04/the-first-reviews-are-going-live-for-starfields-terran-armada-expansion",
-      "urlToImage": "https://images.purexbox.com/acb5304354f31/large.jpg",
-      "publishedAt": "2026-04-07T17:30:00Z",
-      "content": "In addition to the big free update called \"Free Lanes\" that's arrived for Starfield today, the game has also received a brand-new paid expansion known as \"Terran Armada\" but is it worth buying?\r\nWell… [+3943 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": "bloomberg",
-        "name": "Bloomberg"
-      },
-      "author": "Mark Gurman",
-      "title": "Apple’s Foldable iPhone Remains on Track for September Debut (AAPL) - Bloomberg.com",
-      "description": "Apple Inc.’s first foldable phone is on track to arrive during the company’s normal iPhone launch period later this year, people with knowledge of the matter said, rebutting concerns about major manufacturing snags.",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-07/apple-s-foldable-iphone-remains-on-track-for-september-debut",
-      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ibC.7aU2bWTI/v0/1200x800.jpg",
-      "publishedAt": "2026-04-07T17:00:56Z",
-      "content": "Apple Inc.s first foldable phone is on track to arrive during the companys normal iPhone launch period later this year, people with knowledge of the matter said, rebutting concerns about major manufa… [+289 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": "techcrunch",
-        "name": "TechCrunch"
-      },
-      "author": "Sarah Perez",
-      "title": "Chrome is finally getting vertical tabs - TechCrunch",
-      "description": "Google Chrome's latest update brings vertical tabs and a cleaner Reading Mode to help manage cluttered browsing.",
-      "url": "https://techcrunch.com/2026/04/07/chrome-is-finally-getting-vertical-tabs/",
-      "urlToImage": "https://techcrunch.com/wp-content/uploads/2026/01/chrome_rollercoaster-1.jpeg?resize=1200,675",
-      "publishedAt": "2026-04-07T17:00:00Z",
-      "content": "After years of resisting, Google Chrome is finally adopting vertical tabs — a feature more recently popularized by the Arc browser, a predecessor to the AI browser Dia. Google announced on Tuesday th… [+2872 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Kotaku"
-      },
-      "author": "Zack Zwiezen",
-      "title": "Marathon, One Month Later: Everything That Has Happened - Kotaku",
-      "description": "Sony and Bungie's big bet on a live-service extraction shooter has had a hectic and wild first month",
-      "url": "https://kotaku.com/marathon-one-month-later-2000685282",
-      "urlToImage": "https://kotaku.com/app/uploads/2025/12/marathonmain1-1200x675.jpg",
-      "publishedAt": "2026-04-07T16:52:11Z",
-      "content": "About a month ago, Bungie’s latest big video game, Marathon, launched on consoles and PC to positive reviews and a lot of online discourse. Over the last 30+ days, Marathon has been the target of con… [+11475 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Push Square"
-      },
-      "author": "Stephen Tailby",
-      "title": "'The Result Is Incredible': Cyberpunk 2077's Big PS5 Pro Update Arrives Tomorrow - Push Square",
-      "description": "Three modes to choose from",
-      "url": "https://www.pushsquare.com/news/2026/04/the-result-is-incredible-cyberpunk-2077s-big-ps5-pro-update-arrives-tomorrow",
-      "urlToImage": "https://images.pushsquare.com/8a0767434489d/large.jpg",
-      "publishedAt": "2026-04-07T16:41:01Z",
-      "content": "Image: Push Square\r\nCD Projekt RED has announced its sci-fi RPG Cyberpunk 2077 will soon receive the promised PS5 Pro update, enabling enhanced visuals for those who own the souped-up console.\r\nThe u… [+1156 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": "ars-technica",
-        "name": "Ars Technica"
-      },
-      "author": "Andrew Cunningham",
-      "title": "Linux kernel maintainers are following through on removing Intel 486 support - Ars Technica",
-      "description": "Linux devs think even one second spent on 486 support is a second too many.",
-      "url": "https://arstechnica.com/gadgets/2026/04/linux-kernel-maintainers-are-following-through-on-removing-intel-486-support/",
-      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/GettyImages-90739236-1152x648.jpg",
-      "publishedAt": "2026-04-07T16:39:12Z",
+      "author": "WSJ",
+      "title": "Stock Market Today: Oil Jumps, Dow Dips After U.S. Raises the Temperature on Iran — Live Updates - WSJ",
+      "description": null,
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-07-2026",
+      "urlToImage": null,
+      "publishedAt": "2026-04-08T03:53:00Z",
       "content": null,
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Nintendoeverything.com"
-      },
-      "author": "Brian",
-      "title": "Nickelodeon Extreme Tennis Next announced for Nintendo Switch - Nintendo Everything",
-      "description": "Today, Gameloft unveiled Nickelodeon Extreme Tennis Next for Nintendo Switch. The game is launching on May 28, 2026. Nickelodeon Extreme Tennis is a fast-paced arcade tennis game featuring popular characters from SpongeBob, Avatar, Teenage Mutant Ninja Turtle…",
-      "url": "https://nintendoeverything.com/nickelodeon-extreme-tennis-next-announced-for-nintendo-switch/",
-      "urlToImage": "https://nintendoeverything.com/wp-content/uploads/Nickelodeon-Extreme-Tennis-Next.jpg",
-      "publishedAt": "2026-04-07T16:24:13Z",
-      "content": "Today, Gameloft unveiled Nickelodeon Extreme Tennis Next for Nintendo Switch. The game is launching on May 28, 2026.\r\nNickelodeon Extreme Tennis is a fast-paced arcade tennis game featuring popular c… [+1473 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Investor's Business Daily"
-      },
-      "author": null,
-      "title": "Stock Market Today: Dow Loses Ground As Iran Deadline Nears; These IBD 50 Names Are Moving (Live Coverage) - Investor's Business Daily",
-      "description": "Stock Market Today: The Dow Jones index drops ahead of Trump's Strait of Hormuz deadline. UnitedHealth stock jumps while Apple falls.",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-war-strait-of-hormuz-unitedhealth-unh-stock/",
-      "urlToImage": "https://www.investors.com/wp-content/uploads/2017/05/WallStreetSign2-Shutterstock.jpg",
-      "publishedAt": "2026-04-07T19:42:00Z",
-      "content": "Information in Investors Business Daily is for informational and educational purposes only and should not be construed as an offer, recommendation, solicitation, or rating to buy or sell securities. … [+1064 chars]",
       "category": "business"
     },
     {
@@ -286,13 +272,13 @@
         "id": null,
         "name": "KSL.com"
       },
-      "author": "Reuters",
-      "title": "Delta Air hikes checked baggage fees as jet fuel prices soar - KSL.com",
-      "description": "Delta Air Lines said on Tuesday it will raise fees for ​checked bags on domestic and select short-haul international routes, as airlines seek to offset soaring jet fuel costs linked ‌to tensions in the Middle East.",
-      "url": "https://www.ksl.com/article/51478252/delta-air-hikes-checked-baggage-fees-as-jet-fuel-prices-soar",
-      "urlToImage": "https://img.ksl.com/slc/3151/315160/31516074.JPG?filter=kslv2/responsive_story_lg",
-      "publishedAt": "2026-04-07T18:14:28Z",
-      "content": "ATLANTA Delta Air Lines said on Tuesday it will raise fees for checked bags on domestic and select short-haul international routes, as airlines seek to offset soaring jet fuel costs linked to escalat… [+1399 chars]",
+      "author": "Josh Funk, Associated Press",
+      "title": "Travelers will face limits on how many chargers they can carry as airlines try to reduce fire risks - KSL.com",
+      "description": "Travelers will soon face restrictions on how many portable chargers they can carry on a flight as airlines continue to try to reduce the risk of another lithium battery fire aboard their jets.",
+      "url": "https://www.ksl.com/article/51478532/travelers-will-face-limits-on-how-many-chargers-they-can-carry-as-airlines-try-to-reduce-fire-risks",
+      "urlToImage": "https://img.ksl.com/slc/3151/315170/31517053.jpg?filter=kslv2/responsive_story_lg",
+      "publishedAt": "2026-04-08T02:45:14Z",
+      "content": "NEW YORK Travelers will soon face restrictions on how many portable chargers they can carry on a flight as airlines continue to try to reduce the risk of another lithium battery fire aboard their jet… [+2769 chars]",
       "category": "business"
     },
     {
@@ -300,27 +286,27 @@
         "id": "axios",
         "name": "Axios"
       },
-      "author": "Sam Sabin",
-      "title": "Anthropic withholds Mythos Preview model because it's hacking is too powerful - Axios",
-      "description": "This is the one of the first times an AI company has held back a model over societal risks.",
-      "url": "https://www.axios.com/2026/04/07/anthropic-mythos-preview-cybersecurity-risks",
-      "urlToImage": "https://images.axios.com/Of53hjitUmp42UdyMDgUHsvfLsY=/0x0:1920x1080/1366x768/2025/10/15/1760561858136.jpeg",
-      "publishedAt": "2026-04-07T18:04:19Z",
-      "content": "Threat level: Mythos Preview is \"extremely autonomous\" and has sophisticated reasoning capabilities that give it the skills of an advanced security researcher, Logan Graham, head of Anthropic's front… [+4801 chars]",
+      "author": "Ben Geman, Chuck McCutcheon",
+      "title": "Oil prices plunge following U.S.-Iran ceasefire - Axios",
+      "description": "The agreement is subject to Iran to allowing \"complete\" reopening of the Strait of Hormuz, President Trump said.",
+      "url": "https://www.axios.com/2026/04/07/oil-prices-plunge-us-iran-war-ceasefire-trump",
+      "urlToImage": "https://images.axios.com/x2X4j2ylsL0R70YX8JkA7p4OZ3A=/0x0:7600x4275/1366x768/2026/04/07/1775603689935.jpg",
+      "publishedAt": "2026-04-08T02:42:18Z",
+      "content": "Crude oil prices dropped sharply Tuesday evening, falling well under $100 per barrel after President Trump said the U.S. agreed to a two-week ceasefire with Iran that Pakistan had proposed.\r\nWhy it m… [+2536 chars]",
       "category": "business"
     },
     {
       "source": {
-        "id": "ars-technica",
-        "name": "Ars Technica"
+        "id": null,
+        "name": "CNBC"
       },
-      "author": "Jon Brodkin",
-      "title": "SCOTUS overturns 5th Circuit ruling that told ISP to kick pirates off Internet - arstechnica.com",
-      "description": "Supreme Court's precedent-setting Cox ruling helps Grande beat music piracy claims.",
-      "url": "https://arstechnica.com/tech-policy/2026/04/scotus-overturns-5th-circuit-ruling-that-told-isp-to-kick-pirates-off-internet/",
-      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2023/08/getty-pirate-flag-1152x648.jpg",
-      "publishedAt": "2026-04-07T18:00:20Z",
-      "content": null,
+      "author": "Justina Lee, Lee Ying Shan",
+      "title": "South Korea stocks lead gains in Asia as oil prices plunge after U.S.-Iran ceasefire deal - CNBC",
+      "description": "Asia-Pacific markets opened higher after President Donald Trump said he agreed to suspend planned attacks on Iranian infrastructure for two weeks.",
+      "url": "https://www.cnbc.com/2026/04/08/asia-markets-today-trump-iran-war-kospi-nikkei-225-oil-hang-seng-index.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108223387-1762730856669-gettyimages-2196909643-13102024_tokyo_053.jpeg?v=1762731043&w=1920&h=1080",
+      "publishedAt": "2026-04-07T23:46:37Z",
+      "content": "Asia-Pacific markets rallied on Wednesday after U.S. President Donald Trump said he had agreed to suspend planned attacks on Iranian infrastructure for two weeks.\r\nThe move was \"subject to the Islami… [+2018 chars]",
       "category": "business"
     },
     {
@@ -328,55 +314,13 @@
         "id": null,
         "name": "Tipranks.com"
       },
-      "author": "Joy Iyke",
-      "title": "OpenAI Calls on State Investigators Over Alleged “Attacks” by Elon Musk - TipRanks",
-      "description": "OpenAI has asked the attorneys general of California and Delaware to investigate SpaceX and Tesla ($TSLA) CEO Elon Musk and his associates ahead of an upcoming trial for alleged “anti-competitive",
-      "url": "https://www.tipranks.com/news/openai-calls-on-state-investigators-over-alleged-attacks-by-elon-musk",
-      "urlToImage": "https://blog.tipranks.com/wp-content/uploads/2026/04/shutterstock_2592967199-750x406.jpg",
-      "publishedAt": "2026-04-07T17:00:25Z",
-      "content": "Story Highlights OpenAI has asked state authorities to investigate billionaire investor Elon Musk over alleged attacks on the company.The request follows an ongoin lawsuit filed by Musk against the c… [+14 chars]",
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": "ars-technica",
-        "name": "Ars Technica"
-      },
-      "author": "Ryan Whitwam",
-      "title": "Testing suggests Google’s AI Overviews tells millions of lies per hour - arstechnica.com",
-      "description": "Is 90 percent accuracy good enough for a search robot?",
-      "url": "https://arstechnica.com/google/2026/04/analysis-finds-google-ai-overviews-is-wrong-10-percent-of-the-time/",
-      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/Gemini-chat-1152x648.png",
-      "publishedAt": "2026-04-07T16:53:55Z",
-      "content": null,
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Barron's"
-      },
-      "author": "barrons.com",
-      "title": "New Medicare Payment Rate Released. Why UnitedHealth Stock Is Popping. - barrons.com",
+      "author": null,
+      "title": "LEVI Earnings: Levi Strauss Issues Strong Financial Results and Lifts Guidance - tipranks.com",
       "description": null,
-      "url": "https://www.barrons.com/articles/medicare-payment-rate-insurance-healthcare-unitedhealth-stock-humana-7fb6d92c",
+      "url": "https://www.tipranks.com/news/levi-earnings-levi-strauss-issues-strong-financial-results-and-lifts-guidance",
       "urlToImage": null,
-      "publishedAt": "2026-04-07T16:07:00Z",
-      "content": null,
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": "techcrunch",
-        "name": "TechCrunch"
-      },
-      "author": "Rebecca Szkutak",
-      "title": "Anthropic ups compute deal with Google and Broadcom amid skyrocketing demand - TechCrunch",
-      "description": "Anthropic bulked up its compute deal with Google and Broadcom as the company has seen its run-rate revenue surge to $30 billion.",
-      "url": "https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/",
-      "urlToImage": "https://techcrunch.com/wp-content/uploads/2026/03/Dario-Amodei-Anthropic-viva-tech.jpg?w=1024",
-      "publishedAt": "2026-04-07T16:05:56Z",
-      "content": "AI research lab Anthropic announced Monday that it signed a new agreement with Google and Broadcom for increased processing and compute capacity to power its Claude AI models. This reworking of its c… [+1833 chars]",
+      "publishedAt": "2026-04-07T23:20:12Z",
+      "content": "Description: Group Number: Group Name: Ip Address: Username: Computer Name:",
       "category": "business"
     },
     {
@@ -384,13 +328,69 @@
         "id": "associated-press",
         "name": "Associated Press"
       },
-      "author": "Wyatte Grantham-Philips",
-      "title": "Deere & Co agrees to pay $99 million to settle ‘right to repair’ lawsuit - AP News",
-      "description": "Deere & Co. has agreed to pay $99 million as part of a settlement that would resolve a class action lawsuit accusing the farm equipment giant of monopolizing repair services. The Moline, Illinois-based manufacturer, which does business under the John Deere br…",
-      "url": "https://apnews.com/article/john-deere-repair-lawsuit-settlement-595d4b089689cd94418991326275b68d",
-      "urlToImage": "https://dims.apnews.com/dims4/default/d94a783/2147483647/strip/true/crop/3000x1999+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F80%2F52%2F43515f58c2debebfbcc91a7406f6%2Fffa8f6b16cae47da89be4960e041842f",
-      "publishedAt": "2026-04-07T16:04:00Z",
-      "content": "NEW YORK (AP) Deere &amp; Co. has agreed to pay $99 million as part of a settlement that would resolve a class action lawsuit accusing the farm equipment giant of monopolizing repair services.\r\nThe M… [+2407 chars]",
+      "author": "Rio Yamat, Ap Airlines, Travel Writer",
+      "title": "Delta joins the growing list of US airlines raising checked bag fees as jet fuel costs soar - AP News",
+      "description": "Delta Air lines is joining a growing list of U.S. carriers raising checked bag fees. The move announced Tuesday comes as higher fuel costs ripple through the airline industry. Most Delta passengers on domestic and short-haul international routes will now pay …",
+      "url": "https://apnews.com/article/delta-air-fuel-bag-fees-5c1c2d4214ce745b03890f47850b9dd6",
+      "urlToImage": "https://dims.apnews.com/dims4/default/65d236b/2147483647/strip/true/crop/6000x3998+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F29%2Ffe%2F87c54847f032a24d6e6a8c54b9f1%2Ff68566c3d24a45ada0ea42dfb861f56f",
+      "publishedAt": "2026-04-07T22:40:00Z",
+      "content": "Delta Air Lines announced Tuesday that it is raising checked baggage fees, part of a broader wave of U.S. carriers responding to higher jet fuel prices tied to the war in the Middle East.\r\nBeginning … [+2252 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Motley Fool"
+      },
+      "author": null,
+      "title": "Stock Market Today, April 7: Intel Rallies as it Joins Musk's Terafab Project - The Motley Fool",
+      "description": null,
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/04/07/stock-market-today-april-7-intel-rallies-as-it-joins-musk-s-terafab-project/",
+      "urlToImage": null,
+      "publishedAt": "2026-04-07T22:19:38Z",
+      "content": null,
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Investor's Business Daily"
+      },
+      "author": null,
+      "title": "Stock Market Today: Dow, S&P 500 Close Mixed As Critical Iran Deadline Nears (Live Coverage) - Investor's Business Daily",
+      "description": "Stock Market Today: The Dow Jones index drops ahead of Trump's Strait of Hormuz deadline. UnitedHealth stock jumps while Apple falls.",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-war-strait-of-hormuz-unitedhealth-unh-stock/",
+      "urlToImage": "https://www.investors.com/wp-content/uploads/2017/05/WallStreetSign2-Shutterstock.jpg",
+      "publishedAt": "2026-04-07T21:08:00Z",
+      "content": "Information in Investors Business Daily is for informational and educational purposes only and should not be construed as an offer, recommendation, solicitation, or rating to buy or sell securities. … [+1064 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": "axios",
+        "name": "Axios"
+      },
+      "author": "Alexandria Sands",
+      "title": "Japanese \"megabank\" SMBC to open global hub with 2,000 jobs in Uptown Charlotte - Axios",
+      "description": "In a testament to Charlotte's talent and business community, the Tokyo-headquartered bank will invest $50.5 million in the area by 2028.",
+      "url": "https://www.axios.com/local/charlotte/2026/04/07/smbc-north-carolina-investment-jobs-uptown",
+      "urlToImage": "https://images.axios.com/Z-FoQ7-qg3mK6cyruhGQxUgILwM=/0x164:4385x2631/1366x768/2026/04/07/1775582558466.jpeg",
+      "publishedAt": "2026-04-07T20:46:10Z",
+      "content": "Sumitomo Mitsui Banking Corporation, one of Japan's biggest banks, has chosen Uptown Charlotte to establish its second U.S. headquarters.\r\nWhy it matters: In a testament to Charlotte's talent and bus… [+3117 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Andrew Pollack",
+      "title": "Super Micro Launches Internal Probe of Server Sales to China - Bloomberg.com",
+      "description": "Super Micro Computer Inc. said a committee of its independent directors has hired a law firm and is investigating the circumstances surrounding an indictment last month of two employees and a contractor over the sale of servers to China.",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-07/super-micro-launches-internal-probe-of-server-sales-to-china",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i87qHGhA2w4o/v1/1200x800.jpg",
+      "publishedAt": "2026-04-07T20:38:29Z",
+      "content": "Super Micro Computer Inc. said a committee of its independent directors has hired a law firm and is investigating the circumstances surrounding an indictment last month of two employees and a contrac… [+310 chars]",
       "category": "business"
     }
   ]

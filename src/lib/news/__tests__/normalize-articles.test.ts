@@ -67,4 +67,23 @@ describe("normalizeArticles", () => {
     expect(normalized[0].category).toBe("general");
     expect(normalized[1].category).toBe("general");
   });
+
+  it("repairs common mojibake sequences in article text", () => {
+    const rawArticles: RawArticle[] = [
+      {
+        source: { name: "Washington Post" },
+        title: "Trump warns â€˜a whole civilization will die tonightâ€™",
+        url: "https://example.com/mojibake-story",
+        publishedAt: "2026-04-08T10:00:00.000Z",
+        description: "The president called the move â€œvery seriousâ€ in late remarks.",
+        category: "general",
+      },
+    ];
+
+    const normalized = normalizeArticles(rawArticles);
+
+    expect(normalized).toHaveLength(1);
+    expect(normalized[0].title).toBe("Trump warns ‘a whole civilization will die tonight’");
+    expect(normalized[0].description).toBe("The president called the move “very serious” in late remarks.");
+  });
 });

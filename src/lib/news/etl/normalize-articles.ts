@@ -9,6 +9,17 @@ import type { NormalizedArticle } from "@/lib/news/contracts/normalized-schema";
 import { generateArticleSlug } from "@/lib/news/etl/generate-article-slug";
 
 const approvedCategories = new Set<string>(categoryValues);
+const mojibakeReplacements: Array<[string, string]> = [
+  ["â€™", "’"],
+  ["â€˜", "‘"],
+  ["â€œ", "“"],
+  ["â€\u009d", "”"],
+  ["â€¦", "…"],
+  ["â€“", "–"],
+  ["â€”", "—"],
+  ["Â ", " "],
+  ["PokÃ©mon", "Pokémon"],
+];
 
 function normalizeCategory(value?: string | null): Category {
   if (!value) {
@@ -24,13 +35,23 @@ function cleanText(value?: string | null): string | undefined {
     return undefined;
   }
 
-  const cleaned = value
+  const cleaned = repairMojibake(value)
     .replace(/<[^>]+>/g, " ")
     .replace(/\[[^\]]+\]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 
   return cleaned || undefined;
+}
+
+function repairMojibake(value: string): string {
+  let repaired = value;
+
+  for (const [from, to] of mojibakeReplacements) {
+    repaired = repaired.replaceAll(from, to);
+  }
+
+  return repaired;
 }
 
 function deriveCanonicalUrl(url: string): string {

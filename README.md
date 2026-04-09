@@ -53,7 +53,7 @@ data/
   processed/            Canonical processed dataset used by the UI
 ```
 
-Architecture decisions:
+Key decisions:
 - Offline pipeline writes JSON artifacts outside `src/`
 - The canonical frontend dataset lives at `data/processed/articles.json`
 - The UI is read-only over processed data
@@ -77,72 +77,98 @@ The pipeline has 3 stages:
    - writes candidate data to `data/tmp/candidate-articles.json`
 
 3. Summarize
-   - uses the LLM summarizer on the candidate records
+   - uses Gemini by default, or Hugging Face/Ollama/OpenAI if configured
    - falls back to extractive summaries if needed
    - writes the final dataset to `data/processed/articles.json`
 
-The UI reads only the final processed dataset.
+Latest verified pipeline run:
+- `source`: `NewsAPI + Gemini pipeline`
+- `finalArticles`: `27`
+- `summarizedWithAi`: `12`
+- `fallbackSummaries`: `15`
+- Gemini returned some temporary `503 UNAVAILABLE` responses, and the fallback summarizer completed the remaining articles
 
 ## Required Env Vars
 
 - `NEWS_API_KEY`
   - required for live article fetching
+- `SUMMARIZER_PROVIDER`
+  - optional
+  - defaults to `gemini`
+  - supported values: `gemini`, `huggingface`, `ollama`, `openai`
+- `GEMINI_API_KEY`
+  - required if `SUMMARIZER_PROVIDER=gemini`
+- `GEMINI_MODEL`
+  - optional
+  - defaults to `gemini-3-flash-preview`
+- `HUGGINGFACE_API_KEY`
+  - required if `SUMMARIZER_PROVIDER=huggingface`
+- `HUGGINGFACE_MODEL`
+  - optional
+  - defaults to `facebook/bart-large-cnn`
+- `OLLAMA_MODEL`
+  - optional
+  - defaults to `llama3.2:3b`
+- `OLLAMA_BASE_URL`
+  - optional
+  - defaults to `http://127.0.0.1:11434/v1`
 - `OPENAI_API_KEY`
-  - required for live AI summarization
+  - only required if `SUMMARIZER_PROVIDER=openai`
 
-The UI can still run from the committed processed JSON without these secrets, but the live pipeline cannot.
+The deployed UI can run from committed processed JSON without provider secrets, but the live fetch step always needs `NEWS_API_KEY`.
 
 A starter env template is provided in [.env.example](/d:/ai-news-summarizer/.env.example).
 
 ## Exact Commands
 
-Install dependencies:
-
 ```bash
 npm install
 ```
 
-Run the UI locally:
-
 ```bash
 npm run dev
-```
-
-Run tests:
-
-```bash
 npm run test
-```
-
-Build the app:
-
-```bash
 npm run build
-```
-
-Run the full pipeline:
-
-```bash
 npm run pipeline
 ```
 
-Run individual pipeline stages:
-
 ```bash
 npm run pipeline:fetch
 npm run pipeline:process
 npm run pipeline:summarize
 ```
 
-Run with real data in PowerShell:
+Run with real data in PowerShell using Gemini:
 
 ```powershell
 $env:NEWS_API_KEY="your_newsapi_key"
-$env:OPENAI_API_KEY="your_openai_api_key"
+$env:SUMMARIZER_PROVIDER="gemini"
+$env:GEMINI_API_KEY="your_gemini_api_key"
+$env:GEMINI_MODEL="gemini-3-flash-preview"
 
 npm run pipeline:fetch
 npm run pipeline:process
 npm run pipeline:summarize
+```
+
+Alternative providers:
+
+```powershell
+$env:SUMMARIZER_PROVIDER="huggingface"
+$env:HUGGINGFACE_API_KEY="your_huggingface_api_key"
+$env:HUGGINGFACE_MODEL="facebook/bart-large-cnn"
+
+$env:SUMMARIZER_PROVIDER="ollama"
+$env:OLLAMA_MODEL="llama3.2:3b"
+$env:OLLAMA_BASE_URL="http://127.0.0.1:11434/v1"
+$env:SUMMARIZER_PROVIDER="openai"
+$env:OPENAI_API_KEY="your_openai_api_key"
+```
+
+For Ollama, install it first, then run:
+```bash
+ollama pull llama3.2:3b
+ollama serve
 ```
 
 After that, these files will be updated:
@@ -152,14 +178,11 @@ After that, these files will be updated:
 
 ## Testing
 
-The project uses:
-- Vitest
-- React Testing Library
-
 Current tests cover:
 - rejecting invalid articles
 - deduplicating articles by canonical URL
 - normalizing categories
+- repairing common mojibake text artifacts
 - sorting by published date
 - selecting top stories
 - fallback summarization behavior
@@ -175,30 +198,15 @@ Current tests cover:
 ## Where The 5 Required Skills Were Used
 
 The project used these Codex skills during planning and refinement:
-
-1. `grill-me`
-   - stress-tested the original project scope
-   - challenged assumptions about fallback behavior, deployment, categories, and demo safety
-
-2. `write-a-prd`
-   - turned the project idea into a structured PRD
-   - clarified supported tasks, out of scope items, testing requirements, and architecture decisions
-
-3. `prd-to-issues`
-   - broke the PRD into child implementation issues
-   - organized the work into manageable vertical slices for the repo
-
-4. `tdd`
-   - guided test-first development for the ETL pipeline
-   - added tests for invalid article rejection, dedupe behavior, sorting, normalization, and top-story selection
-
-5. `improve-codebase-architecture`
-   - reviewed the first working version
-   - reorganized the codebase into `contracts`, `ingest`, `etl`, `summarize`, `data`, and `storage`
-   - improved separation of concerns without changing app behavior
+- `grill-me` for scope and risk review
+- `write-a-prd` for the project PRD
+- `prd-to-issues` for implementation issue breakdown
+- `tdd` for ETL test-first development
+- `improve-codebase-architecture` for the post-MVP refactor into `contracts`, `ingest`, `etl`, `summarize`, `data`, and `storage`
 
 ## Notes
 
 - The repo may initially contain a scaffold dataset until you run the live pipeline
 - If article URLs still point to `example.com`, the live fetch step has not been run yet
+- The latest committed dataset uses real NewsAPI article URLs and a mixed Gemini-plus-fallback summary run
 - The app should remain honest about excerpt-based summaries when full article text is unavailable

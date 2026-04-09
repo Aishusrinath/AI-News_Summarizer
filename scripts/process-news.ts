@@ -1,3 +1,5 @@
+import { pathToFileURL } from "node:url";
+
 import {
   newsArtifactPaths,
   readJsonArtifact,
@@ -29,7 +31,7 @@ export async function runProcessNews() {
   console.log(`Processed ${deduped.length} articles into data/tmp/candidate-articles.json.`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   runProcessNews().catch((error) => {
     console.error(error);
     process.exitCode = 1;

@@ -1,3 +1,5 @@
+import { pathToFileURL } from "node:url";
+
 import { fetchNews } from "@/lib/news/ingest/fetch-news";
 import { newsArtifactPaths, writeJsonArtifact } from "@/lib/storage/news-artifact-store";
 
@@ -23,7 +25,7 @@ export async function runFetchNews() {
   console.log(`Fetched ${rawNews.articles.length} raw articles into data/raw/latest.json.`);
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   runFetchNews().catch((error) => {
     console.error(error);
     process.exitCode = 1;

@@ -1,5 +1,11 @@
+import { pathToFileURL } from "node:url";
+
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { normalizedArticleSchema } from "@/lib/news/contracts/normalized-schema";
+import type { ArticleSummarizer } from "@/lib/news/summarize/article-summarizer";
+import { createGeminiSummarizer } from "@/lib/news/summarize/gemini-summarizer";
+import { createHuggingFaceSummarizer } from "@/lib/news/summarize/huggingface-summarizer";
+import { createOllamaSummarizer } from "@/lib/news/summarize/ollama-summarizer";
 import { createOpenAiSummarizer } from "@/lib/news/summarize/openai-summarizer";
 import { summarizeArticles } from "@/lib/news/summarize/summarize-articles";
 import {
@@ -8,12 +14,83 @@ import {
   writeJsonArtifact,
 } from "@/lib/storage/news-artifact-store";
 
-export async function runSummarizeNews() {
-  const apiKey = process.env.OPENAI_API_KEY;
+type SummarizerConfig = {
+  provider: "gemini" | "huggingface" | "ollama" | "openai";
+  source: string;
+  summarizeArticle: ArticleSummarizer;
+};
 
-  if (!apiKey) {
-    throw new Error("Missing OPENAI_API_KEY. Set it before running the summarize step.");
+function getSummarizerConfig(): SummarizerConfig {
+  const provider = process.env.SUMMARIZER_PROVIDER?.trim().toLowerCase() ?? "gemini";
+
+  if (provider === "gemini") {
+    const apiKey = process.env.GEMINI_API_KEY;
+
+    if (!apiKey) {
+      throw new Error("Missing GEMINI_API_KEY. Set it before running the summarize step.");
+    }
+
+    return {
+      provider: "gemini",
+      source: "NewsAPI + Gemini pipeline",
+      summarizeArticle: createGeminiSummarizer({
+        apiKey,
+        model: process.env.GEMINI_MODEL?.trim() || "gemini-3-flash-preview",
+      }),
+    };
   }
+
+  if (provider === "huggingface") {
+    const apiKey = process.env.HUGGINGFACE_API_KEY;
+
+    if (!apiKey) {
+      throw new Error(
+        "Missing HUGGINGFACE_API_KEY. Set it before running the summarize step.",
+      );
+    }
+
+    return {
+      provider: "huggingface",
+      source: "NewsAPI + Hugging Face pipeline",
+      summarizeArticle: createHuggingFaceSummarizer({
+        apiKey,
+        model: process.env.HUGGINGFACE_MODEL?.trim() || "facebook/bart-large-cnn",
+      }),
+    };
+  }
+
+  if (provider === "openai") {
+    const apiKey = process.env.OPENAI_API_KEY;
+
+    if (!apiKey) {
+      throw new Error("Missing OPENAI_API_KEY. Set it before running the summarize step.");
+    }
+
+    return {
+      provider: "openai",
+      source: "NewsAPI + OpenAI pipeline",
+      summarizeArticle: createOpenAiSummarizer(apiKey),
+    };
+  }
+
+  if (provider !== "ollama") {
+    throw new Error(
+      `Unsupported SUMMARIZER_PROVIDER: ${provider}. Use "gemini", "huggingface", "ollama", or "openai".`,
+    );
+  }
+
+  return {
+    provider: "ollama",
+    source: "NewsAPI + Ollama pipeline",
+    summarizeArticle: createOllamaSummarizer({
+      baseURL: process.env.OLLAMA_BASE_URL,
+      model: process.env.OLLAMA_MODEL?.trim() || "llama3.2:3b",
+    }),
+  };
+}
+
+export async function runSummarizeNews() {
+  const summarizerConfig = getSummarizerConfig();
 
   const candidate = await readJsonArtifact<{
     counts: {
@@ -31,7 +108,7 @@ export async function runSummarizeNews() {
 
   const summarizedArticles = await summarizeArticles(
     normalizedArticles,
-    createOpenAiSummarizer(apiKey),
+    summarizerConfig.summarizeArticle,
   );
 
   const summarizedWithAi = summarizedArticles.filter(
@@ -41,7 +118,7 @@ export async function runSummarizeNews() {
 
   const dataset = buildProcessedDataset({
     generatedAt: new Date().toISOString(),
-    source: "NewsAPI + OpenAI pipeline",
+    source: summarizerConfig.source,
     articles: summarizedArticles,
     counts: {
       fetched: candidate.counts.fetched,
@@ -56,10 +133,12 @@ export async function runSummarizeNews() {
 
   await writeJsonArtifact(newsArtifactPaths.processedArticles, dataset);
 
-  console.log(`Wrote ${summarizedArticles.length} processed articles to data/processed/articles.json.`);
+  console.log(
+    `Wrote ${summarizedArticles.length} processed articles to data/processed/articles.json using ${summarizerConfig.provider}.`,
+  );
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   runSummarizeNews().catch((error) => {
     console.error(error);
     process.exitCode = 1;
