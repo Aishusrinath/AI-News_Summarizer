@@ -128,6 +128,7 @@ npm install
 ```bash
 npm run dev
 npm run test
+npm run test:e2e
 npm run build
 npm run pipeline
 ```
@@ -187,6 +188,7 @@ Current tests cover:
 - selecting top stories
 - fallback summarization behavior
 - processed dataset loading
+- browser-based headline filtering and article detail navigation with Playwright
 
 ## Deployment
 

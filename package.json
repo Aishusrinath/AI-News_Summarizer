@@ -12,7 +12,8 @@
     "pipeline:process": "tsx scripts/process-news.ts",
     "pipeline:summarize": "tsx scripts/summarize-news.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@google/genai": "^1.49.0",
