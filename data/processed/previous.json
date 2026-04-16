@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T09:12:59.821Z",
+  "generatedAt": "2026-04-16T10:58:26.636Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -11,8 +11,8 @@
     "normalized": 29,
     "dropped": 0,
     "deduped": 27,
-    "summarizedWithAi": 1,
-    "fallbackSummaries": 26,
+    "summarizedWithAi": 2,
+    "fallbackSummaries": 25,
     "finalArticles": 27
   },
   "articles": [
@@ -24,7 +24,7 @@
       "publishedAt": "2026-04-15T07:27:59.000Z",
       "category": "world",
       "url": "https://spaceflightnow.com/2026/04/15/west-coast-spacex-falcon-9-mission-to-launch-25-starlink-satellites/",
-      "summary": "SpaceX launched a Falcon 9 rocket from Space Launch Complex 4E at Vandenberg Space Force Base in California. This West Coast mission launched 25 Starlink satellites.",
+      "summary": "SpaceX launched a Falcon 9 rocket from Space Launch Complex 4E at Vandenberg Space Force Base in California. The mission successfully launched 25 Starlink satellites.",
       "summaryType": "ai",
       "cleanedText": "A Falcon 9 rocket stands poised to launch from the Space Launch Complex 4E at Vandenberg Space Force Base in California. File Photo: SpaceX SpaceX launched a Falcon 9 rocket from Vandenberg Space Fo…"
     },
@@ -36,8 +36,8 @@
       "publishedAt": "2026-04-15T07:04:00.000Z",
       "category": "world",
       "url": "https://www.cbsnews.com/live-updates/iran-war-peace-talks-us-blockade-irans-ports-day-2/",
-      "summary": "Live Updates: U.S. says blockade of Iranian ports \"fully implemented\" as Trump weighs more talks with Iran - CBS News. CENTCOM commander Adm. Brad Cooper says a blockade of Iranian ports \"has been fully implemented,\" as the U.S.-Iran impasse over control of the Strait of Hormuz continues amid a delicate ceasefire.",
-      "summaryType": "fallback",
+      "summary": "CENTCOM commander Adm. Brad Cooper announced that a blockade of Iranian ports has been fully implemented as the U.S. and Iran remain in an impasse over the Strait of Hormuz. Despite the blockade beginning on Monday, tracking data reportedly shows multiple Iran-linked ships continuing to pass through the waterway. This development occurs amid a delicate ceasefire between the two nations.",
+      "summaryType": "ai",
       "description": "CENTCOM commander Adm. Brad Cooper says a blockade of Iranian ports \"has been fully implemented,\" as the U.S.-Iran impasse over control of the Strait of Hormuz continues amid a delicate ceasefire.",
       "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/04/15/8d0476a7-cc9a-4b63-b6a5-7bc8ec0de1d1/thumbnail/1200x630/22cc3ac0ce7712497b627f319385f74d/2026-04-13t140707z-535342284-rc2gnka99rss-rtrmadp-3-iran-crisis-shipping-blockade.jpg",
       "author": "Brian Dakss, Haley Ott, Sarah Lynch Baldwin",
