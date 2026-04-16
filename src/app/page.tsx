@@ -22,6 +22,7 @@ export default async function Home({ searchParams }: PageProps<"/">) {
     refreshStatus,
     availableCategories,
     availableRegions,
+    emptyStateDescription,
   } = await getHomepageFeed(
     Array.isArray(rawCategory) ? rawCategory[0] : rawCategory,
     Array.isArray(rawRegion) ? rawRegion[0] : rawRegion,
@@ -130,12 +131,14 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         <DashboardSection
           title="Top Highlights"
           description="The strongest mix of recency, article quality, and editorial weight in the latest snapshot."
+          emptyStateDescription={emptyStateDescription}
           stories={topHighlights}
         />
 
         <DashboardSection
           title="Category Leaders"
           description="One standout story for each active category, chosen to keep the dashboard broad and useful."
+          emptyStateDescription={emptyStateDescription}
           stories={categoryLeaders}
         />
 
@@ -151,7 +154,10 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             </p>
           </div>
 
-          <ArticleList articles={latestStories} />
+          <ArticleList
+            articles={latestStories}
+            emptyStateDescription={emptyStateDescription}
+          />
         </section>
 
         <footer className="rounded-[1.5rem] border border-stone-200 bg-white/70 px-5 py-4 text-sm text-stone-600 shadow-sm">

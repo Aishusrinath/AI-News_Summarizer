@@ -1,25 +1,24 @@
 import "dotenv/config";
-import { runFetchNews } from "./fetch-news";
-import { runProcessNews } from "./process-news";
-import { runSummarizeNews } from "./summarize-news";
-import { defaultSnapshotStore } from "@/lib/storage/snapshot-store";
+
+import {
+  markNewsRefreshFailure,
+  runNewsRefresh,
+} from "@/lib/news/pipeline/run-news-refresh";
 
 async function main() {
   console.log("Starting pipeline...");
 
   try {
-    await runFetchNews();
-    await runProcessNews();
-    const dataset = await runSummarizeNews();
-    await defaultSnapshotStore.publishSnapshot(dataset);
+    const dataset = await runNewsRefresh();
+    console.log(
+      `Pipeline complete. Published ${dataset.counts.finalArticles} processed articles.`,
+    );
   } catch (error) {
-    await defaultSnapshotStore.markRefreshFailure(
+    await markNewsRefreshFailure(
       error instanceof Error ? error.message : "Pipeline failed.",
     );
     throw error;
   }
-
-  console.log("Pipeline complete.");
 }
 
 main().catch((error) => {

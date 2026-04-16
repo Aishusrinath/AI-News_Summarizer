@@ -1,10 +1,12 @@
 import {
+  categoryLabels,
   canonicalizeCategory,
   sortSupportedCategories,
   type SupportedCategory,
 } from "@/lib/news/contracts/raw-schema";
 import {
   isSupportedRegion,
+  regionLabels,
   supportedRegionValues,
   sortSupportedRegions,
   type SupportedRegion,
@@ -39,6 +41,7 @@ export type DashboardFeed = {
   latestStories: DashboardStory[];
   availableCategories: SupportedCategory[];
   availableRegions: SupportedRegion[];
+  emptyStateDescription: string;
 };
 
 type DashboardFeedInput = {
@@ -281,6 +284,22 @@ function attachStatuses(
   }));
 }
 
+function buildEmptyStateDescription(
+  activeCategory: SupportedCategory | "all",
+  activeRegion: SupportedRegion | "all",
+) {
+  const selectedFilters = [
+    activeCategory === "all" ? null : categoryLabels[activeCategory],
+    activeRegion === "all" ? null : regionLabels[activeRegion],
+  ].filter(Boolean);
+
+  if (selectedFilters.length === 0) {
+    return "There were no validated articles in the latest processed dataset.";
+  }
+
+  return `No ${selectedFilters.join(" + ")} stories matched the latest snapshot. Try All regions or All categories, or wait for the next refresh.`;
+}
+
 export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
   const activeRegion = input.activeRegion ?? "all";
   const availableCategories = sortSupportedCategories(
@@ -342,6 +361,10 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
     refreshStatus: input.refreshStatus,
     availableCategories,
     availableRegions,
+    emptyStateDescription: buildEmptyStateDescription(
+      input.activeCategory,
+      activeRegion,
+    ),
     topHighlights: attachStatuses(topHighlights, statusesById),
     categoryLeaders: attachStatuses(categoryLeaders, statusesById),
     whatChanged: buildWhatChanged(

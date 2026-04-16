@@ -5,14 +5,20 @@ import type { ProcessedArticle } from "@/lib/news/contracts/processed-schema";
 
 type ArticleListProps = {
   articles: ProcessedArticle[] | DashboardStory[];
+  emptyStateDescription?: string;
+  emptyStateTitle?: string;
 };
 
-export function ArticleList({ articles }: ArticleListProps) {
+export function ArticleList({
+  articles,
+  emptyStateDescription = "This category is available, but there were no validated articles in the latest processed dataset.",
+  emptyStateTitle = "No articles in this filter",
+}: ArticleListProps) {
   if (articles.length === 0) {
     return (
       <EmptyState
-        title="No articles in this filter"
-        description="This category is available, but there were no validated articles in the latest processed dataset."
+        title={emptyStateTitle}
+        description={emptyStateDescription}
       />
     );
   }

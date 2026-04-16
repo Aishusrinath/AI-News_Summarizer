@@ -14,6 +14,15 @@ import {
   writeJsonArtifact,
 } from "@/lib/storage/news-artifact-store";
 
+type LocalSnapshotStorePaths = Pick<
+  typeof newsArtifactPaths,
+  "currentSnapshot" | "previousSnapshot" | "processedArticles" | "refreshStatus"
+>;
+
+type LocalSnapshotStoreOptions = {
+  paths?: LocalSnapshotStorePaths;
+};
+
 export type SnapshotStore = {
   getCurrentSnapshot(): Promise<ProcessedDataset>;
   getPreviousSnapshot(): Promise<ProcessedDataset | null>;
@@ -78,33 +87,37 @@ function hasBlobToken() {
   return Boolean(process.env.BLOB_READ_WRITE_TOKEN?.trim());
 }
 
-export function createLocalFileSnapshotStore(): SnapshotStore {
+export function createLocalFileSnapshotStore(
+  options: LocalSnapshotStoreOptions = {},
+): SnapshotStore {
+  const paths = options.paths ?? newsArtifactPaths;
+
   return {
     async getCurrentSnapshot() {
-      const filePath = (await fileExists(newsArtifactPaths.currentSnapshot))
-        ? newsArtifactPaths.currentSnapshot
-        : newsArtifactPaths.processedArticles;
+      const filePath = (await fileExists(paths.currentSnapshot))
+        ? paths.currentSnapshot
+        : paths.processedArticles;
       const parsed = await readJsonArtifact<unknown>(filePath);
       return parseProcessedDataset(parsed);
     },
 
     async getPreviousSnapshot() {
-      if (!(await fileExists(newsArtifactPaths.previousSnapshot))) {
+      if (!(await fileExists(paths.previousSnapshot))) {
         return null;
       }
 
-      const parsed = await readJsonArtifact<unknown>(newsArtifactPaths.previousSnapshot);
+      const parsed = await readJsonArtifact<unknown>(paths.previousSnapshot);
       return parseProcessedDataset(parsed);
     },
 
     async getRefreshStatus() {
       const currentSnapshot = await this.getCurrentSnapshot();
 
-      if (!(await fileExists(newsArtifactPaths.refreshStatus))) {
+      if (!(await fileExists(paths.refreshStatus))) {
         return buildDefaultRefreshStatus(currentSnapshot);
       }
 
-      const parsed = await readJsonArtifact<unknown>(newsArtifactPaths.refreshStatus);
+      const parsed = await readJsonArtifact<unknown>(paths.refreshStatus);
       return refreshStatusSchema.parse(parsed);
     },
 
@@ -112,13 +125,13 @@ export function createLocalFileSnapshotStore(): SnapshotStore {
       const previousSnapshot = await this.getCurrentSnapshot().catch(() => null);
 
       if (previousSnapshot) {
-        await writeJsonArtifact(newsArtifactPaths.previousSnapshot, previousSnapshot);
+        await writeJsonArtifact(paths.previousSnapshot, previousSnapshot);
       }
 
-      await writeJsonArtifact(newsArtifactPaths.currentSnapshot, candidateSnapshot);
-      await writeJsonArtifact(newsArtifactPaths.processedArticles, candidateSnapshot);
+      await writeJsonArtifact(paths.currentSnapshot, candidateSnapshot);
+      await writeJsonArtifact(paths.processedArticles, candidateSnapshot);
       await writeJsonArtifact(
-        newsArtifactPaths.refreshStatus,
+        paths.refreshStatus,
         buildDefaultRefreshStatus(candidateSnapshot, {
           previousSnapshotId: previousSnapshot?.generatedAt ?? null,
           currentSnapshotId: candidateSnapshot.generatedAt,
@@ -138,7 +151,7 @@ export function createLocalFileSnapshotStore(): SnapshotStore {
       }
 
       await writeJsonArtifact(
-        newsArtifactPaths.refreshStatus,
+        paths.refreshStatus,
         buildDefaultRefreshStatus(currentSnapshot, {
           previousSnapshotId: null,
           currentSnapshotId: currentSnapshot?.generatedAt ?? null,

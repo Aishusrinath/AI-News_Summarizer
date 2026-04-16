@@ -149,6 +149,9 @@ describe("buildDashboardFeed", () => {
       "technology",
       "science",
     ]);
+    expect(dashboardFeed.emptyStateDescription).toBe(
+      "There were no validated articles in the latest processed dataset.",
+    );
   });
 
   it("filters dashboard stories by active region metadata", () => {
@@ -202,6 +205,9 @@ describe("buildDashboardFeed", () => {
     expect(dashboardFeed.latestStories.map((entry) => entry.article.id)).toEqual([
       "in-business",
     ]);
+    expect(dashboardFeed.emptyStateDescription).toBe(
+      "No India stories matched the latest snapshot. Try All regions or All categories, or wait for the next refresh.",
+    );
   });
 
   it("shows supported region filters even for legacy snapshots without region metadata", () => {

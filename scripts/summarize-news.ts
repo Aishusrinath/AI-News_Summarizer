@@ -4,11 +4,7 @@ import "dotenv/config";
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { selectArticlesForSummary } from "@/lib/news/etl/select-articles-for-summary";
 import { normalizedArticleSchema } from "@/lib/news/contracts/normalized-schema";
-import type { ArticleSummarizer } from "@/lib/news/summarize/article-summarizer";
-import { createGeminiSummarizer } from "@/lib/news/summarize/gemini-summarizer";
-import { createHuggingFaceSummarizer } from "@/lib/news/summarize/huggingface-summarizer";
-import { createOllamaSummarizer } from "@/lib/news/summarize/ollama-summarizer";
-import { createOpenAiSummarizer } from "@/lib/news/summarize/openai-summarizer";
+import { createSummarizerConfigFromEnv } from "@/lib/news/pipeline/summarizer-config";
 import { summarizeArticles } from "@/lib/news/summarize/summarize-articles";
 import type { ProcessedDataset } from "@/lib/news/contracts/processed-schema";
 import {
@@ -17,83 +13,11 @@ import {
   writeJsonArtifact,
 } from "@/lib/storage/news-artifact-store";
 
-type SummarizerConfig = {
-  provider: "gemini" | "huggingface" | "ollama" | "openai";
-  source: string;
-  summarizeArticle: ArticleSummarizer;
-};
-
-function getSummarizerConfig(): SummarizerConfig {
-  const provider = process.env.SUMMARIZER_PROVIDER?.trim().toLowerCase() ?? "gemini";
-
-  if (provider === "gemini") {
-    const apiKey = process.env.GEMINI_API_KEY;
-
-    if (!apiKey) {
-      throw new Error("Missing GEMINI_API_KEY. Set it before running the summarize step.");
-    }
-
-    return {
-      provider: "gemini",
-      source: "NewsAPI + Gemini pipeline",
-      summarizeArticle: createGeminiSummarizer({
-        apiKey,
-        model: process.env.GEMINI_MODEL?.trim() || "gemini-3-flash-preview",
-      }),
-    };
-  }
-
-  if (provider === "huggingface") {
-    const apiKey = process.env.HUGGINGFACE_API_KEY;
-
-    if (!apiKey) {
-      throw new Error(
-        "Missing HUGGINGFACE_API_KEY. Set it before running the summarize step.",
-      );
-    }
-
-    return {
-      provider: "huggingface",
-      source: "NewsAPI + Hugging Face pipeline",
-      summarizeArticle: createHuggingFaceSummarizer({
-        apiKey,
-        model: process.env.HUGGINGFACE_MODEL?.trim() || "facebook/bart-large-cnn",
-      }),
-    };
-  }
-
-  if (provider === "openai") {
-    const apiKey = process.env.OPENAI_API_KEY;
-
-    if (!apiKey) {
-      throw new Error("Missing OPENAI_API_KEY. Set it before running the summarize step.");
-    }
-
-    return {
-      provider: "openai",
-      source: "NewsAPI + OpenAI pipeline",
-      summarizeArticle: createOpenAiSummarizer(apiKey),
-    };
-  }
-
-  if (provider !== "ollama") {
-    throw new Error(
-      `Unsupported SUMMARIZER_PROVIDER: ${provider}. Use "gemini", "huggingface", "ollama", or "openai".`,
-    );
-  }
-
-  return {
-    provider: "ollama",
-    source: "NewsAPI + Ollama pipeline",
-    summarizeArticle: createOllamaSummarizer({
-      baseURL: process.env.OLLAMA_BASE_URL,
-      model: process.env.OLLAMA_MODEL?.trim() || "llama3.2:3b",
-    }),
-  };
-}
-
 export async function runSummarizeNews(): Promise<ProcessedDataset> {
-  const summarizerConfig = getSummarizerConfig();
+  const summarizerConfig = createSummarizerConfigFromEnv(
+    undefined,
+    "running the summarize step",
+  );
 
   const candidate = await readJsonArtifact<{
     counts: {
