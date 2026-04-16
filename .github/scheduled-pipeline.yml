@@ -33,12 +33,11 @@ jobs:
         run: npm run pipeline
 
       - name: Commit and push changes
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - run: |
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/processed/articles.json
           git commit -m "Update articles - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
           git push
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
