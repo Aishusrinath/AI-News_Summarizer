@@ -114,8 +114,14 @@ Latest verified pipeline run:
   - defaults to `http://127.0.0.1:11434/v1`
 - `OPENAI_API_KEY`
   - only required if `SUMMARIZER_PROVIDER=openai`
+- `BLOB_READ_WRITE_TOKEN`
+  - required on Vercel for live refresh without redeploys
+  - created by connecting a Vercel Blob store to the project
+- `CRON_SECRET`
+  - required on Vercel to authorize `/api/refresh`
+  - set this to a long random string
 
-The deployed UI can run from committed processed JSON without provider secrets, but the live fetch step always needs `NEWS_API_KEY`.
+The deployed UI can run from committed processed JSON without provider secrets, but live refresh needs `NEWS_API_KEY`, the selected summarizer key, `BLOB_READ_WRITE_TOKEN`, and `CRON_SECRET`.
 
 A starter env template is provided in [.env.example](/d:/ai-news-summarizer/.env.example).
 
@@ -193,9 +199,10 @@ Current tests cover:
 ## Deployment
 
 - The frontend is intended for Vercel deployment
-- Vercel hosts the Next.js UI only
-- The deployed app reads precomputed processed JSON
-- No runtime filesystem writes are required in production
+- Vercel hosts the Next.js UI and the `/api/refresh` cron endpoint
+- `vercel.json` schedules `/api/refresh` every 5 minutes in production
+- The cron endpoint writes refreshed snapshots to Vercel Blob, so the app can update without a new Git commit or redeploy
+- If `BLOB_READ_WRITE_TOKEN` is not configured, the deployed app falls back to committed processed JSON
 
 ## Where The 5 Required Skills Were Used
 

@@ -1,6 +1,7 @@
 import { ArticleList } from "@/components/article-list";
 import { CategoryFilter } from "@/components/category-filter";
 import { DashboardSection } from "@/components/dashboard-section";
+import { LiveRefresh } from "@/components/live-refresh";
 import { RefreshStatus } from "@/components/refresh-status";
 import { WhatChanged } from "@/components/what-changed";
 import { getHomepageFeed } from "@/lib/data/get-homepage-feed";
@@ -67,6 +68,10 @@ export default async function Home({ searchParams }: PageProps<"/">) {
               refreshStatus={refreshStatus}
               generatedAt={dataset.generatedAt}
             />
+          </div>
+
+          <div className="mt-4">
+            <LiveRefresh generatedAt={dataset.generatedAt} />
           </div>
         </section>
 
