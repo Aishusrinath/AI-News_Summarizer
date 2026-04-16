@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-04-07T14:00:00.000Z",
   "source": "Fixture dataset",
-  "categories": ["general", "technology", "business"],
+  "categories": ["world", "technology", "business"],
   "counts": {
     "fetched": 3,
     "normalized": 3,
@@ -18,7 +18,7 @@
       "title": "Fixture story",
       "sourceName": "Fixture Source",
       "publishedAt": "2026-04-07T12:00:00.000Z",
-      "category": "general",
+      "category": "world",
       "url": "https://example.com/fixture-story",
       "summary": "A deterministic summary for testing.",
       "summaryType": "ai"

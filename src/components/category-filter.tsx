@@ -1,24 +1,30 @@
 import Link from "next/link";
 
-import type { Category } from "@/lib/news/contracts/raw-schema";
+import {
+  categoryLabels,
+  type SupportedCategory,
+} from "@/lib/news/contracts/raw-schema";
 
 type CategoryFilterProps = {
-  activeCategory: Category | "all";
-  availableCategories: Category[];
+  activeCategory: SupportedCategory | "all";
+  availableCategories: SupportedCategory[];
 };
 
-const labels: Record<Category | "all", string> = {
+const labels: Record<SupportedCategory | "all", string> = {
   all: "All",
-  general: "General",
-  technology: "Technology",
-  business: "Business",
+  world: categoryLabels.world,
+  politics: categoryLabels.politics,
+  business: categoryLabels.business,
+  technology: categoryLabels.technology,
+  science: categoryLabels.science,
+  health: categoryLabels.health,
 };
 
 export function CategoryFilter({
   activeCategory,
   availableCategories,
 }: CategoryFilterProps) {
-  const filterValues: (Category | "all")[] = ["all", ...availableCategories];
+  const filterValues: (SupportedCategory | "all")[] = ["all", ...availableCategories];
 
   return (
     <nav className="flex flex-wrap gap-3" aria-label="Article categories">

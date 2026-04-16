@@ -1,30 +1,38 @@
-import { categorySchema, type Category } from "@/lib/news/contracts/raw-schema";
+import {
+  supportedCategorySchema,
+  type SupportedCategory,
+} from "@/lib/news/contracts/raw-schema";
+import { buildDashboardFeed } from "@/lib/data/dashboard";
 
-import { loadArticles } from "@/lib/data/load-articles";
+import {
+  loadArticles,
+  loadPreviousSnapshot,
+  loadRefreshStatus,
+} from "@/lib/data/load-articles";
 
-type HomePageCategory = Category | "all";
+type HomePageCategory = SupportedCategory | "all";
 
 function getActiveCategory(category?: string): HomePageCategory {
   if (!category) {
     return "all";
   }
 
-  const parsed = categorySchema.safeParse(category);
+  const parsed = supportedCategorySchema.safeParse(category);
   return parsed.success ? parsed.data : "all";
 }
 
 export async function getHomepageFeed(category?: string) {
-  const dataset = await loadArticles();
+  const [dataset, previousDataset, refreshStatus] = await Promise.all([
+    loadArticles(),
+    loadPreviousSnapshot(),
+    loadRefreshStatus(),
+  ]);
   const activeCategory = getActiveCategory(category);
 
-  const articles =
-    activeCategory === "all"
-      ? dataset.articles
-      : dataset.articles.filter((article) => article.category === activeCategory);
-
-  return {
+  return buildDashboardFeed({
     dataset,
-    articles,
+    previousDataset,
     activeCategory,
-  };
+    refreshStatus,
+  });
 }

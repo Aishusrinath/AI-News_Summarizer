@@ -1,21 +1,33 @@
 import Link from "next/link";
 
+import { StatusChip } from "@/components/status-chip";
+import type { StoryStatus } from "@/lib/data/dashboard";
 import { formatDate } from "@/lib/formatting/format-date";
 import { getSummaryLabel } from "@/lib/formatting/get-summary-label";
+import {
+  canonicalizeCategory,
+  categoryLabels,
+} from "@/lib/news/contracts/raw-schema";
 import type { ProcessedArticle } from "@/lib/news/contracts/processed-schema";
 
 type ArticleCardProps = {
   article: ProcessedArticle;
+  statuses?: StoryStatus[];
 };
 
-export function ArticleCard({ article }: ArticleCardProps) {
+export function ArticleCard({ article, statuses = [] }: ArticleCardProps) {
+  const displayCategory = categoryLabels[canonicalizeCategory(article.category)];
+
   return (
     <article className="flex h-full flex-col justify-between rounded-3xl border border-stone-200 bg-white p-6 shadow-sm shadow-stone-200/60">
       <div className="space-y-4">
         <div className="flex flex-wrap items-center gap-3 text-sm text-stone-500">
           <span className="rounded-full bg-stone-100 px-3 py-1 font-medium text-stone-700">
-            {article.category}
+            {displayCategory}
           </span>
+          {statuses.map((status) => (
+            <StatusChip key={status} status={status} />
+          ))}
           <span>{article.sourceName}</span>
           <span>{formatDate(article.publishedAt)}</span>
         </div>

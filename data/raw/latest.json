@@ -3,72 +3,30 @@
   "articles": [
     {
       "source": {
-        "id": "axios",
-        "name": "Axios"
+        "id": "the-washington-post",
+        "name": "The Washington Post"
       },
-      "author": "Dave Lawler, Barak Ravid",
-      "title": "U.S. AND IRAN AGREE TO 2-WEEK CEASEFIRE - Axios",
-      "description": "The announcement came hours before Trump's deadline to launch massive strikes.",
-      "url": "https://www.axios.com/2026/04/07/iran-2-week-ceasfire-trump-pakistan",
-      "urlToImage": "https://images.axios.com/LvbfTl_8-e75siDSwHE6imyb8pI=/0x272:6663x4019/1366x768/2026/04/07/1775592201726.jpeg",
-      "publishedAt": "2026-04-08T04:04:34Z",
-      "content": "<ul><li>That two-week period is to be used to negotiate a larger agreement to potentially end the war.</li><li>The U.S. and Iran are expected to hold peace talks on Friday in Islamabad, two sources f… [+4084 chars]",
-      "category": "general"
-    },
-    {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "WSJ",
-      "title": "Stock Market Today: Oil Jumps, Dow Dips After U.S. Raises the Temperature on Iran — Live Updates - WSJ",
-      "description": null,
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-07-2026",
-      "urlToImage": null,
-      "publishedAt": "2026-04-08T03:53:00Z",
-      "content": null,
-      "category": "general"
-    },
-    {
-      "source": {
-        "id": "politico",
-        "name": "Politico"
-      },
-      "author": "Andrew Howard",
-      "title": "Republican Clay Fuller wins special election to replace Marjorie Taylor Greene - Politico",
-      "description": "But his narrower-than-expected victory is still giving Democrats reason to celebrate.",
-      "url": "https://www.politico.com/news/2026/04/07/clay-fuller-wins-special-election-marjorie-taylor-greene-00863221",
-      "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2Fc5%2F46%2F66d207574956a23544f38b466f16%2Fgettyimages-2269645450-edit.jpg",
-      "publishedAt": "2026-04-08T02:16:44Z",
-      "content": "That continues a broader trend since Trump returned to office last year: Democrats have regularly overperformed in races up and down the ballot, from gubernatorial contests and House special election… [+828 chars]",
+      "author": "Scott Nover",
+      "title": "Prominent NFL reporter resigns amid probe into relationship with Patriots coach - The Washington Post",
+      "description": "Dianna Russini resigned after photographs were published of her with New England Patriots Coach Mike Vrabel. The Athletic launched an ethics investigation.",
+      "url": "https://www.washingtonpost.com/business/2026/04/14/dianna-russini-resigns-patriots-coach/",
+      "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/XDH4CQ536PFRZRCDIE4KIWAUPI.jpg&w=1440",
+      "publishedAt": "2026-04-15T03:41:16Z",
+      "content": "Dianna Russini, one of the countrys best-known NFL reporters, resigned from her job at the Athletic on Tuesday amid an ongoing ethics investigation into her relationship with New England Patriots Coa… [+14 chars]",
       "category": "general"
     },
     {
       "source": {
         "id": null,
-        "name": "NPR"
+        "name": "CBS Sports"
       },
-      "author": "",
-      "title": "Telehealth abortion will remain available for now, after a federal judge's ruling - NPR",
-      "description": "The abortion pill mifepristone must undergo a safety review by the FDA, the judge said. Louisiana's case seeking to ban its use through telemedicine will proceed after that review.",
-      "url": "https://www.npr.org/2026/04/07/nx-s1-5776946/telehealth-abortion-louisiana-federal-court-mifepristone",
-      "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+625/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0b%2F36%2F877452bb444eb66f51bf5cbd093f%2Fgettyimages-2115237708.jpg",
-      "publishedAt": "2026-04-08T01:52:15Z",
-      "content": "A federal judge in Louisiana ruled Tuesday that access to a drug used in abortions can remain as it is nationally for the moment. But the 37-page ruling by Judge David C. Joseph is far from an endors… [+6909 chars]",
-      "category": "general"
-    },
-    {
-      "source": {
-        "id": "entertainment-weekly",
-        "name": "Entertainment Weekly"
-      },
-      "author": "https://www.facebook.com/entertainmentweekly",
-      "title": "Aubrey Plaza expecting first child with 'Girls' star Christopher Abbott - Entertainment Weekly",
-      "description": "Aubrey Plaza is expecting her first child! The beloved 'Parks and Rec' alum is having a baby with Christopher Abbott, her costar from the 2020 psychological drama 'Black Bear.'",
-      "url": "https://ew.com/aubrey-plaza-expecting-first-child-with-christopher-abbott-11945192",
-      "urlToImage": "https://ew.com/thmb/mC5Bkl0hoEtDUjTkbgimn6d_1lw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Aubrey-Plaza-Christopher-Abbott-040726-755bcef6888e4adda022da8af34daccb.jpg",
-      "publishedAt": "2026-04-08T01:28:43Z",
-      "content": "Aubrey Plaza is going to become a mom!\r\nThe Parks and Recreationstar is expecting her first child with the actor Christopher Abbott, with whom she starred in the 2020 psychological drama Black Bear.\r… [+1755 chars]",
+      "author": null,
+      "title": "Miami Heat vs. Charlotte Hornets Live Score and Stats - April 14, 2026 Gametracker - CBS Sports",
+      "description": "Get real-time NBA Basketball coverage and scores as Miami Heat takes on Charlotte Hornets. We bring you the latest game previews, live stats, expert picks and recaps on CBSSports.com",
+      "url": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260414_MIA@CHA/",
+      "urlToImage": "https://sportsfly.cbsistatic.com/fly-535/bundles/sportsmediacss/images/fantasy/default-article-image-large.png",
+      "publishedAt": "2026-04-15T03:40:48Z",
+      "content": "CHARLOTTE, N.C. (AP) LaMelo Ball made a layup with 4.7 seconds left in overtime, Miles Bridges blocked Davion Mitchell's attempt at a winning layup at the buzzer, and the Charlotte Hornets beat Miami… [+2314 chars]",
       "category": "general"
     },
     {
@@ -76,27 +34,97 @@
         "id": "associated-press",
         "name": "Associated Press"
       },
-      "author": "Jack Brook",
-      "title": "Wife of US soldier released from federal immigration detention - AP News",
-      "description": "The wife of a U.S. Army staff sergeant has been released from a federal immigration detention facility where she spent nearly a week after being taken into custody inside a Louisiana military base. The detention of 22-year-old newlywed Annie Ramos, who was bo…",
-      "url": "https://apnews.com/article/army-soldier-immigration-wife-d1fe382267b3fee20d68eda0dddda42a",
-      "urlToImage": "https://dims.apnews.com/dims4/default/6169443/2147483647/strip/true/crop/2485x1656+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F72%2F3d%2F48d637205d842434e5e079818765%2F3e74d7a96f244ca9b8b833f790d8241a",
-      "publishedAt": "2026-04-08T00:59:00Z",
-      "content": "NEW ORLEANS (AP) The wife of a U.S. soldier was released Tuesday from a federal immigration detention facility where she had spent nearly a week after being taken into custody on a Louisiana military… [+3030 chars]",
+      "author": "Suzan Fraser",
+      "title": "Teenage gunman opens fire at a school in Turkey, wounding 16 before killing himself - AP News",
+      "description": "An assailant has opened fire at a high school in southeastern Turkey before killing himself. At least 16 people were wounded. The teenager fired a shotgun randomly inside the vocational high school in Siverek, Sanliurfa province, on Tuesday. The governor said…",
+      "url": "https://apnews.com/article/gunman-attacks-high-school-southeast-turkey-1605b76ff905e5f206f1550b63beb141",
+      "urlToImage": "https://dims.apnews.com/dims4/default/8a6b4a8/2147483647/strip/true/crop/1728x1151+0+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2b%2Fca%2F07a040c8acbeec4ead788c77bc90%2Fdde960bf40ec4f5dbb8c5e5833ea2d31",
+      "publishedAt": "2026-04-15T03:17:00Z",
+      "content": "ANKARA, Turkey (AP) A former student opened fire at a high school in southeastern Turkey on Tuesday, wounding at least 16 people, before killing himself, an official said. \r\nThe 18-year-old attacker … [+1846 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": "associated-press",
+        "name": "Associated Press"
+      },
+      "author": "Megan Janetsky, Will Weissert",
+      "title": "Mexico’s Sheinbaum takes a firmer stance toward the US over migrant deaths and Cuba - AP News",
+      "description": "Mexican President Claudia Sheinbaum has recently been taking a firmer stance with the U.S., defying pressures where other countries have caved. This shift follows changes in geopolitical dynamics in the Americas and the Middle East, giving her more leverage. …",
+      "url": "https://apnews.com/article/mexico-sheinbaum-us-trump-relations-90c3fc348949d4f5b6bf8d80166e870c",
+      "urlToImage": "https://dims.apnews.com/dims4/default/75a45fb/2147483647/strip/true/crop/5733x3820+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F94%2F99%2Fd157a6a77f63e00d6f58480b521f%2F7b1b6afbd0a7448da4469ba4c6ac16b0",
+      "publishedAt": "2026-04-15T02:47:00Z",
+      "content": "MEXICO CITY (AP) The Mexican government on Tuesday protested the deaths of its citizens in U.S. immigration custody as President Claudia Sheinbaum pushes back against U.S. President Donald Trumps pol… [+7010 chars]",
       "category": "general"
     },
     {
       "source": {
         "id": null,
-        "name": "Honolulu Star-Advertiser"
+        "name": "Spaceflight Now"
       },
-      "author": "Nina Wu",
-      "title": "DOH, CDC investigating rise in strep cases in West Hawaii - Honolulu Star-Advertiser",
-      "description": "The Hawaii Department of Health says it is investigating high rates of strep infection in West Hawaii over the past few months.",
-      "url": "https://www.staradvertiser.com/2026/04/07/breaking-news/doh-cdc-investigating-rise-in-strep-cases-in-west-hawaii/",
-      "urlToImage": "https://www.staradvertiser.com/wp-content/uploads/2026/04/web1_20260407_brk_doh01.jpg",
-      "publishedAt": "2026-04-08T00:31:10Z",
-      "content": "The Hawaii Department of Health says it is investigating high rates of strep infection in West Hawaii over the past few months.\r\nDOH said a local physician identified a higher-than-expected number of… [+2580 chars]",
+      "author": null,
+      "title": "Live Coverage: West Coast SpaceX Falcon 9 mission to launch 25 Starlink satellites - Spaceflight Now",
+      "description": null,
+      "url": "https://spaceflightnow.com/2026/04/15/west-coast-spacex-falcon-9-mission-to-launch-25-starlink-satellites/",
+      "urlToImage": null,
+      "publishedAt": "2026-04-15T01:42:05Z",
+      "content": "A Falcon 9 rocket stands poised to launch from the Space Launch Complex 4E at Vandenberg Space Force Base in California. File Photo: SpaceX\r\nSpaceX is counting down to the launch of a Falcon 9 rocket… [+1056 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": null,
+      "title": "Woman killed by police at Omaha Walmart after allegedly kidnapping, slashing child - CBS News",
+      "description": "Omaha police fatally shot a woman they say kidnapped a young boy and slashed him across the face before killing her.",
+      "url": "https://www.cbsnews.com/news/omaha-nebraska-police-kill-woman-slashed-child-knife-walmart/",
+      "urlToImage": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/04/15/89e03e32-bd60-4e50-ae74-f82ba7a1df76/thumbnail/1200x630/a49f1393492b02ba055d7498a9d1aee0/ap26104797103703.jpg",
+      "publishedAt": "2026-04-15T00:55:03Z",
+      "content": "Omaha police on Tuesday shot and killed a woman they say slashed a young boy with a knife outside of a Walmart after taking him from another woman inside the store.\r\nThe suspect approached a female s… [+2150 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Variety"
+      },
+      "author": "Rebecca Rubin",
+      "title": "Margot Robbie Confirms ‘Ocean’s 11’ Prequel Follows Danny Ocean’s Parents at the 1962 Monaco Grand Prix - Variety",
+      "description": "Margot Robbie confirmed the 'Ocean's 11' prequel plot at CinemaCon.",
+      "url": "https://variety.com/2026/film/news/margot-robbie-oceans-11-prequel-plot-danny-oceans-1236721883/",
+      "urlToImage": "https://variety.com/wp-content/uploads/2026/02/P102I71V-e1771366848173.jpg?w=1000&h=563&crop=1",
+      "publishedAt": "2026-04-15T00:38:00Z",
+      "content": "Monaco, hold on to your race cars. \r\nMargot Robbie has confirmed the upcoming “Ocean’s 11” prequel will take place at the crown jewel of the Formula One circuit — the Monaco Grand Prix. It won’t cent… [+2198 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Jeff Mason",
+      "title": "JD Vance Says Pope Should Be Careful With Words After Iran Critique - Bloomberg.com",
+      "description": "Vice President JD Vance, a Catholic, pushed back on Pope Leo XIV’s criticism of the war on Iran, saying the pontiff’s remarks were not based in theological truth and that he should be “careful” with his words on the matter.",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-15/vance-says-pope-should-be-careful-with-words-after-iran-critique",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iJEAJHXsfPeo/v1/1200x800.jpg",
+      "publishedAt": "2026-04-15T00:25:00Z",
+      "content": "Vice President JD Vance, a Catholic, pushed back on Pope Leo XIVs criticism of the war on Iran, saying the pontiffs remarks were not based in theological truth and that he should be careful with his … [+397 chars]",
+      "category": "general"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "Natasha Mascarenhas, Rebecca Torrence, Bailey Lipschultz, Edward Ludlow, Shirin Ghaffary",
+      "title": "Anthropic Attracts Investor Offers at an $800 Billion Valuation - Bloomberg.com",
+      "description": "Anthropic PBC has received several offers from investors for a new round of funding that could value the artificial intelligence startup at about $800 billion or higher — overtures that the Claude maker has so far resisted, according to people familiar with t…",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-14/anthropic-attracts-investor-offers-at-a-800-billion-valuation",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ifgx5CKIG3ss/v1/1200x800.jpg",
+      "publishedAt": "2026-04-15T00:06:00Z",
+      "content": "Anthropic PBC has received several offers from investors for a new round of funding that could value the artificial intelligence startup at about $800 billion or higher overtures that the Claude make… [+202 chars]",
       "category": "general"
     },
     {
@@ -104,14 +132,28 @@
         "id": null,
         "name": "CNBC"
       },
-      "author": "Justina Lee, Lee Ying Shan",
-      "title": "South Korea stocks lead gains in Asia as oil prices plunge after U.S.-Iran ceasefire deal - CNBC",
-      "description": "Asia-Pacific markets opened higher after President Donald Trump said he agreed to suspend planned attacks on Iranian infrastructure for two weeks.",
-      "url": "https://www.cnbc.com/2026/04/08/asia-markets-today-trump-iran-war-kospi-nikkei-225-oil-hang-seng-index.html",
-      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108223387-1762730856669-gettyimages-2196909643-13102024_tokyo_053.jpeg?v=1762731043&w=1920&h=1080",
-      "publishedAt": "2026-04-07T23:46:37Z",
-      "content": "Asia-Pacific markets rallied on Wednesday after U.S. President Donald Trump said he had agreed to suspend planned attacks on Iranian infrastructure for two weeks.\r\nThe move was \"subject to the Islami… [+2018 chars]",
+      "author": "Justina Lee",
+      "title": "Asia markets open higher as hopes for a U.S.-Iran deal rise and oil prices drop - CNBC",
+      "description": "Asia-Pacific markets track overnight gains in U.S. stocks on lower oil prices and hopes of a Iran-U.S. deal",
+      "url": "https://www.cnbc.com/2026/04/15/asia-markets-today-nikkei225-hang-seng-csi300-nifty50-oil-iran-us-.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108094148-1738167165694-gettyimages-2195902460-JAPAN_STOCKS.jpeg?v=1758691768&w=1920&h=1080",
+      "publishedAt": "2026-04-14T23:45:51Z",
+      "content": "An electronic stock board inside the Kabuto One building in Tokyo, Japan, on Tuesday, Jan. 28, 2025. \r\nAsia-Pacific markets opened higher Wednesday, tracking overnight gains in U.S. stocks, as oil pr… [+1299 chars]",
       "category": "general"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Nintendoeverything.com"
+      },
+      "author": "Brian",
+      "title": "Nintendo GameCube – Nintendo Classics 1.6.1 update out now - Nintendo Everything",
+      "description": "Nintendo GameCube - Nintendo Classics version 1.6.1 update has now been released, and here's a quick breakdown of what it does.",
+      "url": "https://nintendoeverything.com/nintendo-gamecube-nintendo-classics-1-6-1-update-out-now/",
+      "urlToImage": "https://nintendoeverything.com/wp-content/uploads/Nintendo-GameCube-Nintendo-Classics-1.6.1-update.jpg",
+      "publishedAt": "2026-04-15T02:35:24Z",
+      "content": "Nintendo has started distribution of a version 1.6.1 update for the Nintendo GameCube – Nintendo Classics app on Switch 2.\r\nRather than adding a new game, this is about an important bug fix. If you’v… [+679 chars]",
+      "category": "technology"
     },
     {
       "source": {
@@ -119,40 +161,26 @@
         "name": "Nintendo Life"
       },
       "author": "Liam Doolan",
-      "title": "Nickelodeon's All-Star Cast Returns To The Tennis Court Next Month - nintendolife.com",
-      "description": "Move aside, Mario Tennis",
-      "url": "https://www.nintendolife.com/news/2026/04/nickelodeons-all-star-cast-returns-to-the-tennis-court-next-month",
-      "urlToImage": "https://images.nintendolife.com/a5745b937ac58/large.jpg",
-      "publishedAt": "2026-04-07T23:45:00Z",
-      "content": "Reminds me of those Nickelodeon Flash games that used to be on their website. Whether or not that's a compliment is up to you.\r\nOh, and @Anti-Matter, in 2019 Nickelodeon's parent company at the time,… [+942 chars]",
+      "title": "Video: Capcom Shares A Big Surprise In Its Latest Pragmata Trailer - Nintendo Life",
+      "description": "What other mysteries await on the moon?",
+      "url": "https://www.nintendolife.com/news/2026/04/video-capcom-shares-a-big-surprise-in-its-latest-pragmata-trailer",
+      "urlToImage": "https://images.nintendolife.com/ba2544c96b642/large.jpg",
+      "publishedAt": "2026-04-15T00:25:00Z",
+      "content": "Capcom launches its new and \"original IP\" Pragmata this week, and while it's kept most of the experience a mystery so far, its latest trailer sheds some light on Hugh and Diana's mission.\r\nIf you don… [+1269 chars]",
       "category": "technology"
     },
     {
       "source": {
-        "id": null,
-        "name": "BGR"
+        "id": "nbc-news",
+        "name": "NBC News"
       },
-      "author": "Krishi Chowdhary",
-      "title": "4 '80s Inspired Retro Gadgets You Can Find On Amazon - bgr.com",
-      "description": "There are many retro-inspired gadgets on Amazon, such as typewriter-style keyboards, '80s-style mics, and even CD players styled as record players.",
-      "url": "https://www.bgr.com/2137868/80s-inspired-amazon-gadgets/",
-      "urlToImage": "https://www.bgr.com/img/gallery/80s-inspired-amazon-gadgets/l-intro-1775068300.jpg",
-      "publishedAt": "2026-04-07T23:17:00Z",
-      "content": "CDs marked a revolutionary upgrade from vinyl records by providing more storage, having better sound quality, and being more compact than their larger counterparts did; as such, CDs were one of the b… [+1521 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": "ars-technica",
-        "name": "Ars Technica"
-      },
-      "author": "Samuel Axon",
-      "title": "Valve brings native Steam Link app to Apple's Vision Pro - Ars Technica",
-      "description": "New app can replace third-party options that were jankier to use.",
-      "url": "https://arstechnica.com/gaming/2026/04/valve-brings-native-steam-link-app-to-apples-vision-pro/",
-      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2024/02/Vision-Pro-HMD-1152x648.jpeg",
-      "publishedAt": "2026-04-07T22:21:21Z",
-      "content": null,
+      "author": "David Ingram",
+      "title": "Apple threatened to remove Grok from the App Store over sexualized deepfakes, letter says - NBC News",
+      "description": "In a letter to senators sent in January, Apple detailed how it responded to Elon Musk's X and Grok generating sexualized deepfakes.",
+      "url": "https://www.nbcnews.com/tech/tech-news/apple-threat-remove-grok-app-store-deepfake-letter-musk-x-ai-rcna331677",
+      "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-04/260414-musk-cook-rs-876540.jpg",
+      "publishedAt": "2026-04-14T23:09:16Z",
+      "content": "Apple privately threatened to remove Elon Musks artificial intelligence app, Grok, from its App Store in January after Musks xAI failed to do enough to stop it from creating nude or sexualized deepfa… [+170 chars]",
       "category": "technology"
     },
     {
@@ -160,223 +188,97 @@
         "id": "the-verge",
         "name": "The Verge"
       },
-      "author": "Sheena Vasani",
-      "title": "Nothing’s noise-canceling CMF Buds 2A are down to $19.99 for the rest of today - The Verge",
-      "description": "Thanks to a lightning deal at Amazon, Nothing’s CMF Buds 2A — which offer ANC and a host of more premium features — are on sale for a mere $19.99 ($29 off).",
-      "url": "https://www.theverge.com/gadgets/908409/nothing-cmf-buds-2a-earbuds-amazon-lightning-deal-sale",
-      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/CMF-Buds-2a-in-Dark-Grey.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
-      "publishedAt": "2026-04-07T22:16:21Z",
-      "content": "<ul><li></li><li></li><li></li></ul>\r\nThe budget-friendly earbuds offer a transparency mode, an adjustable EQ, and plenty of other premium features.\r\nThe budget-friendly earbuds offer a transparency … [+2846 chars]",
+      "author": "Stevie Bonifield",
+      "title": "Microsoft’s finally giving up on its massive Surface Hub touchscreen displays - The Verge",
+      "description": "Microsoft is reportedly ending production of its extra-large, extra-pricey Surface Hub collaborative displays, and canceling plans for a Surface Hub 4.",
+      "url": "https://www.theverge.com/tech/912114/microsoft-surface-hub-displays-discontinued",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13143977/surfacehub2.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+      "publishedAt": "2026-04-14T22:56:52Z",
+      "content": "<ul><li></li><li></li><li></li></ul>\r\nThe Surface Hub 3 that debuted in 2023 will reportedly be the last of Microsofts 50- and 85-inch collaborative displays.\r\nThe Surface Hub 3 that debuted in 2023 … [+2280 chars]",
       "category": "technology"
     },
     {
       "source": {
-        "id": null,
-        "name": "9to5google.com"
+        "id": "ars-technica",
+        "name": "Ars Technica"
       },
-      "author": "Abner Li",
-      "title": "Gemini overlay and Gemini Live start rolling out big Android redesign [Gallery] - 9to5Google",
-      "description": "After redesigns in February and March, Google is rolling out another big revamp for the Gemini overlay and Gemini Live.",
-      "url": "http://9to5google.com/2026/04/07/gemini-live-redesign-android/",
-      "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/03/gemini-android-app-icon.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
-      "publishedAt": "2026-04-07T20:44:00Z",
-      "content": "After redesigns in February and March, Google is rolling out another big revamp for the Gemini overlay and Gemini Live. These visual updates are arriving in surprisingly quick succession.\r\nLast month… [+1614 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Inc."
-      },
-      "author": "Amaya Nichole",
-      "title": "500 Million Windows PCs Are About to Become Unsafe—Now There's a Free Upgrade to Keep Them Running - inc.com",
-      "description": "Microsoft left Windows 10 users with older hardware behind. Google has a free and convenient fix.",
-      "url": "https://www.inc.com/amaya-nichole/500-million-windows-pcs-are-about-to-become-unsafe-now-theres-a-free-upgrade-to-keep-them-running/91328113",
-      "urlToImage": "https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/04/GettyImages-482300538.jpg",
-      "publishedAt": "2026-04-07T20:33:59Z",
-      "content": "A half-billion Windows 10 users are facing fresh security risks in the wake of Microsoft dropping its support for the operating system. But Google just announced a practicaland freesolution to keep t… [+1582 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Kotaku"
-      },
-      "author": "Zack Zwiezen",
-      "title": "New PS5 Dashboard Update Leaks And Damn, Sony, That Looks Good - Kotaku",
-      "description": "The PlayStation 5 home menu is about to get a lot easier to navigate, according to a beta tester",
-      "url": "https://kotaku.com/new-ps5-dashboard-update-leaks-and-damn-sony-that-looks-good-2000685452",
-      "urlToImage": "https://kotaku.com/app/uploads/2025/08/PS5-grid.jpg",
-      "publishedAt": "2026-04-07T20:01:39Z",
-      "content": "A new PlayStation 5 home menu layout is seemingly being tested by Sony, and it looks pretty dang snazzy, moving system apps and the PSN Store icons to a top row for easy navigation.\r\nAs first shared … [+1499 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Kotaku"
-      },
-      "author": "Kenneth Shepard",
-      "title": "Chris Pratt Gets Roasted For Fumbling Basic Mario Lore - Kotaku",
-      "description": "‘It’s one thing to not know the source material but how do you not even know what’s happening in your own movie’",
-      "url": "https://kotaku.com/chris-pratt-mario-galaxy-movie-mushroom-planet-kingdom-2000685457",
-      "urlToImage": "https://kotaku.com/app/uploads/2026/04/prat.jpg",
-      "publishedAt": "2026-04-07T19:51:28Z",
-      "content": "Not everyone can be a certified Mario Knower like Rosalina voice actor Brie Larson, but Chris Pratt, who plays the plumber in Nintendo and Illuminations bajillion-dollar-earning films, really justdoe… [+2895 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Digitalfoundry.net"
-      },
-      "author": "Oliver Mackenzie",
-      "title": "Review: Cyberpunk 2077's PS5 Pro Patch Goes Heavy On RT And Performance Upgrades - Digital Foundry",
-      "description": "Three new modes, backed by the new PSSR.",
-      "url": "https://www.digitalfoundry.net/reviews/cyberpunk-2077s-ps5-pro-patch-goes-heavy-on-rt-and-performance-upgrades",
-      "urlToImage": "https://images.digitalfoundry.net/a2f5aa6285d23/large.jpg",
-      "publishedAt": "2026-04-07T19:47:00Z",
-      "content": "Oliver and Alex sit down to compare notes on the three new modes found in the PS5 Pro upgrade for Cyberpunk 2077.\r\nCyberpunk 2077 has to be one of the most covered games across Digital Foundry histor… [+9703 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Wccftech"
-      },
-      "author": "Sebastian Castellanos",
-      "title": "NVIDIA DLSS 5 — Everything We Know So Far About NVIDIA’s Latest Neural Rendering Technology - Wccftech",
-      "description": "NVIDIA's DLSS 5 is set to launch Fall 2026, offering real-time neural rendering for photoreal graphics on RTX 50 Series GPUs.",
-      "url": "https://wccftech.com/roundup/nvidia-dlss-5/",
-      "urlToImage": "https://cdn.wccftech.com/wp-content/uploads/2026/04/DLSS-5-1920x1073.jpg",
-      "publishedAt": "2026-04-07T19:44:00Z",
-      "content": "DLSS 5 marks the next major evolution of NVIDIAs neural rendering journey, pushing beyond temporal upscaling, frame generation, and machine learning-based ray tracing denoising into fully AI-enhanced… [+7879 chars]",
-      "category": "technology"
-    },
-    {
-      "source": {
-        "id": "the-wall-street-journal",
-        "name": "The Wall Street Journal"
-      },
-      "author": "WSJ",
-      "title": "Stock Market Today: Oil Jumps, Dow Dips After U.S. Raises the Temperature on Iran — Live Updates - WSJ",
-      "description": null,
-      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-07-2026",
-      "urlToImage": null,
-      "publishedAt": "2026-04-08T03:53:00Z",
+      "author": "Scharon Harding",
+      "title": "Sony killing features for antenna, set-top box users of Bravia smart TVs in May - Ars Technica",
+      "description": "Some 2023 and 2024 models are also affected.",
+      "url": "https://arstechnica.com/gadgets/2026/04/sony-killing-features-for-antenna-set-top-box-users-of-bravia-smart-tvs-in-may/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2026/04/125732_original_local_1200x1050_v3_converted-1152x648.jpg",
+      "publishedAt": "2026-04-14T22:00:31Z",
       "content": null,
-      "category": "business"
+      "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "KSL.com"
+        "name": "Nintendoeverything.com"
       },
-      "author": "Josh Funk, Associated Press",
-      "title": "Travelers will face limits on how many chargers they can carry as airlines try to reduce fire risks - KSL.com",
-      "description": "Travelers will soon face restrictions on how many portable chargers they can carry on a flight as airlines continue to try to reduce the risk of another lithium battery fire aboard their jets.",
-      "url": "https://www.ksl.com/article/51478532/travelers-will-face-limits-on-how-many-chargers-they-can-carry-as-airlines-try-to-reduce-fire-risks",
-      "urlToImage": "https://img.ksl.com/slc/3151/315170/31517053.jpg?filter=kslv2/responsive_story_lg",
-      "publishedAt": "2026-04-08T02:45:14Z",
-      "content": "NEW YORK Travelers will soon face restrictions on how many portable chargers they can carry on a flight as airlines continue to try to reduce the risk of another lithium battery fire aboard their jet… [+2769 chars]",
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": "axios",
-        "name": "Axios"
-      },
-      "author": "Ben Geman, Chuck McCutcheon",
-      "title": "Oil prices plunge following U.S.-Iran ceasefire - Axios",
-      "description": "The agreement is subject to Iran to allowing \"complete\" reopening of the Strait of Hormuz, President Trump said.",
-      "url": "https://www.axios.com/2026/04/07/oil-prices-plunge-us-iran-war-ceasefire-trump",
-      "urlToImage": "https://images.axios.com/x2X4j2ylsL0R70YX8JkA7p4OZ3A=/0x0:7600x4275/1366x768/2026/04/07/1775603689935.jpg",
-      "publishedAt": "2026-04-08T02:42:18Z",
-      "content": "Crude oil prices dropped sharply Tuesday evening, falling well under $100 per barrel after President Trump said the U.S. agreed to a two-week ceasefire with Iran that Pakistan had proposed.\r\nWhy it m… [+2536 chars]",
-      "category": "business"
+      "author": "Brian",
+      "title": "Overwatch launches on Nintendo Switch 2 with performance issues, Blizzard confirms patch in the works - Nintendo Everything",
+      "description": "Overwatch just launched on Nintendo Switch 2 today, but things haven’t gone smoothly. Soon after release, players reported issues with the port – notably with performance. Blizzard promised that the new Nintendo Switch 2 version would run up to 60 frames per …",
+      "url": "https://nintendoeverything.com/overwatch-launches-on-nintendo-switch-2-with-performance-issues-blizzard-confirms-patch-in-the-works/",
+      "urlToImage": "https://nintendoeverything.com/wp-content/uploads/Overwatch-Switch-2-performance-issues.jpg",
+      "publishedAt": "2026-04-14T21:05:00Z",
+      "content": "Overwatch just launched on Nintendo Switch 2 today, but things haven’t gone smoothly. Soon after release, players reported issues with the port – notably with performance.\r\nBlizzard promised that the… [+1385 chars]",
+      "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "CNBC"
+        "name": "Deadline"
       },
-      "author": "Justina Lee, Lee Ying Shan",
-      "title": "South Korea stocks lead gains in Asia as oil prices plunge after U.S.-Iran ceasefire deal - CNBC",
-      "description": "Asia-Pacific markets opened higher after President Donald Trump said he agreed to suspend planned attacks on Iranian infrastructure for two weeks.",
-      "url": "https://www.cnbc.com/2026/04/08/asia-markets-today-trump-iran-war-kospi-nikkei-225-oil-hang-seng-index.html",
-      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108223387-1762730856669-gettyimages-2196909643-13102024_tokyo_053.jpeg?v=1762731043&w=1920&h=1080",
-      "publishedAt": "2026-04-07T23:46:37Z",
-      "content": "Asia-Pacific markets rallied on Wednesday after U.S. President Donald Trump said he had agreed to suspend planned attacks on Iranian infrastructure for two weeks.\r\nThe move was \"subject to the Islami… [+2018 chars]",
-      "category": "business"
+      "author": "Dade Hayes",
+      "title": "Prime Video Bundles Apple TV With Peacock Premium Plus For $19.99 A Month - Deadline",
+      "description": "Amazon's Prime Video Channels has launched a limited-time bundle of Apple TV and Peacock Premium Plus for $19.99 a month.",
+      "url": "http://deadline.com/2026/04/prime-video-bundle-apple-tv-peacock-premium-plus-1236860665/",
+      "urlToImage": "https://deadline.com/wp-content/uploads/2025/10/Apple-TV-and-Peacock.jpg?w=1024",
+      "publishedAt": "2026-04-14T20:53:00Z",
+      "content": "Amazon’s Prime Video Channels has launched a limited-time bundle of Apple TV and Peacock Premium Plus for $19.99 a month.\r\nThe bundle, which offers a nearly $10 savings over the combined price of the… [+2072 chars]",
+      "category": "technology"
     },
     {
       "source": {
         "id": null,
-        "name": "Tipranks.com"
+        "name": "Theregister.com"
+      },
+      "author": "Jessica Lyons",
+      "title": "Microsoft's massive Patch Tuesday: It's raining bugs - theregister.com",
+      "description": ": One CVE under attack, one already disclosed by angry bug hunter, and 163 more",
+      "url": "https://www.theregister.com/2026/04/14/microsofts_massive_patch_tuesday/",
+      "urlToImage": "https://regmedia.co.uk/2026/04/14/locusts.jpg",
+      "publishedAt": "2026-04-14T20:40:00Z",
+      "content": "Attackers exploited a spoofing vulnerability in Microsoft SharePoint Server before Redmond issued a fix as part of April's mega Patch Tuesday.\r\nThe monthly patch party included a whopping 165 new Mic… [+2998 chars]",
+      "category": "technology"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Marvelrivals.com"
       },
       "author": null,
-      "title": "LEVI Earnings: Levi Strauss Issues Strong Financial Results and Lifts Guidance - tipranks.com",
-      "description": null,
-      "url": "https://www.tipranks.com/news/levi-earnings-levi-strauss-issues-strong-financial-results-and-lifts-guidance",
-      "urlToImage": null,
-      "publishedAt": "2026-04-07T23:20:12Z",
-      "content": "Description: Group Number: Group Name: Ip Address: Username: Computer Name:",
-      "category": "business"
+      "title": "The Super Hero Team-based PVP Shooter - Marvel Rivals",
+      "description": "Play for free Now! Get ready to Ignite the Battle with Marvel Rivals!",
+      "url": "https://www.marvelrivals.com/balancepost/20260414/41667_1295988.html",
+      "urlToImage": "https://www.marvelrivals.com/pc/gw/20240301101352/data/share.jpg",
+      "publishedAt": "2026-04-14T20:04:48Z",
+      "content": "We've got another round of tweaks coming to Marvel Rivals. We're rolling out a brand-new Chain-CC Protection system to save you from endless stun-locks, Bucky Barnes is trading in his crowd control f… [+7510 chars]",
+      "category": "technology"
     },
     {
       "source": {
-        "id": "associated-press",
-        "name": "Associated Press"
+        "id": "politico",
+        "name": "Politico"
       },
-      "author": "Rio Yamat, Ap Airlines, Travel Writer",
-      "title": "Delta joins the growing list of US airlines raising checked bag fees as jet fuel costs soar - AP News",
-      "description": "Delta Air lines is joining a growing list of U.S. carriers raising checked bag fees. The move announced Tuesday comes as higher fuel costs ripple through the airline industry. Most Delta passengers on domestic and short-haul international routes will now pay …",
-      "url": "https://apnews.com/article/delta-air-fuel-bag-fees-5c1c2d4214ce745b03890f47850b9dd6",
-      "urlToImage": "https://dims.apnews.com/dims4/default/65d236b/2147483647/strip/true/crop/6000x3998+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F29%2Ffe%2F87c54847f032a24d6e6a8c54b9f1%2Ff68566c3d24a45ada0ea42dfb861f56f",
-      "publishedAt": "2026-04-07T22:40:00Z",
-      "content": "Delta Air Lines announced Tuesday that it is raising checked baggage fees, part of a broader wave of U.S. carriers responding to higher jet fuel prices tied to the war in the Middle East.\r\nBeginning … [+2252 chars]",
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Motley Fool"
-      },
-      "author": null,
-      "title": "Stock Market Today, April 7: Intel Rallies as it Joins Musk's Terafab Project - The Motley Fool",
-      "description": null,
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/04/07/stock-market-today-april-7-intel-rallies-as-it-joins-musk-s-terafab-project/",
-      "urlToImage": null,
-      "publishedAt": "2026-04-07T22:19:38Z",
-      "content": null,
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": null,
-        "name": "Investor's Business Daily"
-      },
-      "author": null,
-      "title": "Stock Market Today: Dow, S&P 500 Close Mixed As Critical Iran Deadline Nears (Live Coverage) - Investor's Business Daily",
-      "description": "Stock Market Today: The Dow Jones index drops ahead of Trump's Strait of Hormuz deadline. UnitedHealth stock jumps while Apple falls.",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-iran-war-strait-of-hormuz-unitedhealth-unh-stock/",
-      "urlToImage": "https://www.investors.com/wp-content/uploads/2017/05/WallStreetSign2-Shutterstock.jpg",
-      "publishedAt": "2026-04-07T21:08:00Z",
-      "content": "Information in Investors Business Daily is for informational and educational purposes only and should not be construed as an offer, recommendation, solicitation, or rating to buy or sell securities. … [+1064 chars]",
-      "category": "business"
-    },
-    {
-      "source": {
-        "id": "axios",
-        "name": "Axios"
-      },
-      "author": "Alexandria Sands",
-      "title": "Japanese \"megabank\" SMBC to open global hub with 2,000 jobs in Uptown Charlotte - Axios",
-      "description": "In a testament to Charlotte's talent and business community, the Tokyo-headquartered bank will invest $50.5 million in the area by 2028.",
-      "url": "https://www.axios.com/local/charlotte/2026/04/07/smbc-north-carolina-investment-jobs-uptown",
-      "urlToImage": "https://images.axios.com/Z-FoQ7-qg3mK6cyruhGQxUgILwM=/0x164:4385x2631/1366x768/2026/04/07/1775582558466.jpeg",
-      "publishedAt": "2026-04-07T20:46:10Z",
-      "content": "Sumitomo Mitsui Banking Corporation, one of Japan's biggest banks, has chosen Uptown Charlotte to establish its second U.S. headquarters.\r\nWhy it matters: In a testament to Charlotte's talent and bus… [+3117 chars]",
+      "author": "John Sakellariadis, Brendan Bordelon",
+      "title": "Federal agencies skirt Trump’s Anthropic ban to test its advanced AI model - Politico",
+      "description": "The Commerce Department’s Center for AI Standards and Innovation and other government officials are quietly evaluating Anthropic’s new AI hacking capabilities.",
+      "url": "https://www.politico.com/news/2026/04/14/anthropic-mythos-federal-agency-testing-00872439",
+      "urlToImage": "https://www.politico.com/dims4/default/resize/1200/quality/90/format/jpg?url=https%3A%2F%2Fstatic.politico.com%2F52%2F44%2F3aec20cc4e15881b0470f7fadc3f%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F2260944919",
+      "publishedAt": "2026-04-15T01:37:29Z",
+      "content": "The Commerce Departments Center for AI Standards and Innovation tasked with evaluating U.S. and foreign AI models for potential risks and opportunities is actively testing Mythos hacking prowess, acc… [+6849 chars]",
       "category": "business"
     },
     {
@@ -384,13 +286,97 @@
         "id": "bloomberg",
         "name": "Bloomberg"
       },
-      "author": "Andrew Pollack",
-      "title": "Super Micro Launches Internal Probe of Server Sales to China - Bloomberg.com",
-      "description": "Super Micro Computer Inc. said a committee of its independent directors has hired a law firm and is investigating the circumstances surrounding an indictment last month of two employees and a contractor over the sale of servers to China.",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-07/super-micro-launches-internal-probe-of-server-sales-to-china",
-      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i87qHGhA2w4o/v1/1200x800.jpg",
-      "publishedAt": "2026-04-07T20:38:29Z",
-      "content": "Super Micro Computer Inc. said a committee of its independent directors has hired a law firm and is investigating the circumstances surrounding an indictment last month of two employees and a contrac… [+310 chars]",
+      "author": "Natasha Mascarenhas, Rebecca Torrence, Bailey Lipschultz, Edward Ludlow, Shirin Ghaffary",
+      "title": "Anthropic Attracts Investor Offers at an $800 Billion Valuation - Bloomberg.com",
+      "description": "Anthropic PBC has received several offers from investors for a new round of funding that could value the artificial intelligence startup at about $800 billion or higher — overtures that the Claude maker has so far resisted, according to people familiar with t…",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-14/anthropic-attracts-investor-offers-at-a-800-billion-valuation",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ifgx5CKIG3ss/v1/1200x800.jpg",
+      "publishedAt": "2026-04-15T00:06:00Z",
+      "content": "Anthropic PBC has received several offers from investors for a new round of funding that could value the artificial intelligence startup at about $800 billion or higher overtures that the Claude make… [+202 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "CNBC"
+      },
+      "author": "Justina Lee",
+      "title": "Asia markets open higher as hopes for a U.S.-Iran deal rise and oil prices drop - CNBC",
+      "description": "Asia-Pacific markets track overnight gains in U.S. stocks on lower oil prices and hopes of a Iran-U.S. deal",
+      "url": "https://www.cnbc.com/2026/04/15/asia-markets-today-nikkei225-hang-seng-csi300-nifty50-oil-iran-us-.html",
+      "urlToImage": "https://image.cnbcfm.com/api/v1/image/108094148-1738167165694-gettyimages-2195902460-JAPAN_STOCKS.jpeg?v=1758691768&w=1920&h=1080",
+      "publishedAt": "2026-04-14T23:45:51Z",
+      "content": "An electronic stock board inside the Kabuto One building in Tokyo, Japan, on Tuesday, Jan. 28, 2025. \r\nAsia-Pacific markets opened higher Wednesday, tracking overnight gains in U.S. stocks, as oil pr… [+1299 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Points Guy"
+      },
+      "author": "Sean Cudahy",
+      "title": "The 10 busiest airports in the world: Atlanta extends its streak, O'Hare makes big gains - The Points Guy",
+      "description": "Hartsfield-Jackson Atlanta International Airport (ATL) was again named the busiest airport in the world and in America in 2025. Dubai and Tokyo's Haneda followed.",
+      "url": "https://thepointsguy.com/news/busiest-airports-in-world-2025/",
+      "urlToImage": "https://runway-media-production.global.ssl.fastly.net/us/originals/2026/04/ATL-airport.jpg",
+      "publishedAt": "2026-04-14T23:11:03Z",
+      "content": "The numbers are in and once again, it's Atlanta.\r\nIn 2025, Hartsfield-Jackson Atlanta International Airport (ATL) earned the title of the busiest airport not just in America, but in the world.\r\nIt's … [+3935 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "WSMV Nashville"
+      },
+      "author": "Amber Jayanth",
+      "title": "Painted Tree Boutiques closures leave hundreds of vendors scrambling - WSMV",
+      "description": "Hundreds of local business owners are left without a storefront after Painted Tree Boutiques suddenly announced all their locations are going out of business.",
+      "url": "https://www.wsmv.com/2026/04/14/painted-tree-boutiques-closures-leave-hundreds-vendors-scrambling/",
+      "urlToImage": "https://gray-wsmv-prod.gtv-cdn.com/resizer/v2/V7T7A7UYMBEYHK7W7VZZWZKQQI.jpg?auth=e43f87878d6d4c71ee6f777ea22196c2c1f8a5d9c614d8f94ddedaddbdf88437&width=1200&height=600&smart=true",
+      "publishedAt": "2026-04-14T23:11:00Z",
+      "content": "MURFREESBORO, Tenn. (WSMV) - Hundreds of local business owners are left without a storefront after Painted Tree Boutiques suddenly announced all their locations are going out of business.\r\nA sign is … [+2080 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": "the-wall-street-journal",
+        "name": "The Wall Street Journal"
+      },
+      "author": "Inti Pacheco, WSJ Staff, Heard Editors, Nicholas G. Miller, David Uberti, Joe Wallace, Jinjoo Lee, Spencer Jakab, Telis Demos, Hannah Erin Lang, Matt Wirz, Caitlin McCabe, Ben Glickman, Jared Mitovich, Kim Mackrael, Matt Grossman, Gina Heeb, Carol Ryan",
+      "title": "Stock Market Today: Nasdaq Rises for 10th Day in a Row, Oil Slips Below $100 — Live Markets - WSJ",
+      "description": "Oil falls below $100 a barrel as U.S., Iran signal openness to more talks",
+      "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-04-14-2026",
+      "urlToImage": "https://images.wsj.net/im-34062673/social",
+      "publishedAt": "2026-04-14T23:06:00Z",
+      "content": "The U.S. blockade of the Strait of Hormuz is proving to be no bother to investors.\r\nStocks rose on Tuesday, with the Nasdaq composite's 2% move giving it a 10th straight day of gains. The S&amp;P 500… [+1246 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": "cbs-news",
+        "name": "CBS News"
+      },
+      "author": "Megan  Cerullo, Lilia  Luciano",
+      "title": "Chevron says Venezuelan oil imports are helping curb U.S. gas prices - CBS News",
+      "description": "Venezuelan oil shipped to the U.S. is providing relief from higher prices caused by the Iran war, according to a senior Chevron executive.",
+      "url": "https://www.cbsnews.com/news/chevron-refinery-venezuelan-oil/",
+      "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/04/14/5f02669f-5350-4576-a646-aefdc6db6d64/thumbnail/1200x630/6c76efce439e8a680a73adb1d37286f8/gettyimages-2270503651.jpg",
+      "publishedAt": "2026-04-14T22:16:00Z",
+      "content": "Chevron's stepped-up imports of Venezuelan oil are helping ease fuel prices for U.S. consumers, according to a senior executive with the energy giant.\r\nAndrew Walz, Chevron's president of global refi… [+2459 chars]",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Spaceforce.mil"
+      },
+      "author": null,
+      "title": "U.S. Space Force Advances Heavy Launch Capability Development at Vandenberg - vandenberg.spaceforce.mil",
+      "description": "The U.S. Space Force (USSF) has selected Blue Origin to continue in the process for final determination of a lease in response to the Request for Information (RFI) issued Dec. 30, 2025. This selection",
+      "url": "https://www.vandenberg.spaceforce.mil/News/Article-Display/Article/4459784/us-space-force-advances-heavy-launch-capability-development-at-vandenberg/",
+      "urlToImage": "https://media.defense.gov/2022/Sep/09/2003271520/2000/2000/0/210823-F-GO452-0001F.JPG",
+      "publishedAt": "2026-04-14T21:41:25Z",
+      "content": "VANDENBERG SPACE FORCE BASE, Calif. --  The U.S. Space Force (USSF) has selected Blue Origin to continue in the process for final determination of a lease in response to the Request for Information (… [+1996 chars]",
       "category": "business"
     }
   ]

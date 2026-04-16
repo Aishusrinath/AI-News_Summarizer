@@ -1,8 +1,50 @@
 import { z } from "zod";
 
-export const categoryValues = ["general", "technology", "business"] as const;
+export const supportedCategoryValues = [
+  "world",
+  "politics",
+  "business",
+  "technology",
+  "science",
+  "health",
+] as const;
 
+export const legacyCategoryValues = ["general"] as const;
+
+export const categoryValues = [...supportedCategoryValues, ...legacyCategoryValues] as const;
+
+export const supportedCategorySchema = z.enum(supportedCategoryValues);
 export const categorySchema = z.enum(categoryValues);
+
+export const categoryLabels: Record<Category, string> = {
+  world: "World",
+  politics: "Politics",
+  business: "Business",
+  technology: "Technology",
+  science: "Science",
+  health: "Health",
+  general: "World",
+};
+
+export const supportedCategoryOrder: SupportedCategory[] = [
+  "world",
+  "politics",
+  "business",
+  "technology",
+  "science",
+  "health",
+];
+
+export function canonicalizeCategory(category: Category): SupportedCategory {
+  return category === "general" ? "world" : category;
+}
+
+export function sortSupportedCategories(categories: SupportedCategory[]) {
+  return [...categories].sort(
+    (left, right) =>
+      supportedCategoryOrder.indexOf(left) - supportedCategoryOrder.indexOf(right),
+  );
+}
 
 export const rawArticleSchema = z.object({
   source: z
@@ -27,5 +69,6 @@ export const rawNewsApiResponseSchema = z.object({
 });
 
 export type Category = z.infer<typeof categorySchema>;
+export type SupportedCategory = z.infer<typeof supportedCategorySchema>;
 export type RawArticle = z.infer<typeof rawArticleSchema>;
 export type RawNewsApiResponse = z.infer<typeof rawNewsApiResponseSchema>;

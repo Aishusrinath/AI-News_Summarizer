@@ -23,11 +23,11 @@ const mojibakeReplacements: Array<[string, string]> = [
 
 function normalizeCategory(value?: string | null): Category {
   if (!value) {
-    return "general";
+    return "world";
   }
 
   const normalized = value.trim().toLowerCase();
-  return approvedCategories.has(normalized) ? (normalized as Category) : "general";
+  return approvedCategories.has(normalized) ? (normalized as Category) : "world";
 }
 
 function cleanText(value?: string | null): string | undefined {

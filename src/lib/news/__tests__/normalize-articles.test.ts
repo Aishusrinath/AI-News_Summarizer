@@ -44,7 +44,7 @@ describe("normalizeArticles", () => {
     expect(normalized[0].title).toBe("Valid story");
   });
 
-  it("maps unsupported or missing categories to general", () => {
+  it("keeps supported categories and maps unsupported or missing categories to world", () => {
     const rawArticles: RawArticle[] = [
       {
         source: { name: "Unknown Category Source" },
@@ -64,8 +64,8 @@ describe("normalizeArticles", () => {
     const normalized = normalizeArticles(rawArticles);
 
     expect(normalized).toHaveLength(2);
-    expect(normalized[0].category).toBe("general");
-    expect(normalized[1].category).toBe("general");
+    expect(normalized[0].category).toBe("politics");
+    expect(normalized[1].category).toBe("world");
   });
 
   it("repairs common mojibake sequences in article text", () => {

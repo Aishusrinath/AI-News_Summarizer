@@ -1,4 +1,7 @@
-import type { Category } from "@/lib/news/contracts/raw-schema";
+import {
+  canonicalizeCategory,
+  type SupportedCategory,
+} from "@/lib/news/contracts/raw-schema";
 import type {
   ProcessedArticle,
   ProcessedDataset,
@@ -12,7 +15,11 @@ export function buildProcessedDataset(input: {
   articles: ProcessedArticle[];
   counts: CountsInput;
 }): ProcessedDataset {
-  const categories = [...new Set(input.articles.map((article) => article.category))] as Category[];
+  const categories = [
+    ...new Set(
+      input.articles.map((article) => canonicalizeCategory(article.category)),
+    ),
+  ] as SupportedCategory[];
 
   return {
     generatedAt: input.generatedAt,

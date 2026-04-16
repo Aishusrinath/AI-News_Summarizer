@@ -1,4 +1,5 @@
 import { pathToFileURL } from "node:url";
+import "dotenv/config";
 
 import { fetchNews } from "@/lib/news/ingest/fetch-news";
 import { newsArtifactPaths, writeJsonArtifact } from "@/lib/storage/news-artifact-store";

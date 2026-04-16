@@ -1,4 +1,5 @@
 import { pathToFileURL } from "node:url";
+import "dotenv/config";
 
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { normalizedArticleSchema } from "@/lib/news/contracts/normalized-schema";
@@ -8,6 +9,7 @@ import { createHuggingFaceSummarizer } from "@/lib/news/summarize/huggingface-su
 import { createOllamaSummarizer } from "@/lib/news/summarize/ollama-summarizer";
 import { createOpenAiSummarizer } from "@/lib/news/summarize/openai-summarizer";
 import { summarizeArticles } from "@/lib/news/summarize/summarize-articles";
+import type { ProcessedDataset } from "@/lib/news/contracts/processed-schema";
 import {
   newsArtifactPaths,
   readJsonArtifact,
@@ -89,7 +91,7 @@ function getSummarizerConfig(): SummarizerConfig {
   };
 }
 
-export async function runSummarizeNews() {
+export async function runSummarizeNews(): Promise<ProcessedDataset> {
   const summarizerConfig = getSummarizerConfig();
 
   const candidate = await readJsonArtifact<{
@@ -136,6 +138,8 @@ export async function runSummarizeNews() {
   console.log(
     `Wrote ${summarizedArticles.length} processed articles to data/processed/articles.json using ${summarizerConfig.provider}.`,
   );
+
+  return dataset;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
