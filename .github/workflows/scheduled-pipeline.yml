@@ -2,7 +2,7 @@ name: Scheduled News Pipeline
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -37,6 +37,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: 'Update articles from pipeline'
-          add: 'data/processed/articles.json'
+          add: 'data/processed/*.json'
           default_author: github_actions
           github_token: ${{ secrets.GITHUB_TOKEN }}

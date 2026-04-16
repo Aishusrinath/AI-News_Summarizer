@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T03:59:05.154Z",
+  "generatedAt": "2026-04-16T04:51:53.254Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -11,8 +11,8 @@
     "normalized": 27,
     "dropped": 0,
     "deduped": 25,
-    "summarizedWithAi": 2,
-    "fallbackSummaries": 23,
+    "summarizedWithAi": 0,
+    "fallbackSummaries": 25,
     "finalArticles": 25
   },
   "articles": [
@@ -24,8 +24,8 @@
       "publishedAt": "2026-04-15T03:41:16.000Z",
       "category": "general",
       "url": "https://www.washingtonpost.com/business/2026/04/14/dianna-russini-resigns-patriots-coach/",
-      "summary": "Dianna Russini, a prominent NFL reporter, resigned from her position at The Athletic on Tuesday. Her resignation followed an ethics investigation into her relationship with New England Patriots Coach Mike Vrabel. The probe was launched after photographs were published of Russini with the coach.",
-      "summaryType": "ai",
+      "summary": "Prominent NFL reporter resigns amid probe into relationship with Patriots coach - The Washington Post. Dianna Russini resigned after photographs were published of her with New England Patriots Coach Mike Vrabel. The Athletic launched an ethics investigation.",
+      "summaryType": "fallback",
       "description": "Dianna Russini resigned after photographs were published of her with New England Patriots Coach Mike Vrabel. The Athletic launched an ethics investigation.",
       "imageUrl": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/XDH4CQ536PFRZRCDIE4KIWAUPI.jpg&w=1440",
       "author": "Scott Nover",
@@ -39,8 +39,8 @@
       "publishedAt": "2026-04-15T03:40:48.000Z",
       "category": "general",
       "url": "https://www.cbssports.com/nba/gametracker/recap/NBA_20260414_MIA@CHA/",
-      "summary": "The Charlotte Hornets defeated the Miami Heat in an overtime game played in Charlotte, N.C. LaMelo Ball made a layup with 4.7 seconds remaining in the overtime period to put the Hornets ahead. The victory was secured when Miles Bridges blocked Davion Mitchell's final layup attempt at the buzzer.",
-      "summaryType": "ai",
+      "summary": "Miami Heat vs. Charlotte Hornets Live Score and Stats - April 14, 2026 Gametracker - CBS Sports. Get real-time NBA Basketball coverage and scores as Miami Heat takes on Charlotte Hornets. We bring you the latest game previews, live stats, expert picks and recaps on CBSSports.com",
+      "summaryType": "fallback",
       "description": "Get real-time NBA Basketball coverage and scores as Miami Heat takes on Charlotte Hornets. We bring you the latest game previews, live stats, expert picks and recaps on CBSSports.com",
       "imageUrl": "https://sportsfly.cbsistatic.com/fly-535/bundles/sportsmediacss/images/fantasy/default-article-image-large.png",
       "cleanedText": "CHARLOTTE, N.C. (AP) LaMelo Ball made a layup with 4.7 seconds left in overtime, Miles Bridges blocked Davion Mitchell's attempt at a winning layup at the buzzer, and the Charlotte Hornets beat Miami…"
