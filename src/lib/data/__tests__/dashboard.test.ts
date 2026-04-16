@@ -1,5 +1,6 @@
 import type { ProcessedDataset, RefreshStatus } from "@/lib/news/contracts/processed-schema";
 import { buildDashboardFeed } from "@/lib/data/dashboard";
+import { supportedRegionValues } from "@/lib/news/contracts/regions";
 
 function buildArticle(input: {
   id: string;
@@ -7,6 +8,7 @@ function buildArticle(input: {
   category: "world" | "politics" | "business" | "technology" | "science" | "health";
   publishedAt: string;
   summary?: string;
+  sourceCountry?: "us" | "gb" | "ca" | "au" | "in";
 }) {
   return {
     id: input.id,
@@ -19,6 +21,7 @@ function buildArticle(input: {
     summary: input.summary ?? `${input.title} summary`,
     summaryType: "ai" as const,
     description: `${input.title} description`,
+    sourceCountry: input.sourceCountry,
   };
 }
 
@@ -126,6 +129,7 @@ describe("buildDashboardFeed", () => {
       dataset: currentDataset,
       previousDataset,
       activeCategory: "all",
+      activeRegion: "all",
       refreshStatus,
     });
 
@@ -145,5 +149,93 @@ describe("buildDashboardFeed", () => {
       "technology",
       "science",
     ]);
+  });
+
+  it("filters dashboard stories by active region metadata", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["world", "business"],
+      counts: {
+        fetched: 3,
+        normalized: 3,
+        dropped: 0,
+        deduped: 3,
+        summarizedWithAi: 3,
+        fallbackSummaries: 0,
+        finalArticles: 3,
+      },
+      articles: [
+        buildArticle({
+          id: "us-world",
+          title: "US world",
+          category: "world",
+          publishedAt: "2026-04-10T11:50:00.000Z",
+          sourceCountry: "us",
+        }),
+        buildArticle({
+          id: "in-business",
+          title: "India business",
+          category: "business",
+          publishedAt: "2026-04-10T11:40:00.000Z",
+          sourceCountry: "in",
+        }),
+        buildArticle({
+          id: "gb-world",
+          title: "UK world",
+          category: "world",
+          publishedAt: "2026-04-10T11:30:00.000Z",
+          sourceCountry: "gb",
+        }),
+      ],
+    };
+
+    const dashboardFeed = buildDashboardFeed({
+      dataset: currentDataset,
+      previousDataset: null,
+      activeCategory: "all",
+      activeRegion: "in",
+      refreshStatus,
+    });
+
+    expect(dashboardFeed.availableRegions).toEqual(["us", "gb", "in"]);
+    expect(dashboardFeed.latestStories.map((entry) => entry.article.id)).toEqual([
+      "in-business",
+    ]);
+  });
+
+  it("shows supported region filters even for legacy snapshots without region metadata", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["world"],
+      counts: {
+        fetched: 1,
+        normalized: 1,
+        dropped: 0,
+        deduped: 1,
+        summarizedWithAi: 1,
+        fallbackSummaries: 0,
+        finalArticles: 1,
+      },
+      articles: [
+        buildArticle({
+          id: "legacy-world",
+          title: "Legacy world",
+          category: "world",
+          publishedAt: "2026-04-10T11:50:00.000Z",
+        }),
+      ],
+    };
+
+    const dashboardFeed = buildDashboardFeed({
+      dataset: currentDataset,
+      previousDataset: null,
+      activeCategory: "all",
+      activeRegion: "all",
+      refreshStatus,
+    });
+
+    expect(dashboardFeed.availableRegions).toEqual([...supportedRegionValues]);
   });
 });

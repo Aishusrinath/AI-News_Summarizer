@@ -5,6 +5,7 @@ import {
 } from "@/lib/news/contracts/raw-schema";
 import {
   isSupportedRegion,
+  supportedRegionValues,
   sortSupportedRegions,
   type SupportedRegion,
 } from "@/lib/news/contracts/regions";
@@ -285,7 +286,7 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
   const availableCategories = sortSupportedCategories(
     [...new Set(input.dataset.categories.map((value) => canonicalizeCategory(value)))],
   );
-  const availableRegions = sortSupportedRegions(
+  const availableRegionsFromSnapshot = sortSupportedRegions(
     [
       ...new Set(
         input.dataset.articles
@@ -296,6 +297,10 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
       ),
     ],
   );
+  const availableRegions =
+    availableRegionsFromSnapshot.length > 0
+      ? availableRegionsFromSnapshot
+      : [...supportedRegionValues];
   const filteredCurrentArticles = filterArticles(
     input.dataset.articles,
     input.activeCategory,
