@@ -1,5 +1,5 @@
-import { ArticleList } from "@/components/article-list";
 import { CategoryFilter } from "@/components/category-filter";
+import { CompactStoryList } from "@/components/compact-story-list";
 import { DashboardSection } from "@/components/dashboard-section";
 import { LiveRefresh } from "@/components/live-refresh";
 import { RegionFilter } from "@/components/region-filter";
@@ -93,15 +93,15 @@ export default async function Home({ searchParams }: PageProps<"/">) {
           </div>
         </section>
 
-        <section className="flex flex-col gap-5">
-          <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <section className="grid gap-4 rounded-[1.75rem] border border-stone-200 bg-white/70 p-5 shadow-sm md:grid-cols-[1.1fr_0.9fr]">
+          <div className="space-y-3">
             <div>
-              <h2 className="text-2xl font-semibold tracking-tight text-stone-950">
-                Explore by category
+              <h2 className="text-lg font-semibold tracking-tight text-stone-950">
+                Shape the briefing
               </h2>
               <p className="text-sm leading-7 text-stone-600">
-                Category filters are URL-driven, so this view stays shareable and
-                bookmarkable.
+                Filter the same snapshot by topic or region without losing the
+                shareable URL.
               </p>
             </div>
             <CategoryFilter
@@ -110,52 +110,63 @@ export default async function Home({ searchParams }: PageProps<"/">) {
               availableCategories={availableCategories}
             />
           </div>
-        </section>
 
-        <section className="flex flex-col gap-3 rounded-[1.5rem] border border-amber-100 bg-white/60 p-5 shadow-sm">
-          <div>
-            <h2 className="text-lg font-semibold tracking-tight text-stone-950">
-              Filter by region
-            </h2>
-            <p className="text-sm leading-7 text-stone-600">
-              Compare coverage from US, UK, Canada, Australia, and India feeds.
-            </p>
+          <div className="space-y-3 rounded-[1.25rem] border border-amber-100 bg-amber-50/60 p-4">
+            <div>
+              <h2 className="text-lg font-semibold tracking-tight text-stone-950">
+                Region lens
+              </h2>
+              <p className="text-sm leading-7 text-stone-600">
+                Compare coverage from US, UK, Canada, Australia, and India feeds.
+              </p>
+            </div>
+            <RegionFilter
+              activeCategory={activeCategory}
+              activeRegion={activeRegion}
+              availableRegions={availableRegions}
+            />
           </div>
-          <RegionFilter
-            activeCategory={activeCategory}
-            activeRegion={activeRegion}
-            availableRegions={availableRegions}
-          />
         </section>
 
         <DashboardSection
-          title="Top Highlights"
+          title="Editor’s First Pass"
           description="The strongest mix of recency, article quality, and editorial weight in the latest snapshot."
           emptyStateDescription={emptyStateDescription}
           stories={topHighlights}
         />
 
-        <DashboardSection
-          title="Category Leaders"
-          description="One standout story for each active category, chosen to keep the dashboard broad and useful."
-          emptyStateDescription={emptyStateDescription}
-          stories={categoryLeaders}
-        />
+        <section className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
+          <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
+              <h2 className="text-2xl font-semibold tracking-tight text-stone-950">
+                Category Pulse
+              </h2>
+              <p className="text-sm leading-7 text-stone-600">
+                One non-repeated story per active category, designed for a fast
+                cross-topic scan.
+              </p>
+            </div>
+            <CompactStoryList
+              stories={categoryLeaders}
+              emptyStateDescription={emptyStateDescription}
+            />
+          </div>
 
-        <WhatChanged changes={whatChanged} />
+          <WhatChanged changes={whatChanged} />
+        </section>
 
         <section className="flex flex-col gap-5">
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-semibold tracking-tight text-stone-950">
-              Latest Stories
+              More From This Snapshot
             </h2>
             <p className="text-sm leading-7 text-stone-600">
-              A broader scan of the current snapshot, trimmed for a clean first pass.
+              A compact back bench of additional stories after the main highlights.
             </p>
           </div>
 
-          <ArticleList
-            articles={latestStories}
+          <CompactStoryList
+            stories={latestStories}
             emptyStateDescription={emptyStateDescription}
           />
         </section>

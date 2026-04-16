@@ -133,15 +133,30 @@ describe("buildDashboardFeed", () => {
       refreshStatus,
     });
 
-    expect(dashboardFeed.topHighlights).toHaveLength(5);
-    expect(dashboardFeed.categoryLeaders).toHaveLength(5);
+    expect(dashboardFeed.topHighlights).toHaveLength(3);
+    expect(
+      dashboardFeed.categoryLeaders.every(
+        (entry) =>
+          !dashboardFeed.topHighlights.some(
+            (highlight) => highlight.article.id === entry.article.id,
+          ),
+      ),
+    ).toBe(true);
     expect(dashboardFeed.whatChanged.some((entry) => entry.status === "new")).toBe(true);
     expect(
       dashboardFeed.categoryLeaders.some((entry) =>
         entry.statuses.includes("leader-changed"),
       ),
     ).toBe(true);
-    expect(dashboardFeed.latestStories).toHaveLength(5);
+    expect(
+      dashboardFeed.latestStories.every(
+        (entry) =>
+          ![
+            ...dashboardFeed.topHighlights,
+            ...dashboardFeed.categoryLeaders,
+          ].some((spotlight) => spotlight.article.id === entry.article.id),
+      ),
+    ).toBe(true);
     expect(dashboardFeed.availableCategories).toEqual([
       "world",
       "politics",
@@ -202,7 +217,7 @@ describe("buildDashboardFeed", () => {
     });
 
     expect(dashboardFeed.availableRegions).toEqual([...supportedRegionValues]);
-    expect(dashboardFeed.latestStories.map((entry) => entry.article.id)).toEqual([
+    expect(dashboardFeed.topHighlights.map((entry) => entry.article.id)).toEqual([
       "in-business",
     ]);
     expect(dashboardFeed.emptyStateDescription).toBe(

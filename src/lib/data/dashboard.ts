@@ -52,8 +52,8 @@ type DashboardFeedInput = {
   refreshStatus: RefreshStatus;
 };
 
-const TOP_HIGHLIGHTS_LIMIT = 6;
-const LATEST_STORIES_LIMIT = 9;
+const TOP_HIGHLIGHTS_LIMIT = 3;
+const LATEST_STORIES_LIMIT = 12;
 const WHAT_CHANGED_LIMIT = 8;
 
 function getArticleScore(article: ProcessedArticle): number {
@@ -146,8 +146,9 @@ function buildCategoryLeaders(
   rankedArticles: ProcessedArticle[],
   availableCategories: SupportedCategory[],
   previousDataset: ProcessedDataset | null,
+  excludedArticleIds = new Set<string>(),
 ): ProcessedArticle[] {
-  const pickedIds = new Set<string>();
+  const pickedIds = new Set(excludedArticleIds);
   const previousArticles = previousDataset?.articles ?? [];
   const previousLeaderByCategory = new Map<SupportedCategory, string>();
 
@@ -177,8 +178,11 @@ function buildCategoryLeaders(
       candidates.find(
         (article) => !pickedIds.has(article.id) && article.id !== previousLeaderId,
       ) ??
-      candidates.find((article) => !pickedIds.has(article.id)) ??
-      candidates[0];
+      candidates.find((article) => !pickedIds.has(article.id));
+
+    if (!preferredUnique) {
+      return [];
+    }
 
     pickedIds.add(preferredUnique.id);
     return [preferredUnique];
@@ -330,12 +334,17 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
           articles: filteredPreviousArticles,
         }
       : null,
+    new Set(topHighlights.map((article) => article.id)),
   );
   const statusesById = buildStoryStatuses(
     rankedCurrentArticles,
     rankedPreviousArticles,
     categoryLeaders,
   );
+  const spotlightArticleIds = new Set([
+    ...topHighlights.map((article) => article.id),
+    ...categoryLeaders.map((article) => article.id),
+  ]);
 
   return {
     dataset: {
@@ -359,7 +368,9 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
       categoryLeaders,
     ),
     latestStories: attachStatuses(
-      rankedCurrentArticles.slice(0, LATEST_STORIES_LIMIT),
+      rankedCurrentArticles
+        .filter((article) => !spotlightArticleIds.has(article.id))
+        .slice(0, LATEST_STORIES_LIMIT),
       statusesById,
     ),
   };
