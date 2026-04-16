@@ -3,58 +3,25 @@
   "source": "Fixture dataset",
   "categories": ["world", "technology", "business"],
   "counts": {
-    "fetched": 4,
-    "normalized": 4,
+    "fetched": 3,
+    "normalized": 3,
     "dropped": 0,
-    "deduped": 4,
-    "summarizedWithAi": 3,
+    "deduped": 3,
+    "summarizedWithAi": 2,
     "fallbackSummaries": 1,
-    "finalArticles": 4
+    "finalArticles": 3
   },
   "articles": [
-    {
-      "id": "be4140ce9b9d4a3f",
-      "slug": "iran-truce-spurs-bull-turn-how-aggressive-should-you-be-inve-be4140ce",
-      "title": "Iran Truce Spurs Bull Turn: How Aggressive Should You Be?",
-      "sourceName": "Investment News",
-      "publishedAt": "2026-04-07T13:00:00.000Z",
-      "category": "business",
-      "url": "https://example.com/iran-truce-story",
-      "summary": "Markets rally on Iran peace news.",
-      "summaryType": "ai"
-    },
     {
       "id": "fixture-1",
       "slug": "fixture-story-fixture1",
       "title": "Fixture story",
       "sourceName": "Fixture Source",
       "publishedAt": "2026-04-07T12:00:00.000Z",
-      "category": "business",
+      "category": "world",
       "url": "https://example.com/fixture-story",
       "summary": "A deterministic summary for testing.",
       "summaryType": "ai"
-    },
-    {
-      "id": "fixture-2",
-      "slug": "another-business-story",
-      "title": "Another business article",
-      "sourceName": "Business Daily",
-      "publishedAt": "2026-04-07T11:00:00.000Z",
-      "category": "business",
-      "url": "https://example.com/another-story",
-      "summary": "Related business news.",
-      "summaryType": "ai"
-    },
-    {
-      "id": "fixture-3",
-      "slug": "tech-story",
-      "title": "Tech story",
-      "sourceName": "Tech News",
-      "publishedAt": "2026-04-07T10:00:00.000Z",
-      "category": "technology",
-      "url": "https://example.com/tech-story",
-      "summary": "Technology update.",
-      "summaryType": "fallback"
     }
   ]
 }

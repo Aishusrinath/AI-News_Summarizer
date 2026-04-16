@@ -1,10 +1,14 @@
-import { canonicalizeCategory } from "@/lib/news/contracts/raw-schema";
+import { canonicalizeCategory, type Category } from "@/lib/news/contracts/raw-schema";
 
 import { loadArticles, loadRefreshStatus } from "@/lib/data/load-articles";
 
 const RELATED_STORIES_LIMIT = 4;
 
-function rankRelatedStories(slug: string, category: string, articles: Awaited<ReturnType<typeof loadArticles>>["articles"]) {
+function rankRelatedStories(
+  slug: string,
+  category: Category,
+  articles: Awaited<ReturnType<typeof loadArticles>>["articles"],
+) {
   return [...articles]
     .filter(
       (candidate) =>

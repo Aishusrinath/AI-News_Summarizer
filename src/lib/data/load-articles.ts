@@ -22,7 +22,7 @@ export function parseProcessedDataset(input: unknown): ProcessedDataset {
     articles?: Array<{ category?: string }>;
   };
 
-  return {
+  const normalizedDataset = {
     ...dataset,
     categories: Array.isArray(dataset.categories)
       ? dataset.categories.map((category) =>
