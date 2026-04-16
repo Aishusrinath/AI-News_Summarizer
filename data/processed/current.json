@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-16T11:59:26.712Z",
+  "generatedAt": "2026-04-16T14:00:15.579Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "business",
@@ -11,8 +11,8 @@
     "normalized": 29,
     "dropped": 0,
     "deduped": 24,
-    "summarizedWithAi": 1,
-    "fallbackSummaries": 23,
+    "summarizedWithAi": 2,
+    "fallbackSummaries": 22,
     "finalArticles": 24
   },
   "articles": [
@@ -24,7 +24,7 @@
       "publishedAt": "2026-04-15T12:41:13.000Z",
       "category": "business",
       "url": "https://finance.yahoo.com/markets/stocks/article/stock-market-today-sp-500-nasdaq-dow-futures-hit-pause-near-records-amid-hopes-for-us-iran-talks-231104398.html",
-      "summary": "S&P 500, Nasdaq, and Dow futures hit a pause near record levels today. This market activity occurred amid hopes for potential talks between the United States and Iran.",
+      "summary": "S&P 500, Nasdaq, and Dow futures reached a pause near record levels today. This market activity occurred amid hopes for potential talks between the United States and Iran.",
       "summaryType": "ai",
       "author": "Yahoo Finance"
     },
@@ -51,8 +51,8 @@
       "publishedAt": "2026-04-15T12:03:00.000Z",
       "category": "business",
       "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nasdaq-nvidia-win-streaks-asml-bank-of-america/",
-      "summary": "Futures: 2 Titans In Buy Areas As Iran Hopes Drive Rally; What To Do - Investor's Business Daily. The Nasdaq has risen for 10 sessions. ASML and Bank of America beat views.",
-      "summaryType": "fallback",
+      "summary": "The Nasdaq has risen for 10 sessions as hopes regarding Iran drive a market rally. Both ASML and Bank of America exceeded financial expectations in their recent reports. Investor's Business Daily notes that two major companies have entered buy areas.",
+      "summaryType": "ai",
       "description": "The Nasdaq has risen for 10 sessions. ASML and Bank of America beat views.",
       "imageUrl": "https://www.investors.com/wp-content/uploads/2026/04/stock-ai-judging-adobe.jpg",
       "cleanedText": "Information in Investors Business Daily is for informational and educational purposes only and should not be construed as an offer, recommendation, solicitation, or rating to buy or sell securities. …"
