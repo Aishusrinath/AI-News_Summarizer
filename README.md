@@ -199,9 +199,10 @@ Current tests cover:
 ## Deployment
 
 - The frontend is intended for Vercel deployment
-- Vercel hosts the Next.js UI and the `/api/refresh` cron endpoint
-- `vercel.json` schedules `/api/refresh` every 5 minutes in production
-- The cron endpoint writes refreshed snapshots to Vercel Blob, so the app can update without a new Git commit or redeploy
+- Vercel hosts the Next.js UI
+- GitHub Actions runs the news pipeline hourly and commits refreshed processed JSON
+- Vercel redeploys from those hourly GitHub commits when automatic deployments are enabled
+- The `/api/refresh` endpoint can be used for Vercel Cron on paid plans, but Vercel Hobby accounts are limited to daily cron schedules
 - If `BLOB_READ_WRITE_TOKEN` is not configured, the deployed app falls back to committed processed JSON
 
 ## Where The 5 Required Skills Were Used
