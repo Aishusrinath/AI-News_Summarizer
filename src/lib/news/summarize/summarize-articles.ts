@@ -29,6 +29,28 @@ export function buildFallbackProcessedArticle(article: NormalizedArticle): Proce
   };
 }
 
+export function buildAiProcessedArticle(
+  article: NormalizedArticle,
+  summary: string,
+): ProcessedArticle {
+  return {
+    id: article.id,
+    slug: article.slug,
+    title: article.title,
+    sourceName: article.sourceName,
+    publishedAt: article.publishedAt,
+    category: article.category,
+    sourceCountry: article.sourceCountry,
+    url: article.url,
+    summary,
+    summaryType: "ai",
+    description: article.description,
+    imageUrl: article.imageUrl,
+    author: article.author,
+    cleanedText: article.cleanedText,
+  };
+}
+
 function formatSummarizationError(error: unknown): string {
   if (error instanceof Error) {
     return error.message;
@@ -60,22 +82,7 @@ export async function summarizeArticles(
 
       console.log(`${progressLabel} - AI summary complete`);
 
-      results.push({
-        id: article.id,
-        slug: article.slug,
-        title: article.title,
-        sourceName: article.sourceName,
-        publishedAt: article.publishedAt,
-        category: article.category,
-        sourceCountry: article.sourceCountry,
-        url: article.url,
-        summary,
-        summaryType: "ai",
-        description: article.description,
-        imageUrl: article.imageUrl,
-        author: article.author,
-        cleanedText: article.cleanedText,
-      });
+      results.push(buildAiProcessedArticle(article, summary));
     } catch (error) {
       console.warn(
         `${progressLabel} - AI summary failed, using fallback summary (${formatSummarizationError(error)})`,

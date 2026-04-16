@@ -1,5 +1,8 @@
 import type { RawNewsApiResponse } from "@/lib/news/contracts/raw-schema";
-import type { ProcessedDataset } from "@/lib/news/contracts/processed-schema";
+import type {
+  ProcessedArticle,
+  ProcessedDataset,
+} from "@/lib/news/contracts/processed-schema";
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { dedupeArticles } from "@/lib/news/etl/dedupe-articles";
 import { normalizeArticles } from "@/lib/news/etl/normalize-articles";
@@ -11,13 +14,17 @@ import {
 } from "@/lib/news/ingest/news-api-client";
 import { summarizeArticles } from "@/lib/news/summarize/summarize-articles";
 import {
+  cleanEnvValue,
   createSummarizerConfigFromEnv,
   getRequiredEnv,
   processEnvReader,
   type EnvReader,
   type SummarizerConfig,
 } from "@/lib/news/pipeline/summarizer-config";
-import { buildFallbackProcessedArticle } from "@/lib/news/summarize/summarize-articles";
+import {
+  buildAiProcessedArticle,
+  buildFallbackProcessedArticle,
+} from "@/lib/news/summarize/summarize-articles";
 import {
   defaultSnapshotStore,
   type SnapshotStore,
@@ -46,12 +53,39 @@ type NewsRefreshServiceDependencies = {
 };
 
 const DEFAULT_MAX_FINAL_ARTICLES = 120;
+const DEFAULT_SUMMARY_ARTICLE_LIMIT = 10;
 
 const systemClock: ClockPort = {
   now() {
     return new Date().toISOString();
   },
 };
+
+function buildReusableAiSummaryMap(
+  snapshot: ProcessedDataset | null,
+): Map<string, ProcessedArticle> {
+  return new Map(
+    (snapshot?.articles ?? [])
+      .filter((article) => article.summaryType === "ai")
+      .map((article) => [article.id, article]),
+  );
+}
+
+function getOptionalPositiveInteger(env: EnvReader, name: string) {
+  const rawValue = cleanEnvValue(env.get(name));
+
+  if (!rawValue) {
+    return undefined;
+  }
+
+  const parsed = Number.parseInt(rawValue, 10);
+
+  if (!Number.isFinite(parsed) || parsed < 0) {
+    throw new Error(`${name} must be a non-negative integer.`);
+  }
+
+  return parsed;
+}
 
 export function createNewsRefreshService({
   newsSource,
@@ -64,13 +98,17 @@ export function createNewsRefreshService({
   return {
     async refresh(options = {}) {
       const shouldPublish = options.publish ?? true;
+      const currentSnapshot = await snapshotStore.getCurrentSnapshot().catch(() => null);
+      const reusableAiSummaries = buildReusableAiSummaryMap(currentSnapshot);
       const rawNews = await newsSource.fetchNews();
       const normalizedArticles = normalizeArticles(rawNews.articles);
       const dedupedArticles = dedupeArticles(normalizedArticles);
       const finalArticleCandidates = dedupedArticles.slice(0, maxFinalArticles);
       const articlesToSummarize = selectArticlesForSummary(
-        finalArticleCandidates,
-        summaryArticleLimit,
+        finalArticleCandidates.filter(
+          (article) => !reusableAiSummaries.has(article.id),
+        ),
+        summaryArticleLimit ?? DEFAULT_SUMMARY_ARTICLE_LIMIT,
       );
       const summarizedArticles = await summarizeArticles(
         articlesToSummarize,
@@ -81,7 +119,12 @@ export function createNewsRefreshService({
       );
       const finalArticles = finalArticleCandidates.map((article) =>
         summarizedArticlesById.get(article.id) ??
-        buildFallbackProcessedArticle(article),
+        (reusableAiSummaries.has(article.id)
+          ? buildAiProcessedArticle(
+              article,
+              reusableAiSummaries.get(article.id)?.summary ?? article.title,
+            )
+          : buildFallbackProcessedArticle(article)),
       );
       const summarizedWithAi = summarizedArticles.filter(
         (article) => article.summaryType === "ai",
@@ -142,5 +185,7 @@ export function createNewsRefreshServiceFromEnv(
     newsSource: createNewsSourceFromEnv(env),
     summarizerConfig: createSummarizerConfigFromEnv(env),
     snapshotStore,
+    maxFinalArticles: getOptionalPositiveInteger(env, "MAX_FINAL_ARTICLES"),
+    summaryArticleLimit: getOptionalPositiveInteger(env, "SUMMARY_ARTICLE_LIMIT"),
   });
 }

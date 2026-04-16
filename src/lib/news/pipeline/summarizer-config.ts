@@ -22,8 +22,25 @@ export const processEnvReader: EnvReader = {
   },
 };
 
+export function cleanEnvValue(value: string | undefined) {
+  const trimmed = value?.trim();
+
+  if (!trimmed) {
+    return undefined;
+  }
+
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'"))
+  ) {
+    return trimmed.slice(1, -1).trim();
+  }
+
+  return trimmed;
+}
+
 export function getRequiredEnv(env: EnvReader, name: string, context: string) {
-  const value = env.get(name)?.trim();
+  const value = cleanEnvValue(env.get(name));
 
   if (!value) {
     throw new Error(`Missing ${name}. Set it before ${context}.`);
@@ -32,19 +49,18 @@ export function getRequiredEnv(env: EnvReader, name: string, context: string) {
   return value;
 }
 
-export function createSummarizerConfigFromEnv(
-  env: EnvReader = processEnvReader,
-  context = "refreshing news",
+function createSingleSummarizerConfigFromEnv(
+  provider: string,
+  env: EnvReader,
+  context: string,
 ): SummarizerConfig {
-  const provider = env.get("SUMMARIZER_PROVIDER")?.trim().toLowerCase() ?? "gemini";
-
   if (provider === "gemini") {
     return {
       provider,
       source: "NewsAPI + Gemini pipeline",
       summarizeArticle: createGeminiSummarizer({
         apiKey: getRequiredEnv(env, "GEMINI_API_KEY", context),
-        model: env.get("GEMINI_MODEL")?.trim() || "gemini-3-flash-preview",
+        model: cleanEnvValue(env.get("GEMINI_MODEL")) || "gemini-3-flash-preview",
       }),
     };
   }
@@ -55,7 +71,8 @@ export function createSummarizerConfigFromEnv(
       source: "NewsAPI + Hugging Face pipeline",
       summarizeArticle: createHuggingFaceSummarizer({
         apiKey: getRequiredEnv(env, "HUGGINGFACE_API_KEY", context),
-        model: env.get("HUGGINGFACE_MODEL")?.trim() || "facebook/bart-large-cnn",
+        model:
+          cleanEnvValue(env.get("HUGGINGFACE_MODEL")) || "facebook/bart-large-cnn",
       }),
     };
   }
@@ -80,8 +97,47 @@ export function createSummarizerConfigFromEnv(
     provider,
     source: "NewsAPI + Ollama pipeline",
     summarizeArticle: createOllamaSummarizer({
-      baseURL: env.get("OLLAMA_BASE_URL"),
-      model: env.get("OLLAMA_MODEL")?.trim() || "llama3.2:3b",
+      baseURL: cleanEnvValue(env.get("OLLAMA_BASE_URL")),
+      model: cleanEnvValue(env.get("OLLAMA_MODEL")) || "llama3.2:3b",
     }),
+  };
+}
+
+export function createSummarizerConfigFromEnv(
+  env: EnvReader = processEnvReader,
+  context = "refreshing news",
+): SummarizerConfig {
+  const provider = cleanEnvValue(env.get("SUMMARIZER_PROVIDER"))?.toLowerCase() ?? "gemini";
+  const primaryConfig = createSingleSummarizerConfigFromEnv(provider, env, context);
+  const fallbackProvider = cleanEnvValue(
+    env.get("SUMMARIZER_FALLBACK_PROVIDER"),
+  )?.toLowerCase();
+
+  if (!fallbackProvider || fallbackProvider === primaryConfig.provider) {
+    return primaryConfig;
+  }
+
+  const fallbackConfig = createSingleSummarizerConfigFromEnv(
+    fallbackProvider,
+    env,
+    context,
+  );
+
+  return {
+    provider: primaryConfig.provider,
+    source: `${primaryConfig.source} with ${fallbackConfig.provider} fallback`,
+    async summarizeArticle(article) {
+      try {
+        return await primaryConfig.summarizeArticle(article);
+      } catch (error) {
+        const message = error instanceof Error ? error.message : "Unknown error";
+
+        console.warn(
+          `Primary summarizer ${primaryConfig.provider} failed; trying ${fallbackConfig.provider} (${message})`,
+        );
+
+        return fallbackConfig.summarizeArticle(article);
+      }
+    },
   };
 }

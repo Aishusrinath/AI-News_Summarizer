@@ -3,6 +3,7 @@ import {
   type NewsSourcePort,
 } from "@/lib/news/pipeline/news-refresh-service";
 import type { RawArticle, RawNewsApiResponse } from "@/lib/news/contracts/raw-schema";
+import type { ProcessedDataset } from "@/lib/news/contracts/processed-schema";
 import type { SnapshotStore } from "@/lib/storage/snapshot-store";
 
 function buildRawArticle(input: {
@@ -23,9 +24,9 @@ function buildRawArticle(input: {
   };
 }
 
-function createSnapshotStore(): SnapshotStore {
+function createSnapshotStore(currentSnapshot: ProcessedDataset | null = null): SnapshotStore {
   return {
-    getCurrentSnapshot: vi.fn(),
+    getCurrentSnapshot: vi.fn(async () => currentSnapshot),
     getPreviousSnapshot: vi.fn(),
     getRefreshStatus: vi.fn(),
     publishSnapshot: vi.fn(),
@@ -159,6 +160,65 @@ describe("createNewsRefreshService", () => {
       "fallback",
       "fallback",
     ]);
+  });
+
+  it("reuses existing AI summaries before spending provider calls", async () => {
+    const firstSummarizer = vi.fn(async (article) => `Cached AI summary for ${article.title}`);
+    const firstService = createNewsRefreshService({
+      newsSource: {
+        fetchNews: vi.fn(async () => ({
+          status: "ok",
+          articles: [
+            buildRawArticle({
+              title: "Reusable story",
+              url: "https://example.com/reusable-story",
+            }),
+          ],
+        })),
+      },
+      snapshotStore: createSnapshotStore(),
+      clock: {
+        now: () => "2026-04-16T21:00:00.000Z",
+      },
+      summarizerConfig: {
+        provider: "gemini",
+        source: "Fixture pipeline",
+        summarizeArticle: firstSummarizer,
+      },
+    });
+    const firstDataset = await firstService.refresh({ publish: false });
+    const secondSummarizer = vi.fn(async (article) => `New AI summary for ${article.title}`);
+    const secondService = createNewsRefreshService({
+      newsSource: {
+        fetchNews: vi.fn(async () => ({
+          status: "ok",
+          articles: [
+            buildRawArticle({
+              title: "Reusable story",
+              url: "https://example.com/reusable-story",
+            }),
+          ],
+        })),
+      },
+      snapshotStore: createSnapshotStore(firstDataset),
+      clock: {
+        now: () => "2026-04-16T22:00:00.000Z",
+      },
+      summarizerConfig: {
+        provider: "gemini",
+        source: "Fixture pipeline",
+        summarizeArticle: secondSummarizer,
+      },
+    });
+
+    const secondDataset = await secondService.refresh({ publish: false });
+
+    expect(firstSummarizer).toHaveBeenCalledTimes(1);
+    expect(secondSummarizer).not.toHaveBeenCalled();
+    expect(secondDataset.articles[0]).toMatchObject({
+      summary: "Cached AI summary for Reusable story",
+      summaryType: "ai",
+    });
   });
 
   it("marks refresh failures through the configured snapshot store", async () => {
