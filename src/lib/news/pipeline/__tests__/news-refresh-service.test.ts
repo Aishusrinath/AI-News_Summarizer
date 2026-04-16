@@ -118,6 +118,49 @@ describe("createNewsRefreshService", () => {
     expect(snapshotStore.publishSnapshot).not.toHaveBeenCalled();
   });
 
+  it("keeps extra final articles with fallback summaries after the AI summary cap", async () => {
+    const snapshotStore = createSnapshotStore();
+    const rawArticles = Array.from({ length: 3 }, (_, index) =>
+      buildRawArticle({
+        title: `Regional story ${index + 1}`,
+        url: `https://example.com/regional-story-${index + 1}`,
+      }),
+    );
+    const service = createNewsRefreshService({
+      newsSource: {
+        fetchNews: vi.fn(async () => ({
+          status: "ok",
+          articles: rawArticles,
+        })),
+      },
+      snapshotStore,
+      clock: {
+        now: () => "2026-04-16T21:00:00.000Z",
+      },
+      maxFinalArticles: 3,
+      summaryArticleLimit: 1,
+      summarizerConfig: {
+        provider: "gemini",
+        source: "Fixture pipeline",
+        summarizeArticle: vi.fn(async (article) => `AI summary for ${article.title}`),
+      },
+    });
+
+    const dataset = await service.refresh({ publish: false });
+
+    expect(dataset.articles).toHaveLength(3);
+    expect(dataset.counts).toMatchObject({
+      summarizedWithAi: 1,
+      fallbackSummaries: 2,
+      finalArticles: 3,
+    });
+    expect(dataset.articles.map((article) => article.summaryType)).toEqual([
+      "ai",
+      "fallback",
+      "fallback",
+    ]);
+  });
+
   it("marks refresh failures through the configured snapshot store", async () => {
     const snapshotStore = createSnapshotStore();
     const service = createNewsRefreshService({

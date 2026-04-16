@@ -2,12 +2,31 @@ import type { NormalizedArticle } from "@/lib/news/contracts/normalized-schema";
 import type { ProcessedArticle } from "@/lib/news/contracts/processed-schema";
 import type { ArticleSummarizer } from "@/lib/news/summarize/article-summarizer";
 
-function buildFallbackSummary(article: NormalizedArticle): string {
+export function buildFallbackSummary(article: NormalizedArticle): string {
   if (article.description) {
     return `${article.title}. ${article.description}`;
   }
 
   return article.title;
+}
+
+export function buildFallbackProcessedArticle(article: NormalizedArticle): ProcessedArticle {
+  return {
+    id: article.id,
+    slug: article.slug,
+    title: article.title,
+    sourceName: article.sourceName,
+    publishedAt: article.publishedAt,
+    category: article.category,
+    sourceCountry: article.sourceCountry,
+    url: article.url,
+    summary: buildFallbackSummary(article),
+    summaryType: "fallback",
+    description: article.description,
+    imageUrl: article.imageUrl,
+    author: article.author,
+    cleanedText: article.cleanedText,
+  };
 }
 
 function formatSummarizationError(error: unknown): string {
@@ -62,22 +81,7 @@ export async function summarizeArticles(
         `${progressLabel} - AI summary failed, using fallback summary (${formatSummarizationError(error)})`,
       );
 
-      results.push({
-        id: article.id,
-        slug: article.slug,
-        title: article.title,
-        sourceName: article.sourceName,
-        publishedAt: article.publishedAt,
-        category: article.category,
-        sourceCountry: article.sourceCountry,
-        url: article.url,
-        summary: buildFallbackSummary(article),
-        summaryType: "fallback",
-        description: article.description,
-        imageUrl: article.imageUrl,
-        author: article.author,
-        cleanedText: article.cleanedText,
-      });
+      results.push(buildFallbackProcessedArticle(article));
     }
   }
 

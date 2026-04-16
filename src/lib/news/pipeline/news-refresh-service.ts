@@ -17,6 +17,7 @@ import {
   type EnvReader,
   type SummarizerConfig,
 } from "@/lib/news/pipeline/summarizer-config";
+import { buildFallbackProcessedArticle } from "@/lib/news/summarize/summarize-articles";
 import {
   defaultSnapshotStore,
   type SnapshotStore,
@@ -40,7 +41,11 @@ type NewsRefreshServiceDependencies = {
   summarizerConfig: SummarizerConfig;
   snapshotStore: SnapshotStore;
   clock?: ClockPort;
+  maxFinalArticles?: number;
+  summaryArticleLimit?: number;
 };
+
+const DEFAULT_MAX_FINAL_ARTICLES = 120;
 
 const systemClock: ClockPort = {
   now() {
@@ -53,6 +58,8 @@ export function createNewsRefreshService({
   summarizerConfig,
   snapshotStore,
   clock = systemClock,
+  maxFinalArticles = DEFAULT_MAX_FINAL_ARTICLES,
+  summaryArticleLimit,
 }: NewsRefreshServiceDependencies): NewsRefreshService {
   return {
     async refresh(options = {}) {
@@ -60,20 +67,33 @@ export function createNewsRefreshService({
       const rawNews = await newsSource.fetchNews();
       const normalizedArticles = normalizeArticles(rawNews.articles);
       const dedupedArticles = dedupeArticles(normalizedArticles);
-      const articlesToSummarize = selectArticlesForSummary(dedupedArticles);
+      const finalArticleCandidates = dedupedArticles.slice(0, maxFinalArticles);
+      const articlesToSummarize = selectArticlesForSummary(
+        finalArticleCandidates,
+        summaryArticleLimit,
+      );
       const summarizedArticles = await summarizeArticles(
         articlesToSummarize,
         summarizerConfig.summarizeArticle,
       );
+      const summarizedArticlesById = new Map(
+        summarizedArticles.map((article) => [article.id, article]),
+      );
+      const finalArticles = finalArticleCandidates.map((article) =>
+        summarizedArticlesById.get(article.id) ??
+        buildFallbackProcessedArticle(article),
+      );
       const summarizedWithAi = summarizedArticles.filter(
         (article) => article.summaryType === "ai",
       ).length;
-      const fallbackSummaries = summarizedArticles.length - summarizedWithAi;
+      const fallbackSummaries = finalArticles.filter(
+        (article) => article.summaryType === "fallback",
+      ).length;
 
       const dataset = buildProcessedDataset({
         generatedAt: clock.now(),
         source: summarizerConfig.source,
-        articles: summarizedArticles,
+        articles: finalArticles,
         counts: {
           fetched: rawNews.articles.length,
           normalized: normalizedArticles.length,
@@ -81,7 +101,7 @@ export function createNewsRefreshService({
           deduped: dedupedArticles.length,
           summarizedWithAi,
           fallbackSummaries,
-          finalArticles: summarizedArticles.length,
+          finalArticles: finalArticles.length,
         },
       });
 
