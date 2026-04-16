@@ -201,7 +201,7 @@ describe("buildDashboardFeed", () => {
       refreshStatus,
     });
 
-    expect(dashboardFeed.availableRegions).toEqual(["us", "gb", "in"]);
+    expect(dashboardFeed.availableRegions).toEqual([...supportedRegionValues]);
     expect(dashboardFeed.latestStories.map((entry) => entry.article.id)).toEqual([
       "in-business",
     ]);

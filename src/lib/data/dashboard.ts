@@ -305,21 +305,7 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
   const availableCategories = sortSupportedCategories(
     [...new Set(input.dataset.categories.map((value) => canonicalizeCategory(value)))],
   );
-  const availableRegionsFromSnapshot = sortSupportedRegions(
-    [
-      ...new Set(
-        input.dataset.articles
-          .map((article) => article.sourceCountry)
-          .filter((region): region is SupportedRegion =>
-            Boolean(region && isSupportedRegion(region)),
-          ),
-      ),
-    ],
-  );
-  const availableRegions =
-    availableRegionsFromSnapshot.length > 0
-      ? availableRegionsFromSnapshot
-      : [...supportedRegionValues];
+  const availableRegions = sortSupportedRegions([...supportedRegionValues]);
   const filteredCurrentArticles = filterArticles(
     input.dataset.articles,
     input.activeCategory,
