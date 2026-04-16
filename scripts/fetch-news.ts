@@ -2,6 +2,10 @@ import { pathToFileURL } from "node:url";
 import "dotenv/config";
 
 import { fetchNews } from "@/lib/news/ingest/fetch-news";
+import {
+  defaultNewsCategories,
+  defaultNewsCountries,
+} from "@/lib/news/ingest/news-api-client";
 import { newsArtifactPaths, writeJsonArtifact } from "@/lib/storage/news-artifact-store";
 
 const defaultBaseUrl = "https://newsapi.org/v2";
@@ -16,8 +20,8 @@ export async function runFetchNews() {
   const rawNews = await fetchNews({
     apiKey,
     baseUrl: defaultBaseUrl,
-    categories: ["general", "technology", "business"],
-    country: "us",
+    categories: defaultNewsCategories,
+    countries: [...defaultNewsCountries],
     pageSize: 10,
   });
 

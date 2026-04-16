@@ -3,7 +3,7 @@ import type { Category, RawArticle } from "@/lib/news/contracts/raw-schema";
 export type NewsApiClientConfig = {
   apiKey: string;
   baseUrl: string;
-  country?: string;
+  countries?: string[];
   pageSize?: number;
 };
 
@@ -25,41 +25,53 @@ type NewsApiResponse = {
   articles?: NewsApiArticle[];
 };
 
-const supportedCategories: Category[] = ["general", "technology", "business"];
+export const defaultNewsCountries = ["us", "gb", "ca", "au", "in"] as const;
+export const defaultNewsCategories: Category[] = [
+  "general",
+  "business",
+  "technology",
+  "science",
+  "health",
+];
 
 export function createNewsApiClient(config: NewsApiClientConfig) {
   const pageSize = config.pageSize ?? 10;
-  const country = config.country ?? "us";
+  const countries =
+    config.countries && config.countries.length > 0
+      ? config.countries
+      : defaultNewsCountries;
 
   return {
-    async fetchLatest(categories: Category[] = supportedCategories): Promise<RawArticle[]> {
+    async fetchLatest(categories: Category[] = defaultNewsCategories): Promise<RawArticle[]> {
       const allArticles: RawArticle[] = [];
 
-      for (const category of categories) {
-        const params = new URLSearchParams({
-          country,
-          category,
-          pageSize: String(pageSize),
-        });
-
-        const response = await fetch(`${config.baseUrl}/top-headlines?${params.toString()}`, {
-          headers: {
-            "X-Api-Key": config.apiKey,
-          },
-        });
-
-        const payload = (await response.json()) as NewsApiResponse;
-
-        if (!response.ok || payload.status !== "ok") {
-          const message = payload.message ?? `NewsAPI request failed with status ${response.status}`;
-          throw new Error(message);
-        }
-
-        for (const article of payload.articles ?? []) {
-          allArticles.push({
-            ...article,
+      for (const country of countries) {
+        for (const category of categories) {
+          const params = new URLSearchParams({
+            country,
             category,
+            pageSize: String(pageSize),
           });
+
+          const response = await fetch(`${config.baseUrl}/top-headlines?${params.toString()}`, {
+            headers: {
+              "X-Api-Key": config.apiKey,
+            },
+          });
+
+          const payload = (await response.json()) as NewsApiResponse;
+
+          if (!response.ok || payload.status !== "ok") {
+            const message = payload.message ?? `NewsAPI request failed with status ${response.status}`;
+            throw new Error(message);
+          }
+
+          for (const article of payload.articles ?? []) {
+            allArticles.push({
+              ...article,
+              category,
+            });
+          }
         }
       }
 

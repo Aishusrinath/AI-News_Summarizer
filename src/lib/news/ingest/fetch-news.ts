@@ -9,7 +9,7 @@ export type FetchNewsOptions = {
   apiKey: string;
   baseUrl: string;
   categories?: Category[];
-  country?: string;
+  countries?: string[];
   pageSize?: number;
 };
 
@@ -17,7 +17,7 @@ export async function fetchNews(options: FetchNewsOptions): Promise<RawNewsApiRe
   const client = createNewsApiClient({
     apiKey: options.apiKey,
     baseUrl: options.baseUrl,
-    country: options.country,
+    countries: options.countries,
     pageSize: options.pageSize,
   });
 

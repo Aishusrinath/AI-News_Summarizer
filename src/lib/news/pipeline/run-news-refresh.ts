@@ -2,6 +2,10 @@ import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { dedupeArticles } from "@/lib/news/etl/dedupe-articles";
 import { normalizeArticles } from "@/lib/news/etl/normalize-articles";
 import { fetchNews } from "@/lib/news/ingest/fetch-news";
+import {
+  defaultNewsCategories,
+  defaultNewsCountries,
+} from "@/lib/news/ingest/news-api-client";
 import type { ProcessedDataset } from "@/lib/news/contracts/processed-schema";
 import type { ArticleSummarizer } from "@/lib/news/summarize/article-summarizer";
 import { createGeminiSummarizer } from "@/lib/news/summarize/gemini-summarizer";
@@ -81,8 +85,8 @@ export async function runNewsRefresh(): Promise<ProcessedDataset> {
   const rawNews = await fetchNews({
     apiKey: getRequiredEnv("NEWS_API_KEY"),
     baseUrl: "https://newsapi.org/v2",
-    categories: ["general", "technology", "business"],
-    country: "us",
+    categories: defaultNewsCategories,
+    countries: [...defaultNewsCountries],
     pageSize: 10,
   });
   const normalizedArticles = normalizeArticles(rawNews.articles);
