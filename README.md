@@ -6,15 +6,17 @@ AI News Summarizer is a small proof-of-concept Next.js app for a class assignmen
 
 The app is designed around an offline pipeline plus a read-only frontend:
 - the pipeline fetches, processes, and summarizes data ahead of time
-- the Next.js UI reads `data/processed/articles.json`
+- the Next.js UI reads the latest processed snapshot from `data/processed/current.json`, falling back to `data/processed/articles.json`
 - the deployed app does not call the news API or the LLM during page requests
 
 ## Supported Tasks
 
 - Browse recent headlines
 - Filter articles by category
+- Filter articles by source region
 - Open article detail pages
 - Read AI-generated or fallback summaries
+- Inspect summary provenance and snapshot health
 - Open the original publisher article from the card or detail page
 
 ## Out Of Scope
@@ -22,7 +24,7 @@ The app is designed around an offline pipeline plus a read-only frontend:
 - User accounts
 - Personalized recommendations
 - Multiple news providers
-- Real-time updates
+- True real-time newsroom updates
 - Vector databases
 - Full in-app rendering of publisher articles
 - LLM-based category classification
@@ -58,8 +60,10 @@ Key decisions:
 - The canonical frontend dataset lives at `data/processed/articles.json`
 - The UI is read-only over processed data
 - Category filtering uses URL search params
+- Region filtering uses URL search params
 - Article detail pages resolve by route-safe `slug`
 - Fallback summaries are used if AI summarization fails
+- NewsAPI `general` stories are presented as app-facing `World` stories
 
 ## How The Pipeline Works
 
@@ -115,13 +119,15 @@ Latest verified pipeline run:
 - `OPENAI_API_KEY`
   - only required if `SUMMARIZER_PROVIDER=openai`
 - `BLOB_READ_WRITE_TOKEN`
-  - required on Vercel for live refresh without redeploys
+  - optional
+  - only needed if using the `/api/refresh` endpoint with Vercel Blob instead of committed JSON snapshots
   - created by connecting a Vercel Blob store to the project
 - `CRON_SECRET`
-  - required on Vercel to authorize `/api/refresh`
+  - optional
+  - only needed if exposing `/api/refresh` for authenticated cron-triggered refreshes
   - set this to a long random string
 
-The deployed UI can run from committed processed JSON without provider secrets, but live refresh needs `NEWS_API_KEY`, the selected summarizer key, `BLOB_READ_WRITE_TOKEN`, and `CRON_SECRET`.
+The default Hobby-friendly production setup uses GitHub Actions to run the pipeline hourly, commit refreshed JSON, and trigger a Vercel redeploy. That setup needs `NEWS_API_KEY` and the selected summarizer key in GitHub Actions secrets, but it does not require Vercel Blob or Vercel Cron.
 
 A starter env template is provided in [.env.example](/d:/ai-news-summarizer/.env.example).
 
@@ -202,8 +208,11 @@ Current tests cover:
 - Vercel hosts the Next.js UI
 - GitHub Actions runs the news pipeline hourly and commits refreshed processed JSON
 - Vercel redeploys from those hourly GitHub commits when automatic deployments are enabled
-- The `/api/refresh` endpoint can be used for Vercel Cron on paid plans, but Vercel Hobby accounts are limited to daily cron schedules
-- If `BLOB_READ_WRITE_TOKEN` is not configured, the deployed app falls back to committed processed JSON
+- The live page watcher polls `/api/refresh/status` and refreshes the open page when a newly deployed snapshot is available
+- Use `/api/snapshot` to inspect the deployed snapshot timestamp, article count, categories, regions, counts, and refresh status
+- The `/api/refresh` endpoint can be used with Vercel Blob and Vercel Cron on paid plans
+- Vercel Hobby accounts are limited to daily cron schedules, so hourly Vercel Cron expressions fail deployment; use GitHub Actions for hourly refresh on Hobby
+- If `BLOB_READ_WRITE_TOKEN` is not configured, the deployed app reads committed processed JSON
 
 ## Where The 5 Required Skills Were Used
 

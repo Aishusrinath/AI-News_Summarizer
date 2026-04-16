@@ -1,4 +1,5 @@
 import type { Category, RawArticle } from "@/lib/news/contracts/raw-schema";
+import { supportedRegionValues } from "@/lib/news/contracts/regions";
 
 export type NewsApiClientConfig = {
   apiKey: string;
@@ -25,7 +26,7 @@ type NewsApiResponse = {
   articles?: NewsApiArticle[];
 };
 
-export const defaultNewsCountries = ["us", "gb", "ca", "au", "in"] as const;
+export const defaultNewsCountries = supportedRegionValues;
 export const defaultNewsCategories: Category[] = [
   "general",
   "business",
@@ -33,6 +34,10 @@ export const defaultNewsCategories: Category[] = [
   "science",
   "health",
 ];
+
+function toAppCategory(category: Category): Category {
+  return category === "general" ? "world" : category;
+}
 
 export function createNewsApiClient(config: NewsApiClientConfig) {
   const pageSize = config.pageSize ?? 10;
@@ -69,7 +74,8 @@ export function createNewsApiClient(config: NewsApiClientConfig) {
           for (const article of payload.articles ?? []) {
             allArticles.push({
               ...article,
-              category,
+              category: toAppCategory(category),
+              sourceCountry: country,
             });
           }
         }

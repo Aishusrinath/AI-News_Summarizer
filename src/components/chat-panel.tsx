@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useTransition } from "react";
+import { useEffect, useRef, useState, useTransition } from "react";
 
 import type { ChatMode, ChatResponse } from "@/lib/chat/types";
 
@@ -10,6 +10,7 @@ type ChatPanelProps = {
   articleSlug?: string;
   starterPrompts: string[];
   compact?: boolean;
+  promptOnly?: boolean;
 };
 
 type ChatThreadEntry = {
@@ -30,12 +31,14 @@ export function ChatPanel({
   articleSlug,
   starterPrompts,
   compact = false,
+  promptOnly = false,
 }: ChatPanelProps) {
   const [thread, setThread] = useState<ChatThreadEntry[]>([]);
   const [input, setInput] = useState("");
   const [sessionId, setSessionId] = useState("");
   const [pendingMode, setPendingMode] = useState<ChatMode | null>(null);
   const [isPending, startTransition] = useTransition();
+  const transcriptRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const sessionStorageKey = "ai-news-chat-session-id";
@@ -50,6 +53,19 @@ export function ChatPanel({
     window.sessionStorage.setItem(sessionStorageKey, newSessionId);
     setSessionId(newSessionId);
   }, []);
+
+  useEffect(() => {
+    const transcript = transcriptRef.current;
+
+    if (!transcript) {
+      return;
+    }
+
+    transcript.scrollTo({
+      top: transcript.scrollHeight,
+      behavior: "smooth",
+    });
+  }, [thread, isPending]);
 
   async function submitMessage(
     message: string,
@@ -156,18 +172,30 @@ export function ChatPanel({
           <button
             key={prompt}
             type="button"
+            disabled={isPending}
             onClick={() => void submitMessage(prompt)}
-            className="rounded-full border border-stone-700 bg-stone-900/80 px-4 py-2 text-left text-sm text-stone-200 hover:border-stone-500 hover:bg-stone-900"
+            className={[
+              "border border-stone-700 bg-stone-900/80 text-left text-sm text-stone-200 hover:border-stone-500 hover:bg-stone-900 disabled:cursor-not-allowed disabled:opacity-60",
+              compact ? "rounded-2xl px-3 py-2.5" : "rounded-full px-4 py-2",
+            ].join(" ")}
           >
             {prompt}
           </button>
         ))}
       </div>
 
-      <div className="mt-6 flex min-h-[280px] flex-col gap-4 overflow-y-auto rounded-[1.5rem] border border-stone-800 bg-stone-900/70 p-4">
+      <div
+        ref={transcriptRef}
+        className={[
+          "flex flex-col gap-4 overflow-y-auto rounded-[1.5rem] border border-stone-800 bg-stone-900/70 p-4",
+          compact ? "mt-4 max-h-72 min-h-36" : "mt-6 max-h-[540px] min-h-[320px]",
+        ].join(" ")}
+      >
         {thread.length === 0 ? (
           <p className="text-sm leading-7 text-stone-400">
-            Ask about the latest world-news snapshot or use the general assistant for broader questions.
+            {promptOnly
+              ? "Choose a question above to ask about this story."
+              : "Ask about the latest world-news snapshot or use the general assistant for broader questions."}
           </p>
         ) : (
           thread.map((entry) => (
@@ -272,28 +300,30 @@ export function ChatPanel({
         ) : null}
       </div>
 
-      <form
-        className="mt-5 flex flex-col gap-3"
-        onSubmit={(event) => {
-          event.preventDefault();
-          void submitMessage(input);
-        }}
-      >
-        <textarea
-          value={input}
-          onChange={(event) => setInput(event.target.value)}
-          rows={compact ? 3 : 4}
-          placeholder="Ask about the latest world-news snapshot, or switch to a broader general question."
-          className="w-full rounded-[1.5rem] border border-stone-700 bg-stone-900/80 px-4 py-3 text-sm leading-7 text-stone-100 outline-none placeholder:text-stone-500 focus:border-amber-400"
-        />
-        <button
-          type="submit"
-          disabled={isPending || input.trim().length === 0}
-          className="inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-stone-950 disabled:cursor-not-allowed disabled:bg-stone-700 disabled:text-stone-400"
+      {promptOnly ? null : (
+        <form
+          className="mt-5 flex flex-col gap-3"
+          onSubmit={(event) => {
+            event.preventDefault();
+            void submitMessage(input);
+          }}
         >
-          {isPending ? "Working..." : "Send"}
-        </button>
-      </form>
+          <textarea
+            value={input}
+            onChange={(event) => setInput(event.target.value)}
+            rows={compact ? 3 : 4}
+            placeholder="Ask about the latest world-news snapshot, or switch to a broader general question."
+            className="w-full rounded-[1.5rem] border border-stone-700 bg-stone-900/80 px-4 py-3 text-sm leading-7 text-stone-100 outline-none placeholder:text-stone-500 focus:border-amber-400"
+          />
+          <button
+            type="submit"
+            disabled={isPending || input.trim().length === 0}
+            className="inline-flex items-center justify-center rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-stone-950 disabled:cursor-not-allowed disabled:bg-stone-700 disabled:text-stone-400"
+          >
+            {isPending ? "Working..." : "Send"}
+          </button>
+        </form>
+      )}
     </section>
   );
 }

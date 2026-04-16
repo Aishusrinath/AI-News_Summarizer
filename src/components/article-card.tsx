@@ -9,6 +9,10 @@ import {
   categoryLabels,
 } from "@/lib/news/contracts/raw-schema";
 import type { ProcessedArticle } from "@/lib/news/contracts/processed-schema";
+import {
+  isSupportedRegion,
+  regionLabels,
+} from "@/lib/news/contracts/regions";
 
 type ArticleCardProps = {
   article: ProcessedArticle;
@@ -17,6 +21,10 @@ type ArticleCardProps = {
 
 export function ArticleCard({ article, statuses = [] }: ArticleCardProps) {
   const displayCategory = categoryLabels[canonicalizeCategory(article.category)];
+  const displayRegion =
+    article.sourceCountry && isSupportedRegion(article.sourceCountry)
+      ? regionLabels[article.sourceCountry]
+      : null;
 
   return (
     <article className="flex h-full flex-col justify-between rounded-3xl border border-stone-200 bg-white p-6 shadow-sm shadow-stone-200/60">
@@ -25,6 +33,11 @@ export function ArticleCard({ article, statuses = [] }: ArticleCardProps) {
           <span className="rounded-full bg-stone-100 px-3 py-1 font-medium text-stone-700">
             {displayCategory}
           </span>
+          {displayRegion ? (
+            <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 font-medium text-amber-800">
+              {displayRegion}
+            </span>
+          ) : null}
           {statuses.map((status) => (
             <StatusChip key={status} status={status} />
           ))}

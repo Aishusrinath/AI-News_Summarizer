@@ -2,6 +2,7 @@ import { ArticleList } from "@/components/article-list";
 import { CategoryFilter } from "@/components/category-filter";
 import { DashboardSection } from "@/components/dashboard-section";
 import { LiveRefresh } from "@/components/live-refresh";
+import { RegionFilter } from "@/components/region-filter";
 import { RefreshStatus } from "@/components/refresh-status";
 import { WhatChanged } from "@/components/what-changed";
 import { getHomepageFeed } from "@/lib/data/get-homepage-feed";
@@ -9,6 +10,7 @@ import { formatDate } from "@/lib/formatting/format-date";
 
 export default async function Home({ searchParams }: PageProps<"/">) {
   const rawCategory = (await searchParams)?.category;
+  const rawRegion = (await searchParams)?.region;
   const {
     dataset,
     topHighlights,
@@ -16,9 +18,14 @@ export default async function Home({ searchParams }: PageProps<"/">) {
     whatChanged,
     latestStories,
     activeCategory,
+    activeRegion,
     refreshStatus,
     availableCategories,
-  } = await getHomepageFeed(Array.isArray(rawCategory) ? rawCategory[0] : rawCategory);
+    availableRegions,
+  } = await getHomepageFeed(
+    Array.isArray(rawCategory) ? rawCategory[0] : rawCategory,
+    Array.isArray(rawRegion) ? rawRegion[0] : rawRegion,
+  );
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.22),_transparent_28%),linear-gradient(180deg,_#f7f3ea_0%,_#f2eee6_100%)] px-6 py-10 md:px-10">
@@ -98,9 +105,26 @@ export default async function Home({ searchParams }: PageProps<"/">) {
             </div>
             <CategoryFilter
               activeCategory={activeCategory}
+              activeRegion={activeRegion}
               availableCategories={availableCategories}
             />
           </div>
+        </section>
+
+        <section className="flex flex-col gap-3 rounded-[1.5rem] border border-amber-100 bg-white/60 p-5 shadow-sm">
+          <div>
+            <h2 className="text-lg font-semibold tracking-tight text-stone-950">
+              Filter by region
+            </h2>
+            <p className="text-sm leading-7 text-stone-600">
+              Compare coverage from US, UK, Canada, Australia, and India feeds.
+            </p>
+          </div>
+          <RegionFilter
+            activeCategory={activeCategory}
+            activeRegion={activeRegion}
+            availableRegions={availableRegions}
+          />
         </section>
 
         <DashboardSection

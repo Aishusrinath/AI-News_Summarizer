@@ -102,6 +102,7 @@ export function normalizeArticles(rawArticles: RawArticle[]): NormalizedArticle[
         sourceName,
         publishedAt,
         category: normalizeCategory(article.category),
+        sourceCountry: article.sourceCountry?.trim().toLowerCase(),
         url,
         description,
         imageUrl: article.urlToImage ?? undefined,

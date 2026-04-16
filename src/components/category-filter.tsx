@@ -4,9 +4,11 @@ import {
   categoryLabels,
   type SupportedCategory,
 } from "@/lib/news/contracts/raw-schema";
+import type { SupportedRegion } from "@/lib/news/contracts/regions";
 
 type CategoryFilterProps = {
   activeCategory: SupportedCategory | "all";
+  activeRegion: SupportedRegion | "all";
   availableCategories: SupportedCategory[];
 };
 
@@ -22,6 +24,7 @@ const labels: Record<SupportedCategory | "all", string> = {
 
 export function CategoryFilter({
   activeCategory,
+  activeRegion,
   availableCategories,
 }: CategoryFilterProps) {
   const filterValues: (SupportedCategory | "all")[] = ["all", ...availableCategories];
@@ -30,7 +33,18 @@ export function CategoryFilter({
     <nav className="flex flex-wrap gap-3" aria-label="Article categories">
       {filterValues.map((category) => {
         const isActive = category === activeCategory;
-        const href = category === "all" ? "/" : `/?category=${category}`;
+        const params = new URLSearchParams();
+
+        if (category !== "all") {
+          params.set("category", category);
+        }
+
+        if (activeRegion !== "all") {
+          params.set("region", activeRegion);
+        }
+
+        const query = params.toString();
+        const href = query ? `/?${query}` : "/";
 
         return (
           <Link

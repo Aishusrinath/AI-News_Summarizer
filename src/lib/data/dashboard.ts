@@ -3,6 +3,11 @@ import {
   sortSupportedCategories,
   type SupportedCategory,
 } from "@/lib/news/contracts/raw-schema";
+import {
+  isSupportedRegion,
+  sortSupportedRegions,
+  type SupportedRegion,
+} from "@/lib/news/contracts/regions";
 import type {
   ProcessedArticle,
   ProcessedDataset,
@@ -25,18 +30,21 @@ export type DashboardChange = {
 export type DashboardFeed = {
   dataset: ProcessedDataset;
   activeCategory: SupportedCategory | "all";
+  activeRegion: SupportedRegion | "all";
   refreshStatus: RefreshStatus;
   topHighlights: DashboardStory[];
   categoryLeaders: DashboardStory[];
   whatChanged: DashboardChange[];
   latestStories: DashboardStory[];
   availableCategories: SupportedCategory[];
+  availableRegions: SupportedRegion[];
 };
 
 type DashboardFeedInput = {
   dataset: ProcessedDataset;
   previousDataset: ProcessedDataset | null;
   activeCategory: SupportedCategory | "all";
+  activeRegion: SupportedRegion | "all";
   refreshStatus: RefreshStatus;
 };
 
@@ -71,12 +79,20 @@ function rankArticles(articles: ProcessedArticle[]): ProcessedArticle[] {
 function filterArticles(
   articles: ProcessedArticle[],
   activeCategory: SupportedCategory | "all",
+  activeRegion: SupportedRegion | "all",
 ) {
-  return activeCategory === "all"
-    ? articles
-    : articles.filter(
-        (article) => canonicalizeCategory(article.category) === activeCategory,
-      );
+  return articles.filter((article) => {
+    const categoryMatches =
+      activeCategory === "all" ||
+      canonicalizeCategory(article.category) === activeCategory;
+    const regionMatches =
+      activeRegion === "all" ||
+      (article.sourceCountry &&
+        isSupportedRegion(article.sourceCountry) &&
+        article.sourceCountry === activeRegion);
+
+    return categoryMatches && regionMatches;
+  });
 }
 
 function buildStoryStatuses(
@@ -265,13 +281,30 @@ function attachStatuses(
 }
 
 export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
+  const activeRegion = input.activeRegion ?? "all";
   const availableCategories = sortSupportedCategories(
     [...new Set(input.dataset.categories.map((value) => canonicalizeCategory(value)))],
   );
-  const filteredCurrentArticles = filterArticles(input.dataset.articles, input.activeCategory);
+  const availableRegions = sortSupportedRegions(
+    [
+      ...new Set(
+        input.dataset.articles
+          .map((article) => article.sourceCountry)
+          .filter((region): region is SupportedRegion =>
+            Boolean(region && isSupportedRegion(region)),
+          ),
+      ),
+    ],
+  );
+  const filteredCurrentArticles = filterArticles(
+    input.dataset.articles,
+    input.activeCategory,
+    activeRegion,
+  );
   const filteredPreviousArticles = filterArticles(
     input.previousDataset?.articles ?? [],
     input.activeCategory,
+    activeRegion,
   );
   const rankedCurrentArticles = rankArticles(filteredCurrentArticles);
   const rankedPreviousArticles = rankArticles(filteredPreviousArticles);
@@ -300,8 +333,10 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
       categories: availableCategories,
     },
     activeCategory: input.activeCategory,
+    activeRegion,
     refreshStatus: input.refreshStatus,
     availableCategories,
+    availableRegions,
     topHighlights: attachStatuses(topHighlights, statusesById),
     categoryLeaders: attachStatuses(categoryLeaders, statusesById),
     whatChanged: buildWhatChanged(

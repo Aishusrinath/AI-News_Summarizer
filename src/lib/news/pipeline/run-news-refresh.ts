@@ -1,6 +1,7 @@
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { dedupeArticles } from "@/lib/news/etl/dedupe-articles";
 import { normalizeArticles } from "@/lib/news/etl/normalize-articles";
+import { selectArticlesForSummary } from "@/lib/news/etl/select-articles-for-summary";
 import { fetchNews } from "@/lib/news/ingest/fetch-news";
 import {
   defaultNewsCategories,
@@ -91,8 +92,9 @@ export async function runNewsRefresh(): Promise<ProcessedDataset> {
   });
   const normalizedArticles = normalizeArticles(rawNews.articles);
   const dedupedArticles = dedupeArticles(normalizedArticles);
+  const articlesToSummarize = selectArticlesForSummary(dedupedArticles);
   const summarizedArticles = await summarizeArticles(
-    dedupedArticles,
+    articlesToSummarize,
     summarizerConfig.summarizeArticle,
   );
   const summarizedWithAi = summarizedArticles.filter(

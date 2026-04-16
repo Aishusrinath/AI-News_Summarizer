@@ -11,6 +11,7 @@ export const processedArticleSchema = z.object({
   sourceName: z.string().min(1),
   publishedAt: z.string().datetime({ offset: true }),
   category: categorySchema,
+  sourceCountry: z.string().optional(),
   url: z.string().url(),
   summary: z.string().min(1),
   summaryType: summaryTypeSchema,

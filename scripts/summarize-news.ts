@@ -2,6 +2,7 @@ import { pathToFileURL } from "node:url";
 import "dotenv/config";
 
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
+import { selectArticlesForSummary } from "@/lib/news/etl/select-articles-for-summary";
 import { normalizedArticleSchema } from "@/lib/news/contracts/normalized-schema";
 import type { ArticleSummarizer } from "@/lib/news/summarize/article-summarizer";
 import { createGeminiSummarizer } from "@/lib/news/summarize/gemini-summarizer";
@@ -108,8 +109,9 @@ export async function runSummarizeNews(): Promise<ProcessedDataset> {
     normalizedArticleSchema.parse(article),
   );
 
+  const articlesToSummarize = selectArticlesForSummary(normalizedArticles);
   const summarizedArticles = await summarizeArticles(
-    normalizedArticles,
+    articlesToSummarize,
     summarizerConfig.summarizeArticle,
   );
 

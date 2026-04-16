@@ -61,6 +61,7 @@ export const rawArticleSchema = z.object({
   publishedAt: z.string().nullable().optional(),
   content: z.string().nullable().optional(),
   category: z.string().nullable().optional(),
+  sourceCountry: z.string().optional(),
 });
 
 export const rawNewsApiResponseSchema = z.object({
