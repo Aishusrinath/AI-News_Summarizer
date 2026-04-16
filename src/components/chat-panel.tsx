@@ -311,8 +311,12 @@ export function ChatPanel({
           <textarea
             value={input}
             onChange={(event) => setInput(event.target.value)}
-            rows={compact ? 3 : 4}
-            placeholder="Ask about the latest world-news snapshot, or switch to a broader general question."
+            rows={compact ? 2 : 4}
+            placeholder={
+              compact
+                ? "Ask a follow-up about this story..."
+                : "Ask about the latest world-news snapshot, or switch to a broader general question."
+            }
             className="w-full rounded-[1.5rem] border border-stone-700 bg-stone-900/80 px-4 py-3 text-sm leading-7 text-stone-100 outline-none placeholder:text-stone-500 focus:border-amber-400"
           />
           <button

@@ -129,10 +129,9 @@ export function ArticleDetail({
       <aside className="flex h-fit flex-col gap-4 xl:sticky xl:top-8">
         <ChatPanel
           compact
-          promptOnly
           articleSlug={article.slug}
           title="Ask About This Story"
-          description="Pick a question to get a grounded answer from this story and the current snapshot."
+          description="Pick a question or ask your own follow-up about this summary and the current snapshot."
           starterPrompts={[
             "Summarize why this story matters.",
             "Compare this with the latest stories in the same category.",
