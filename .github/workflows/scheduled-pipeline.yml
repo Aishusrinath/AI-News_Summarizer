@@ -39,5 +39,3 @@ jobs:
           git add data/processed/articles.json
           git commit -m "Update articles - $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "No changes to commit"
           git push
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
