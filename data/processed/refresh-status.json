@@ -1,8 +1,8 @@
 {
   "currentSnapshotId": "2026-04-16T21:32:49.353Z",
-  "previousSnapshotId": "2026-04-16T20:42:35.498Z",
+  "previousSnapshotId": null,
   "lastSuccessfulRefreshAt": "2026-04-16T21:32:49.353Z",
-  "lastAttemptedRefreshAt": "2026-04-16T21:32:49.353Z",
-  "isStale": false,
-  "status": "success"
+  "lastAttemptedRefreshAt": "2026-04-17T01:08:37.662Z",
+  "isStale": true,
+  "status": "failed"
 }
