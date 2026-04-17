@@ -5,6 +5,10 @@ import {
   runNewsRefresh,
 } from "@/lib/news/pipeline/run-news-refresh";
 
+function shouldAllowStaleOnFailure() {
+  return process.env.NEWS_ALLOW_STALE_ON_FAILURE?.trim().toLowerCase() === "true";
+}
+
 async function main() {
   console.log("Starting pipeline...");
 
@@ -17,6 +21,14 @@ async function main() {
     await markNewsRefreshFailure(
       error instanceof Error ? error.message : "Pipeline failed.",
     );
+
+    if (shouldAllowStaleOnFailure()) {
+      console.warn(
+        "Pipeline failed, but keeping the last published snapshot because NEWS_ALLOW_STALE_ON_FAILURE=true.",
+      );
+      return;
+    }
+
     throw error;
   }
 }

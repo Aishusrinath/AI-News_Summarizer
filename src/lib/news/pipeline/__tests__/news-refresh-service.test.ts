@@ -10,6 +10,8 @@ function buildRawArticle(input: {
   title: string;
   url: string;
   category?: string;
+  publishedAt?: string;
+  sourceCountry?: string;
 }): RawArticle {
   return {
     source: {
@@ -18,9 +20,9 @@ function buildRawArticle(input: {
     title: input.title,
     description: `${input.title} description`,
     url: input.url,
-    publishedAt: "2026-04-16T20:00:00.000Z",
+    publishedAt: input.publishedAt ?? "2026-04-16T20:00:00.000Z",
     category: input.category ?? "technology",
-    sourceCountry: "us",
+    sourceCountry: input.sourceCountry ?? "us",
   };
 }
 
@@ -219,6 +221,76 @@ describe("createNewsRefreshService", () => {
       summary: "Cached AI summary for Reusable story",
       summaryType: "ai",
     });
+  });
+
+  it("keeps recent articles from the previous snapshot during rotating refreshes", async () => {
+    const existingService = createNewsRefreshService({
+      newsSource: {
+        fetchNews: vi.fn(async () => ({
+          status: "ok",
+          articles: [
+            buildRawArticle({
+              title: "India retained story",
+              url: "https://example.com/india-retained-story",
+              publishedAt: "2026-04-15T18:00:00.000Z",
+              sourceCountry: "in",
+            }),
+            buildRawArticle({
+              title: "Expired story",
+              url: "https://example.com/expired-story",
+              publishedAt: "2026-04-10T18:00:00.000Z",
+              sourceCountry: "gb",
+            }),
+          ],
+        })),
+      },
+      snapshotStore: createSnapshotStore(),
+      clock: {
+        now: () => "2026-04-16T21:00:00.000Z",
+      },
+      summarizerConfig: {
+        provider: "gemini",
+        source: "Fixture pipeline",
+        summarizeArticle: vi.fn(async (article) => `AI summary for ${article.title}`),
+      },
+    });
+    const existingSnapshot = await existingService.refresh({ publish: false });
+    const rotatingService = createNewsRefreshService({
+      newsSource: {
+        fetchNews: vi.fn(async () => ({
+          status: "ok",
+          articles: [
+            buildRawArticle({
+              title: "Fresh US story",
+              url: "https://example.com/fresh-us-story",
+              publishedAt: "2026-04-16T20:00:00.000Z",
+              sourceCountry: "us",
+            }),
+          ],
+        })),
+      },
+      snapshotStore: createSnapshotStore(existingSnapshot),
+      clock: {
+        now: () => "2026-04-16T22:00:00.000Z",
+      },
+      historyDays: 3,
+      summarizerConfig: {
+        provider: "gemini",
+        source: "Fixture pipeline",
+        summarizeArticle: vi.fn(async (article) => `AI summary for ${article.title}`),
+      },
+    });
+
+    const dataset = await rotatingService.refresh({ publish: false });
+
+    expect(dataset.articles.map((article) => article.title)).toEqual([
+      "Fresh US story",
+      "India retained story",
+    ]);
+    expect(dataset.articles.map((article) => article.sourceCountry)).toEqual([
+      "us",
+      "in",
+    ]);
   });
 
   it("marks refresh failures through the configured snapshot store", async () => {

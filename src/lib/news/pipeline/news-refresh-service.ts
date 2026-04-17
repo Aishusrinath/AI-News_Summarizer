@@ -48,12 +48,15 @@ type NewsRefreshServiceDependencies = {
   summarizerConfig: SummarizerConfig;
   snapshotStore: SnapshotStore;
   clock?: ClockPort;
+  historyDays?: number;
   maxFinalArticles?: number;
   summaryArticleLimit?: number;
 };
 
 const DEFAULT_MAX_FINAL_ARTICLES = 120;
 const DEFAULT_SUMMARY_ARTICLE_LIMIT = 10;
+const DEFAULT_HISTORY_DAYS = 3;
+const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 const systemClock: ClockPort = {
   now() {
@@ -87,11 +90,68 @@ function getOptionalPositiveInteger(env: EnvReader, name: string) {
   return parsed;
 }
 
+function getOptionalFetchStrategy(env: EnvReader) {
+  const strategy = cleanEnvValue(env.get("NEWS_FETCH_STRATEGY"));
+
+  if (!strategy || strategy === "full" || strategy === "rotating") {
+    return strategy;
+  }
+
+  throw new Error("NEWS_FETCH_STRATEGY must be either full or rotating.");
+}
+
+function getRotationIndex(env: EnvReader, now = new Date()) {
+  const configuredIndex = getOptionalPositiveInteger(env, "NEWS_ROTATION_INDEX");
+
+  if (configuredIndex !== undefined) {
+    return configuredIndex;
+  }
+
+  return Math.floor(now.getTime() / (60 * 60 * 1000));
+}
+
+function getRetainedArticleCutoff(nowIso: string, historyDays: number) {
+  return new Date(new Date(nowIso).getTime() - historyDays * ONE_DAY_MS);
+}
+
+function isFreshEnoughForHistory(article: ProcessedArticle, cutoff: Date) {
+  return new Date(article.publishedAt).getTime() >= cutoff.getTime();
+}
+
+function mergeWithRetainedSnapshotArticles({
+  currentArticles,
+  currentSnapshot,
+  maxFinalArticles,
+  cutoff,
+}: {
+  currentArticles: ProcessedArticle[];
+  currentSnapshot: ProcessedDataset | null;
+  maxFinalArticles: number;
+  cutoff: Date;
+}) {
+  const seenIds = new Set(currentArticles.map((article) => article.id));
+  const retainedArticles = (currentSnapshot?.articles ?? []).filter((article) => {
+    if (seenIds.has(article.id)) {
+      return false;
+    }
+
+    return isFreshEnoughForHistory(article, cutoff);
+  });
+
+  return [...currentArticles, ...retainedArticles]
+    .sort(
+      (left, right) =>
+        new Date(right.publishedAt).getTime() - new Date(left.publishedAt).getTime(),
+    )
+    .slice(0, maxFinalArticles);
+}
+
 export function createNewsRefreshService({
   newsSource,
   summarizerConfig,
   snapshotStore,
   clock = systemClock,
+  historyDays = DEFAULT_HISTORY_DAYS,
   maxFinalArticles = DEFAULT_MAX_FINAL_ARTICLES,
   summaryArticleLimit,
 }: NewsRefreshServiceDependencies): NewsRefreshService {
@@ -100,6 +160,7 @@ export function createNewsRefreshService({
       const shouldPublish = options.publish ?? true;
       const currentSnapshot = await snapshotStore.getCurrentSnapshot().catch(() => null);
       const reusableAiSummaries = buildReusableAiSummaryMap(currentSnapshot);
+      const generatedAt = clock.now();
       const rawNews = await newsSource.fetchNews();
       const normalizedArticles = normalizeArticles(rawNews.articles);
       const dedupedArticles = dedupeArticles(normalizedArticles);
@@ -117,7 +178,7 @@ export function createNewsRefreshService({
       const summarizedArticlesById = new Map(
         summarizedArticles.map((article) => [article.id, article]),
       );
-      const finalArticles = finalArticleCandidates.map((article) =>
+      const refreshedArticles = finalArticleCandidates.map((article) =>
         summarizedArticlesById.get(article.id) ??
         (reusableAiSummaries.has(article.id)
           ? buildAiProcessedArticle(
@@ -126,7 +187,13 @@ export function createNewsRefreshService({
             )
           : buildFallbackProcessedArticle(article)),
       );
-      const summarizedWithAi = summarizedArticles.filter(
+      const finalArticles = mergeWithRetainedSnapshotArticles({
+        currentArticles: refreshedArticles,
+        currentSnapshot,
+        maxFinalArticles,
+        cutoff: getRetainedArticleCutoff(generatedAt, historyDays),
+      });
+      const summarizedWithAi = finalArticles.filter(
         (article) => article.summaryType === "ai",
       ).length;
       const fallbackSummaries = finalArticles.filter(
@@ -134,7 +201,7 @@ export function createNewsRefreshService({
       ).length;
 
       const dataset = buildProcessedDataset({
-        generatedAt: clock.now(),
+        generatedAt,
         source: summarizerConfig.source,
         articles: finalArticles,
         counts: {
@@ -164,13 +231,25 @@ export function createNewsRefreshService({
 export function createNewsSourceFromEnv(
   env: EnvReader = processEnvReader,
 ): NewsSourcePort {
+  const fetchStrategy = getOptionalFetchStrategy(env);
+  const rotationIndex = getRotationIndex(env);
+  const countries =
+    fetchStrategy === "rotating"
+      ? [defaultNewsCountries[rotationIndex % defaultNewsCountries.length]]
+      : [...defaultNewsCountries];
+  const categoryRotationIndex = Math.floor(rotationIndex / defaultNewsCountries.length);
+  const categories =
+    fetchStrategy === "rotating"
+      ? [defaultNewsCategories[categoryRotationIndex % defaultNewsCategories.length]]
+      : defaultNewsCategories;
+
   return {
     fetchNews() {
       return fetchNews({
         apiKey: getRequiredEnv(env, "NEWS_API_KEY", "refreshing news"),
         baseUrl: "https://newsapi.org/v2",
-        categories: defaultNewsCategories,
-        countries: [...defaultNewsCountries],
+        categories,
+        countries,
         pageSize: 10,
       });
     },
@@ -185,6 +264,7 @@ export function createNewsRefreshServiceFromEnv(
     newsSource: createNewsSourceFromEnv(env),
     summarizerConfig: createSummarizerConfigFromEnv(env),
     snapshotStore,
+    historyDays: getOptionalPositiveInteger(env, "NEWS_HISTORY_DAYS"),
     maxFinalArticles: getOptionalPositiveInteger(env, "MAX_FINAL_ARTICLES"),
     summaryArticleLimit: getOptionalPositiveInteger(env, "SUMMARY_ARTICLE_LIMIT"),
   });

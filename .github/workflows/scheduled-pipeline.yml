@@ -31,6 +31,10 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SUMMARIZER_PROVIDER: gemini
           GEMINI_MODEL: gemini-3-flash-preview
+          NEWS_FETCH_STRATEGY: rotating
+          NEWS_ALLOW_STALE_ON_FAILURE: "true"
+          SUMMARY_ARTICLE_LIMIT: "2"
+          MAX_FINAL_ARTICLES: "120"
         run: npm run pipeline
 
       - name: Commit and push changes
