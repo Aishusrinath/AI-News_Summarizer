@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-19T09:42:07.501Z",
+  "generatedAt": "2026-04-19T10:34:01.519Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -8,10 +8,10 @@
     "technology"
   ],
   "counts": {
-    "fetched": 10,
-    "normalized": 10,
+    "fetched": 9,
+    "normalized": 9,
     "dropped": 0,
-    "deduped": 10,
+    "deduped": 9,
     "summarizedWithAi": 0,
     "fallbackSummaries": 120,
     "finalArticles": 120
@@ -132,7 +132,7 @@
       "sourceName": "Business Insider",
       "publishedAt": "2026-04-18T08:00:01.000Z",
       "category": "world",
-      "sourceCountry": "ca",
+      "sourceCountry": "au",
       "url": "https://www.businessinsider.com/guides/streaming/where-to-watch-world-snooker-championship-2026",
       "summary": "Where to watch World Snooker Championship: Live stream 2026 frames free from anywhere. The World Snooker Championship returns to Sheffield. We'll show you how to watch from anywhere.",
       "summaryType": "fallback",
@@ -257,7 +257,7 @@
       "sourceName": "Livemint",
       "publishedAt": "2026-04-18T07:59:32.000Z",
       "category": "world",
-      "sourceCountry": "gb",
+      "sourceCountry": "au",
       "url": "https://www.livemint.com/opinion/columns/strait-of-hormuz-reopening-us-iran-talks-israel-lebanon-ceasefire-west-asia-war-11776491373709.html",
       "summary": "Iran talks, China’s rise, and US’s shrinking ally base. Iran’s decision to reopen the Strait of Hormuz under a temporary ceasefire has eased immediate market concerns, but deeper faultlines in US-Iran negotiations remain. How soon is a deal possible?",
       "summaryType": "fallback",
@@ -305,7 +305,7 @@
       "sourceName": "Cityxtra.co.uk",
       "publishedAt": "2026-04-18T07:00:00.000Z",
       "category": "world",
-      "sourceCountry": "us",
+      "sourceCountry": "au",
       "url": "https://cityxtra.co.uk/44832/manchester-citys-2026-27-pre-season-tour-plans-due-to-be-unveiled/",
       "summary": "Manchester City’s 2026/27 pre-season tour plans due to be unveiled. Tensions in the Middle East have cast doubt on City’s training bases ahead of the 2026/27 season.With the 2026 FIFA World Cup final, Pep Guardiola faces a heavily delayed reunion with his stars.Unce...",
       "summaryType": "fallback",
@@ -439,6 +439,22 @@
       "imageUrl": "https://www.rte.ie/images/00243d35-1600.jpg",
       "author": "Yvonne Murray",
       "cleanedText": "A Lego figure wearing a king's crown and unmistakable Trump hairdo stands in the middle of a chessboard surrounded by soldiers. \"Send them to the slaughter, you're the only one to blame,\" rap the ly…"
+    },
+    {
+      "id": "bf80d4c3232dc771",
+      "slug": "watch-census-centenarian-ambassador-on-past-century-bf80d4c3",
+      "title": "Watch: Census Centenarian Ambassador on past century",
+      "sourceName": "RTE",
+      "publishedAt": "2026-04-18T06:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.rte.ie/news/2026/0418/1568840-census-centenarian-ambassadors/",
+      "summary": "Watch: Census Centenarian Ambassador on past century. The National Archives of Ireland has announced 48 'Centenarian Ambassadors' for the public release of the 1926 Census records.",
+      "summaryType": "fallback",
+      "description": "The National Archives of Ireland has announced 48 'Centenarian Ambassadors' for the public release of the 1926 Census records.",
+      "imageUrl": "https://www.rte.ie/images/00243d39-1600.jpg",
+      "author": "Eleanor Mannion",
+      "cleanedText": "The National Archives of Ireland has announced 48 'Centenarian Ambassadors' for the public release of the 1926 Census records. The long-awaited archive, documenting life in the early years of the Ir…"
     },
     {
       "id": "7e9d80ef35387690",
@@ -1888,22 +1904,6 @@
       "imageUrl": "https://kotaku.com/app/uploads/2026/04/a699dc2e9cf8568ee63b55a7c92eedc9_original-1200x675.jpg",
       "author": "Kenneth Shepard",
       "cleanedText": "The Quiet Things is an upcoming narrative game by Silver Script Games that tells an autobiographical story about studio founder Alyx Jones experiences with mental health issues and childhood abuse an…"
-    },
-    {
-      "id": "9c4bd7958e2b4c1d",
-      "slug": "scientists-discover-a-hidden-giant-magma-reservoir-nestled-j-9c4bd795",
-      "title": "Scientists Discover a Hidden Giant Magma Reservoir Nestled Just 15 Kilometers Beneath Tuscany's Surface - The Daily Galaxy",
-      "sourceName": "The Daily Galaxy --Great Discoveries Channel",
-      "publishedAt": "2026-04-17T17:46:00.000Z",
-      "category": "science",
-      "sourceCountry": "us",
-      "url": "https://dailygalaxy.com/2026/04/hidden-giant-magma-reservoir-below-tuscany/",
-      "summary": "Scientists Discover a Hidden Giant Magma Reservoir Nestled Just 15 Kilometers Beneath Tuscany's Surface - The Daily Galaxy. A massive magma reservoir is secretly waiting beneath Italy’s peaceful landscape. With no eruptions in sight, scientists are scrambling to figure out why this enormous force remains dormant.",
-      "summaryType": "fallback",
-      "description": "A massive magma reservoir is secretly waiting beneath Italy’s peaceful landscape. With no eruptions in sight, scientists are scrambling to figure out why this enormous force remains dormant.",
-      "imageUrl": "https://dailygalaxy.com/wp-content/uploads/2026/04/Scientists-Discover-a-Hidden-Giant-Magma-Reservoir-Nestled-Just-15-Kilometers-Beneath-Tuscanys-Surface-scaled.jpg",
-      "author": "Melissa Ait Lounis",
-      "cleanedText": "Deep beneath Tuscany, Italy, scientists have uncovered a massive magma reservoir that has been lying dormant without anyone noticing. This discovery reveals an enormous magmatic system hiding beneath…"
     }
   ]
 }
