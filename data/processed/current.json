@@ -1,19 +1,35 @@
 {
-  "generatedAt": "2026-04-20T21:41:12.486Z",
+  "generatedAt": "2026-04-20T22:37:57.172Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world"
   ],
   "counts": {
-    "fetched": 10,
-    "normalized": 10,
+    "fetched": 9,
+    "normalized": 9,
     "dropped": 0,
-    "deduped": 10,
+    "deduped": 9,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 29,
-    "finalArticles": 29
+    "fallbackSummaries": 38,
+    "finalArticles": 38
   },
   "articles": [
+    {
+      "id": "851bda52e807c1d7",
+      "slug": "us-national-stopped-for-satellite-phone-like-device-in-j-k-l-851bda52",
+      "title": "US national stopped for satellite phone-like device in J&K, let off after checks",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-04-19T22:20:28.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/india/us-national-stopped-for-satellite-phone-like-device-in-jk-let-off-after-checks/articleshow/130378702.cms",
+      "summary": "US national stopped for satellite phone-like device in J&K, let off after checks. India News: NEW DELHI/SRINAGAR: Visiting US national Jeffrey Scott, who was stopped at Srinagar airport after a satellite phone-like device was detected in his ba.",
+      "summaryType": "fallback",
+      "description": "India News: NEW DELHI/SRINAGAR: Visiting US national Jeffrey Scott, who was stopped at Srinagar airport after a satellite phone-like device was detected in his ba.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-130379826,width-1280,height-720,imgsize-167356,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "Naseer Ganai and Bharti Jain",
+      "cleanedText": "News India News US national stopped for satellite phone-like device in J&amp;K, let off after checks Follow Us On Social Media"
+    },
     {
       "id": "2ec782c14a17ca7e",
       "slug": "rsl-denies-services-club-s-anzac-day-two-up-request-2ec782c1",
@@ -31,6 +47,36 @@
       "cleanedText": "Lachlan Brown was 17 years old when he joined the military. Twenty years later, with tours of Iraq and Afghanistan under his belt, the customs he developed in the Army have become a part of his cult…"
     },
     {
+      "id": "781ddc3ce8745064",
+      "slug": "eu-india-free-trade-agreement-can-further-accelerate-coopera-781ddc3c",
+      "title": "EU-India free trade agreement can further accelerate cooperation in aviation sector: German Consulate General",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-04-19T21:27:00.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/city/bengaluru/eu-india-free-trade-agreement-can-further-accelerate-cooperation-in-aviation-sector-german-consulate-general/articleshow/130377021.cms",
+      "summary": "EU-India free trade agreement can further accelerate cooperation in aviation sector: German Consulate General. Bengaluru: Annett Baessler, deputy consul general of the German Consulate General in Bengaluru, highlighted the potential of the proposed EU–India Fre.",
+      "summaryType": "fallback",
+      "description": "Bengaluru: Annett Baessler, deputy consul general of the German Consulate General in Bengaluru, highlighted the potential of the proposed EU–India Fre.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-117518771,width-1280,height-720,imgsize-97769,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "TNN",
+      "cleanedText": "News City News bengaluru News EU-India free trade agreement can further accelerate cooperation in aviation sector: German Consulate General Follow Us …"
+    },
+    {
+      "id": "af8900a285d00863",
+      "slug": "trump-says-u-s-seizes-iranian-flagged-cargo-ship-near-strait-af8900a2",
+      "title": "Trump says U.S. seizes Iranian-flagged cargo ship near Strait of Hormuz that tried to pass blockade",
+      "sourceName": "Japan Today",
+      "publishedAt": "2026-04-19T21:21:14.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://japantoday.com/category/world/iran-doubles-down-on-closing-the-strait-of-hormuz-as-the-ceasefire-inches-toward-expiration",
+      "summary": "Trump says U.S. seizes Iranian-flagged cargo ship near Strait of Hormuz that tried to pass blockade. President Donald Trump said the U.S. forcibly seized an Iranian-flagged cargo ship that tried to get around a naval blockade near the Strait of Hormuz on Sunday, the first such interception since the blockade of Iranian ports began last week. Trump on social …",
+      "summaryType": "fallback",
+      "description": "President Donald Trump said the U.S. forcibly seized an Iranian-flagged cargo ship that tried to get around a naval blockade near the Strait of Hormuz on Sunday, the first such interception since the blockade of Iranian ports began last week. Trump on social …",
+      "cleanedText": "President Donald Trump said the U.S. forcibly seized an Iranian-flagged cargo ship that tried to get around a naval blockade near the Strait of Hormuz on Sunday, the first such interception since the…"
+    },
+    {
       "id": "38ee9d9d197aa95d",
       "slug": "fight-over-gas-taxes-intensifies-as-major-project-expansion--38ee9d9d",
       "title": "Fight over gas taxes intensifies as major project expansion approved",
@@ -45,6 +91,22 @@
       "imageUrl": "https://live-production.wcms.abc-cdn.net.au/f46b47050b2f6deb5ffb8e747a17119f?impolicy=wcms_watermark_news&cropH=675&cropW=1200&xPos=0&yPos=29&width=862&height=485&imformat=generic",
       "author": "Cason Ho",
       "cleanedText": "Natural gas taxes are back in the fray after the expansion of Australia's largest project received environmental approval ahead of Senate inquiry hearings this week which will probe how resources are…"
+    },
+    {
+      "id": "bb77663f9718714f",
+      "slug": "india-cancels-plan-to-place-biometric-app-on-smartphones-bb77663f",
+      "title": "India Cancels Plan to Place Biometric App on Smartphones",
+      "sourceName": "pymnts.com",
+      "publishedAt": "2026-04-19T21:11:46.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://www.pymnts.com/news/biometrics/2026/india-cancels-plan-to-place-biometric-app-on-smartphones/",
+      "summary": "India Cancels Plan to Place Biometric App on Smartphones. India has reportedly abandoned plans to require smartphone makers to include the country’s biometric ID app on their devices. The move came in the face of opposition from companies such as Apple and Samsung, Reuters reported Friday (April 17). UIDAI (Unique I…",
+      "summaryType": "fallback",
+      "description": "India has reportedly abandoned plans to require smartphone makers to include the country’s biometric ID app on their devices. The move came in the face of opposition from companies such as Apple and Samsung, Reuters reported Friday (April 17). UIDAI (Unique I…",
+      "imageUrl": "https://www.pymnts.com/wp-content/uploads/2026/04/biometric-app-1.jpg",
+      "author": "PYMNTS",
+      "cleanedText": "India has reportedly abandoned plans to require smartphone makers to include the countrys biometric ID app on their devices.The move came in the face of opposition from companies such as Apple and Sa…"
     },
     {
       "id": "1806076bde03c96c",
@@ -79,6 +141,38 @@
       "cleanedText": "Thanks to an American 2017 Super Bowl advertisement, the line \"Wanna pet my roo?\" came to represent one of Australia's best-known wines, but now its maker is one of a growing number of wine businesse…"
     },
     {
+      "id": "bb013bc25759c015",
+      "slug": "india-adds-a-new-nuke-to-its-fleet-bb013bc2",
+      "title": "India Adds a new Nuke To Its Fleet",
+      "sourceName": "OilPrice.com",
+      "publishedAt": "2026-04-19T21:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://oilprice.com/Alternative-Energy/Nuclear-Power/India-Adds-a-new-Nuke-To-Its-Fleet.html",
+      "summary": "India Adds a new Nuke To Its Fleet. In April 2026, a new 500 MW sodium-cooled reactor in Kalpakkam, India, attained criticality. The reactor maintained a nuclear chain reaction—which is a pretty big step for any new nuclear plant. There are a number of things that struck us about this news. The…",
+      "summaryType": "fallback",
+      "description": "In April 2026, a new 500 MW sodium-cooled reactor in Kalpakkam, India, attained criticality. The reactor maintained a nuclear chain reaction—which is a pretty big step for any new nuclear plant. There are a number of things that struck us about this news. The…",
+      "imageUrl": "https://d32r1sh890xpii.cloudfront.net/article/1200x675/2026-04-18_dagspmbfzr.jpg",
+      "author": "Leonard Brecken",
+      "cleanedText": "Europe is racing back to… India's fast breeder reactor in… Nuclear startups backed by Big… Set us as your preferred Google source By Leonard Brecken - Apr 19, 2026, 4:00 PM CDTIn April 2026, a ne…"
+    },
+    {
+      "id": "357e8f5c00b8f4f7",
+      "slug": "batters-batspd-gainers-decliners-apr-20-2026-357e8f5c",
+      "title": "Batters BatSpd Gainers & Decliners — Apr 20, 2026",
+      "sourceName": "Fangraphs.com",
+      "publishedAt": "2026-04-19T20:58:20.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://fantasy.fangraphs.com/batters-batspd-gainers-decliners-apr-20-2026/",
+      "summary": "Batters BatSpd Gainers & Decliners — Apr 20, 2026. Who's up and who's down? Source",
+      "summaryType": "fallback",
+      "description": "Who's up and who's down? Source",
+      "imageUrl": "https://fantasy.fangraphs.com/wp-content/uploads/sites/3/2016/04/flat_rg_brown.png",
+      "author": "Mike Podhorzer",
+      "cleanedText": "Among qualified batters between 2023 and 2025, Statcast’s BatSpd has a 0.662 correlation with HR/FB rate, the highest among all the metrics in our Statcast – Bat Tracking section. So it follows that …"
+    },
+    {
       "id": "2781f9c33a646b91",
       "slug": "nt-ranked-last-for-illicit-tobacco-laws-in-new-report-2781f9c3",
       "title": "NT ranked last for illicit tobacco laws in new report",
@@ -93,6 +187,38 @@
       "imageUrl": "https://live-production.wcms.abc-cdn.net.au/1487f6803957e4e64efcc6f5968dd080?impolicy=wcms_watermark_news&cropH=2813&cropW=5000&xPos=0&yPos=260&width=862&height=485&imformat=generic",
       "author": "Olivana Lathouris",
       "cleanedText": "The Northern Territory has the weakest response to illicit tobacco of any state and territory in the country, according to a new national report from aleading advocacy group. Released by the Austral…"
+    },
+    {
+      "id": "7b869878c43ea821",
+      "slug": "trump-says-marines-have-seized-an-iranian-flagged-cargo-ship-7b869878",
+      "title": "Trump says Marines have seized an Iranian-flagged cargo ship that tried to evade blockade after Navy blew a ‘hole in the engineroom’",
+      "sourceName": "Fortune",
+      "publishedAt": "2026-04-19T20:49:48.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://fortune.com/2026/04/19/trump-marines-custody-seizure-iranian-flagged-cargo-ship-blockade-navy-strait-of-hormuz/",
+      "summary": "Trump says Marines have seized an Iranian-flagged cargo ship that tried to evade blockade after Navy blew a ‘hole in the engineroom’. Trump on social media said the ship was warned by a U.S. Navy guided missile destroyer in the Gulf of Oman to stop, but it did not.",
+      "summaryType": "fallback",
+      "description": "Trump on social media said the ship was warned by a U.S. Navy guided missile destroyer in the Gulf of Oman to stop, but it did not.",
+      "imageUrl": "https://fortune.com/img-assets/wp-content/uploads/2026/04/9561132-e1776631229749.jpg?resize=1200,600",
+      "author": "Michelle L. Price, Samy Magdy, Sam Metz, The Associated Press",
+      "cleanedText": "President Donald Trump said the U.S. forcibly seized an Iranian-flagged cargo ship that tried to get around a naval blockade near the Strait of Hormuz on Sunday, the first such interception since the…"
+    },
+    {
+      "id": "a30d374508214db1",
+      "slug": "the-u-s-navy-just-blew-a-giant-hole-in-an-iranian-cargo-ship-a30d3745",
+      "title": "The U.S. Navy Just Blew A Giant Hole In An Iranian Cargo Ship As The Crisis In The Strait Of Hormuz Escalates To An Entirely New Level",
+      "sourceName": "Theeconomiccollapseblog.com",
+      "publishedAt": "2026-04-19T20:48:03.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "http://theeconomiccollapseblog.com/the-u-s-navy-just-blew-a-giant-hole-in-an-iranian-cargo-ship-as-the-crisis-in-the-strait-of-hormuz-escalates-to-an-entirely-new-level/",
+      "summary": "The U.S. Navy Just Blew A Giant Hole In An Iranian Cargo Ship As The Crisis In The Strait Of Hormuz Escalates To An Entirely New Level. Apparently the Trump administration was not kidding when it warned that no Iranian ships would be allowed through the blockade. Just a little while ago, Donald Trump announced that the U.S. Navy has blown an enormous hole in the side of an Iranian cargo vesse…",
+      "summaryType": "fallback",
+      "description": "Apparently the Trump administration was not kidding when it warned that no Iranian ships would be allowed through the blockade. Just a little while ago, Donald Trump announced that the U.S. Navy has blown an enormous hole in the side of an Iranian cargo vesse…",
+      "imageUrl": "http://theeconomiccollapseblog.com/wp-content/uploads/2026/04/ChatGPT-Image-Apr-19-2026-at-01_05_00-PM.png",
+      "author": "Michael",
+      "cleanedText": "Apparently the Trump administration was not kidding when it warned that no Iranian ships would be allowed through the blockade. Just a little while ago, Donald Trump announced that the U.S. Navy has …"
     },
     {
       "id": "d393049722775739",
@@ -172,6 +298,22 @@
       "description": "Chancellor Friedrich Merz said he plans to convene Germany’s national security council to discuss the global energy crisis, signaling increased concern about its impact on Europe’s biggest economy.",
       "author": "Bloomberg News",
       "cleanedText": "(Bloomberg) Chancellor Friedrich Merz said he plans to convene Germanys national security council to discuss the global energy crisis, signaling increased concern about its impact on Europes biggest …"
+    },
+    {
+      "id": "6d82b031a11a1c52",
+      "slug": "india-moves-closer-to-opening-nuclear-power-sector-to-foreig-6d82b031",
+      "title": "India moves closer to opening nuclear power sector to foreign investment as AEC cleared FDI policy: Official",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-04-19T20:12:13.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/india/india-moves-closer-to-opening-nuclear-power-sector-to-foreign-investment-as-aec-cleared-fdi-policy-official/articleshow/130377818.cms",
+      "summary": "India moves closer to opening nuclear power sector to foreign investment as AEC cleared FDI policy: Official. India News: NEW DELHI: India has moved closer to opening its nuclear power sector to foreign investment, with the Atomic Energy Commission approving a new foreign.",
+      "summaryType": "fallback",
+      "description": "India News: NEW DELHI: India has moved closer to opening its nuclear power sector to foreign investment, with the Atomic Energy Commission approving a new foreign.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-130377816,width-1280,height-720,imgsize-75738,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "Surendra Singh",
+      "cleanedText": "News Defence News India moves closer to opening nuclear power sector to foreign investment as AEC cleared FDI policy: Official Follow Us On Social Media"
     },
     {
       "id": "d4703993db944541",

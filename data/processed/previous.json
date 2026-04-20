@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-20T20:51:17.472Z",
+  "generatedAt": "2026-04-20T21:41:12.486Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world"
@@ -10,10 +10,90 @@
     "dropped": 0,
     "deduped": 10,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 19,
-    "finalArticles": 19
+    "fallbackSummaries": 29,
+    "finalArticles": 29
   },
   "articles": [
+    {
+      "id": "2ec782c14a17ca7e",
+      "slug": "rsl-denies-services-club-s-anzac-day-two-up-request-2ec782c1",
+      "title": "RSL denies services club's Anzac Day two-up request",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T21:33:05.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/rsl-denies-service-clubs-anzac-day-two-up-request/106526204",
+      "summary": "RSL denies services club's Anzac Day two-up request. An ex-services organisation wants changes to Queensland legislation that allows the local RSL branch to reject its application to play two-up on Anzac Day.",
+      "summaryType": "fallback",
+      "description": "An ex-services organisation wants changes to Queensland legislation that allows the local RSL branch to reject its application to play two-up on Anzac Day.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/dcb4c5efaf11172e7aa254b60a77cbdc?impolicy=wcms_watermark_news&cropH=1152&cropW=2048&xPos=0&yPos=280&width=862&height=485&imformat=generic",
+      "author": "Nikki Sorbello and Grace Whiteside",
+      "cleanedText": "Lachlan Brown was 17 years old when he joined the military. Twenty years later, with tours of Iraq and Afghanistan under his belt, the customs he developed in the Army have become a part of his cult…"
+    },
+    {
+      "id": "38ee9d9d197aa95d",
+      "slug": "fight-over-gas-taxes-intensifies-as-major-project-expansion--38ee9d9d",
+      "title": "Fight over gas taxes intensifies as major project expansion approved",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T21:19:54.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/gas-tax-inquiry-chevron-gorgon-approved/106575550",
+      "summary": "Fight over gas taxes intensifies as major project expansion approved. Australia's offshore petroleum regulator has approved an environment plan for the expansion of the country's largest gas project, operated by US-based Chevron. The Greens say the profits from the expansion are a clear reason why tax reform is needed.",
+      "summaryType": "fallback",
+      "description": "Australia's offshore petroleum regulator has approved an environment plan for the expansion of the country's largest gas project, operated by US-based Chevron. The Greens say the profits from the expansion are a clear reason why tax reform is needed.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/f46b47050b2f6deb5ffb8e747a17119f?impolicy=wcms_watermark_news&cropH=675&cropW=1200&xPos=0&yPos=29&width=862&height=485&imformat=generic",
+      "author": "Cason Ho",
+      "cleanedText": "Natural gas taxes are back in the fray after the expansion of Australia's largest project received environmental approval ahead of Senate inquiry hearings this week which will probe how resources are…"
+    },
+    {
+      "id": "1806076bde03c96c",
+      "slug": "live-more-wall-street-records-oil-prices-tumble-asx-on-edge-1806076b",
+      "title": "Live: More Wall Street records, oil prices tumble, ASX on edge",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T21:06:10.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/asx-markets-business-news-live-updates/106581644",
+      "summary": "Live: More Wall Street records, oil prices tumble, ASX on edge. Wall Street hit new highs while oil prices retreated sharply on hopes of a US-Iran peace deal on Friday. Those hopes are now fading. Follow the day's events and insights from our business reporters on the ABC News live markets blog.",
+      "summaryType": "fallback",
+      "description": "Wall Street hit new highs while oil prices retreated sharply on hopes of a US-Iran peace deal on Friday. Those hopes are now fading. Follow the day's events and insights from our business reporters on the ABC News live markets blog.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/243afdeb72b57081273fdf917bd143e4?impolicy=wcms_watermark_news&cropH=1689&cropW=3000&xPos=0&yPos=308&width=862&height=485&imformat=generic",
+      "author": "Stephen Letts",
+      "cleanedText": "Risk was back in town in a big way on Friday's global markets as hopes of US-Iran peace deal saw traders bid up just about everything except oil, which was dumped. The benchmark S&amp;P 500 and Nasd…"
+    },
+    {
+      "id": "785e2c3cfaf64e17",
+      "slug": "profits-shrivel-as-yellow-tail-winemaker-posts-5-5-million-l-785e2c3c",
+      "title": "Profits shrivel as yellow tail winemaker posts $5.5 million loss",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T21:01:31.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/low-wine-consumption-rising-costs-tariffs-see-yellow-tail-slump/106566568",
+      "summary": "Profits shrivel as yellow tail winemaker posts $5.5 million loss. The maker of one of Australia's best known wine brands, yellow tail, says rising costs and global factors such as tariffs are behind the sharp drop in profits.",
+      "summaryType": "fallback",
+      "description": "The maker of one of Australia's best known wine brands, yellow tail, says rising costs and global factors such as tariffs are behind the sharp drop in profits.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/256bf6c71cad8e700f8ae33353afc235?impolicy=wcms_watermark_news&cropH=1278&cropW=2272&xPos=0&yPos=213&width=862&height=485&imformat=generic",
+      "author": "Emily Doak",
+      "cleanedText": "Thanks to an American 2017 Super Bowl advertisement, the line \"Wanna pet my roo?\" came to represent one of Australia's best-known wines, but now its maker is one of a growing number of wine businesse…"
+    },
+    {
+      "id": "2781f9c33a646b91",
+      "slug": "nt-ranked-last-for-illicit-tobacco-laws-in-new-report-2781f9c3",
+      "title": "NT ranked last for illicit tobacco laws in new report",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T20:57:15.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/iliicit-tobacco-laws-nt-worst-performing-jurisdiction-new-report/106578372",
+      "summary": "NT ranked last for illicit tobacco laws in new report. Smoking is one of the leading causes of death in the Northern Territory. Now, the jurisdiction has been ranked the weakest in the country for how it tackles cheap, illicit tobacco.",
+      "summaryType": "fallback",
+      "description": "Smoking is one of the leading causes of death in the Northern Territory. Now, the jurisdiction has been ranked the weakest in the country for how it tackles cheap, illicit tobacco.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/1487f6803957e4e64efcc6f5968dd080?impolicy=wcms_watermark_news&cropH=2813&cropW=5000&xPos=0&yPos=260&width=862&height=485&imformat=generic",
+      "author": "Olivana Lathouris",
+      "cleanedText": "The Northern Territory has the weakest response to illicit tobacco of any state and territory in the country, according to a new national report from aleading advocacy group. Released by the Austral…"
+    },
     {
       "id": "d393049722775739",
       "slug": "the-super-mario-galaxy-movie-takes-its-box-office-dominance--d3930497",
@@ -45,6 +125,38 @@
       "imageUrl": "https://allears.net/wp-content/uploads/2023/12/2023-WDW-Animal-Kingdom-Atmo-09-700x525.jpg",
       "author": "Sydney Leever",
       "cleanedText": "Disney World has a lot of closures right now! Whether you’re visiting the parks or resorts, one of these closures is likely to affect your trip. Animal Kingdom Lets take a look at all 25 closures i…"
+    },
+    {
+      "id": "5ce001820b38ce36",
+      "slug": "iran-daily-briefing-why-jd-vance-might-have-no-one-to-talk-t-5ce00182",
+      "title": "Iran daily briefing: Why JD Vance might have no-one to talk to, plus Israel's new 'yellow line'",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T20:24:38.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/iran-israel-war-daily-news-briefing/106582220",
+      "summary": "Iran daily briefing: Why JD Vance might have no-one to talk to, plus Israel's new 'yellow line'. Welcome to Monday and a return to the rhetorical threat spiral we've been watching for weeks. Here's what you should know this morning.",
+      "summaryType": "fallback",
+      "description": "Welcome to Monday and a return to the rhetorical threat spiral we've been watching for weeks. Here's what you should know this morning.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/3609aec22ae28d93a6b578aaa8508069?impolicy=wcms_watermark_news&cropH=2350&cropW=4177&xPos=0&yPos=0&width=862&height=485&imformat=generic",
+      "author": "Matthew Doran",
+      "cleanedText": "Gday, ABC Middle East correspondent Matthew Doran here in Jerusalem. Its the end of: day 51 of the war day 12 of the ceasefire between the US, Israel and Iran day 3 of the …"
+    },
+    {
+      "id": "d212cde26a49d945",
+      "slug": "blood-donation-eligibility-expands-for-gay-and-bisexual-men--d212cde2",
+      "title": "Blood donation eligibility expands for gay and bisexual men, transgender people",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T20:22:18.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/lifeblood-gender-neutral-assessment-for-blood-donation/106578630",
+      "summary": "Blood donation eligibility expands for gay and bisexual men, transgender people. From today, Australian Red Cross Lifeblood will use gender-neutral assessments for blood and platelets donations.",
+      "summaryType": "fallback",
+      "description": "From today, Australian Red Cross Lifeblood will use gender-neutral assessments for blood and platelets donations.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/350a369da52fe4bd24320cf7a80f4f04?impolicy=wcms_watermark_news&cropH=2813&cropW=5000&xPos=0&yPos=105&width=862&height=485&imformat=generic",
+      "author": "Josephine Lim",
+      "cleanedText": "More gay and bisexual men as well as transgender people in monogamous relationships may be eligible to donate blood and platelets for the first time in Australia under a change taking effect from tod…"
     },
     {
       "id": "ff56cceea0470952",
@@ -91,6 +203,22 @@
       "description": "The European Union’s energy commissioner is asking people in the bloc to drive less, work from home and implement other measures to lower the demand for oil and gas as the Iran war strains energy supplies. The EU is asking its member states to implement the I…",
       "author": "Global News Canada",
       "cleanedText": "Skip to comments. Drive less and work from home as Iran energy shock bites, EU official urgesGlobal News Canada ^ | Apr 2, 2026 | Uday Rana Posted on 04/19/2026 12:34:49 PM PDT by CondoleezzaPr…"
+    },
+    {
+      "id": "ddc3fb725af0e359",
+      "slug": "thrills-and-spills-how-ex-nrl-star-lomax-fared-in-rugby-mile-ddc3fb72",
+      "title": "Thrills and spills: How ex-NRL star Lomax fared in rugby milestone moment",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T19:31:23.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/super-rugby-pacific-zac-lomax-force-brumbies-waratahs-australia/106581666",
+      "summary": "Thrills and spills: How ex-NRL star Lomax fared in rugby milestone moment. Even if Zac Lomax's starting debut for the Western Force had been disastrous, it would still deserve to be considered a success.",
+      "summaryType": "fallback",
+      "description": "Even if Zac Lomax's starting debut for the Western Force had been disastrous, it would still deserve to be considered a success.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/90513ec06657bea53ed32c52e47423f1?impolicy=wcms_watermark_news&cropH=2250&cropW=4000&xPos=0&yPos=101&width=862&height=485&imformat=generic",
+      "author": "Luke Pentony",
+      "cleanedText": "Had Zac Lomax's starting debut for the Western Force been disastrous, it would still deserve to be considered a success. After all, Lomax can only improve by making mistakes and he is on a steep le…"
     },
     {
       "id": "9c7e4d6ad07194fc",
@@ -157,6 +285,22 @@
       "cleanedText": "NEED TO CATCH up? The Journal brings you a round-up of todays news. St James's Brass &amp; Reed Band leads the procession at Fianna Fáils 1916 Centenary Commemoration at Arbour Hill Cemetery today. …"
     },
     {
+      "id": "9187ac24ca9627ad",
+      "slug": "seascape-receivers-launch-sale-campaign-for-auckland-s-partl-9187ac24",
+      "title": "Seascape receivers launch sale campaign for Auckland’s partly built apartment tower",
+      "sourceName": "New Zealand Herald",
+      "publishedAt": "2026-04-19T19:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.nzherald.co.nz/property/receivers-launch-sale-campaign-for-aucklands-partly-built-seascape-apartment-tower/premium/BMQJYQEWNNA6TEEAKYJQA53OBI/",
+      "summary": "Seascape receivers launch sale campaign for Auckland’s partly built apartment tower. Asian-based investors and others overseas could be interested in buying the Akl project.",
+      "summaryType": "fallback",
+      "description": "Asian-based investors and others overseas could be interested in buying the Akl project.",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/6T6KZJEKCJCFLIN346R6YCGQXE.jpg?auth=2ccadd4f43c57efd05044df5c4f9d8b647649944142e67ac05a1d7adeb3060a2&width=1200&height=675&quality=70&focal=941%2C443&smart=false",
+      "author": "Anne Gibson",
+      "cleanedText": "KordaMentha Real Estate has been appointed as the transaction adviser. Calibre Partners Neale Jackson and Brendon Gibson are in charge of the building, which is partly clad. Bayley said: Seascape r…"
+    },
+    {
       "id": "7f65acecd11e56ea",
       "slug": "ties-to-us-have-become-a-problem-carney-tells-canada-7f65acec",
       "title": "Ties to US Have Become a Problem, Carney Tells Canada",
@@ -187,6 +331,22 @@
       "imageUrl": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-04/2026-Coachella-the-strokes-vl-205p-b3ac05.jpg",
       "author": "Angela Yang",
       "cleanedText": "The Strokes wrapped up their Coachella set Saturday night by using the festival's massive LED screens onstage to voice the rock bands political protests against American foreign intervention and mili…"
+    },
+    {
+      "id": "7eb5bf6b3d754cb6",
+      "slug": "the-one-man-primed-to-benefit-from-a-global-food-crisis-vlad-7eb5bf6b",
+      "title": "The one man primed to benefit from a global food crisis — Vladimir Putin",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-04-19T18:42:35.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-04-20/russia-poised-to-capitalise-from-global-fertiliser-crisis/106565418",
+      "summary": "The one man primed to benefit from a global food crisis — Vladimir Putin. With fears hunger could hit record levels, Vladimir Putin and Russia are poised to capitalise — financially and diplomatically.",
+      "summaryType": "fallback",
+      "description": "With fears hunger could hit record levels, Vladimir Putin and Russia are poised to capitalise — financially and diplomatically.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/fba58e71c861e0cbd13aeff0c7313646?impolicy=wcms_watermark_news&cropH=2695&cropW=4791&xPos=0&yPos=0&width=862&height=485&imformat=generic",
+      "author": "Brett Worthington",
+      "cleanedText": "Global food agencies are holding their breath fearing protracted Strait of Hormuz blockages could cause tens of millions of people to slip into hunger. The blockade sent ripples through global mark…"
     },
     {
       "id": "6bff7b9c2a9b0c8a",
