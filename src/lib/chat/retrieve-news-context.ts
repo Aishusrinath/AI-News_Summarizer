@@ -27,6 +27,7 @@ const stopWords = new Set([
   "update",
   "updates",
   "what",
+  "whats",
   "when",
   "where",
   "who",
@@ -200,12 +201,15 @@ export function retrieveNewsContext(input: {
   articleSlug?: string;
 }) {
   const specificTokens = getSpecificQueryTokens(input.message);
+  const requestedCategories = getRequestedCategories(input.message);
 
   if (!input.articleSlug && hasOutOfScopeIntent(input.message)) {
     return {
       relevantArticles: [],
       previousArticlesById: new Map<string, ProcessedArticle>(),
       needsChangeTracking: queryNeedsChangeTracking(input.message),
+      requestedCategories,
+      hasRequestedCategoryCoverage: false,
     };
   }
 
@@ -241,5 +245,11 @@ export function retrieveNewsContext(input: {
     relevantArticles: fallbackArticles,
     previousArticlesById,
     needsChangeTracking: queryNeedsChangeTracking(input.message),
+    requestedCategories,
+    hasRequestedCategoryCoverage:
+      requestedCategories.length === 0 ||
+      fallbackArticles.some((article) =>
+        requestedCategories.includes(canonicalizeCategory(article.category)),
+      ),
   };
 }

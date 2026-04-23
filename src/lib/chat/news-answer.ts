@@ -82,6 +82,17 @@ export function answerNewsQuestion(input: {
     };
   }
 
+  if (!input.articleSlug && !context.hasRequestedCategoryCoverage) {
+    return {
+      mode: "news",
+      groundingStatus: "insufficient",
+      routingReason: input.routingReason,
+      answer:
+        "I couldn't find enough category-specific support for that in the current snapshot. Try a broader news question or switch to the General Model for a non-snapshot answer.",
+      sources: [],
+    };
+  }
+
   const sources = buildSources(
     context.relevantArticles.map((article) => {
       const previousArticle = context.previousArticlesById.get(article.id);

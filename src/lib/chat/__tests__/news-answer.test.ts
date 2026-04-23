@@ -163,4 +163,94 @@ describe("answerNewsQuestion", () => {
     expect(response.groundingStatus).toBe("insufficient");
     expect(response.sources).toEqual([]);
   });
+
+  it("does not let conversational phrasing create fake grounding for narrow election questions", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["world", "technology"],
+      counts: {
+        fetched: 2,
+        normalized: 2,
+        dropped: 0,
+        deduped: 2,
+        summarizedWithAi: 2,
+        fallbackSummaries: 0,
+        finalArticles: 2,
+      },
+      articles: [
+        buildArticle({
+          id: "world-1",
+          slug: "world-1",
+          title: "Ships reportedly attacked in key oil route",
+          category: "world",
+          summary: "What happened in the oil route shocked markets overnight.",
+          publishedAt: "2026-04-10T11:00:00.000Z",
+        }),
+        buildArticle({
+          id: "tech-1",
+          slug: "tech-1",
+          title: "Oppo zoom comparison stuns camera reviewers",
+          category: "technology",
+          summary: "A reviewer compared a flagship phone camera against pro gear.",
+          publishedAt: "2026-04-10T10:00:00.000Z",
+        }),
+      ],
+    };
+
+    const response = answerNewsQuestion({
+      message: "whats latest update of tamilnadu elections?",
+      currentDataset,
+      previousDataset: null,
+      routingReason: "Routed to News Model.",
+    });
+
+    expect(response.groundingStatus).toBe("insufficient");
+    expect(response.sources).toEqual([]);
+  });
+
+  it("does not ground category-specific news questions on the wrong category", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["world", "health"],
+      counts: {
+        fetched: 2,
+        normalized: 2,
+        dropped: 0,
+        deduped: 2,
+        summarizedWithAi: 2,
+        fallbackSummaries: 0,
+        finalArticles: 2,
+      },
+      articles: [
+        buildArticle({
+          id: "world-1",
+          slug: "world-1",
+          title: "Advisor platform expands AI planning tools",
+          category: "world",
+          summary: "A financial platform announced new AI planning capabilities.",
+          publishedAt: "2026-04-10T11:00:00.000Z",
+        }),
+        buildArticle({
+          id: "health-1",
+          slug: "health-1",
+          title: "New cancer screening guidance released",
+          category: "health",
+          summary: "Doctors published updated cancer screening guidance.",
+          publishedAt: "2026-04-10T10:00:00.000Z",
+        }),
+      ],
+    };
+
+    const response = answerNewsQuestion({
+      message: "Summarize the top technology stories.",
+      currentDataset,
+      previousDataset: null,
+      routingReason: "Routed to News Model.",
+    });
+
+    expect(response.groundingStatus).toBe("insufficient");
+    expect(response.sources).toEqual([]);
+  });
 });
