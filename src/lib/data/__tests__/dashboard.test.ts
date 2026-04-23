@@ -259,4 +259,61 @@ describe("buildDashboardFeed", () => {
 
     expect(dashboardFeed.availableRegions).toEqual([...supportedRegionValues]);
   });
+
+  it("does not show duplicate mirrored stories in the dashboard feed", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["world"],
+      counts: {
+        fetched: 2,
+        normalized: 2,
+        dropped: 0,
+        deduped: 2,
+        summarizedWithAi: 2,
+        fallbackSummaries: 0,
+        finalArticles: 2,
+      },
+      articles: [
+        {
+          ...buildArticle({
+            id: "story-a",
+            title: "Never Settle No More: Is OnePlus Done in the US?",
+            category: "world",
+            publishedAt: "2026-04-10T11:50:00.000Z",
+            sourceCountry: "in",
+          }),
+          sourceName: "PCMag.com",
+          url: "https://uk.pcmag.com/mobile-phones/164565/never-settle-no-more-is-oneplus-done-in-the-us",
+        },
+        {
+          ...buildArticle({
+            id: "story-b",
+            title: "Never Settle No More: Is OnePlus Done in the US?",
+            category: "world",
+            publishedAt: "2026-04-10T11:50:00.000Z",
+            sourceCountry: "in",
+          }),
+          sourceName: "PCMag.com",
+          url: "https://me.pcmag.com/en/mobile-phones/36726/never-settle-no-more-is-oneplus-done-in-the-us",
+        },
+      ],
+    };
+
+    const dashboardFeed = buildDashboardFeed({
+      dataset: currentDataset,
+      previousDataset: null,
+      activeCategory: "all",
+      activeRegion: "in",
+      refreshStatus,
+    });
+
+    const renderedIds = [
+      ...dashboardFeed.topHighlights,
+      ...dashboardFeed.categoryLeaders,
+      ...dashboardFeed.latestStories,
+    ].map((entry) => entry.article.id);
+
+    expect(renderedIds).toHaveLength(1);
+  });
 });

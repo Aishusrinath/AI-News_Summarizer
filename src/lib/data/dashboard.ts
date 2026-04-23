@@ -99,6 +99,28 @@ function filterArticles(
   });
 }
 
+function getDisplayDedupKey(article: ProcessedArticle) {
+  return [
+    article.sourceName.trim().toLowerCase(),
+    article.title.trim().toLowerCase(),
+    article.publishedAt,
+  ].join("::");
+}
+
+function dedupeArticlesForDisplay(articles: ProcessedArticle[]) {
+  const deduped = new Map<string, ProcessedArticle>();
+
+  for (const article of articles) {
+    const key = getDisplayDedupKey(article);
+
+    if (!deduped.has(key)) {
+      deduped.set(key, article);
+    }
+  }
+
+  return [...deduped.values()];
+}
+
 function buildStoryStatuses(
   currentArticles: ProcessedArticle[],
   previousArticles: ProcessedArticle[],
@@ -320,8 +342,8 @@ export function buildDashboardFeed(input: DashboardFeedInput): DashboardFeed {
     input.activeCategory,
     activeRegion,
   );
-  const rankedCurrentArticles = rankArticles(filteredCurrentArticles);
-  const rankedPreviousArticles = rankArticles(filteredPreviousArticles);
+  const rankedCurrentArticles = rankArticles(dedupeArticlesForDisplay(filteredCurrentArticles));
+  const rankedPreviousArticles = rankArticles(dedupeArticlesForDisplay(filteredPreviousArticles));
   const topHighlights = rankedCurrentArticles.slice(0, TOP_HIGHLIGHTS_LIMIT);
   const categoryScope =
     input.activeCategory === "all" ? availableCategories : [input.activeCategory];
