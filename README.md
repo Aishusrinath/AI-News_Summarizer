@@ -202,6 +202,28 @@ Current tests cover:
 - processed dataset loading
 - browser-based headline filtering and article detail navigation with Playwright
 
+## Assignment 6 Evaluation
+
+The Assignment 6 evidence is in [docs/assignment-6-evaluation.md](/d:/ai-news-summarizer/docs/assignment-6-evaluation.md).
+
+Evaluation artifacts:
+- [data/evaluation/cases.json](/d:/ai-news-summarizer/data/evaluation/cases.json)
+- [scripts/evaluate-assignment6.ts](/d:/ai-news-summarizer/scripts/evaluate-assignment6.ts)
+- [data/evaluation/results.json](/d:/ai-news-summarizer/data/evaluation/results.json)
+
+Run the evaluation with:
+
+```bash
+npm run evaluate:a6
+```
+
+Assignment 6 summary:
+- Architecture category: hybrid, combining deterministic ETL/storage, prompt-first summarization, and lightweight retrieval over the processed snapshot
+- Main alternative not chosen: full vector RAG, because the current snapshot size is small and vector storage would add cost and operational overhead before it is needed
+- Important capability not implemented: vector RAG over full publisher text; it would help once the app has many more articles, multiple providers, or longer source documents
+- Baseline comparison: the baseline retrieval always fell back to latest headlines, while the improved retrieval only does that for broad snapshot questions
+- Evidence-based improvement: unsupported specific questions now return `groundingStatus: "insufficient"` instead of unrelated grounded sources, and category hints improve AI/security retrieval
+
 ## Deployment
 
 - The frontend is intended for Vercel deployment

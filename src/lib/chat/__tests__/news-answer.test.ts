@@ -73,4 +73,94 @@ describe("answerNewsQuestion", () => {
     expect(response.answer).toContain("Key takeaway:");
     expect(response.answer).toContain("AI chip demand rises");
   });
+
+  it("does not present unrelated latest stories as grounded support", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["technology", "business"],
+      counts: {
+        fetched: 2,
+        normalized: 2,
+        dropped: 0,
+        deduped: 2,
+        summarizedWithAi: 2,
+        fallbackSummaries: 0,
+        finalArticles: 2,
+      },
+      articles: [
+        buildArticle({
+          id: "tech-1",
+          slug: "tech-1",
+          title: "AI chip demand rises",
+          category: "technology",
+          summary: "Demand for AI chips increased in the latest snapshot.",
+          publishedAt: "2026-04-10T11:00:00.000Z",
+        }),
+        buildArticle({
+          id: "biz-1",
+          slug: "biz-1",
+          title: "Markets react to rates",
+          category: "business",
+          summary: "Markets reacted sharply to the latest rate expectations.",
+          publishedAt: "2026-04-10T10:00:00.000Z",
+        }),
+      ],
+    };
+
+    const response = answerNewsQuestion({
+      message: "What is happening in Toronto sports?",
+      currentDataset,
+      previousDataset: null,
+      routingReason: "Routed to News Model.",
+    });
+
+    expect(response.groundingStatus).toBe("insufficient");
+    expect(response.sources).toEqual([]);
+  });
+
+  it("does not fill narrow election questions with generic latest coverage", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["politics", "world"],
+      counts: {
+        fetched: 2,
+        normalized: 2,
+        dropped: 0,
+        deduped: 2,
+        summarizedWithAi: 2,
+        fallbackSummaries: 0,
+        finalArticles: 2,
+      },
+      articles: [
+        buildArticle({
+          id: "politics-1",
+          slug: "politics-1",
+          title: "Campaign finance debate continues",
+          category: "politics",
+          summary: "Lawmakers discussed national campaign finance rules.",
+          publishedAt: "2026-04-10T11:00:00.000Z",
+        }),
+        buildArticle({
+          id: "world-1",
+          slug: "world-1",
+          title: "Global markets react to conflict",
+          category: "world",
+          summary: "International markets reacted to the latest conflict updates.",
+          publishedAt: "2026-04-10T10:00:00.000Z",
+        }),
+      ],
+    };
+
+    const response = answerNewsQuestion({
+      message: "latest update of Tamilnadu elections",
+      currentDataset,
+      previousDataset: null,
+      routingReason: "Routed to News Model.",
+    });
+
+    expect(response.groundingStatus).toBe("insufficient");
+    expect(response.sources).toEqual([]);
+  });
 });

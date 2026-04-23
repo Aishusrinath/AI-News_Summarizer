@@ -11,6 +11,7 @@
     "pipeline:fetch": "tsx scripts/fetch-news.ts",
     "pipeline:process": "tsx scripts/process-news.ts",
     "pipeline:summarize": "tsx scripts/summarize-news.ts",
+    "evaluate:a6": "tsx scripts/evaluate-assignment6.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test"

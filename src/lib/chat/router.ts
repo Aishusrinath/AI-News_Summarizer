@@ -1,12 +1,21 @@
 import type { ChatMode } from "@/lib/chat/types";
 
-const timelySignals = [
+const timeSignals = [
   "today",
   "right now",
   "latest",
+  "this hour",
+  "update",
+  "updates",
+  "current",
+  "now",
+];
+
+const newsSignals = [
   "news",
   "headline",
   "headlines",
+  "current events",
   "market",
   "markets",
   "war",
@@ -22,10 +31,7 @@ const timelySignals = [
   "technology",
   "science",
   "health",
-  "this hour",
   "what changed",
-  "update",
-  "updates",
 ];
 
 const generalSignals = [
@@ -48,6 +54,7 @@ const generalSignals = [
 export function routeChatMode(
   message: string,
   modeOverride?: ChatMode,
+  articleSlug?: string,
 ): { mode: ChatMode; routingReason: string } {
   if (modeOverride) {
     return {
@@ -60,30 +67,38 @@ export function routeChatMode(
   }
 
   const normalizedMessage = message.toLowerCase();
-  const timelyScore = timelySignals.filter((signal) => normalizedMessage.includes(signal)).length;
+  const timeScore = timeSignals.filter((signal) => normalizedMessage.includes(signal)).length;
+  const newsScore = newsSignals.filter((signal) => normalizedMessage.includes(signal)).length;
   const generalScore = generalSignals.filter((signal) =>
     normalizedMessage.includes(signal),
   ).length;
 
-  if (timelyScore > 0 || /\b(today|latest|now|current)\b/.test(normalizedMessage)) {
+  if (articleSlug) {
     return {
       mode: "news",
-      routingReason:
-        "Routed to News Model because the request appears time-sensitive or current-events focused.",
+      routingReason: "Routed to News Model because the question is attached to a specific article.",
     };
   }
 
-  if (generalScore > timelyScore) {
+  if (newsScore > 0 && (timeScore > 0 || newsScore >= generalScore)) {
+    return {
+      mode: "news",
+      routingReason:
+        "Routed to News Model because the request looks like a current-events or news question.",
+    };
+  }
+
+  if (generalScore > 0 || (newsScore === 0 && timeScore === 0)) {
     return {
       mode: "general",
       routingReason:
-        "Routed to General Model because the request looks like a broader explanation or assistance task.",
+        "Routed to General Model because the request looks like a broader assistant task.",
     };
   }
 
   return {
-    mode: "news",
+    mode: "general",
     routingReason:
-      "Routed to News Model by default because the request could be interpreted as current events.",
+      "Routed to General Model by default because the request was not clearly about the current news snapshot.",
   };
 }

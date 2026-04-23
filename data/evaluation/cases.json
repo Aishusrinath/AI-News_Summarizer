@@ -1,0 +1,55 @@
+[
+  {
+    "id": "tech-ai-security",
+    "kind": "representative",
+    "message": "What are the AI or cyber security headlines?",
+    "expectedCategory": "technology",
+    "expectedTitleIncludes": ["Chrome", "Google"],
+    "metricReason": "A technology/security question should retrieve a technology story instead of only the newest headlines."
+  },
+  {
+    "id": "business-airline",
+    "kind": "representative",
+    "message": "Summarize the business news about Spirit Airlines.",
+    "expectedCategory": "business",
+    "expectedTitleIncludes": ["Spirit Airlines"],
+    "metricReason": "The query names a business entity that appears in the processed snapshot."
+  },
+  {
+    "id": "health-cancer",
+    "kind": "representative",
+    "message": "What health stories mention cancer?",
+    "expectedCategory": "health",
+    "expectedTitleIncludes": ["Cancer"],
+    "metricReason": "The health filter and topic term should find a matching medical story."
+  },
+  {
+    "id": "science-meteorites",
+    "kind": "representative",
+    "message": "Give me the science story about Martian meteorites.",
+    "expectedCategory": "science",
+    "expectedTitleIncludes": ["Martian Meteorites"],
+    "metricReason": "A science topic query should retrieve the named science article."
+  },
+  {
+    "id": "latest-refresh",
+    "kind": "representative",
+    "message": "What changed in the latest refresh?",
+    "expectedGroundingStatus": "grounded",
+    "metricReason": "Broad change-tracking questions should still receive a snapshot briefing."
+  },
+  {
+    "id": "unsupported-sports",
+    "kind": "failure",
+    "message": "What is happening in Toronto sports?",
+    "expectedGroundingStatus": "insufficient",
+    "metricReason": "The app does not ingest sports or local Toronto coverage, so a grounded answer would be misleading."
+  },
+  {
+    "id": "unsupported-weather",
+    "kind": "failure",
+    "message": "Will it rain in Toronto tomorrow?",
+    "expectedGroundingStatus": "insufficient",
+    "metricReason": "The app is a news snapshot browser, not a weather service."
+  }
+]

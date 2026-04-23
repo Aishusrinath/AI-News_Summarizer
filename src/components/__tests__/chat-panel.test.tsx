@@ -73,7 +73,7 @@ describe("ChatPanel", () => {
 
     fireEvent.change(
       screen.getByPlaceholderText(
-        "Ask about the latest world-news snapshot, or switch to a broader general question.",
+        "Ask anything, from current events to broader general questions.",
       ),
       {
         target: {

@@ -27,7 +27,7 @@ function modeLabel(mode: ChatMode) {
 
 export function ChatPanel({
   title = "Ask the Assistant",
-  description = "Ask about the latest snapshot or use the general assistant for broader help.",
+  description = "Ask almost anything. The assistant uses current news grounding when relevant and gives a general response for broader questions.",
   articleSlug,
   starterPrompts,
   compact = false,
@@ -195,7 +195,7 @@ export function ChatPanel({
           <p className="text-sm leading-7 text-stone-400">
             {promptOnly
               ? "Choose a question above to ask about this story."
-              : "Ask about the latest world-news snapshot or use the general assistant for broader questions."}
+              : "Ask almost anything. News questions use the current snapshot, and broader questions use the general assistant."}
           </p>
         ) : (
           thread.map((entry) => (
@@ -315,7 +315,7 @@ export function ChatPanel({
             placeholder={
               compact
                 ? "Ask a follow-up about this story..."
-                : "Ask about the latest world-news snapshot, or switch to a broader general question."
+                : "Ask anything, from current events to broader general questions."
             }
             className="w-full rounded-[1.5rem] border border-stone-700 bg-stone-900/80 px-4 py-3 text-sm leading-7 text-stone-100 outline-none placeholder:text-stone-500 focus:border-amber-400"
           />

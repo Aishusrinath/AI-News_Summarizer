@@ -24,7 +24,11 @@ export async function POST(request: Request) {
       );
     }
 
-    const { mode, routingReason } = routeChatMode(parsed.message, parsed.modeOverride);
+    const { mode, routingReason } = routeChatMode(
+      parsed.message,
+      parsed.modeOverride,
+      parsed.articleSlug,
+    );
 
     const response =
       mode === "news"
@@ -39,6 +43,19 @@ export async function POST(request: Request) {
             message: parsed.message,
             routingReason,
           });
+
+    if (
+      mode === "news" &&
+      parsed.modeOverride !== "news" &&
+      response.groundingStatus === "insufficient"
+    ) {
+      const fallbackResponse = await answerGeneralQuestion({
+        message: parsed.message,
+        routingReason: `${routingReason} The current snapshot did not have enough support, so the assistant fell back to the General Model.`,
+      });
+
+      return NextResponse.json(chatResponseSchema.parse(fallbackResponse));
+    }
 
     return NextResponse.json(chatResponseSchema.parse(response));
   } catch (error) {

@@ -24,13 +24,46 @@ const stopWords = new Set([
   "the",
   "this",
   "to",
+  "update",
+  "updates",
   "what",
   "when",
   "where",
   "who",
+  "will",
   "why",
   "with",
 ]);
+
+const categoryQueryHints: Record<SupportedCategory, string[]> = {
+  world: ["global", "international", "foreign"],
+  politics: ["congress", "election", "government", "policy", "white house"],
+  business: ["market", "markets", "company", "companies", "stock", "stocks", "economy"],
+  technology: ["ai", "artificial intelligence", "tech", "software", "cyber", "security"],
+  science: ["research", "study", "space", "scientists"],
+  health: ["medical", "medicine", "doctor", "doctors", "cancer", "disease"],
+};
+
+const categoryHintTokens = new Set(
+  Object.values(categoryQueryHints)
+    .flat()
+    .flatMap((hint) => tokenize(hint)),
+);
+
+const broadSnapshotSignals = [
+  "headline",
+  "headlines",
+  "latest",
+  "top stories",
+  "top news",
+  "news today",
+  "what changed",
+  "this hour",
+  "current snapshot",
+];
+
+const broadSnapshotTokens = new Set(broadSnapshotSignals.flatMap((signal) => tokenize(signal)));
+const outOfScopeSignals = ["sports", "weather", "forecast", "rain", "tomorrow"];
 
 function getQueryTokens(message: string) {
   return message
@@ -42,6 +75,7 @@ function getQueryTokens(message: string) {
 
 function getRequestedCategories(message: string): SupportedCategory[] {
   const normalizedMessage = message.toLowerCase();
+  const messageTokens = new Set(tokenize(message));
   const possibleCategories: SupportedCategory[] = [
     "world",
     "politics",
@@ -51,7 +85,25 @@ function getRequestedCategories(message: string): SupportedCategory[] {
     "health",
   ];
 
-  return possibleCategories.filter((category) => normalizedMessage.includes(category));
+  return possibleCategories.filter(
+    (category) =>
+      messageTokens.has(category) ||
+      categoryQueryHints[category].some((hint) =>
+        hint.includes(" ") ? normalizedMessage.includes(hint) : messageTokens.has(hint),
+      ),
+  );
+}
+
+function hasBroadSnapshotIntent(message: string) {
+  const normalizedMessage = message.toLowerCase();
+
+  return broadSnapshotSignals.some((signal) => normalizedMessage.includes(signal));
+}
+
+function hasOutOfScopeIntent(message: string) {
+  const messageTokens = new Set(tokenize(message));
+
+  return outOfScopeSignals.some((signal) => messageTokens.has(signal));
 }
 
 function articleText(article: ProcessedArticle) {
@@ -68,18 +120,47 @@ function articleText(article: ProcessedArticle) {
     .toLowerCase();
 }
 
+function tokenize(value: string) {
+  return value
+    .toLowerCase()
+    .split(/[^a-z0-9]+/i)
+    .map((token) => token.trim())
+    .filter(Boolean);
+}
+
+function hasTokenMatch(tokens: Set<string>, queryToken: string) {
+  return (
+    tokens.has(queryToken) ||
+    (queryToken.length >= 5 &&
+      [...tokens].some((token) => token === `${queryToken}s` || queryToken === `${token}s`))
+  );
+}
+
+function isCategoryToken(token: string) {
+  return categoryHintTokens.has(token) || token === "election" || token === "elections";
+}
+
+function getSpecificQueryTokens(message: string) {
+  return getQueryTokens(message).filter(
+    (token) => !broadSnapshotTokens.has(token) && !isCategoryToken(token),
+  );
+}
+
 function scoreArticle(article: ProcessedArticle, message: string, articleSlug?: string) {
   const text = articleText(article);
+  const textTokens = new Set(tokenize(text));
+  const titleTokens = new Set(tokenize(article.title));
   const tokens = getQueryTokens(message);
+  const specificTokens = getSpecificQueryTokens(message);
   const requestedCategories = getRequestedCategories(message);
   const publishedMs = new Date(article.publishedAt).getTime();
   const ageHours = Math.max(0, (Date.now() - publishedMs) / (1000 * 60 * 60));
 
-  let score = Math.max(0, 48 - ageHours);
+  let score = hasBroadSnapshotIntent(message) ? Math.max(0, 48 - ageHours) : 0;
 
   for (const token of tokens) {
-    if (text.includes(token)) {
-      score += article.title.toLowerCase().includes(token) ? 8 : 4;
+    if (hasTokenMatch(textTokens, token)) {
+      score += hasTokenMatch(titleTokens, token) ? 8 : 4;
     }
   }
 
@@ -87,12 +168,20 @@ function scoreArticle(article: ProcessedArticle, message: string, articleSlug?: 
     score += 10;
   }
 
-  if (article.summaryType === "ai") {
+  if (article.summaryType === "ai" && score > 0) {
     score += 3;
   }
 
   if (articleSlug && article.slug === articleSlug) {
     score += 50;
+  }
+
+  if (
+    !articleSlug &&
+    specificTokens.length > 0 &&
+    !specificTokens.some((token) => hasTokenMatch(textTokens, token))
+  ) {
+    return 0;
   }
 
   return score;
@@ -110,6 +199,16 @@ export function retrieveNewsContext(input: {
   previousDataset: ProcessedDataset | null;
   articleSlug?: string;
 }) {
+  const specificTokens = getSpecificQueryTokens(input.message);
+
+  if (!input.articleSlug && hasOutOfScopeIntent(input.message)) {
+    return {
+      relevantArticles: [],
+      previousArticlesById: new Map<string, ProcessedArticle>(),
+      needsChangeTracking: queryNeedsChangeTracking(input.message),
+    };
+  }
+
   const rankedArticles = [...input.currentDataset.articles]
     .map((article) => ({
       article,
@@ -123,7 +222,9 @@ export function retrieveNewsContext(input: {
     .map((entry) => entry.article);
 
   const fallbackArticles =
-    relevantArticles.length > 0
+    relevantArticles.length > 0 ||
+    !hasBroadSnapshotIntent(input.message) ||
+    specificTokens.length > 0
       ? relevantArticles
       : [...input.currentDataset.articles]
           .sort(

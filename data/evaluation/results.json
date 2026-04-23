@@ -1,0 +1,248 @@
+{
+  "generatedAt": "2026-04-23T14:24:16.484Z",
+  "dataset": {
+    "source": "NewsAPI + Gemini pipeline",
+    "generatedAt": "2026-04-16T21:32:49.353Z",
+    "articleCount": 80,
+    "counts": {
+      "fetched": 91,
+      "normalized": 91,
+      "dropped": 0,
+      "deduped": 80,
+      "summarizedWithAi": 0,
+      "fallbackSummaries": 80,
+      "finalArticles": 80
+    }
+  },
+  "metrics": {
+    "outputQuality": {
+      "metric": "source hit rate on representative grounded cases",
+      "improved": "4/5",
+      "baseline": "4/5"
+    },
+    "endToEndTaskSuccess": {
+      "metric": "expected grounding status plus expected source when applicable",
+      "improved": "6/7",
+      "baseline": "4/7"
+    },
+    "upstreamRetrieval": {
+      "metric": "hit@4 for cases with expected source/category",
+      "improved": "4/4",
+      "baseline": "3/4"
+    },
+    "upstreamTransformation": {
+      "metric": "processed artifact count consistency",
+      "passed": true,
+      "detail": "finalArticles must equal the stored article array length and be no larger than normalized/deduped counts."
+    }
+  },
+  "cases": [
+    {
+      "id": "tech-ai-security",
+      "kind": "representative",
+      "message": "What are the AI or cyber security headlines?",
+      "metricReason": "A technology/security question should retrieve a technology story instead of only the newest headlines.",
+      "expected": {
+        "category": "technology",
+        "titleIncludes": [
+          "Chrome",
+          "Google"
+        ]
+      },
+      "improved": {
+        "groundingStatus": "grounded",
+        "sourceTitles": [
+          "These 108 Malicious Chrome Extensions Are Stealing Google and Telegram Data - Lifehacker",
+          "“TotalRecall Reloaded” tool finds a side entrance to Windows 11’s Recall database - Ars Technica",
+          "Apple says Jon Prosser has only partially complied with subpoenas in iOS 26 leak case - 9to5Mac",
+          "Google launches a Gemini AI app on Mac - The Verge"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      },
+      "baseline": {
+        "sourceTitles": [
+          "National security collective duty of citizens, not just of forces: NSA Ajit Doval",
+          "Live Updates: Trump says Iran war \"close to over\" as Pakistan pushes for new peace talks - CBS News",
+          "Scientists Found Literal Ink From Ballpoint Pens in Martian Meteorites - Gizmodo",
+          "French government seeking release of 86-year-old French widow detained by ICE"
+        ],
+        "retrievalHit": false,
+        "endToEndPass": false
+      }
+    },
+    {
+      "id": "business-airline",
+      "kind": "representative",
+      "message": "Summarize the business news about Spirit Airlines.",
+      "metricReason": "The query names a business entity that appears in the processed snapshot.",
+      "expected": {
+        "category": "business",
+        "titleIncludes": [
+          "Spirit Airlines"
+        ]
+      },
+      "improved": {
+        "groundingStatus": "grounded",
+        "sourceTitles": [
+          "Spirit Airlines could liquidate as early as this week, sources say - CNBC",
+          "From dropping bombs to pressuring banks: U.S. pivots to economic warfare on Iran - AP News",
+          "Here's the severance package Disney is giving to laid-off employees - Business Insider",
+          "Goldman Sachs bond traders stumbled as Wall Street rivals thrived: 'A fire is being lit under' them - CNBC"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      },
+      "baseline": {
+        "sourceTitles": [
+          "Spirit Airlines could liquidate as early as this week, sources say - CNBC",
+          "Why men need to talk about prostate cancer",
+          "From dropping bombs to pressuring banks: U.S. pivots to economic warfare on Iran - AP News",
+          "Live Updates: Trump says Iran war \"close to over\" as Pakistan pushes for new peace talks - CBS News"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      }
+    },
+    {
+      "id": "health-cancer",
+      "kind": "representative",
+      "message": "What health stories mention cancer?",
+      "metricReason": "The health filter and topic term should find a matching medical story.",
+      "expected": {
+        "category": "health",
+        "titleIncludes": [
+          "Cancer"
+        ]
+      },
+      "improved": {
+        "groundingStatus": "grounded",
+        "sourceTitles": [
+          "Dermatologists Reveal the Number-1 Sign of Skin Cancer—and It’s Sneaky - AOL.com",
+          "A mechanism for adaptive genome regulation in cancer - Nature",
+          "Emergence of oncofetal plasticity is ubiquitous in early colorectal cancers - Nature",
+          "Woman Diagnosed with Vulvar, Cervical and Anal Cancer After Learning Her Husband of 30 Years Had Cheated on Her - AOL.com"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      },
+      "baseline": {
+        "sourceTitles": [
+          "Dermatologists Reveal the Number-1 Sign of Skin Cancer—and It’s Sneaky - AOL.com",
+          "A mechanism for adaptive genome regulation in cancer - Nature",
+          "Emergence of oncofetal plasticity is ubiquitous in early colorectal cancers - Nature",
+          "Woman Diagnosed with Vulvar, Cervical and Anal Cancer After Learning Her Husband of 30 Years Had Cheated on Her - AOL.com"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      }
+    },
+    {
+      "id": "science-meteorites",
+      "kind": "representative",
+      "message": "Give me the science story about Martian meteorites.",
+      "metricReason": "A science topic query should retrieve the named science article.",
+      "expected": {
+        "category": "science",
+        "titleIncludes": [
+          "Martian Meteorites"
+        ]
+      },
+      "improved": {
+        "groundingStatus": "grounded",
+        "sourceTitles": [
+          "Scientists Found Literal Ink From Ballpoint Pens in Martian Meteorites - Gizmodo",
+          "Vulcan woes will “absolutely” be a factor in Pentagon’s next rocket competition - Ars Technica",
+          "Interstellar invader 3I/ATLAS is spraying tons of water into space every second. Jupiter-bound spacecraft JUICE discovers - Space",
+          "Molecular basis for methylation-sensitive editing by Cas9 - Nature"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      },
+      "baseline": {
+        "sourceTitles": [
+          "Scientists Found Literal Ink From Ballpoint Pens in Martian Meteorites - Gizmodo",
+          "'Every Apple user needs to know about this nasty scam': Fake warnings tell users their iCloud data will be deleted — but don't fall for this devious phishing trick",
+          "Why men need to talk about prostate cancer",
+          "Ancient DNA reveals pervasive directional selection across West Eurasia - Nature"
+        ],
+        "retrievalHit": true,
+        "endToEndPass": true
+      }
+    },
+    {
+      "id": "latest-refresh",
+      "kind": "representative",
+      "message": "What changed in the latest refresh?",
+      "metricReason": "Broad change-tracking questions should still receive a snapshot briefing.",
+      "expected": {
+        "groundingStatus": "grounded"
+      },
+      "improved": {
+        "groundingStatus": "insufficient",
+        "sourceTitles": [],
+        "retrievalHit": null,
+        "endToEndPass": false
+      },
+      "baseline": {
+        "sourceTitles": [
+          "Trump Doesn’t Have the Power to Enact His Latest Elections Scheme",
+          "Republicans worry White House ‘nonsense’ is hurting midterm prospects - Politico",
+          "Liberals look at banning social media for minors as 'important element' of online safety agenda",
+          "News of the day: Housing market correction, Microsoft data centre, private asset investing, trucking fuel costs, financial sector risks and more"
+        ],
+        "retrievalHit": null,
+        "endToEndPass": true
+      }
+    },
+    {
+      "id": "unsupported-sports",
+      "kind": "failure",
+      "message": "What is happening in Toronto sports?",
+      "metricReason": "The app does not ingest sports or local Toronto coverage, so a grounded answer would be misleading.",
+      "expected": {
+        "groundingStatus": "insufficient"
+      },
+      "improved": {
+        "groundingStatus": "insufficient",
+        "sourceTitles": [],
+        "retrievalHit": null,
+        "endToEndPass": true
+      },
+      "baseline": {
+        "sourceTitles": [
+          "'Teeny tiny' or thousands will die? Psychiatrists divided over how many would get MAID for mental illness",
+          "Emerita Announces Renewal of the Nuevo Tintillo Property Permit and Changes to Board of Directors",
+          "Emerita Announces Renewal of the Nuevo Tintillo Property Permit and Changes to Board of Directors"
+        ],
+        "retrievalHit": null,
+        "endToEndPass": false
+      }
+    },
+    {
+      "id": "unsupported-weather",
+      "kind": "failure",
+      "message": "Will it rain in Toronto tomorrow?",
+      "metricReason": "The app is a news snapshot browser, not a weather service.",
+      "expected": {
+        "groundingStatus": "insufficient"
+      },
+      "improved": {
+        "groundingStatus": "insufficient",
+        "sourceTitles": [],
+        "retrievalHit": null,
+        "endToEndPass": true
+      },
+      "baseline": {
+        "sourceTitles": [
+          "Scott Bessent Predicts Americans Will Still Be Paying Biden-Era Gas Prices In Summer Thanks To Iran War",
+          "'Teeny tiny' or thousands will die? Psychiatrists divided over how many would get MAID for mental illness",
+          "'Every Apple user needs to know about this nasty scam': Fake warnings tell users their iCloud data will be deleted — but don't fall for this devious phishing trick",
+          "Oppn: Will oppose delimitation, it cuts share of south, NE"
+        ],
+        "retrievalHit": null,
+        "endToEndPass": false
+      }
+    }
+  ]
+}
