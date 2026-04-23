@@ -43,44 +43,68 @@ async function answerWithGemini(message: string) {
   return answer;
 }
 
+type GeneralProvider = {
+  label: string;
+  isConfigured: boolean;
+  answer: (message: string) => Promise<string>;
+};
+
 export async function answerGeneralQuestion(input: {
   message: string;
   routingReason: string;
 }): Promise<ChatResponse> {
-  try {
-    const answer = process.env.OPENAI_API_KEY
-      ? await answerWithOpenAI(input.message)
-      : process.env.GEMINI_API_KEY
-        ? await answerWithGemini(input.message)
-        : null;
+  const providers: GeneralProvider[] = [
+    {
+      label: "OpenAI",
+      isConfigured: Boolean(process.env.OPENAI_API_KEY),
+      answer: answerWithOpenAI,
+    },
+    {
+      label: "Gemini",
+      isConfigured: Boolean(process.env.GEMINI_API_KEY),
+      answer: answerWithGemini,
+    },
+  ];
+  const configuredProviders = providers.filter((provider) => provider.isConfigured);
 
-    if (!answer) {
-      return {
-        mode: "general",
-        groundingStatus: "general",
-        routingReason: `${input.routingReason} No general-model API key is configured in this environment yet.`,
-        answer:
-          "The General Model is not configured in this environment yet. It will support broader explanation, brainstorming, and study-style questions once an OpenAI or Gemini key is available.",
-        sources: [],
-      };
-    }
-
+  if (configuredProviders.length === 0) {
     return {
       mode: "general",
       groundingStatus: "general",
-      routingReason: input.routingReason,
-      answer,
-      sources: [],
-    };
-  } catch (error) {
-    const message = error instanceof Error ? error.message : "General assistant failed.";
-
-    return {
-      mode: "general",
-      groundingStatus: "general",
-      routingReason: `${input.routingReason} The configured general model was unavailable.`,
-      answer: `The General Model is temporarily unavailable: ${message}`,
+      routingReason: `${input.routingReason} No general-model API key is configured in this environment yet.`,
+      answer:
+        "The General Model is not configured in this environment yet. It will support broader explanation, brainstorming, and study-style questions once an OpenAI or Gemini key is available.",
       sources: [],
     };
   }
+
+  const providerErrors: string[] = [];
+
+  for (const provider of configuredProviders) {
+    try {
+      const answer = await provider.answer(input.message);
+
+      return {
+        mode: "general",
+        groundingStatus: "general",
+        routingReason:
+          providerErrors.length === 0
+            ? input.routingReason
+            : `${input.routingReason} ${provider.label} answered after another general-model provider was unavailable.`,
+        answer,
+        sources: [],
+      };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "General assistant failed.";
+      providerErrors.push(`${provider.label}: ${message}`);
+    }
+  }
+
+  return {
+    mode: "general",
+    groundingStatus: "general",
+    routingReason: `${input.routingReason} The configured general-model providers were unavailable.`,
+    answer: `The General Model is temporarily unavailable: ${providerErrors.join(" | ")}`,
+    sources: [],
+  };
 }
