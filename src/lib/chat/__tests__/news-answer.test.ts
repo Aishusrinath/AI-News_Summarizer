@@ -209,6 +209,51 @@ describe("answerNewsQuestion", () => {
     expect(response.sources).toEqual([]);
   });
 
+  it("does not let a matching year create fake grounding for a narrow election question", () => {
+    const currentDataset: ProcessedDataset = {
+      generatedAt: "2026-04-10T12:00:00.000Z",
+      source: "Fixture",
+      categories: ["world", "technology"],
+      counts: {
+        fetched: 2,
+        normalized: 2,
+        dropped: 0,
+        deduped: 2,
+        summarizedWithAi: 2,
+        fallbackSummaries: 0,
+        finalArticles: 2,
+      },
+      articles: [
+        buildArticle({
+          id: "world-1",
+          slug: "world-1",
+          title: "Global company issues 2026 outlook",
+          category: "world",
+          summary: "A company published its 2026 outlook and investors reacted.",
+          publishedAt: "2026-04-10T11:00:00.000Z",
+        }),
+        buildArticle({
+          id: "tech-1",
+          slug: "tech-1",
+          title: "Camera comparison published in 2026 review",
+          category: "technology",
+          summary: "A reviewer compared a flagship phone camera against pro gear.",
+          publishedAt: "2026-04-10T10:00:00.000Z",
+        }),
+      ],
+    };
+
+    const response = answerNewsQuestion({
+      message: "latest update on tamilnadu elections 2026?",
+      currentDataset,
+      previousDataset: null,
+      routingReason: "Routed to News Model.",
+    });
+
+    expect(response.groundingStatus).toBe("insufficient");
+    expect(response.sources).toEqual([]);
+  });
+
   it("does not ground category-specific news questions on the wrong category", () => {
     const currentDataset: ProcessedDataset = {
       generatedAt: "2026-04-10T12:00:00.000Z",

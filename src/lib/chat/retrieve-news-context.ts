@@ -147,6 +147,10 @@ function getSpecificQueryTokens(message: string) {
   );
 }
 
+function isAlphabeticToken(token: string) {
+  return /[a-z]/i.test(token);
+}
+
 function scoreArticle(article: ProcessedArticle, message: string, articleSlug?: string) {
   const text = articleText(article);
   const textTokens = new Set(tokenize(text));
@@ -180,7 +184,9 @@ function scoreArticle(article: ProcessedArticle, message: string, articleSlug?: 
   if (
     !articleSlug &&
     specificTokens.length > 0 &&
-    !specificTokens.some((token) => hasTokenMatch(textTokens, token))
+    !specificTokens
+      .filter(isAlphabeticToken)
+      .some((token) => hasTokenMatch(textTokens, token))
   ) {
     return 0;
   }
