@@ -105,6 +105,10 @@ Latest verified pipeline run:
 - `GEMINI_MODEL`
   - optional
   - defaults to `gemini-3-flash-preview`
+- `GEMINI_GENERAL_MODEL`
+  - optional
+  - used by the top-right general assistant when `GEMINI_API_KEY` is available and `OPENAI_API_KEY` is not set
+  - defaults to `gemini-2.5-flash`
 - `HUGGINGFACE_API_KEY`
   - required if `SUMMARIZER_PROVIDER=huggingface`
 - `HUGGINGFACE_MODEL`
@@ -117,7 +121,12 @@ Latest verified pipeline run:
   - optional
   - defaults to `http://127.0.0.1:11434/v1`
 - `OPENAI_API_KEY`
-  - only required if `SUMMARIZER_PROVIDER=openai`
+  - required if `SUMMARIZER_PROVIDER=openai`
+  - also enables the top-right general assistant
+- `OPENAI_GENERAL_MODEL`
+  - optional
+  - used by the top-right general assistant when `OPENAI_API_KEY` is available
+  - defaults to `gpt-4.1-mini`
 - `BLOB_READ_WRITE_TOKEN`
   - optional
   - only needed if using the `/api/refresh` endpoint with Vercel Blob instead of committed JSON snapshots
@@ -128,6 +137,11 @@ Latest verified pipeline run:
   - set this to a long random string
 
 The default Hobby-friendly production setup uses GitHub Actions to run the pipeline hourly, commit refreshed JSON, and trigger a Vercel redeploy. That setup needs `NEWS_API_KEY` and the selected summarizer key in GitHub Actions secrets, but it does not require Vercel Blob or Vercel Cron.
+
+For the deployed chat assistant on Vercel:
+- add `OPENAI_API_KEY` if you want the general assistant to answer broad non-news questions with OpenAI
+- add `OPENAI_GENERAL_MODEL` only if you want to override the default `gpt-4.1-mini`
+- if both `OPENAI_API_KEY` and `GEMINI_API_KEY` are present, the general assistant prefers OpenAI first
 
 A starter env template is provided in [.env.example](/d:/ai-news-summarizer/.env.example).
 
