@@ -104,7 +104,8 @@ export async function answerGeneralQuestion(input: {
     mode: "general",
     groundingStatus: "general",
     routingReason: `${input.routingReason} The configured general-model providers were unavailable.`,
-    answer: `The General Model is temporarily unavailable: ${providerErrors.join(" | ")}`,
+    answer:
+      "The general assistant is temporarily unavailable because the configured AI providers are out of quota or unavailable. You can still use the news-grounded assistant for questions supported by the current snapshot.",
     sources: [],
   };
 }

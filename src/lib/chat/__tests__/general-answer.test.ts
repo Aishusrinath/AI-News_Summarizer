@@ -80,7 +80,11 @@ describe("answerGeneralQuestion", () => {
       routingReason: "Routed to General Model.",
     });
 
-    expect(response.answer).toContain("OpenAI: OpenAI quota exceeded.");
-    expect(response.answer).toContain("Gemini: Gemini resource exhausted.");
+    expect(response.answer).toContain("The general assistant is temporarily unavailable");
+    expect(response.answer).not.toContain("OpenAI quota exceeded.");
+    expect(response.answer).not.toContain("Gemini resource exhausted.");
+    expect(response.routingReason).toContain(
+      "The configured general-model providers were unavailable.",
+    );
   });
 });
