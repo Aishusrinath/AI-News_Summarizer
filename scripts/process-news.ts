@@ -1,5 +1,5 @@
 import { pathToFileURL } from "node:url";
-import "dotenv/config";
+import "./load-env";
 
 import {
   newsArtifactPaths,

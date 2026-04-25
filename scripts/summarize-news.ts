@@ -1,5 +1,5 @@
 import { pathToFileURL } from "node:url";
-import "dotenv/config";
+import "./load-env";
 
 import { buildProcessedDataset } from "@/lib/news/etl/build-processed-dataset";
 import { selectArticlesForSummary } from "@/lib/news/etl/select-articles-for-summary";

@@ -32,7 +32,7 @@ export async function POST(request: Request) {
 
     const response =
       mode === "news"
-        ? answerNewsQuestion({
+        ? await answerNewsQuestion({
             message: parsed.message,
             currentDataset: await loadArticles(),
             previousDataset: await loadPreviousSnapshot(),
