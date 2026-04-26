@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T11:35:35.447Z",
+  "generatedAt": "2026-04-26T12:54:04.176Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,10 +7,10 @@
     "business"
   ],
   "counts": {
-    "fetched": 9,
-    "normalized": 9,
+    "fetched": 8,
+    "normalized": 8,
     "dropped": 0,
-    "deduped": 9,
+    "deduped": 8,
     "summarizedWithAi": 0,
     "fallbackSummaries": 120,
     "finalArticles": 120
@@ -102,7 +102,7 @@
       "sourceName": "Sporting News",
       "publishedAt": "2026-04-25T10:30:02.000Z",
       "category": "world",
-      "sourceCountry": "gb",
+      "sourceCountry": "au",
       "url": "https://www.sportingnews.com/us/tsn/news/watch-liege-bastogne-liege-2026-time-channel-stream-cycling-classic/d1e00f4199358770a7660c24",
       "summary": "Where to watch Liege-Bastogne-Liege 2026: Time, TV channel, live stream for cycling classic. Can Tadej Pogacar make it three in a row at the last of the spring monuments, or will a teen sensation continue his hot streak?",
       "summaryType": "fallback",
@@ -229,7 +229,7 @@
       "sourceName": "SB Nation",
       "publishedAt": "2026-04-25T10:10:24.000Z",
       "category": "world",
-      "sourceCountry": "ca",
+      "sourceCountry": "au",
       "url": "https://liverpooloffside.sbnation.com/liverpool-fc-match-coverage/80055/liverpool-crystal-palace-premier-league-2025-26-live-coverage-how-to-watch-streaming-tv",
       "summary": "Liverpool vs. Crystal Palace: Premier League 2025-26 Live Coverage & How to Watch. Coverage of Liverpool's Premier League game against Crystal Palace with lineup news, streaming options, and updates.",
       "summaryType": "fallback",
@@ -287,6 +287,22 @@
       "cleanedText": "United States immigration authorities have arrested a 53-year-old Nigerian national in Los Angeles over previous convictions for child molestation and other sexual offences. The Enforcement and Remo…"
     },
     {
+      "id": "a267ce596f406512",
+      "slug": "club-to-temple-youth-to-elders-chakra-bam-s-songs-unite-ever-a267ce59",
+      "title": "Club to temple, youth to elders: Chakra Bam’s songs unite every heart",
+      "sourceName": "Dineshkhabar.com",
+      "publishedAt": "2026-04-25T09:37:34.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://dineshkhabar.com/article/135007",
+      "summary": "Club to temple, youth to elders: Chakra Bam’s songs unite every heart. Dhangadhi: When Chakra Bam steps onto a stage, the atmosphere transforms. The audience sways instinctively to the rhythmic beats of the Madal, Hudko, and Damaha, sounds that echo from the rugged hills of Nepal’s far western region. He carries with him not onl…",
+      "summaryType": "fallback",
+      "description": "Dhangadhi: When Chakra Bam steps onto a stage, the atmosphere transforms. The audience sways instinctively to the rhythmic beats of the Madal, Hudko, and Damaha, sounds that echo from the rugged hills of Nepal’s far western region. He carries with him not onl…",
+      "imageUrl": "https://dineshkhabar.com/sites/default/files/styles/featured/public/field/image/Untitled%20design%20%2826%29.jpg?itok=422Dax98",
+      "author": "editor",
+      "cleanedText": "Dhangadhi: When Chakra Bam steps onto a stage, the atmosphere transforms. The audience sways instinctively to the rhythmic beats of the Madal, Hudko, and Damaha, sounds that echo from the rugged hill…"
+    },
+    {
       "id": "37a4870f47c92a66",
       "slug": "japan-sheds-pacifism-as-global-order-begins-to-fracture-37a4870f",
       "title": "Japan sheds pacifism as global order begins to fracture",
@@ -341,7 +357,7 @@
       "sourceName": "Github.com",
       "publishedAt": "2026-04-25T09:03:03.000Z",
       "category": "world",
-      "sourceCountry": "us",
+      "sourceCountry": "au",
       "url": "https://github.com/public-apis/public-apis/blob/master/README.md",
       "summary": "Show HN: GitHub Directory for Public APIs. Article URL: https://github.com/public-apis/public-apis/blob/master/README.md Comments URL: https://news.ycombinator.com/item?id=47899891 Points: 1 # Comments: 1",
       "summaryType": "fallback",
@@ -460,6 +476,22 @@
       "imageUrl": "https://swarajya.gumlet.io/swarajya/2026-04-25/1fjy4wv7/download.jpg?w=600&h=315&format=jpg",
       "author": "Diksha Yadav",
       "cleanedText": "A person running a manufacturing unit is not a fraudster. He is not an environmental criminal. He did not steal from the government or endanger any consumer. At some point in the ordinary course of r…"
+    },
+    {
+      "id": "dc0188fd6e9ad32a",
+      "slug": "isis-brides-launch-new-bid-to-return-to-australia-sparking-a-dc0188fd",
+      "title": "ISIS brides launch new bid to return to Australia - sparking a defiant message from the Deputy Prime Minister",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-04-25T07:38:52.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.dailymail.com/news/article-15764387/ISIS-brides-launch-new-bid-return-Australia-richard-marles.html",
+      "summary": "ISIS brides launch new bid to return to Australia - sparking a defiant message from the Deputy Prime Minister. It's understood that four women, and nine children and grandchildren left the Al-Roj detention camp in northeastern Syria on Friday to travel the 10-hour journey to Damascus.",
+      "summaryType": "fallback",
+      "description": "It's understood that four women, and nine children and grandchildren left the Al-Roj detention camp in northeastern Syria on Friday to travel the 10-hour journey to Damascus.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/04/25/08/108150175-0-image-a-10_1777102086456.jpg",
+      "author": "Kylie Stevens, Maisy Rae",
+      "cleanedText": "Deputy Prime Minister Richard Marles has hit back at reports that a cohort of ISIS brides and their families have launched a second attempt to return to Australia. It's understood that four women, a…"
     },
     {
       "id": "81219b41bef1bab6",
@@ -1888,38 +1920,6 @@
       "imageUrl": "https://tim.blog/wp-content/uploads/2026/04/milad-fakurian-58Z17lnVS4U-unsplash-scaled.jpg",
       "author": "Tim Ferriss",
       "cleanedText": "The following is a guest post from Dr. Tommy Wood (@drtommywood), associate professor of pediatrics and neuroscience at the University of Washington, where his research focuses on brain health. In …"
-    },
-    {
-      "id": "763e74ddfe96c177",
-      "slug": "maura-higgins-stuns-in-a-floral-white-mini-dress-as-she-beam-763e74dd",
-      "title": "Maura Higgins stuns in a floral white mini dress as she beams in New York after joining Dancing With The Stars",
-      "sourceName": "Dailymail.com",
-      "publishedAt": "2026-04-24T18:37:44.000Z",
-      "category": "world",
-      "sourceCountry": "us",
-      "url": "https://www.dailymail.com/tvshowbiz/article-15763131/Maura-Higgins-New-York-Dancing-Stars.html",
-      "summary": "Maura Higgins stuns in a floral white mini dress as she beams in New York after joining Dancing With The Stars. Maura Higgins looked incredibly chic in a floral white mini dress as she stepped out in Hudson Square, New York City on Friday.",
-      "summaryType": "fallback",
-      "description": "Maura Higgins looked incredibly chic in a floral white mini dress as she stepped out in Hudson Square, New York City on Friday.",
-      "imageUrl": "https://i.dailymail.com/1s/2026/04/24/18/108138649-0-image-m-34_1777053540787.jpg",
-      "author": "Lily Jobson",
-      "cleanedText": "Maura Higgins looked incredibly chic in a floral white mini dress as she stepped out in Hudson Square, New York City on Friday. The Love Island star, 35, who is continuing her Stateside takeover aft…"
-    },
-    {
-      "id": "cc50d9e34a306ff2",
-      "slug": "the-left-lost-on-dei-but-infrastructure-remains-cc50d9e3",
-      "title": "The Left Lost on DEI, But Infrastructure Remains",
-      "sourceName": "Realclearpolicy.com",
-      "publishedAt": "2026-04-24T18:35:56.000Z",
-      "category": "world",
-      "sourceCountry": "us",
-      "url": "https://www.realclearpolicy.com/articles/2026/04/23/the_left_lost_on_dei_1178741.html",
-      "summary": "The Left Lost on DEI, But Infrastructure Remains. Let's start with the good news. Between January 2023 and May 2025, Fortune 100 companies reduced their use of the term \"DEI\" by ninety-eight percent according to an analysis by Gravity Research....",
-      "summaryType": "fallback",
-      "description": "Let's start with the good news. Between January 2023 and May 2025, Fortune 100 companies reduced their use of the term \"DEI\" by ninety-eight percent according to an analysis by Gravity Research....",
-      "imageUrl": "https://assets.realclear.com/images/60/608417_6_.png",
-      "author": "John Tillman, RealClearPolicy",
-      "cleanedText": "They dropped the letters but kept the levers. Let's start with the good news. Between January 2023 and May 2025, Fortune 100 companies reduced their use of the term \"DEI\" by ninety-eight percent ac…"
     }
   ]
 }
