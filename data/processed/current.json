@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T16:36:32.125Z",
+  "generatedAt": "2026-04-26T17:34:27.800Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -8,10 +8,10 @@
     "business"
   ],
   "counts": {
-    "fetched": 10,
-    "normalized": 10,
+    "fetched": 8,
+    "normalized": 8,
     "dropped": 0,
-    "deduped": 9,
+    "deduped": 8,
     "summarizedWithAi": 0,
     "fallbackSummaries": 120,
     "finalArticles": 120
@@ -32,6 +32,22 @@
       "imageUrl": "https://i.dailymail.com/1s/2026/04/25/15/108154813-0-image-m-95_1777127667931.jpg",
       "author": "Peter Hitchens",
       "cleanedText": "Just in time for the Kings mistaken visit to Donald Trump, which starts tomorrow, comes a new and spiteful threat from our supposed best friends, the Americans. Leaked to the respectable Reuters news…"
+    },
+    {
+      "id": "6450262ac96a0d9e",
+      "slug": "the-rolling-stones-tease-new-album-title-with-international--6450262a",
+      "title": "The Rolling Stones tease new album title with international billboard campaign",
+      "sourceName": "The-independent.com",
+      "publishedAt": "2026-04-25T15:48:45.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.the-independent.com/arts-entertainment/music/news/rolling-stones-foreign-tongues-new-album-title-b2964922.html",
+      "summary": "The Rolling Stones tease new album title with international billboard campaign. The much-anticipated new record will seemingly be named ‘Foreign Tongues’",
+      "summaryType": "fallback",
+      "description": "The much-anticipated new record will seemingly be named ‘Foreign Tongues’",
+      "imageUrl": "https://static.the-independent.com/2026/04/21/07/1351941805.jpg?width=1200&height=800&crop=1200:800",
+      "author": "Kevin E G Perry",
+      "cleanedText": "Your support helps us to tell the story From reproductive rights to climate change to Big Tech, The Independent is on the ground when the story is developing. Whether it's investigating the financia…"
     },
     {
       "id": "b7be34361e1b3ed0",
@@ -164,7 +180,7 @@
       "sourceName": "disneyfoodblog.com",
       "publishedAt": "2026-04-25T14:00:05.000Z",
       "category": "world",
-      "sourceCountry": "ca",
+      "sourceCountry": "au",
       "url": "https://www.disneyfoodblog.com/2026/04/25/heading-to-disney-world-soon-heres-everything-that-might-be-closed-during-your-trip/",
       "summary": "Heading To Disney World Soon? Here’s Everything That Might Be CLOSED During Your Trip. Lots of construction remains in Disney World, but one big project just finished up!",
       "summaryType": "fallback",
@@ -1905,21 +1921,6 @@
       "description": "This week’s edition of Finovate Global features recent fintech news from the north African nation of Libya. Tadhamun Bank Libya partners with JMR Infotech for AI Chatbot and Voicebot Tadhamun Bank Libya has turned to JMR Infotech, a digital transformation and…",
       "author": "David Penn",
       "cleanedText": "This week’s edition of Finovate Global features recent fintech news from the north African nation of Libya. Tadhamun Bank Libya partners with JMR Infotech for AI Chatbot and Voicebot Tadham…"
-    },
-    {
-      "id": "d69a0c38682c2508",
-      "slug": "19-5m-in-federal-spending-on-winnipeg-based-defence-projects-d69a0c38",
-      "title": "$19.5M in federal spending on Winnipeg-based defence projects expected to add over 150 jobs",
-      "sourceName": "CBC News",
-      "publishedAt": "2026-04-24T20:30:04.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://www.cbc.ca/news/canada/manitoba/winnipeg-defence-projects-federal-funding-jobs-9.7176376",
-      "summary": "$19.5M in federal spending on Winnipeg-based defence projects expected to add over 150 jobs. Canada's federal government is giving $19.5 million in federal defence funding to three companies for projects they say will create more than 150 jobs in Manitoba.",
-      "summaryType": "fallback",
-      "description": "Canada's federal government is giving $19.5 million in federal defence funding to three companies for projects they say will create more than 150 jobs in Manitoba.",
-      "imageUrl": "https://i.cbc.ca/ais/9e09b86f-bac8-4b0a-afba-66b294a2f7fc,1777060556312/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C4032%2C2268%29%3BResize%3D620",
-      "cleanedText": "Canada's federal government is giving $19.5 million in federal defence funding to three companies for projects they say will create more than 150 jobs in Manitoba. StandardAero, Magellan Aerospace …"
     }
   ]
 }
