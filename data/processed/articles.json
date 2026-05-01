@@ -1,19 +1,64 @@
 {
-  "generatedAt": "2026-05-01T08:56:24.282Z",
+  "generatedAt": "2026-05-01T10:20:55.566Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world"
   ],
   "counts": {
-    "fetched": 9,
-    "normalized": 9,
+    "fetched": 3,
+    "normalized": 3,
     "dropped": 0,
-    "deduped": 9,
+    "deduped": 3,
     "summarizedWithAi": 0,
     "fallbackSummaries": 120,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "393e0386b0242bcc",
+      "slug": "schroders-warms-to-government-bonds-as-stagflation-worries-m-393e0386",
+      "title": "Schroders Warms to Government Bonds as Stagflation Worries Mount",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-04-30T10:10:45.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://financialpost.com/pmn/business-pmn/schroders-warms-to-government-bonds-as-stagflation-worries-mount",
+      "summary": "Schroders Warms to Government Bonds as Stagflation Worries Mount. UK asset manager Schroders Plc has closed its short position in government bonds, citing the increased risk of recession.",
+      "summaryType": "fallback",
+      "description": "UK asset manager Schroders Plc has closed its short position in government bonds, citing the increased risk of recession.",
+      "author": "Bloomberg News",
+      "cleanedText": "(Bloomberg) UK asset manager Schroders Plc has closed its short position in government bonds, citing the increased risk of recession. THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now t…"
+    },
+    {
+      "id": "311343a1afa05e9a",
+      "slug": "king-charles-follows-queen-elizabeth-s-playbook-with-a-twist-311343a1",
+      "title": "King Charles follows Queen Elizabeth's playbook with a twist during Trump state visit: expert",
+      "sourceName": "Fox News",
+      "publishedAt": "2026-04-30T10:00:27.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.foxnews.com/entertainment/king-charles-honors-queen-elizabeths-playbook-charting-new-course-first-us-visit",
+      "summary": "King Charles follows Queen Elizabeth's playbook with a twist during Trump state visit: expert. Experts compare King Charles' first US visit as monarch to Queen Elizabeth's historic trips, noting his more outspoken and personal diplomatic approach.",
+      "summaryType": "fallback",
+      "description": "Experts compare King Charles' first US visit as monarch to Queen Elizabeth's historic trips, noting his more outspoken and personal diplomatic approach.",
+      "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2026/04/king-charles-queen-elizabeth-us-2.jpeg",
+      "cleanedText": "King Charles III's first visit to the United States as a British monarch is drawing fresh comparisons to Queen Elizabeth II's historic trips with royal experts noting that he appears to be charting a…"
+    },
+    {
+      "id": "197f7e818cdf6f44",
+      "slug": "oil-worries-spook-european-markets-before-ecb-and-boe-decisi-197f7e81",
+      "title": "Oil worries spook European markets before ECB and BoE decisions",
+      "sourceName": "CNA",
+      "publishedAt": "2026-04-30T09:53:26.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.channelnewsasia.com/business/oil-worries-spook-european-markets-ecb-and-boe-decisions-6090931",
+      "summary": "Oil worries spook European markets before ECB and BoE decisions. LONDON, April 30 : Renewed risk aversion swept global equity and bond markets on Thursday and oil surged to a four-year high on worries that the Iran war could worsen, before what could be difficult European Central Bank and Bank of England meetings.The rise …",
+      "summaryType": "fallback",
+      "description": "LONDON, April 30 : Renewed risk aversion swept global equity and bond markets on Thursday and oil surged to a four-year high on worries that the Iran war could worsen, before what could be difficult European Central Bank and Bank of England meetings.The rise …",
+      "imageUrl": "https://dam.mediacorp.sg/image/upload/s--mnpypgJ---/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-04-30T015615Z_1_LYNXMPEM3T02P_RTROPTP_3_GLOBAL-MARKETS.JPG?itok=vF-CCPc3",
+      "cleanedText": "LONDON, April 30 : Renewed risk aversion swept global equity and bond markets on Thursday and oil surged to a four-year high on worries that the Iran war could worsen, before what could be difficult …"
+    },
     {
       "id": "617c03795b8b1601",
       "slug": "how-to-watch-pakistan-super-league-2026-in-india-tv-channel--617c0379",
@@ -1828,54 +1873,6 @@
       "description": "Ardian is increasingly a buyer of private equity assets from Canadian pension plans, as institutional investors turn to the secondary market to free up cash following a prolonged period of low deal activity.",
       "author": "Bloomberg News",
       "cleanedText": "(Bloomberg) Ardian is increasingly a buyer of private equity assets from Canadian pension plans, as institutional investors turn to the secondary market to free up cash following a prolonged period o…"
-    },
-    {
-      "id": "ed88e78d54563797",
-      "slug": "sensex-today-stock-market-highlights-sensex-settled-with-609-ed88e78d",
-      "title": "Sensex today | Stock Market Highlights: Sensex settled with 609.45 pts or 0.79% gains at 77,496.36, and Nifty 50 was up 181.95 pts or 0.76% to 24,177.65.",
-      "sourceName": "BusinessLine",
-      "publishedAt": "2026-04-29T10:32:50.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://www.thehindubusinessline.com/markets/sensex-nifty50-today-stock-market-highlights-29th-april-2026/article70916125.ece",
-      "summary": "Sensex today | Stock Market Highlights: Sensex settled with 609.45 pts or 0.79% gains at 77,496.36, and Nifty 50 was up 181.95 pts or 0.76% to 24,177.65.. Sensex Today, Nifty 50 | Stock Market Highlights - Find here all the highlights related to Sensex, Nifty, BSE, NSE, share prices and Indian stock markets for 29 April 2026",
-      "summaryType": "fallback",
-      "description": "Sensex Today, Nifty 50 | Stock Market Highlights - Find here all the highlights related to Sensex, Nifty, BSE, NSE, share prices and Indian stock markets for 29 April 2026",
-      "imageUrl": "https://bl-i.thgim.com/public/incoming/8ourp5/article70916137.ece/alternates/LANDSCAPE_1200/Stock%20Market%20graph%20finances.jpg",
-      "author": "Team BL, KS Badri Narayanan",
-      "cleanedText": "April 29, 2026 15:57This live blog is closed To read more, visit businessline April 29, 2026 15:54MAS Financial Services reported standalone net profit for the quarter ended M…"
-    },
-    {
-      "id": "a7ad265925d2ab6d",
-      "slug": "zmc-welcomes-sally-knutson-as-chief-financial-advisor-operat-a7ad2659",
-      "title": "ZMC Welcomes Sally Knutson as Chief Financial Advisor & Operating Partner",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-04-29T10:30:25.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/zmc-welcomes-sally-knutson-as-chief-financial-advisor-operating-partner",
-      "summary": "ZMC Welcomes Sally Knutson as Chief Financial Advisor & Operating Partner. Former Cast & Crew CFO Returns to ZMC, Extending the Firm’s Operating Partner Model into Finance NEW YORK — ZMC ( www.zmclp.com), a leading private equity firm investing in companies across the media, communications, and entertainment sectors, today announced…",
-      "summaryType": "fallback",
-      "description": "Former Cast & Crew CFO Returns to ZMC, Extending the Firm’s Operating Partner Model into Finance NEW YORK — ZMC ( www.zmclp.com), a leading private equity firm investing in companies across the media, communications, and entertainment sectors, today announced…",
-      "imageUrl": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/04/bw20260429762554_x9075.jpeg",
-      "author": "Business Wire",
-      "cleanedText": "Former Cast &amp; Crew CFO Returns to ZMC, Extending the Firms Operating Partner Model into Finance THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to read the latest news in your city …"
-    },
-    {
-      "id": "497d1a79fa8f1bd6",
-      "slug": "copper-snaps-four-day-decline-on-china-buying-ahead-of-holid-497d1a79",
-      "title": "Copper Snaps Four-Day Decline on China Buying Ahead of Holiday",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-04-29T10:30:01.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/pmn/business-pmn/copper-snaps-four-day-decline-on-china-buying-ahead-of-holiday",
-      "summary": "Copper Snaps Four-Day Decline on China Buying Ahead of Holiday. Copper advanced as some Chinese buyers replenished stockpiles ahead of a holiday, although concerns about global growth persisted with no immediate sign of a resolution to the Iran war.",
-      "summaryType": "fallback",
-      "description": "Copper advanced as some Chinese buyers replenished stockpiles ahead of a holiday, although concerns about global growth persisted with no immediate sign of a resolution to the Iran war.",
-      "imageUrl": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/04/776441135-2.jpg",
-      "author": "Bloomberg News",
-      "cleanedText": "(Bloomberg) Copper advanced as some Chinese buyers replenished stockpiles ahead of a holiday, although concerns about global growth persisted with no immediate sign of a resolution to the Iran war. …"
     }
   ]
 }
