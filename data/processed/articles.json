@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T12:56:53.708Z",
+  "generatedAt": "2026-05-03T14:10:26.332Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,15 +7,47 @@
     "health"
   ],
   "counts": {
-    "fetched": 7,
-    "normalized": 7,
+    "fetched": 9,
+    "normalized": 9,
     "dropped": 0,
-    "deduped": 7,
+    "deduped": 9,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 109,
-    "finalArticles": 109
+    "fallbackSummaries": 117,
+    "finalArticles": 117
   },
   "articles": [
+    {
+      "id": "16369daf7618235b",
+      "slug": "vr-extraction-dungeon-crawler-reave-has-been-cancelled-after-16369daf",
+      "title": "VR Extraction Dungeon Crawler ‘Reave’ Has Been Cancelled After Months in Open Beta",
+      "sourceName": "Road to VR",
+      "publishedAt": "2026-05-02T13:40:55.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.roadtovr.com/reave-vr-dungeon-extraction-cancelled-alta-township-tale-studio/",
+      "summary": "VR Extraction Dungeon Crawler ‘Reave’ Has Been Cancelled After Months in Open Beta. Reave was an upcoming VR extraction dungeon crawler from Alta, the studio behind Township Tale. The company announced that the game has been cancelled despite the game being in a mature enough state for months of open playtesting. Following the successful lau…",
+      "summaryType": "fallback",
+      "description": "Reave was an upcoming VR extraction dungeon crawler from Alta, the studio behind Township Tale. The company announced that the game has been cancelled despite the game being in a mature enough state for months of open playtesting. Following the successful lau…",
+      "imageUrl": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2025/12/reave.jpg",
+      "author": "Ben Lang",
+      "cleanedText": "Reave was an upcoming VR extraction dungeon crawler from Alta, the studio behind Township Tale. The company announced that the game has been cancelled despite the game being in a mature enough state …"
+    },
+    {
+      "id": "be64d4c1f3fa80d1",
+      "slug": "india-squad-for-women-s-t20-world-cup-2026-harmanpreet-kaur--be64d4c1",
+      "title": "India squad for Women's T20 World Cup 2026: Harmanpreet Kaur to lead team as India chase another World Cup title",
+      "sourceName": "Sporting News",
+      "publishedAt": "2026-05-02T12:43:27.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.sportingnews.com/in/cricket/news/india-squad-womens-t20-world-cup-harmanpreet-kaur-lead/071cb4703e22a64538e1c2aa",
+      "summary": "India squad for Women's T20 World Cup 2026: Harmanpreet Kaur to lead team as India chase another World Cup title. BCCI has announced the Indian squad for the upcoming Women's T20 World Cup 2026.",
+      "summaryType": "fallback",
+      "description": "BCCI has announced the Indian squad for the upcoming Women's T20 World Cup 2026.",
+      "imageUrl": "https://s.yimg.com/os/en/the_sporting_news_articles_584/8753a345e2f47a72fee31449b913c37a",
+      "author": "Ritabrata_Banerjee",
+      "cleanedText": "India have announced their squad for the upcoming Women's T20 World Cup 2026, which will be held in England and Wales between June 12 and July 5. India, who had won their maiden ICC title by lifting…"
+    },
     {
       "id": "2d6a5201d5c50d03",
       "slug": "celebrity-traitors-cast-revealed-20-stars-to-compete-on-bbc--2d6a5201",
@@ -31,6 +63,22 @@
       "imageUrl": "https://www.justjared.com/wp-content/uploads/2026/05/celebrity-traitors-cast.jpg",
       "author": "Kim Brown",
       "cleanedText": "Credit: Getty Images The cast for The Celebrity Traitors has been revealed! The show airs on the BBC and is hosted by Claudia Winkleman. If you don’t know, it was the highest-rated TV show on telev…"
+    },
+    {
+      "id": "74d523ddf61dbb70",
+      "slug": "the-fight-to-save-the-yachats-whale-74d523dd",
+      "title": "The Fight to Save the Yachats Whale",
+      "sourceName": "The Atlantic",
+      "publishedAt": "2026-05-02T12:29:05.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.theatlantic.com/science/2026/05/yachats-beached-whale-rescue/686978/",
+      "summary": "The Fight to Save the Yachats Whale. A juvenile humpback washed ashore in Oregon. Could local residents save it?",
+      "summaryType": "fallback",
+      "description": "A juvenile humpback washed ashore in Oregon. Could local residents save it?",
+      "imageUrl": "https://cdn.theatlantic.com/thumbor/vr-PTGVcuAH7Y_LrlpG70O7yS8M=/0x112:5275x2859/1200x625/media/img/mt/2026/04/GKS_251116_Humpback_07_copy/original.jpg",
+      "author": "Robin Romm",
+      "cleanedText": "One afternoon in November, just north of the small Oregon coastal town of Yachats, a juvenile humpback whale tumbled ashore. A few hours earlier, local residents had spotted it thrashing in distress …"
     },
     {
       "id": "7d77d63b9f215ac4",
@@ -63,6 +111,22 @@
       "imageUrl": "https://st1.latestly.com/wp-content/uploads/2024/11/Zayn-Malik-Lookalike-784x441.jpg",
       "author": "Ians",
       "cleanedText": "Los Angeles, May 2: Singer-songwriter Zayn Malik has canceled all U.S. dates for the 2026 tour behind his Konnakol album. The album was released on April 17, 2026. However, dates in the U.K. and Mexi…"
+    },
+    {
+      "id": "3fcf852d6746695f",
+      "slug": "confirmed-india-women-s-squad-for-icc-women-s-t20-world-cup--3fcf852d",
+      "title": "Confirmed India women's squad for ICC Women's T20 World Cup 2026: Full list of players",
+      "sourceName": "Cricketnews.com",
+      "publishedAt": "2026-05-02T11:45:32.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.cricketnews.com/en/cricket/news/india-womens-squad-icc-womens-t20-world-cup-2026-players/1b09b20628147771149776a2",
+      "summary": "Confirmed India women's squad for ICC Women's T20 World Cup 2026: Full list of players. India's women's cricket team has been named for the upcoming T20 World Cup, with Harmanpreet Kaur as the skipper.",
+      "summaryType": "fallback",
+      "description": "India's women's cricket team has been named for the upcoming T20 World Cup, with Harmanpreet Kaur as the skipper.",
+      "imageUrl": "https://s.yimg.com/os/en/the_cricket_news_articles_506/d51c9489f37921a6c5232c37efea90c2",
+      "author": "Soham Mukherjee",
+      "cleanedText": "Confirmed India women's squad for ICC Women's T20 World Cup 2026: Full list of players originally appeared on Cricket News. Add Cricket News as a Preferred Source by clicking here. India wom…"
     },
     {
       "id": "12a7a86dc62ef9a0",
@@ -161,6 +225,22 @@
       "cleanedText": "An oil tanker sails by as a Colombian soldier patrols the beach during the International Conference on the Just Transition Away from Fossil Fuels in Santa Marta, Colombia. Get your news from a sourc…"
     },
     {
+      "id": "40ee58255279978a",
+      "slug": "which-countries-have-dropped-out-of-eurovision-2026-and-why-40ee5825",
+      "title": "Which countries have dropped out of Eurovision 2026 and why?",
+      "sourceName": "The-independent.com",
+      "publishedAt": "2026-05-02T11:18:51.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.the-independent.com/arts-entertainment/eurovision/eurovision-2026-israel-boycott-which-countries-b2969409.html",
+      "summary": "Which countries have dropped out of Eurovision 2026 and why?. One country is even refusing to air the annual song contest",
+      "summaryType": "fallback",
+      "description": "One country is even refusing to air the annual song contest",
+      "imageUrl": "https://static.the-independent.com/2026/04/29/08/2272214382.jpg?width=1200&height=800&crop=1200:800",
+      "author": "Rachel McGrath",
+      "cleanedText": "Your support helps us to tell the story From reproductive rights to climate change to Big Tech, The Independent is on the ground when the story is developing. Whether it's investigating the financia…"
+    },
+    {
       "id": "1e4f50051abe7ab1",
       "slug": "why-did-spirit-airlines-fail-is-this-the-first-economic-shoc-1e4f5005",
       "title": "Why did Spirit Airlines fail? Is this the first economic shock of the Iran war— or a missed bailout moment under Trump? The true cost of flying cheap in America",
@@ -191,6 +271,22 @@
       "imageUrl": "https://img1-azrcdn.newser.com/image/1682230-12-20260502061002.jpeg",
       "author": "Jenn Gidman",
       "cleanedText": "Germany hosts several US military facilities, including the headquarters of its European and African commands, Ramstein Air Base, and a medical center in Landstuhl, where casualties from the wars in …"
+    },
+    {
+      "id": "a86ed13605b1fe55",
+      "slug": "tv-and-streaming-viewing-picks-for-may-2-2026-how-to-watch-s-a86ed136",
+      "title": "TV and streaming viewing picks for May 2, 2026: How to watch Sixers-Celtics, Game 7",
+      "sourceName": "Awful Announcing",
+      "publishedAt": "2026-05-02T11:00:54.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://awfulannouncing.com/viewing-picks/may-2-2026-watch-sixers-celtics-game-7.html",
+      "summary": "TV and streaming viewing picks for May 2, 2026: How to watch Sixers-Celtics, Game 7. All Times Eastern Australian Rules Football AFL Men’s — Round 8 Sydney Swans vs. Melbourne Demons — FS2/Fox One, 1:01 a.m. (Sunday) Gold Coast Suns vs. Greater Western Sydney Giants — FS1/Fox One, 5 a.m. (Sunday) Baseball Banana Ball World Tour Exhibition, Ky…",
+      "summaryType": "fallback",
+      "description": "All Times Eastern Australian Rules Football AFL Men’s — Round 8 Sydney Swans vs. Melbourne Demons — FS2/Fox One, 1:01 a.m. (Sunday) Gold Coast Suns vs. Greater Western Sydney Giants — FS1/Fox One, 5 a.m. (Sunday) Baseball Banana Ball World Tour Exhibition, Ky…",
+      "imageUrl": "https://s.yimg.com/os/en/awful_announcing_173/ff2d92485a32c9caa5cb1dd78675cc0e",
+      "author": "Ken Fang",
+      "cleanedText": "Australian Rules FootballAFL Mens Round 8Sydney Swans vs. Melbourne Demons FS2/Fox One, 1:01 a.m. (Sunday)Gold Coast Suns vs. Greater Western Sydney Giants FS1/Fox One, 5 a.m. (Sunday) BaseballBanan…"
     },
     {
       "id": "c1a1d1ac9118511f",
@@ -225,6 +321,38 @@
       "cleanedText": "In the wake of the U.S. Supreme Courts landmark decision in Louisiana v. Callais, much attention has been paid to its impact on the midterms and the partisan gerrymandering surge we can expect in the…"
     },
     {
+      "id": "2afd0e6da56409e5",
+      "slug": "as-santa-marta-leads-the-world-into-the-energy-future-the-us-2afd0e6d",
+      "title": "As Santa Marta Leads the World Into the Energy Future, the US Clings to the Past",
+      "sourceName": "Substack.com",
+      "publishedAt": "2026-05-02T10:53:01.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://billmckibben.substack.com/p/a-hinge-moment-on-planet-earth",
+      "summary": "As Santa Marta Leads the World Into the Energy Future, the US Clings to the Past. Many of the people who’ve been working for years on climate issues assembled this week in Santa Marta, Colombia for a conference on how to get off fossil fuels. Sponsored by the Colombians and the Dutch, it was an outgrowth of December’s unhappy COP negotiati…",
+      "summaryType": "fallback",
+      "description": "Many of the people who’ve been working for years on climate issues assembled this week in Santa Marta, Colombia for a conference on how to get off fossil fuels. Sponsored by the Colombians and the Dutch, it was an outgrowth of December’s unhappy COP negotiati…",
+      "imageUrl": "https://www.commondreams.org/media-library/image.jpg?id=66667951&width=1200&height=600&coordinates=0%2C416%2C0%2C417",
+      "author": "Bill Mckibben",
+      "cleanedText": "Many of the people whove been working for years on climate issues assembled this week in Santa Marta, Colombia for a conference on how to get off fossil fuels. Sponsored by the Colombians and the Dut…"
+    },
+    {
+      "id": "097f571fd3d57bba",
+      "slug": "indonesia-maintains-fertilizer-supply-amid-global-turmoil-en-097f571f",
+      "title": "Indonesia maintains fertilizer supply amid global turmoil: envoy",
+      "sourceName": "Antaranews.com",
+      "publishedAt": "2026-05-02T10:51:31.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://en.antaranews.com/news/414372/indonesia-maintains-fertilizer-supply-amid-global-turmoil-envoy",
+      "summary": "Indonesia maintains fertilizer supply amid global turmoil: envoy. State-run fertilizer producer PT Pupuk Indonesia has been able to maintain supply stability amid global turmoil, Presidential Special Envoy for Energy and ...",
+      "summaryType": "fallback",
+      "description": "State-run fertilizer producer PT Pupuk Indonesia has been able to maintain supply stability amid global turmoil, Presidential Special Envoy for Energy and ...",
+      "imageUrl": "https://cdn.antaranews.com/cache/1200x800/2026/05/02/7b390e75-f418-48d1-af79-1962e46f70a7.jpeg",
+      "author": "Mario Sofia Nasution, Yashinta Difa",
+      "cleanedText": "Jakarta (ANTARA) - State-run fertilizer producer PT Pupuk Indonesia has been able to maintain supply stability amid global turmoil, Presidential Special Envoy for Energy and Environment Hashim Djojoh…"
+    },
+    {
       "id": "6ce6bb7b6b4acb5a",
       "slug": "pope-leo-xiv-encourages-wealthy-us-catholics-to-keep-donatin-6ce6bb7b",
       "title": "Pope Leo XIV encourages wealthy US Catholics to keep donating",
@@ -247,7 +375,7 @@
       "sourceName": "Android Central",
       "publishedAt": "2026-05-02T10:23:00.000Z",
       "category": "world",
-      "sourceCountry": "in",
+      "sourceCountry": "au",
       "url": "https://www.androidcentral.com/streaming-tv/netflix/clip-this-netflixs-new-mobile-design-is-all-about-short-videos-and-scrolling",
       "summary": "Clip this: Netflix's new mobile design is all about short videos and scrolling. Kick back this weekend with Netflix's fresh (and much-needed) mobile app redesign that brings \"Clips\" into our lives.",
       "summaryType": "fallback",
