@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-03T22:34:57.288Z",
+  "generatedAt": "2026-05-03T23:38:30.315Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -11,10 +11,26 @@
     "dropped": 0,
     "deduped": 9,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 63,
-    "finalArticles": 63
+    "fallbackSummaries": 71,
+    "finalArticles": 71
   },
   "articles": [
+    {
+      "id": "ff5954e557c0e326",
+      "slug": "keystone-lite-gets-federal-approval-sparking-hope-for-jobs-m-ff5954e5",
+      "title": "‘Keystone Lite’ gets federal approval, sparking hope for jobs, millions in tax revenue",
+      "sourceName": "Wnd.com",
+      "publishedAt": "2026-05-02T22:30:03.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.wnd.com/2026/05/keystone-lite-gets-federal-approval-sparking-hope-jobs/",
+      "summary": "‘Keystone Lite’ gets federal approval, sparking hope for jobs, millions in tax revenue. Barack Obama delayed, Joe Biden killed original economic boost for America",
+      "summaryType": "fallback",
+      "description": "Barack Obama delayed, Joe Biden killed original economic boost for America",
+      "imageUrl": "https://www.wnd.com/wp-content/uploads/2014/02/keystone_construction.jpg",
+      "author": "Bob Unruh",
+      "cleanedText": "Keystone XL was a pipeline project proposed running from Canada into the United State that would have provided oil for processing to multiple states, helping address energy shortages, the needs of th…"
+    },
     {
       "id": "11387b30ab0691eb",
       "slug": "aimee-lou-wood-hosts-snl-uk-pokes-fun-at-sex-education-the-w-11387b30",
@@ -64,6 +80,22 @@
       "cleanedText": "Conah Wolf Walker stopped Sam The Savage Eggington in the tenth round after a hard, physical main event that built steadily into a one-sided finish at City Hall in Wolverhampton, West Midlands, UK on…"
     },
     {
+      "id": "ad4d82b2b376bee8",
+      "slug": "finally-this-is-the-week-we-ve-all-been-waiting-for-in-disne-ad4d82b2",
+      "title": "FINALLY. This Is the Week We’ve All Been Waiting for in Disney World!",
+      "sourceName": "disneyfoodblog.com",
+      "publishedAt": "2026-05-02T22:00:50.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.disneyfoodblog.com/2026/05/02/finally-this-is-the-week-weve-all-been-waiting-for-in-disney-world/",
+      "summary": "FINALLY. This Is the Week We’ve All Been Waiting for in Disney World!. One of Disney World's BIGGEST construction projects FINALLY reopens this week...but other closures continue.",
+      "summaryType": "fallback",
+      "description": "One of Disney World's BIGGEST construction projects FINALLY reopens this week...but other closures continue.",
+      "imageUrl": "https://www.disneyfoodblog.com/wp-content/uploads/2026/04/2026-WDW-magic-kingdom-big-thunder-mountain-railroad-concept-art-rainbow-caverns-1-700x375.png",
+      "author": "Jordan-Paige Sudduth",
+      "cleanedText": "This week is about to be a BIG one in Disney World, because one of the BIGGEST closures will finally go away! ©Disney That’s right, this week is FINALLY the time when one of Magic Kingdom‘s most po…"
+    },
+    {
       "id": "e9451078569905c3",
       "slug": "aimee-lou-wood-is-lauded-by-fans-as-she-makes-snl-uk-hosting-e9451078",
       "title": "Aimee Lou Wood is lauded by fans as she makes SNL UK hosting debut and brushes off 'mean and unfunny' teeth parody: 'She's smashing it!'",
@@ -78,6 +110,84 @@
       "imageUrl": "https://i.dailymail.com/1s/2026/05/02/22/108332787-0-image-m-35_1777758812194.jpg",
       "author": "Lily Jobson",
       "cleanedText": "Aimee Lou Wood was lauded by fans as she made her SNL UK hosting debut on Saturday night - a year after the 'mean and unfunny' teeth parody about her. The actress, 32, took aim at the original US ve…"
+    },
+    {
+      "id": "375a1d9efd4719f5",
+      "slug": "three-veteran-nhl-coaches-that-must-be-on-the-kings-and-ken--375a1d9e",
+      "title": "Three Veteran NHL Coaches That Must Be On The Kings And Ken Holland's List",
+      "sourceName": "The Hockey News",
+      "publishedAt": "2026-05-02T21:57:22.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://thehockeynews.com/nhl/los-angeles-kings/latest-news/three-veteran-nhl-coaches-that-must-be-on-the-kings-and-ken-hollands-list",
+      "summary": "Three Veteran NHL Coaches That Must Be On The Kings And Ken Holland's List. Los Angeles Kings GM Ken Holland revealed that he will be searching for a new head coach for next season. Though he'll be looking at a variation of candidates with different levels of experience, here are three veteran coaches who should be on his list.",
+      "summaryType": "fallback",
+      "description": "Los Angeles Kings GM Ken Holland revealed that he will be searching for a new head coach for next season. Though he'll be looking at a variation of candidates with different levels of experience, here are three veteran coaches who should be on his list.",
+      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/VliZb14ythblYLuJ5P_FRA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://media.zenfs.com/en/the_hockey_news_los_angeles_kings_articles_947/69c262b81151d0db3183996418da7467",
+      "author": "Andre Leal",
+      "cleanedText": "During Friday's exit meeting for Los Angeles Kings GM Ken Holland, he revealed that interim head coach D.J. Smith isn't officially the coach for next season, but is a candidate for the job in the sea…"
+    },
+    {
+      "id": "7df8219c8e90452d",
+      "slug": "poland-2026-falconets-cage-malawi-2-0-in-ikenne-eye-win-in-l-7df8219c",
+      "title": "Poland 2026: Falconets cage Malawi 2-0 in Ikenne, eye win in Lilongwe",
+      "sourceName": "Vanguard",
+      "publishedAt": "2026-05-02T21:29:57.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.vanguardngr.com/2026/05/poland-2026-falconets-cage-malawi-2-0-in-ikenne-eye-win-in-lilongwe/",
+      "summary": "Poland 2026: Falconets cage Malawi 2-0 in Ikenne, eye win in Lilongwe. Nigeria’s U-20 girls, Falconets, dominated easily and created a hatful of opportunities as they earned a 2-0 win over their counterparts from Malawi in the first leg of a FIFA U20 Women’s World Cup final round fixture in Ikenne-Remo on Saturday. The post Pola…",
+      "summaryType": "fallback",
+      "description": "Nigeria’s U-20 girls, Falconets, dominated easily and created a hatful of opportunities as they earned a 2-0 win over their counterparts from Malawi in the first leg of a FIFA U20 Women’s World Cup final round fixture in Ikenne-Remo on Saturday. The post Pola…",
+      "imageUrl": "https://cdn.vanguardngr.com/wp-content/uploads/2026/05/Falconets.jpeg",
+      "author": "Emmanuel Okogba",
+      "cleanedText": "Nigerias U-20 girls, Falconets, dominated easily and created a hatful of opportunities as they earned a 2-0 win over their counterparts from Malawi in the first leg of a FIFA U20 Womens World Cup fin…"
+    },
+    {
+      "id": "79831aac3423d11f",
+      "slug": "carolina-hurricanes-drop-the-nation-s-next-great-novelty-bee-79831aac",
+      "title": "Carolina Hurricanes drop the nation's next great novelty beer cup",
+      "sourceName": "Fox News",
+      "publishedAt": "2026-05-02T21:28:26.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.foxnews.com/outkick-sports/carolina-hurricanes-drop-nations-next-great-novelty-beer-cup",
+      "summary": "Carolina Hurricanes drop the nation's next great novelty beer cup. Carolina Hurricanes fans can now drink beer from a big plastic skate at the Lenovo Center during their second-round series against the Philadelphia Flyers.",
+      "summaryType": "fallback",
+      "description": "Carolina Hurricanes fans can now drink beer from a big plastic skate at the Lenovo Center during their second-round series against the Philadelphia Flyers.",
+      "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2026/05/lenovo-center.jpeg",
+      "cleanedText": "There are still two first-round series that need to be decided, but the NHL is itching to get the second round of the Stanley Cup Finals underway. The first series to get rolling is the first-ever p…"
+    },
+    {
+      "id": "6ed78ccb444d56a5",
+      "slug": "fedex-workers-in-fort-mcmurray-win-their-union-join-teamster-6ed78ccb",
+      "title": "FedEx Workers in Fort McMurray Win Their Union, Join Teamsters",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-05-02T21:27:36.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://financialpost.com/globe-newswire/fedex-workers-in-fort-mcmurray-win-their-union-join-teamsters",
+      "summary": "FedEx Workers in Fort McMurray Win Their Union, Join Teamsters. Workers join Teamsters Local Union 362 after company tried to strip immigrant workers of right to join a union alongside Canadians CALGARY, Alberta, May 02, 2026 (GLOBE NEWSWIRE) — Approximately 50 workers at FedEx Express in Fort McMurray have won their unio…",
+      "summaryType": "fallback",
+      "description": "Workers join Teamsters Local Union 362 after company tried to strip immigrant workers of right to join a union alongside Canadians CALGARY, Alberta, May 02, 2026 (GLOBE NEWSWIRE) — Approximately 50 workers at FedEx Express in Fort McMurray have won their unio…",
+      "author": "GlobeNewswire",
+      "cleanedText": "Workers join Teamsters Local Union 362 after company tried to strip immigrant workers of right to join a union alongside Canadians THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to rea…"
+    },
+    {
+      "id": "ba97466c671ffdc9",
+      "slug": "taylor-swift-and-travis-kelce-fans-erupt-over-whispers-coupl-ba97466c",
+      "title": "Taylor Swift and Travis Kelce fans erupt over whispers couple bought Kentucky Derby horse after owner teases NDA",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-05-02T21:18:13.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.dailymail.com/tvshowbiz/article-15785445/Taylor-Swift-Travis-Kelce-fans-Derby-horse.html",
+      "summary": "Taylor Swift and Travis Kelce fans erupt over whispers couple bought Kentucky Derby horse after owner teases NDA. The rumor mill over Swift and Kelce's interest in the three-year-old chestnut thoroughbred started online, coinciding with the couple's plans to wed this summer.",
+      "summaryType": "fallback",
+      "description": "The rumor mill over Swift and Kelce's interest in the three-year-old chestnut thoroughbred started online, coinciding with the couple's plans to wed this summer.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/05/02/22/108291765-0-image-m-64_1777756441273.jpg",
+      "author": "Jennifer Pearson",
+      "cleanedText": "Taylor Swift and Travis Kelce fans are humming over buzz the couple bought a 10 percent stake in the 2026 Kentucky Derby race horse The Puma this week. The rumor mill over Swift and Kelce's interest…"
     },
     {
       "id": "2030cb9e443ac39c",
@@ -202,6 +312,22 @@
       "cleanedText": "Dannielynn Birkhead, the 19-year-old daughter of the late Anna Nicole Smith, made a striking entrance at the 2026 Kentucky Derby, turning heads with a bold, goth-inspired look. Joined by her proud d…"
     },
     {
+      "id": "8fc931726773e2a4",
+      "slug": "team-canada-reveals-head-coach-for-men-s-worlds-8fc93172",
+      "title": "Team Canada reveals head coach for men's worlds",
+      "sourceName": "Sporting News",
+      "publishedAt": "2026-05-02T20:39:19.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.sportingnews.com/us/nhl/dallas-stars/news/team-canada-reveals-head-coach-mens-worlds/3314942657a1c6e7566b8a32",
+      "summary": "Team Canada reveals head coach for men's worlds. Hockey Canada has announced who will serve as the head coach for the upcoming 2026 IHHF Men's World Championship in Switzerland.",
+      "summaryType": "fallback",
+      "description": "Hockey Canada has announced who will serve as the head coach for the upcoming 2026 IHHF Men's World Championship in Switzerland.",
+      "imageUrl": "https://s.yimg.com/os/en/the_sporting_news_articles_584/32081fb30ecdb537508829cd42f9e190",
+      "author": "Jennifer Streeter",
+      "cleanedText": "Team Canada reveals head coach for men's worlds originally appeared on The Sporting News. Add The Sporting News as a Preferred Source by clicking here. Misha Donskov will serve as the head coach for…"
+    },
+    {
       "id": "9d3a464e750723a9",
       "slug": "spirit-airlines-collapse-strands-travelers-what-to-know-abou-9d3a464e",
       "title": "Spirit Airlines collapse strands travelers: What to know about refunds, rebooking and fares",
@@ -216,6 +342,21 @@
       "imageUrl": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-05/260502-spirit-airlines-ww-1118-948f12.jpg",
       "author": "Kathy Park, Mirna Alsharif, Francie Ebert, Carmen Gonzalez",
       "cleanedText": "FORT LAUDERDALE, Fla. Passengers arriving at Fort Lauderdale-Hollywood International Airport on Saturday were still being dropped off for flights that no longer existed learning only at curbside that…"
+    },
+    {
+      "id": "bb1137579646c586",
+      "slug": "ashley-graham-slams-glp-1-trend-as-a-smack-in-the-face-after-bb113757",
+      "title": "Ashley Graham slams GLP-1 trend as 'a smack in the face' after body positivity movement - Entertainment Weekly",
+      "sourceName": "Slashdot.org",
+      "publishedAt": "2026-05-02T20:32:16.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://slashdot.org/firehose.pl?op=view&amp;id=183106526",
+      "summary": "Ashley Graham slams GLP-1 trend as 'a smack in the face' after body positivity movement - Entertainment Weekly. Ashley Graham slams GLP-1 trend as 'a smack in the face' after body positivity movementEntertainment Weekly Ashley Graham Speaks Out on 'Disheartening' Shift Away From Body Acceptance MovementYahoo News Canada Ashley Graham Slammed The GLP-1 Trend As \"Dishear…",
+      "summaryType": "fallback",
+      "description": "Ashley Graham slams GLP-1 trend as 'a smack in the face' after body positivity movementEntertainment Weekly Ashley Graham Speaks Out on 'Disheartening' Shift Away From Body Acceptance MovementYahoo News Canada Ashley Graham Slammed The GLP-1 Trend As \"Dishear…",
+      "author": "feedfeeder",
+      "cleanedText": "The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way."
     },
     {
       "id": "47afdc174cefe9ed",
@@ -567,21 +708,6 @@
       "imageUrl": "https://www.sciencealert.com/images/2026/04/OilPill.jpg",
       "author": "Carly Cassella",
       "cleanedText": "Nutritional supplements are exploding in popularity, but some experts remain skeptical of the numerous health claims surrounding these pills and their safety at high dosages. Omega-3 is often taken …"
-    },
-    {
-      "id": "bb1137579646c586",
-      "slug": "princess-charlotte-beams-in-new-11th-birthday-portrait-and-v-bb113757",
-      "title": "Princess Charlotte beams in new 11th birthday portrait and video - Yahoo News Canada",
-      "sourceName": "Slashdot.org",
-      "publishedAt": "2026-05-02T17:52:54.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://slashdot.org/firehose.pl?op=view&amp;id=183105282",
-      "summary": "Princess Charlotte beams in new 11th birthday portrait and video - Yahoo News Canada. Princess Charlotte beams in new 11th birthday portrait and videoYahoo News Canada View Full Coverage on Google News ...",
-      "summaryType": "fallback",
-      "description": "Princess Charlotte beams in new 11th birthday portrait and videoYahoo News Canada View Full Coverage on Google News ...",
-      "author": "feedfeeder",
-      "cleanedText": "The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way."
     },
     {
       "id": "c61021d4f32ffad0",
