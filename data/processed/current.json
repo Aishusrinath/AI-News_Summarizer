@@ -1,20 +1,52 @@
 {
-  "generatedAt": "2026-05-03T07:54:00.226Z",
+  "generatedAt": "2026-05-03T09:18:01.369Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
     "health"
   ],
   "counts": {
-    "fetched": 5,
-    "normalized": 5,
+    "fetched": 8,
+    "normalized": 8,
     "dropped": 0,
-    "deduped": 5,
+    "deduped": 8,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 70,
-    "finalArticles": 70
+    "fallbackSummaries": 78,
+    "finalArticles": 78
   },
   "articles": [
+    {
+      "id": "3b4bda294a1f2278",
+      "slug": "wife-of-nrl-star-cameron-munster-reveals-heartbreaking-famil-3b4bda29",
+      "title": "Wife of NRL star Cameron Munster reveals heartbreaking family tragedy driving her personal Mother's Day mission - after Melbourne Storm pivot lost his dad unexpectedly in 2025",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-05-02T08:47:53.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.dailymail.com/sport/nrl/article-15783755/Wife-NRL-star-Cameron-Munster-Bianca-reveals-heartbreaking-family-tragedy-driving-Mothers-Day-mission-Melbourne-Storm-pivot-lost-dad-unexpectedly-2025.html",
+      "summary": "Wife of NRL star Cameron Munster reveals heartbreaking family tragedy driving her personal Mother's Day mission - after Melbourne Storm pivot lost his dad unexpectedly in 2025. Maria McMahon died of ovarian cancer in 2021 and ever since, the Munster family have taken part in the annual Mother's Day Classic in Melbourne.",
+      "summaryType": "fallback",
+      "description": "Maria McMahon died of ovarian cancer in 2021 and ever since, the Munster family have taken part in the annual Mother's Day Classic in Melbourne.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/05/02/04/108321665-0-image-m-59_1777692908640.jpg",
+      "author": "Andrew Prentice",
+      "cleanedText": "Footy WAG Bianca Munster has revealed the death of her mum five years ago is the driving force behind her Mother's Day mission on May 10. It also comes after her NRL star husband Cameron Munster los…"
+    },
+    {
+      "id": "2c6a50ff47080256",
+      "slug": "alex-zanardi-dies-at-the-age-of-59-2c6a50ff",
+      "title": "Alex Zanardi dies at the age of 59",
+      "sourceName": "autosport.com",
+      "publishedAt": "2026-05-02T08:30:02.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.autosport.com/f1/news/alex-zanardi-dies-at-the-age-of-59/10817217/",
+      "summary": "Alex Zanardi dies at the age of 59. A wide smile, dimples on his cheeks, and those slightly squinting eyes. If we close our eyes, that’s how Alex Zanardi comes to mind. And of course, wearing a racing suit – whether it was a Formula 1 suit, a Ganassi one, or the Italian handbike suit didn’t rea…",
+      "summaryType": "fallback",
+      "description": "A wide smile, dimples on his cheeks, and those slightly squinting eyes. If we close our eyes, that’s how Alex Zanardi comes to mind. And of course, wearing a racing suit – whether it was a Formula 1 suit, a Ganassi one, or the Italian handbike suit didn’t rea…",
+      "imageUrl": "https://cdn-7.motorsport.com/images/amp/6b7Aapv0/s6/alex-zanardi-bmw-team-rll.jpg",
+      "author": "Giacomo Rauli",
+      "cleanedText": "A wide smile, dimples on his cheeks, and those slightly squinting eyes. If we close our eyes, thats how Alex Zanardi comes to mind. And of course, wearing a racing suit whether it was a Formula 1 sui…"
+    },
     {
       "id": "6e48078b132519ae",
       "slug": "as-meghan-and-harry-s-son-archie-celebrates-his-seventh-birt-6e48078b",
@@ -111,6 +143,22 @@
       "cleanedText": "Kolkata: Come July and National Pension System or NPS subscribers will witness a tweaking of account-level charges. It follows the decision of the regulator PFRDA (Pension Fund Regulatory and Develop…"
     },
     {
+      "id": "01c2b4fd7aeef158",
+      "slug": "westmeath-still-dreaming-of-a-rare-leinster-title-despite-lu-01c2b4fd",
+      "title": "Westmeath still dreaming of a rare Leinster title despite Luke Loughlin injury blow",
+      "sourceName": "The Irish Times",
+      "publishedAt": "2026-05-02T05:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.irishtimes.com/sport/gaelic-games/2026/05/02/westmeath-still-dreaming-of-a-rare-leinster-title-despite-luke-loughlin-injury-blow/",
+      "summary": "Westmeath still dreaming of a rare Leinster title despite Luke Loughlin injury blow. Lake County have several players capable of causing Kildare bother in provincial semi-final",
+      "summaryType": "fallback",
+      "description": "Lake County have several players capable of causing Kildare bother in provincial semi-final",
+      "imageUrl": "https://www.irishtimes.com/resizer/v2/GK5FPWPZCRAQLPGZQZIXNKSCLE.jpg?smart=true&auth=f6fec380105d412b5bf69bddb61e7213e588304c8763e54c3eb9b2b0ee87e2fa&width=1200&height=630",
+      "author": "Gordon Manning",
+      "cleanedText": "It had been one of those giddy, dare-to-dream kind of weeks around Westmeath until life swung by with a good old-fashioned gut-punch on Wednesday. While still basking in the afterglow of putting one…"
+    },
+    {
       "id": "b0e5e6eb99280252",
       "slug": "gold-silver-prices-today-check-retail-rates-of-24k-22k-gold--b0e5e6eb",
       "title": "Gold, silver prices today: Check retail rates of 24K, 22K gold, 999 silver on May 2 in Delhi, Mumbai, Pune, others",
@@ -159,6 +207,22 @@
       "cleanedText": "(What's moving Sensex and Nifty Track latest market news, stock tips, Budget 2025, Share Market on Budget 2025 and expert advice, on ETMarkets. Also, ETMarkets.com is now on Telegram. For fastest new…"
     },
     {
+      "id": "1134033993bf1f55",
+      "slug": "why-australia-s-fastest-male-sprinter-of-all-time-was-not-pi-11340339",
+      "title": "Why Australia's fastest male sprinter of all time was NOT picked for the national six-man relay squad",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-05-02T04:00:27.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.dailymail.com/sport/olympics/article-15784165/Why-Australias-fastest-male-sprinter-time-NOT-picked-national-six-man-relay-squad.html",
+      "summary": "Why Australia's fastest male sprinter of all time was NOT picked for the national six-man relay squad. He is the Aussie that came from the clouds to record the fastest all-conditions 100m sprint time in Australian history, yet his historic run was not deemed good enough to earn national selection",
+      "summaryType": "fallback",
+      "description": "He is the Aussie that came from the clouds to record the fastest all-conditions 100m sprint time in Australian history, yet his historic run was not deemed good enough to earn national selection",
+      "imageUrl": "https://i.dailymail.com/1s/2026/05/02/04/108321341-0-image-m-14_1777693706108.jpg",
+      "author": "Josh Alston",
+      "cleanedText": "He is the Aussie that came from the clouds to record the fastest all-conditions 100m sprint time in Australian history, yet his historic run was not deemed good enough to earn national selection. Wh…"
+    },
+    {
       "id": "8f2e63d74e1f1819",
       "slug": "like-charles-dickens-bleak-house-supreme-court-flags-delay-i-8f2e63d7",
       "title": "Like Charles Dickens’ Bleak House: Supreme Court flags delay in justice, orders Rs 164.91 crore refund to Reliance",
@@ -189,6 +253,22 @@
       "imageUrl": "https://www.newsbtc.com/wp-content/uploads/2026/05/btc.png?fit=1382%2C921",
       "author": "Keshav Verma",
       "cleanedText": "Keshav is currently a senior writer at NewsBTC and has been attached to the website since June 14, 2021. Keshav has been writing for many years, first as a hobbyist and later as a freelancer. He has …"
+    },
+    {
+      "id": "1102a1e58c959d75",
+      "slug": "ghost-rainbows-storms-and-sunsets-wa-s-skies-captured-by-you-1102a1e5",
+      "title": "Ghost rainbows, storms and sunsets — WA's skies, captured by you",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-05-02T02:15:34.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-05-02/april-best-weather-photos-perth-western-australia-/106622480",
+      "summary": "Ghost rainbows, storms and sunsets — WA's skies, captured by you. In classic shoulder season conditions, April delivered a transitional mix of warm beach weather and cool, wet days with rainfall in the double-digits as we inch closer to winter.",
+      "summaryType": "fallback",
+      "description": "In classic shoulder season conditions, April delivered a transitional mix of warm beach weather and cool, wet days with rainfall in the double-digits as we inch closer to winter.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/afa1ec79438f9911cdfce81952ebe980?impolicy=wcms_watermark_news&cropH=2268&cropW=4032&xPos=0&yPos=378&width=862&height=485&imformat=generic",
+      "author": "Tabarak Al Jrood and Kenith Png",
+      "cleanedText": "April delivered a classic autumnal mix of warm beach weather and cool, wet days as we head into winter. From storms to stunning sunsets, we look back at some of the spectacular photographs sent in …"
     },
     {
       "id": "1bcb2f0048d06728",
@@ -222,6 +302,38 @@
       "cleanedText": "Skip to comments. Venezuela Oil Exports Hit Seven-Year HighOilPrice.com ^ | May 01, 2026 | Julianne Geiger Posted on 05/01/2026 7:07:22 PM PDT by BeauBo Venezuelas oil exports rose to 1.23 mil…"
     },
     {
+      "id": "acb8525805753f0b",
+      "slug": "cosmetics-will-soon-cost-more-here-s-why-acb85258",
+      "title": "Cosmetics will soon cost more. Here's why",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-05-02T02:03:14.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-05-02/australians-likely-pay-more-cosmetics-even-if-strait-hormuz-open/106564794",
+      "summary": "Cosmetics will soon cost more. Here's why. Australians spend about $450 on average on beauty products per year. That could soon rise as petroleum prices increase.",
+      "summaryType": "fallback",
+      "description": "Australians spend about $450 on average on beauty products per year. That could soon rise as petroleum prices increase.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/9f2ac9b90a1853b56dadaf5042f7f3e7?impolicy=wcms_watermark_news&cropH=2523&cropW=4485&xPos=0&yPos=0&width=862&height=485&imformat=generic",
+      "author": "Yiying Li",
+      "cleanedText": "Australians will likely be forced to pay more for cosmetic products, such as lipsticks and moisturisers, due to crude oil supply disruptions caused by the Middle East war. Even if the situation stab…"
+    },
+    {
+      "id": "d642436731cd0c3e",
+      "slug": "c-o-r-r-e-c-t-i-o-n-applied-intuition-inc-d6424367",
+      "title": "/C O R R E C T I O N -- Applied Intuition, Inc./",
+      "sourceName": "Associated Press",
+      "publishedAt": "2026-05-02T02:01:52.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://apnews.com/press-release/pr-newswire/c-o-r-r-e-c-t-i-o-n-applied-intuition-inc-6c6778483477d981fc4e5dcb9ff1eb8b",
+      "summary": "/C O R R E C T I O N -- Applied Intuition, Inc./. In the news release, Applied Intuition Collaborates with Heidelberg Materials to Advance Innovation in Quarry Operations with Autonomous Haulage Fleets, issued 30-Apr-2026 by Applied Intuition, Inc. over PR Newswire, we are advised by the company that changes…",
+      "summaryType": "fallback",
+      "description": "In the news release, Applied Intuition Collaborates with Heidelberg Materials to Advance Innovation in Quarry Operations with Autonomous Haulage Fleets, issued 30-Apr-2026 by Applied Intuition, Inc. over PR Newswire, we are advised by the company that changes…",
+      "imageUrl": "https://dims.apnews.com/dims4/default/295c329/2147483647/strip/true/crop/675x450+12+0/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F90%2F29%2F4e3c1cc7446089a9101a7bdff4c8%2Fdefaultshareimage-copy.png",
+      "author": "Applied Intuition",
+      "cleanedText": "In the news release, Applied Intuition Collaborates with Heidelberg Materials to Advance Innovation in Quarry Operations with Autonomous Haulage Fleets, issued 30-Apr-2026 by Applied Intuition, Inc. …"
+    },
+    {
       "id": "62a59ca67dbb4a33",
       "slug": "digital-marketing-agency-what-it-is-do-you-need-one-2026-62a59ca6",
       "title": "Digital Marketing Agency: What It Is & Do You Need One 2026",
@@ -251,6 +363,22 @@
       "description": "Financial Times: US warns Europe of delays to arms shipments as Iran war drains stockpiles — Deferred deliveries could include those used in Ukraine's defence against Russia — Washington has warned European allies, including the UK, Poland, Lithuania and …",
       "imageUrl": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F2ff85f2f-ac82-4931-a9ed-7bb4a8287999.jpg?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
       "cleanedText": "memeorandum is an auto-generated summary of the stories that US political commentators are discussing online right now. Unlike sister sites Techmeme and Mediagazer, it is not a human-edited news out…"
+    },
+    {
+      "id": "567bfe17c4b5bff9",
+      "slug": "iconic-1980s-train-returns-to-tracks-after-major-refurbishme-567bfe17",
+      "title": "Iconic 1980s train returns to tracks after major refurbishment",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-05-02T01:38:18.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-05-02/xpt-returns-to-tracks-in-1980s-colours-after-major-refurbish/106625392",
+      "summary": "Iconic 1980s train returns to tracks after major refurbishment. As train travel grows in popularity amid the fuel crisis, an iconic regional service returns to the tracks after a major makeover.",
+      "summaryType": "fallback",
+      "description": "As train travel grows in popularity amid the fuel crisis, an iconic regional service returns to the tracks after a major makeover.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/b7db58c1e450f40e038e665e658ae18a?impolicy=wcms_watermark_news&cropH=900&cropW=1600&xPos=0&yPos=1&width=862&height=485&imformat=generic",
+      "author": "Emma Siossian",
+      "cleanedText": "On a quiet weekday in the town of Kendall, a recorded railway announcement cuts through the still morning air, heralding the XPT's imminent arrival. At the New South Wales town's heritage-listed rai…"
     },
     {
       "id": "1f7f87fd7b1d83aa",
