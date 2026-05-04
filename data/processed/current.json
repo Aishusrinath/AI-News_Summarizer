@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T22:52:20.602Z",
+  "generatedAt": "2026-05-04T23:48:28.838Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,15 +7,63 @@
     "science"
   ],
   "counts": {
-    "fetched": 18,
-    "normalized": 18,
+    "fetched": 4,
+    "normalized": 4,
     "dropped": 0,
-    "deduped": 18,
+    "deduped": 4,
     "summarizedWithAi": 0,
     "fallbackSummaries": 120,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "117b2eee5969b893",
+      "slug": "doctor-who-showrunner-reacted-to-snl-uk-s-parody-sketch-but--117b2eee",
+      "title": "Doctor Who Showrunner Reacted To SNL: UK's Parody Sketch, But Am I The Only One Confused?",
+      "sourceName": "CinemaBlend",
+      "publishedAt": "2026-05-03T23:45:00.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.cinemablend.com/television/doctor-who-showrunner-reaction-snl-uks-parody-sketch-im-confused-ncuti-gatwa",
+      "summary": "Doctor Who Showrunner Reacted To SNL: UK's Parody Sketch, But Am I The Only One Confused?. This caught me off guard.",
+      "summaryType": "fallback",
+      "description": "This caught me off guard.",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/TdhKSXw2M8pCA3XQjigTLL-1280-80.jpg",
+      "author": "mick.joest@CinemaBlend.com (Mick Joest) , Mick Joest",
+      "cleanedText": "Aimee Lou Wood's episode of Saturday Night Live UK is getting positive buzz, and even Doctor Who's showrunner, Russell T. Davies, approves. His comments came after attending the latest episode, in wh…"
+    },
+    {
+      "id": "e2a1dfd9f74b2d3f",
+      "slug": "one-minute-jab-rolled-out-on-nhs-for-tens-of-thousands-of-ca-e2a1dfd9",
+      "title": "'One-minute' jab rolled out on NHS for tens of thousands of cancer patients",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-05-03T23:01:46.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.dailymail.com/health/article-15782101/One-minute-jab-NHS-cancer.html",
+      "summary": "'One-minute' jab rolled out on NHS for tens of thousands of cancer patients. Tens of thousands of cancer patients could benefit from a new jab on the NHS which 'rapidly' treats over a dozen cancers in just 60 seconds.",
+      "summaryType": "fallback",
+      "description": "Tens of thousands of cancer patients could benefit from a new jab on the NHS which 'rapidly' treats over a dozen cancers in just 60 seconds.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/05/01/15/108310537-0-image-a-10_1777647523595.jpg",
+      "author": "Zoe Hardy",
+      "cleanedText": "Tens of thousands of cancer patients could benefit from a new jab on the NHS which 'rapidly' treats over a dozen cancers in just 60 seconds. The health service is set to roll out an injectable form…"
+    },
+    {
+      "id": "f4d65339f3bcbd08",
+      "slug": "strait-unchoked-f4d65339",
+      "title": "STRAIT UNCHOKED?",
+      "sourceName": "Associated Press",
+      "publishedAt": "2026-05-03T23:00:17.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://apnews.com/article/iran-us-war-ceasefire-negotiations-strait-454006a0a9bb19a45a2f299c0869cefb",
+      "summary": "STRAIT UNCHOKED?. U.S. President Donald Trump has announced \"Project Freedom\" to help ships leave the Strait of Hormuz, starting on Monday. He says the project aims to assist \"neutral and innocent\" countries affected by the Iran war. There are few details. Trump also mentions …",
+      "summaryType": "fallback",
+      "description": "U.S. President Donald Trump has announced \"Project Freedom\" to help ships leave the Strait of Hormuz, starting on Monday. He says the project aims to assist \"neutral and innocent\" countries affected by the Iran war. There are few details. Trump also mentions …",
+      "imageUrl": "https://dims.apnews.com/dims4/default/71e1e9a/2147483647/strip/true/crop/6000x3998+0+1/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fba%2F20%2Fe7ea1d4be7e4f2fb5dfbd34a4426%2F627b9553c00341b992685051d8d18806",
+      "author": "ap news",
+      "cleanedText": "DUBAI, United Arab Emirates (AP) The United States will launch an effort on Monday to guide stranded ships from the Iran-gripped Strait of Hormuz, President Donald Trump said, giving few details abou…"
+    },
     {
       "id": "3efaeef5be09c90b",
       "slug": "princess-eugenie-shares-rare-family-pics-amid-dad-andrew-s-e-3efaeef5",
@@ -71,7 +119,7 @@
       "sourceName": "Crypto Briefing",
       "publishedAt": "2026-05-03T22:33:15.000Z",
       "category": "world",
-      "sourceCountry": "us",
+      "sourceCountry": "gb",
       "url": "https://cryptobriefing.com/bulk-carrier-attacked-near-strait-of-hormuz-impacting-traffic-normalization-odds/",
       "summary": "Bulk carrier attacked near Strait of Hormuz, impacting traffic normalization odds. The attack exacerbates geopolitical tensions, hindering maritime stability and complicating diplomatic efforts for regional de-escalation. The post Bulk carrier attacked near Strait of Hormuz, impacting traffic normalization odds appeared first on Crypto Brie…",
       "summaryType": "fallback",
@@ -1863,54 +1911,6 @@
       "summary": "Canada proposes POET mission to hunt Earth-sized planets - Phys.org",
       "summaryType": "fallback",
       "author": "Phys.org"
-    },
-    {
-      "id": "ad4d82b2b376bee8",
-      "slug": "finally-this-is-the-week-we-ve-all-been-waiting-for-in-disne-ad4d82b2",
-      "title": "FINALLY. This Is the Week We’ve All Been Waiting for in Disney World!",
-      "sourceName": "disneyfoodblog.com",
-      "publishedAt": "2026-05-02T22:00:50.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://www.disneyfoodblog.com/2026/05/02/finally-this-is-the-week-weve-all-been-waiting-for-in-disney-world/",
-      "summary": "FINALLY. This Is the Week We’ve All Been Waiting for in Disney World!. One of Disney World's BIGGEST construction projects FINALLY reopens this week...but other closures continue.",
-      "summaryType": "fallback",
-      "description": "One of Disney World's BIGGEST construction projects FINALLY reopens this week...but other closures continue.",
-      "imageUrl": "https://www.disneyfoodblog.com/wp-content/uploads/2026/04/2026-WDW-magic-kingdom-big-thunder-mountain-railroad-concept-art-rainbow-caverns-1-700x375.png",
-      "author": "Jordan-Paige Sudduth",
-      "cleanedText": "This week is about to be a BIG one in Disney World, because one of the BIGGEST closures will finally go away! ©Disney That’s right, this week is FINALLY the time when one of Magic Kingdom‘s most po…"
-    },
-    {
-      "id": "e9451078569905c3",
-      "slug": "aimee-lou-wood-is-lauded-by-fans-as-she-makes-snl-uk-hosting-e9451078",
-      "title": "Aimee Lou Wood is lauded by fans as she makes SNL UK hosting debut and brushes off 'mean and unfunny' teeth parody: 'She's smashing it!'",
-      "sourceName": "Dailymail.com",
-      "publishedAt": "2026-05-02T21:59:19.000Z",
-      "category": "world",
-      "sourceCountry": "gb",
-      "url": "https://www.dailymail.com/tvshowbiz/article-15785671/Aimee-Lou-Wood-SNL-UK-teeth-parody.html",
-      "summary": "Aimee Lou Wood is lauded by fans as she makes SNL UK hosting debut and brushes off 'mean and unfunny' teeth parody: 'She's smashing it!'. Aimee Lou Wood was lauded by fans as she made her SNL UK hosting debut on Saturday night - a year after the 'mean and unfunny' teeth parody about her.",
-      "summaryType": "fallback",
-      "description": "Aimee Lou Wood was lauded by fans as she made her SNL UK hosting debut on Saturday night - a year after the 'mean and unfunny' teeth parody about her.",
-      "imageUrl": "https://i.dailymail.com/1s/2026/05/02/22/108332787-0-image-m-35_1777758812194.jpg",
-      "author": "Lily Jobson",
-      "cleanedText": "Aimee Lou Wood was lauded by fans as she made her SNL UK hosting debut on Saturday night - a year after the 'mean and unfunny' teeth parody about her. The actress, 32, took aim at the original US ve…"
-    },
-    {
-      "id": "375a1d9efd4719f5",
-      "slug": "three-veteran-nhl-coaches-that-must-be-on-the-kings-and-ken--375a1d9e",
-      "title": "Three Veteran NHL Coaches That Must Be On The Kings And Ken Holland's List",
-      "sourceName": "The Hockey News",
-      "publishedAt": "2026-05-02T21:57:22.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://thehockeynews.com/nhl/los-angeles-kings/latest-news/three-veteran-nhl-coaches-that-must-be-on-the-kings-and-ken-hollands-list",
-      "summary": "Three Veteran NHL Coaches That Must Be On The Kings And Ken Holland's List. Los Angeles Kings GM Ken Holland revealed that he will be searching for a new head coach for next season. Though he'll be looking at a variation of candidates with different levels of experience, here are three veteran coaches who should be on his list.",
-      "summaryType": "fallback",
-      "description": "Los Angeles Kings GM Ken Holland revealed that he will be searching for a new head coach for next season. Though he'll be looking at a variation of candidates with different levels of experience, here are three veteran coaches who should be on his list.",
-      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/VliZb14ythblYLuJ5P_FRA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://media.zenfs.com/en/the_hockey_news_los_angeles_kings_articles_947/69c262b81151d0db3183996418da7467",
-      "author": "Andre Leal",
-      "cleanedText": "During Friday's exit meeting for Los Angeles Kings GM Ken Holland, he revealed that interim head coach D.J. Smith isn't officially the coach for next season, but is a candidate for the job in the sea…"
     }
   ]
 }
