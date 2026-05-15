@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T20:55:25.464Z",
+  "generatedAt": "2026-05-15T21:54:03.105Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world"
@@ -10,10 +10,86 @@
     "dropped": 0,
     "deduped": 10,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 28,
-    "finalArticles": 28
+    "fallbackSummaries": 38,
+    "finalArticles": 38
   },
   "articles": [
+    {
+      "id": "ed75b32059689234",
+      "slug": "emails-show-fbi-director-kash-patel-s-hawaii-trip-included-v-ed75b320",
+      "title": "Emails show FBI Director Kash Patel's Hawaii trip included 'VIP snorkel' at a Pearl Harbor memorial",
+      "sourceName": "Japan Today",
+      "publishedAt": "2026-05-14T21:41:51.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://japantoday.com/category/world/emails-show-fbi-director-kash-patel%27s-hawaii-trip-included-%27vip-snorkel%27-at-a-pearl-harbor-memorial",
+      "summary": "Emails show FBI Director Kash Patel's Hawaii trip included 'VIP snorkel' at a Pearl Harbor memorial. When Kash Patel visited Hawaii last summer, the FBI took pains to note the director was not on vacation, highlighting his walking tour of the bureau's Honolulu field office and meetings with local law enforcement. Left out of the FBI's news releases was an ex…",
+      "summaryType": "fallback",
+      "description": "When Kash Patel visited Hawaii last summer, the FBI took pains to note the director was not on vacation, highlighting his walking tour of the bureau's Honolulu field office and meetings with local law enforcement. Left out of the FBI's news releases was an ex…",
+      "cleanedText": "When Kash Patel visited Hawaii last summer, the FBI took pains to note the director was not on vacation, highlighting his walking tour of the bureau's Honolulu field office and meetings with local la…"
+    },
+    {
+      "id": "3442bff414d391e7",
+      "slug": "what-is-a-cultural-institution-actually-for-3442bff4",
+      "title": "What is a cultural institution actually for?",
+      "sourceName": "Artsjournal.com",
+      "publishedAt": "2026-05-14T21:20:09.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.artsjournal.com/2026/05/what-is-a-cultural-institution-actually-for.html",
+      "summary": "What is a cultural institution actually for?. Good Morning, Four different institutional stories today, all of them answers to the same question: what is a major cultural institution actually for? The Met is absorbing the Neue Galerie — its building and Ronald Lauder’s collection of 20th-century Austrian…",
+      "summaryType": "fallback",
+      "description": "Good Morning, Four different institutional stories today, all of them answers to the same question: what is a major cultural institution actually for? The Met is absorbing the Neue Galerie — its building and Ronald Lauder’s collection of 20th-century Austrian…",
+      "cleanedText": "Good Morning, Four different institutional stories today, all of them answers to the same question: what is a major cultural institution actually for? The Met is absorbing the Neue Galerie its build…"
+    },
+    {
+      "id": "8cf336b71d4bb391",
+      "slug": "2026-nfl-schedule-release-viewing-guide-when-where-to-watch--8cf336b7",
+      "title": "2026 NFL Schedule Release Viewing Guide: When/Where to Watch & More",
+      "sourceName": "Bleeding Cool News",
+      "publishedAt": "2026-05-14T21:07:10.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://bleedingcool.com/tv/2026-nfl-schedule-release-viewing-guide-when-where-to-watch-more/",
+      "summary": "2026 NFL Schedule Release Viewing Guide: When/Where to Watch & More. If you're an NFL fan (if you're reading this, we're assuming that you are), then you know that Disney's \"Year of the Super Bowl\" pretty much kicked off about a minute after this year's Super Bowl wrapped. Of course, if you're ESPN, the road to the big game is…",
+      "summaryType": "fallback",
+      "description": "If you're an NFL fan (if you're reading this, we're assuming that you are), then you know that Disney's \"Year of the Super Bowl\" pretty much kicked off about a minute after this year's Super Bowl wrapped. Of course, if you're ESPN, the road to the big game is…",
+      "imageUrl": "https://bleedingcool.com/wp-content/uploads/2026/05/2026-Schedule-Release-3-1-2000x1125.jpg",
+      "author": "Ray Flook",
+      "cleanedText": "Posted in: NFL, Sports, TV | Tagged: espn, nfl Kicking off at 8 pm tonight, here's your viewing guide for ESPN's SportsCenter Special Presented by Nationwide: 2026 NFL Schedule Release. 202…"
+    },
+    {
+      "id": "0d68bf1817064140",
+      "slug": "the-17-welfare-payments-migrants-will-lose-under-the-liberal-0d68bf18",
+      "title": "The 17 welfare payments migrants will lose under the Liberal's proposed crackdown",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-05-14T21:05:23.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.dailymail.com/news/article-15819347/The-17-welfare-payments-migrants-lose-Liberals-proposed-crackdown.html",
+      "summary": "The 17 welfare payments migrants will lose under the Liberal's proposed crackdown. Opposition Leader Angus Taylor says a Coalition government would restrict access to welfare benefits to Australian citizens.",
+      "summaryType": "fallback",
+      "description": "Opposition Leader Angus Taylor says a Coalition government would restrict access to welfare benefits to Australian citizens.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/05/14/22/108618215-0-image-a-12_1778792612531.jpg",
+      "author": "Michelle Grattan",
+      "cleanedText": "Opposition Leader Angus Taylor says a Coalition government would restrict access to welfare benefits to Australian citizens. Taylor will include the controversial policy in his Thursday night budget…"
+    },
+    {
+      "id": "1986f84945a12537",
+      "slug": "northern-territory-musicians-escape-to-international-festiva-1986f849",
+      "title": "Northern Territory musicians escape to international festival in the UK",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-05-14T20:54:51.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-05-15/nt-musicians-attend-uk-music-festival-the-great-escape/106646694",
+      "summary": "Northern Territory musicians escape to international festival in the UK. Northern Territory musicians attending The Great Escape music festival in the UK are hoping their experience will open more doors for regional artists.",
+      "summaryType": "fallback",
+      "description": "Northern Territory musicians attending The Great Escape music festival in the UK are hoping their experience will open more doors for regional artists.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/24d3e5f55a73c2040e2b67285e0eb76b?impolicy=wcms_watermark_news&cropH=2592&cropW=4608&xPos=0&yPos=107&width=862&height=485&imformat=generic",
+      "author": "Anzaya Karim",
+      "cleanedText": "Four Northern Territory musicians have been sent to the United Kingdom on a mission to promote local music to the masses. Music NT has dispatched Dave Crowe, Sally Balfour, Stefan Fergueca and Trace…"
+    },
     {
       "id": "e3b02a3edfb12dc5",
       "slug": "left-pitched-short-sales-to-take-candy-from-retail-investors-e3b02a3e",
@@ -29,6 +105,22 @@
       "imageUrl": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/05/0516-mg-left.jpg",
       "author": "Bloomberg News",
       "cleanedText": "Citron Research founder Andrew Left coordinated with hedge funds on stocks he planned to short and bragged his hot voice with retail investors meant they could take candy from a baby, according to em…"
+    },
+    {
+      "id": "8e47f24666075828",
+      "slug": "the-numbers-newsweek-published-by-accident-how-hostile-cover-8e47f246",
+      "title": "The Numbers Newsweek Published By Accident: How Hostile Coverage Became Meghan’s Marketing Budget",
+      "sourceName": "Celebchai.com",
+      "publishedAt": "2026-05-14T20:53:19.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://celebchai.com/2026/05/14/the-numbers-newsweek-published-by-accident-how-hostile-coverage-became-meghans-marketing-budget/",
+      "summary": "The Numbers Newsweek Published By Accident: How Hostile Coverage Became Meghan’s Marketing Budget. Newsweek’s claim of Meghan Sussex’s lifestyle brand failing, based on 220,000 monthly visits, misrepresents her e-commerce success. The sign of a struggling brand contradicts analysis t…",
+      "summaryType": "fallback",
+      "description": "Newsweek’s claim of Meghan Sussex’s lifestyle brand failing, based on 220,000 monthly visits, misrepresents her e-commerce success. The sign of a struggling brand contradicts analysis t…",
+      "imageUrl": "https://celebchai.com/wp-content/uploads/2026/05/screenshot-2026-05-14-at-1.44.24-pm.png",
+      "author": "Aparna Vashisht Rota",
+      "cleanedText": "When Newsweek set out to prove Meghan Sussex’s lifestyle brand was failing, they reached for what they assumed was a damning statistic: As Ever was averaging just over 220,000 monthly visits to aseve…"
     },
     {
       "id": "81c7c0f0546fa44c",
@@ -47,6 +139,22 @@
       "cleanedText": "TORONTO, May 14, 2026 (GLOBE NEWSWIRE) -- Allied Gold Corporation (TSX: AAUC) (NYSE: AAUC) (Allied or the Company) herein provides its financial and operational results for the first quarter of 2026.…"
     },
     {
+      "id": "2bba399b933a7ed9",
+      "slug": "kash-patel-reportedly-took-vip-snorkel-around-sunken-pearl-h-2bba399b",
+      "title": "Kash Patel Reportedly Took ‘VIP Snorkel’ Around Sunken Pearl Harbor Battleship",
+      "sourceName": "Mediaite",
+      "publishedAt": "2026-05-14T20:51:38.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.mediaite.com/politics/kash-patel-reportedly-took-vip-snorkel-around-sunken-pearl-harbor-battleship/",
+      "summary": "Kash Patel Reportedly Took ‘VIP Snorkel’ Around Sunken Pearl Harbor Battleship. FBI Director Kash Patel allegedly took a \"VIP snorkel\" around the sunken USS Arizona battleship, a Pearl Harbor memorial, during his trip to Hawaii last summer. The post Kash Patel Reportedly Took ‘VIP Snorkel’ Around Sunken Pearl Harbor Battleship first appe…",
+      "summaryType": "fallback",
+      "description": "FBI Director Kash Patel allegedly took a \"VIP snorkel\" around the sunken USS Arizona battleship, a Pearl Harbor memorial, during his trip to Hawaii last summer. The post Kash Patel Reportedly Took ‘VIP Snorkel’ Around Sunken Pearl Harbor Battleship first appe…",
+      "imageUrl": "https://www.mediaite.com/wp-content/uploads/2026/04/kash.jpg",
+      "author": "Zoe Engels",
+      "cleanedText": "(AP Photo/Jacquelyn Martin) FBI Director Kash Patel allegedly took a “VIP snorkel” around the sunken USS Arizona battleship, a Pearl Harbor memorial, during his trip to Hawaii last summer. Accordin…"
+    },
+    {
       "id": "0ba2b1f9898408b9",
       "slug": "northwest-copper-announces-closing-of-fully-subscribed-13-8--0ba2b1f9",
       "title": "NorthWest Copper Announces Closing of Fully Subscribed $13.8 Million Brokered Private Placement",
@@ -61,6 +169,38 @@
       "imageUrl": "https://ml.globenewswire.com/Resource/Download/734a2640-efb1-4c58-9b19-21106711dd7e",
       "author": "NorthWest Copper Corp",
       "cleanedText": "Not for distribution to United States newswire services or for dissemination in the United States TORONTO, May 14, 2026 (GLOBE NEWSWIRE) -- NorthWest Copper (NorthWest or the Company) (TSX-V: NWST) …"
+    },
+    {
+      "id": "606ba469d4cd60fd",
+      "slug": "kash-patel-took-vip-snorkel-around-pearl-harbor-report-says-606ba469",
+      "title": "Kash Patel Took ‘VIP Snorkel’ Around Pearl Harbor, Report Says",
+      "sourceName": "Forbes",
+      "publishedAt": "2026-05-14T20:45:43.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.forbes.com/sites/saradorn/2026/05/14/kash-patel-took-vip-snorkel-around-pearl-harbor-report-says/",
+      "summary": "Kash Patel Took ‘VIP Snorkel’ Around Pearl Harbor, Report Says. Dignitaries, including military and government officials responsible for managing the site, have been allowed to swim there.",
+      "summaryType": "fallback",
+      "description": "Dignitaries, including military and government officials responsible for managing the site, have been allowed to swim there.",
+      "imageUrl": "https://imageio.forbes.com/specials-images/imageserve/6a06339d41bd7a8f32829d52/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "author": "Sara Dorn, Forbes Staff, Sara Dorn, Forbes Staff https://www.forbes.com/sites/saradorn/",
+      "cleanedText": "FBI Director Kash Patel snorkeled around Pearl Harbor during a stop in Hawaii after visiting New Zealand on official business, according to the Associated Pressa privilege typically reserved for dign…"
+    },
+    {
+      "id": "87d6057c28da0094",
+      "slug": "research-links-seismic-testing-to-decreased-commercial-fish--87d6057c",
+      "title": "Research links seismic testing to decreased commercial fish catch",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-05-14T20:37:49.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-05-15/lower-commercial-fish-catch-linked-to-seismic-testing/106268904",
+      "summary": "Research links seismic testing to decreased commercial fish catch. New research links seismic testing used for oil and gas exploration with decreases in commercial fish catch rates in Victoria's east.",
+      "summaryType": "fallback",
+      "description": "New research links seismic testing used for oil and gas exploration with decreases in commercial fish catch rates in Victoria's east.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/0101bbc761c596e4daf501d39e547200?impolicy=wcms_watermark_news&cropH=1080&cropW=1920&xPos=0&yPos=0&width=862&height=485&imformat=generic",
+      "author": "Danielle Pope",
+      "cleanedText": "New research has established a connection between seismic surveying and a decrease in commercial fish catch rates. The article in the journal Marine Environmental Research is the first independently…"
     },
     {
       "id": "dd2e892449d809aa",
@@ -153,6 +293,21 @@
       "description": "CHICAGO — Coeur Mining, Inc.’s (“Coeur” or the “Company”) (NYSE, TSX: CDE) Executive Vice President and Chief Financial Officer, Thomas S. Whelan and Executive Vice President and Chief Operating Officer, Michael “Mick” Routledge will participate in the Canacc…",
       "author": "Business Wire",
       "cleanedText": "CHICAGO Coeur Mining, Inc.s (Coeur or the Company) (NYSE, TSX: CDE) Executive Vice President and Chief Financial Officer, Thomas S. Whelan and Executive Vice President and Chief Operating Officer, Mi…"
+    },
+    {
+      "id": "491c1f90370beb82",
+      "slug": "emails-show-kash-patel-working-trip-to-hawaii-included-vip-s-491c1f90",
+      "title": "Emails show Kash Patel working trip to Hawaii included 'VIP Snorkel'",
+      "sourceName": "CBC News",
+      "publishedAt": "2026-05-14T20:30:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.cbc.ca/news/world/kash-patel-hawaii-vip-snorkel-pearl-harbour-9.7199941",
+      "summary": "Emails show Kash Patel working trip to Hawaii included 'VIP Snorkel'. When Kash Patel visited Hawaii last summer, the FBI took pains to note the director was not on vacation, highlighting his walking tour of the bureau's Honolulu field office and meetings with local law enforcement.",
+      "summaryType": "fallback",
+      "description": "When Kash Patel visited Hawaii last summer, the FBI took pains to note the director was not on vacation, highlighting his walking tour of the bureau's Honolulu field office and meetings with local law enforcement.",
+      "imageUrl": "https://i.cbc.ca/ais/9d6c88d1-91b6-45e9-803f-a41ef71eba2c,1778786925849/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C186%2C3575%2C2010%29%3BResize%3D620",
+      "cleanedText": "When Kash Patel visited Hawaii last summer, the FBI took pains to note the director was not on vacation, highlighting his walking tour of the bureau's Honolulu field office and meetings with local la…"
     },
     {
       "id": "e793f937ee7164e0",
