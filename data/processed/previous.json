@@ -1,20 +1,52 @@
 {
-  "generatedAt": "2026-05-17T21:49:16.566Z",
+  "generatedAt": "2026-05-17T22:48:00.467Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
     "business"
   ],
   "counts": {
-    "fetched": 7,
-    "normalized": 7,
+    "fetched": 8,
+    "normalized": 8,
     "dropped": 0,
-    "deduped": 7,
+    "deduped": 8,
     "summarizedWithAi": 0,
-    "fallbackSummaries": 77,
-    "finalArticles": 77
+    "fallbackSummaries": 84,
+    "finalArticles": 84
   },
   "articles": [
+    {
+      "id": "b54e61ffb15c46a1",
+      "slug": "b-c-couple-in-hospital-isolation-after-testing-positive-for--b54e61ff",
+      "title": "B.C. couple in hospital isolation after testing positive for hantavirus",
+      "sourceName": "National Post",
+      "publishedAt": "2026-05-16T21:55:30.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://nationalpost.com/news/canada/b-c-couple-in-hospital-isolation-after-testing-positive-for-hantavirus",
+      "summary": "B.C. couple in hospital isolation after testing positive for hantavirus. Both will remain in isolation in hospital while a third person who was isolating has been transferred to hospital for assessment",
+      "summaryType": "fallback",
+      "description": "Both will remain in isolation in hospital while a third person who was isolating has been transferred to hospital for assessment",
+      "imageUrl": "https://smartcdn.gprod.postmedia.digital/nationalpost/wp-content/uploads/2026/05/2275200354_303080891.jpg",
+      "author": "Stewart Lewis",
+      "cleanedText": "The B.C. Provincial Health Office is reporting that one of four high risk individuals who was on the cruise ship M.V. Hondius and self-isolating on Vancouver Island has tested presumptive positive fo…"
+    },
+    {
+      "id": "135a5015e1a59995",
+      "slug": "neuer-in-germany-s-world-cup-squad-after-all-nagelsmann-reac-135a5015",
+      "title": "Neuer in Germany's World Cup squad after all? Nagelsmann reacts",
+      "sourceName": "Onefootball.com",
+      "publishedAt": "2026-05-16T21:48:00.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://onefootball.com/en/news/neuer-in-germanys-world-cup-squad-after-all-nagelsmann-reacts-42877706",
+      "summary": "Neuer in Germany's World Cup squad after all? Nagelsmann reacts. For weeks, a possible DFB return for Manuel Neuer for the World Cup in the USA, Mexico, and Canada has been a topic of discussion. 'Sky' reignited that debate today with breaking news right in the mid...",
+      "summaryType": "fallback",
+      "description": "For weeks, a possible DFB return for Manuel Neuer for the World Cup in the USA, Mexico, and Canada has been a topic of discussion. 'Sky' reignited that debate today with breaking news right in the mid...",
+      "imageUrl": "https://s.yimg.com/ny/api/res/1.2/OGVTnVuBTh3inbYQkNrx_g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA7Y2Y9d2VicA--/https://media.zenfs.com/en/onefootball_articles_802/1c2718efe2f9a4ea955845c55ecd1e5f",
+      "author": "OneFootball",
+      "cleanedText": "For weeks, a possible DFB return for Manuel Neuer for the World Cup in the USA, Mexico, and Canada has been a topic of discussion. 'Sky' reignited that debate today with breaking news right in the mi…"
+    },
     {
       "id": "d68f881638738514",
       "slug": "it-s-a-crime-against-humanity-uk-s-look-mum-no-computer-met--d68f8816",
@@ -47,6 +79,37 @@
       "cleanedText": "The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way."
     },
     {
+      "id": "289c0163dcb3b62a",
+      "slug": "iran-men-s-soccer-team-heading-to-turkey-for-world-cup-prepa-289c0163",
+      "title": "Iran men's soccer team heading to Turkey for World Cup preparations",
+      "sourceName": "CBS News",
+      "publishedAt": "2026-05-16T21:15:37.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.cbsnews.com/news/iran-mens-soccer-team-heading-to-turkey-world-cup-preparations/",
+      "summary": "Iran men's soccer team heading to Turkey for World Cup preparations. Iran and the U.S. cut diplomatic ties in 1980, and the players are expected to use their time in Turkey to complete the necessary procedures for obtaining visas.",
+      "summaryType": "fallback",
+      "description": "Iran and the U.S. cut diplomatic ties in 1980, and the players are expected to use their time in Turkey to complete the necessary procedures for obtaining visas.",
+      "imageUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/16/0aa7ba71-ad44-4d01-a714-9f785bbd1237/thumbnail/1200x630/731c43ab96d9b65cba857db163c6327e/gettyimages-2275495770.jpg",
+      "cleanedText": "Iran's World Cup squad will travel to Turkey on Monday for a training camp, friendlies and to complete visa applications before heading to the United States, head coach Amir Ghalenoei said on Saturda…"
+    },
+    {
+      "id": "ee70f0b58f706f91",
+      "slug": "ironman-athletes-excited-to-experience-jacksonville-in-a-new-ee70f0b5",
+      "title": "IRONMAN athletes excited to experience Jacksonville in a new way",
+      "sourceName": "Yahoo Entertainment",
+      "publishedAt": "2026-05-16T21:06:48.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://sports.yahoo.com/articles/ironman-athletes-excited-experience-jacksonville-210648188.html",
+      "summary": "IRONMAN athletes excited to experience Jacksonville in a new way. The big day finally arrived as nearly 2,000 athletes from 39 countries gathered in Jacksonville Saturday morning for the city’s first-ever IRONMAN race.",
+      "summaryType": "fallback",
+      "description": "The big day finally arrived as nearly 2,000 athletes from 39 countries gathered in Jacksonville Saturday morning for the city’s first-ever IRONMAN race.",
+      "imageUrl": "https://s.yimg.com/os/en/wjax_cox_articles_158/47a4dd471cd3da1a81787317c4a272a7",
+      "author": "Jessica Salinas",
+      "cleanedText": "The big day finally arrived as nearly 2,000 athletes from 39 countries gathered in Jacksonville Saturday morning for the citys first-ever IRONMAN race. The grueling, multi-stage triathlon kicked off…"
+    },
+    {
       "id": "bd2c90490c959060",
       "slug": "i-tested-the-lg-b6-and-lg-b5-oled-tvs-side-by-side-and-it-wa-bd2c9049",
       "title": "I tested the LG B6 and LG B5 OLED TVs side by side — and it was a mess that's mostly just given me a fresh appreciation for the LG C6",
@@ -61,6 +124,36 @@
       "imageUrl": "https://cdn.mos.cms.futurecdn.net/6oaWSTBMmv9bTh6cVaT6Eo-2560-80.jpg",
       "author": "james.davidson@futurenet.com (James Davidson) , James Davidson",
       "cleanedText": "The LG B5 was one of my favorite OLED TVs in 2025. It delivered detailed, contrast-rich picture quality and came with a full suite of gaming features that made it one of the best gaming TVs on the ma…"
+    },
+    {
+      "id": "278282f3a51ae702",
+      "slug": "canadian-police-respond-to-bbq-food-theft-culprit-found-to-b-278282f3",
+      "title": "Canadian Police respond to BBQ food theft, culprit found to be fox with mouthful of hot dogs",
+      "sourceName": "Fox News",
+      "publishedAt": "2026-05-16T20:55:03.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.foxnews.com/outkick-culture/canadian-police-respond-bbq-food-theft-culprit-found-fox-mouthful-hot-dogs",
+      "summary": "Canadian Police respond to BBQ food theft, culprit found to be fox with mouthful of hot dogs. Canadian police investigated a BBQ goods theft in Alberta and found the culprit was a fox caught red-handed stealing hot dogs from an outdoor cook.",
+      "summaryType": "fallback",
+      "description": "Canadian police investigated a BBQ goods theft in Alberta and found the culprit was a fox caught red-handed stealing hot dogs from an outdoor cook.",
+      "imageUrl": "https://static.foxnews.com/foxnews.com/content/uploads/2026/05/fox-in-brush.jpeg",
+      "cleanedText": "There's really nothing better than firing up a grill and having a nice barbecue, but few things are as enraging as getting ready to cook and realizing something is missing. For me, that usually mean…"
+    },
+    {
+      "id": "0d29a5fca14c3166",
+      "slug": "venezuela-circulates-draft-of-oil-law-regulations-for-compan-0d29a5fc",
+      "title": "Venezuela Circulates Draft of Oil Law Regulations for Companies",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-05-16T20:53:24.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://financialpost.com/pmn/business-pmn/venezuela-circulates-draft-of-oil-law-regulations-for-companies",
+      "summary": "Venezuela Circulates Draft of Oil Law Regulations for Companies. The Venezuelan government is circulating a draft of regulations as part of its newly enacted oil law, highly anticipated by companies planning to invest in the country’s increased oil production.",
+      "summaryType": "fallback",
+      "description": "The Venezuelan government is circulating a draft of regulations as part of its newly enacted oil law, highly anticipated by companies planning to invest in the country’s increased oil production.",
+      "author": "Bloomberg News",
+      "cleanedText": "(Bloomberg) The Venezuelan government is circulating a draft of regulations as part of its newly enacted oil law, highly anticipated by companies planning to invest in the countrys increased oil prod…"
     },
     {
       "id": "1cfe6027f048bd98",
@@ -85,7 +178,7 @@
       "sourceName": "The-independent.com",
       "publishedAt": "2026-05-16T20:25:59.000Z",
       "category": "world",
-      "sourceCountry": "gb",
+      "sourceCountry": "ca",
       "url": "https://www.the-independent.com/life-style/money-savings-happiness-how-much-b2978008.html",
       "summary": "This is how much money we need to be happy, according to science. Decades of international research have consistently shown that materialistic goals undermine wellbeing",
       "summaryType": "fallback",
@@ -169,6 +262,22 @@
       "description": "During a 15 May 2026 interview, the president discussed maintaining foreign enrolment. He argued institutions rely on international tuition.Speaking to Fox News presenter Sean Hannity on 'Hannity', he articulated his perspective. 'But if you don't have those …",
       "author": "International Business Times",
       "cleanedText": "Skip to comments. Trump risks MAGA split by backing 500,000 Chinese students and farmland sales International Business Times ^ | 16 May 2026 | Aiza Morana Posted on 05/16/2026 12:50:44 PM PDT b…"
+    },
+    {
+      "id": "1ebd39c1ce224cc4",
+      "slug": "tragedy-after-dad-ignored-warnings-not-to-let-son-11-stay-in-1ebd39c1",
+      "title": "Tragedy after dad ignored warnings not to let son, 11, stay in apartment with two Cane Corso dogs that previously mauled woman and killed two other pets, court told",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-05-16T19:46:27.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.dailymail.com/news/article-15823779/cane-corso-mauling-warnings-tragedy.html",
+      "summary": "Tragedy after dad ignored warnings not to let son, 11, stay in apartment with two Cane Corso dogs that previously mauled woman and killed two other pets, court told. Crystal MacDonald, owner of the two Cane Corsos that killed 11-year-old Kache Grist, said she warned his father, who she was roommates at the time, not to bring the boy into her home.",
+      "summaryType": "fallback",
+      "description": "Crystal MacDonald, owner of the two Cane Corsos that killed 11-year-old Kache Grist, said she warned his father, who she was roommates at the time, not to bring the boy into her home.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/05/16/20/108659913-0-image-a-59_1778958797234.jpg",
+      "author": "Alexa Cimino",
+      "cleanedText": "An 11-year-old boy was mauled to death by two notorious Cane Corso dogs after his father ignored warnings not to bring him to stay with them, a court heard. The dogs' owner, Crystal MacDonald, mad…"
     },
     {
       "id": "4063b90bef91dafe",
