@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T22:52:40.102Z",
+  "generatedAt": "2026-06-17T00:12:28.440Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world"
@@ -9,11 +9,27 @@
     "normalized": 10,
     "dropped": 0,
     "deduped": 10,
-    "summarizedWithAi": 4,
-    "fallbackSummaries": 35,
-    "finalArticles": 39
+    "summarizedWithAi": 5,
+    "fallbackSummaries": 44,
+    "finalArticles": 49
   },
   "articles": [
+    {
+      "id": "0cb5c86056dea12c",
+      "slug": "auto-sales-hit-record-high-in-may-0cb5c860",
+      "title": "Auto sales hit record high in May",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-06-16T00:04:01.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/auto-sales-hit-record-high-in-may/articleshow/131756759.cms",
+      "summary": "Auto sales hit record high in May. India Business News: NEW DELHI: India’s automobile industry recorded its highest-ever sales for the month of May, with passenger vehicles (PVs), two-wheelers and three-whe.",
+      "summaryType": "fallback",
+      "description": "India Business News: NEW DELHI: India’s automobile industry recorded its highest-ever sales for the month of May, with passenger vehicles (PVs), two-wheelers and three-whe.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-131756755,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "Aabhas Sharma",
+      "cleanedText": "EMI CalculatorDetermine the monthly installment amount for a loan"
+    },
     {
       "id": "73d6c313d446d775",
       "slug": "vrrm-class-action-notice-robbins-llp-reminds-investors-of-th-73d6c313",
@@ -29,6 +45,22 @@
       "imageUrl": "https://ml.globenewswire.com/Resource/Download/f6c754ad-b344-4389-a551-cf97ce05752e",
       "author": "Robbins LLP",
       "cleanedText": "SAN DIEGO, June 15, 2026 (GLOBE NEWSWIRE) -- Robbins LLP informs stockholders that a class action was filed on behalf of all investors who purchased or otherwise acquired Verra Mobility Corporation (…"
+    },
+    {
+      "id": "771a8da8b3ad223a",
+      "slug": "kfc-s-latest-refresh-from-jkr-celebrates-its-most-iconic-ass-771a8da8",
+      "title": "KFC’s Latest Refresh From JKR Celebrates Its Most Iconic Asset",
+      "sourceName": "Printmag.com",
+      "publishedAt": "2026-06-15T22:37:25.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://www.printmag.com/branding-identity-design/kfcs-latest-refresh-from-jkr-celebrates-its-most-iconic-asset/",
+      "summary": "KFC is undergoing a brand refresh by JKR that places its iconic bucket at the center of the company's brand story. The update features bold typography and refined illustrations intended to bring fresh energy to the fast-food chain. First introduced by Colonel Harland Sanders in 1957, the bucket remains the brand's most recognizable asset.",
+      "summaryType": "ai",
+      "description": "The bucket is back at the center of KFC's brand story. In a new refresh from JKR, bold typography, refined illustrations, and a renewed focus on the chain's most recognizable asset bring fresh energy to one of the world's most iconic fast-food brands. The pos…",
+      "imageUrl": "https://www.printmag.com/wp-content/uploads/2026/06/000_KFC_JKR_2026_PR_BeforeAfter-scaled.png",
+      "author": "Jessica Deseo",
+      "cleanedText": "Finger Lickin’ Good. Few fast-food brands have a piece of packaging as iconic as the KFC bucket. First introduced by Colonel Harland Sanders in 1957, the bucket has become one of the most recognizabl…"
     },
     {
       "id": "a94a272c8d94dd8e",
@@ -169,6 +201,66 @@
       "imageUrl": "https://finovate.com/wp-content/uploads/2026/06/praveen-kumar-nandagiri-O-1hOdIqQz0-unsplash-scaled.jpg",
       "author": "David Penn",
       "cleanedText": "Canadian fintech KOHO has raised C$130 million in new funding, boosting the company’s valuation to C$1.33 billion and earning the firm unicorn status. The Series E investment provides KOHO with the i…"
+    },
+    {
+      "id": "5535c285541ef252",
+      "slug": "oil-buyers-reassess-purchases-after-us-iran-deal-sends-crude-5535c285",
+      "title": "Oil buyers reassess purchases after US-Iran deal sends crude prices tumbling",
+      "sourceName": "Crypto Briefing",
+      "publishedAt": "2026-06-15T22:11:44.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://cryptobriefing.com/oil-buyers-reassess-us-iran-deal/",
+      "summary": "Oil buyers reassess purchases after US-Iran deal sends crude prices tumbling. The US-Iran deal's impact on oil prices could reshape global energy markets, benefiting sectors reliant on lower fuel costs while posing risks if negotiations falter. The post Oil buyers reassess purchases after US-Iran deal sends crude prices tumbling appear…",
+      "summaryType": "fallback",
+      "description": "The US-Iran deal's impact on oil prices could reshape global energy markets, benefiting sectors reliant on lower fuel costs while posing risks if negotiations falter. The post Oil buyers reassess purchases after US-Iran deal sends crude prices tumbling appear…",
+      "imageUrl": "https://static.cryptobriefing.com/wp-content/uploads/2026/06/15181136/oil-tanker-ship-definition-types-and-operations-6-800x420.jpeg",
+      "author": "Editorial Team",
+      "cleanedText": "Asian refiners eye Iranian crude as framework agreement promises to reopen the Strait of Hormuz, while Bitcoin catches a bid from the risk-on wave The Strait of Hormuz, a chokepoint that handles roug…"
+    },
+    {
+      "id": "dbbf40fd5d67d97d",
+      "slug": "india-us-talks-next-week-to-give-final-touches-to-bilateral--dbbf40fd",
+      "title": "India-US talks next week to give ‘final touches’ to bilateral trade deal",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-06-15T21:48:13.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/india-us-talks-next-week-to-give-final-touches-to-bilateral-trade-deal/articleshow/131754853.cms",
+      "summary": "India-US talks next week to give ‘final touches’ to bilateral trade deal. India Business News: NEW DELHI: US Trade Representative Jamieson Greer will hold talks with commerce & industry minister Piyush Goyal next week to give “final touches”.",
+      "summaryType": "fallback",
+      "description": "India Business News: NEW DELHI: US Trade Representative Jamieson Greer will hold talks with commerce & industry minister Piyush Goyal next week to give “final touches”.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-131754852,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "TNN",
+      "cleanedText": "EMI CalculatorDetermine the monthly installment amount for a loan"
+    },
+    {
+      "id": "c289a51d7183f3b5",
+      "slug": "mountain-province-diamonds-addresses-near-term-liquidity-pos-c289a51d",
+      "title": "Mountain Province Diamonds Addresses Near Term Liquidity Position with Asset Sale and Receives Extensions on Financial Obligations",
+      "sourceName": "PR Newswire UK",
+      "publishedAt": "2026-06-15T21:05:00.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://www.prnewswire.co.uk/news-releases/mountain-province-diamonds-addresses-near-term-liquidity-position-with-asset-sale-and-receives-extensions-on-financial-obligations-302800780.html",
+      "summary": "Mountain Province Diamonds Addresses Near Term Liquidity Position with Asset Sale and Receives Extensions on Financial Obligations. TSX and OTC: MPVD TORONTO and NEW YORK, June 15, 2026 /PRNewswire/ -- Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) and (OTC: MPVD) announces today that it has completed a series of transactions to strengthen its near-term…",
+      "summaryType": "fallback",
+      "description": "TSX and OTC: MPVD TORONTO and NEW YORK, June 15, 2026 /PRNewswire/ -- Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) and (OTC: MPVD) announces today that it has completed a series of transactions to strengthen its near-term…",
+      "cleanedText": "TSX and OTC: MPVD TORONTO and NEW YORK, June 15, 2026 /PRNewswire/ -- Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) and (OTC: MPVD) announces today that it has c…"
+    },
+    {
+      "id": "7cd9aafcfc498609",
+      "slug": "mountain-province-diamonds-addresses-near-term-liquidity-pos-7cd9aafc",
+      "title": "Mountain Province Diamonds Addresses Near Term Liquidity Position with Asset Sale and Receives Extensions on Financial Obligations",
+      "sourceName": "PRNewswire",
+      "publishedAt": "2026-06-15T21:05:00.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://www.prnewswire.com/news-releases/mountain-province-diamonds-addresses-near-term-liquidity-position-with-asset-sale-and-receives-extensions-on-financial-obligations-302800781.html",
+      "summary": "Mountain Province Diamonds Addresses Near Term Liquidity Position with Asset Sale and Receives Extensions on Financial Obligations. TSX and OTC: MPVD TORONTO and NEW YORK, June 15, 2026 /PRNewswire/ - Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) and (OTC: MPVD) announces today that it has completed a series of transactions to strengthen its near-term …",
+      "summaryType": "fallback",
+      "description": "TSX and OTC: MPVD TORONTO and NEW YORK, June 15, 2026 /PRNewswire/ - Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) and (OTC: MPVD) announces today that it has completed a series of transactions to strengthen its near-term …",
+      "cleanedText": "TSX and OTC: MPVD TORONTO and NEW YORK, June 15, 2026 /PRNewswire/ - Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) and (OTC: MPVD) announces today that it has co…"
     },
     {
       "id": "54060919757f1a17",
@@ -330,6 +422,54 @@
       "cleanedText": "It has been a difficult journey for the Iran national team to get to the World Cup, with United States restrictions due to the war in Iran forcing them to move their base camp to Tijuana ahead of the…"
     },
     {
+      "id": "ba51291769ef0840",
+      "slug": "ufc-fighter-josh-hokit-called-michelle-obama-a-man-reviving--ba512917",
+      "title": "UFC fighter Josh Hokit called Michelle Obama 'a man,' reviving baseless conspiracy theory",
+      "sourceName": "Snopes.com",
+      "publishedAt": "2026-06-15T20:28:00.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://www.snopes.com//news/2026/06/15/ufc-michelle-obama-man-trans/",
+      "summary": "UFC fighter Josh Hokit called Michelle Obama 'a man,' reviving baseless conspiracy theory. Hokit made the false claim about Obama's gender identity after winning a match held at the White House in mid-June 2026.",
+      "summaryType": "fallback",
+      "description": "Hokit made the false claim about Obama's gender identity after winning a match held at the White House in mid-June 2026.",
+      "imageUrl": "https://mediaproxy.snopes.com/width/1200/https://media.snopes.com/2026/06/michelle_obama_nonsense_repack_real.png",
+      "author": "Izz Scott LaMagdeleine",
+      "cleanedText": "On June 14, 2026, UFC fighter Josh Hokit won a heavyweight match held at the White House meant to mark the 250th anniversary of the U.S. and President Donald Trump's 80th birthday. At the end of his …"
+    },
+    {
+      "id": "40e578abddef598d",
+      "slug": "78-of-older-persons-experienced-at-least-one-climate-related-40e578ab",
+      "title": "78% of older persons experienced at least one climate-related hazard in the last three years: HelpAge India report",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-06-15T20:18:52.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/home/environment/78-of-older-persons-experienced-at-least-one-climate-related-hazard-in-the-last-three-years-helpage-india-report/articleshow/131754570.cms",
+      "summary": "78% of older persons experienced at least one climate-related hazard in the last three years: HelpAge India report. While most affected by heatwaves stay indoors (90%) and increase water intake (81%), illness still rises (74%), existing conditions worsen (44%), and healthcare access becomes difficult (33%). Released on Monday to mark World Elder Abuse Awareness Day observe…",
+      "summaryType": "fallback",
+      "description": "While most affected by heatwaves stay indoors (90%) and increase water intake (81%), illness still rises (74%), existing conditions worsen (44%), and healthcare access becomes difficult (33%). Released on Monday to mark World Elder Abuse Awareness Day observe…",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-131754568,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "Ambika Pandit",
+      "cleanedText": "News 78% of older persons experienced at least one climate-related hazard in the last three years: HelpAge India report Follow Us On Social Media Tom Brady stood next to…"
+    },
+    {
+      "id": "7f9da81859603f71",
+      "slug": "jackie-shroff-sunny-leone-and-kunal-kemmu-approached-to-host-7f9da818",
+      "title": "Jackie Shroff, Sunny Leone, and Kunal Kemmu approached to host upcoming reality show The Alliance India?",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-06-15T20:09:16.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/tv/news/hindi/jackie-shroff-sunny-leone-and-kunal-kemmu-approached-to-host-upcoming-reality-show-the-alliance-india/articleshow/131754496.cms",
+      "summary": "Jackie Shroff, Sunny Leone, and Kunal Kemmu approached to host upcoming reality show The Alliance India?. 'The Alliance India,' a strategy-based reality show featuring 16 contestants in four teams is soon be launched on a popular OTT platform. The competition emphasizes trust, teamwork, and smart decisions, with potential celebrity participants like Kushal Tandon…",
+      "summaryType": "fallback",
+      "description": "'The Alliance India,' a strategy-based reality show featuring 16 contestants in four teams is soon be launched on a popular OTT platform. The competition emphasizes trust, teamwork, and smart decisions, with potential celebrity participants like Kushal Tandon…",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-131754540,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "etimes.in",
+      "cleanedText": "News tv Jackie Shroff, Sunny Leone, and Kunal Kemmu approached to host upcoming reality show The Alliance India? Follow Us On Social Media Tom Brady stood next…"
+    },
+    {
       "id": "bdfa866ebc2e2d95",
       "slug": "us-air-force-b-52-bomber-plane-crashes-after-take-off-in-cal-bdfa866e",
       "title": "US Air Force B-52 bomber plane crashes after take off in California - BBC",
@@ -343,6 +483,22 @@
       "description": "Officials did not say if anyone was injured in the crash, but the aircraft typically carry a crew of five.",
       "imageUrl": "https://ichef.bbci.co.uk/news/1024/branded_news/0cba/live/2d1c3470-68f7-11f1-8e1d-bbbb1017d210.jpg",
       "cleanedText": "Congressman Jay Obernolte, whose district includes the base, posted on Facebook that he and his wife \"are praying for everyone involved in today's B-52 crash at Edwards Air Force Base, especially the…"
+    },
+    {
+      "id": "9b7024bc3a9ada75",
+      "slug": "venezuela-s-oil-exports-hit-seven-year-high-as-global-buyers-9b7024bc",
+      "title": "Venezuela’s Oil Exports Hit Seven-Year High as Global Buyers Return",
+      "sourceName": "OilPrice.com",
+      "publishedAt": "2026-06-15T20:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://oilprice.com/Energy/Energy-General/Venezuelas-Oil-Exports-Hit-Seven-Year-High-as-Global-Buyers-Return.html",
+      "summary": "Venezuela’s Oil Exports Hit Seven-Year High as Global Buyers Return. Venezuela’s oil production and exports are set to increase in the coming months as the United States further eases the rules of operating in the world’s biggest crude resource holder after taking control over the industry following the capture of Nicolas Madu…",
+      "summaryType": "fallback",
+      "description": "Venezuela’s oil production and exports are set to increase in the coming months as the United States further eases the rules of operating in the world’s biggest crude resource holder after taking control over the industry following the capture of Nicolas Madu…",
+      "imageUrl": "https://d32r1sh890xpii.cloudfront.net/article/1200x675/2026-06-15_idk35p46kf.jpg",
+      "author": "Tsvetana Paraskova",
+      "cleanedText": "U.S. grid reliability appears to… The United States and Uzbekistan… China's Jiangnan Shipyard unveiled a… Set us as your preferred Google source By Tsvetana Paraskova - Jun 15, 2026, 3:00 PM CDTV…"
     },
     {
       "id": "37406ebb00440b80",
