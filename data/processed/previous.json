@@ -1,20 +1,68 @@
 {
-  "generatedAt": "2026-06-23T21:27:15.843Z",
+  "generatedAt": "2026-06-23T23:03:19.955Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
     "health"
   ],
   "counts": {
-    "fetched": 9,
-    "normalized": 9,
+    "fetched": 3,
+    "normalized": 3,
     "dropped": 0,
-    "deduped": 9,
-    "summarizedWithAi": 22,
-    "fallbackSummaries": 98,
+    "deduped": 3,
+    "summarizedWithAi": 24,
+    "fallbackSummaries": 96,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "f13089f07995efda",
+      "slug": "shoppers-making-1-7bn-high-street-visits-per-year-driven-by--f13089f0",
+      "title": "Shoppers ‘making 1.7bn high street visits per year driven by social media’",
+      "sourceName": "The-independent.com",
+      "publishedAt": "2026-06-22T23:01:00.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.the-independent.com/tech/american-express-east-midlands-market-harborough-b3000855.html",
+      "summary": "According to American Express, nearly two-thirds of adults visited a shop or hospitality venue in the past year after being influenced by social media. This trend accounts for an estimated 1.7 billion high street visits annually.",
+      "summaryType": "ai",
+      "description": "Nearly two-thirds of adults have visited a shop or hospitality venue in the past year after being influenced by social media, American Express said.",
+      "imageUrl": "https://static.the-independent.com/2026/06/23/00/19141506-fd17f2b0-f42a-4b4f-a5ca-4322bab74c90.jpg?width=1200&height=800&crop=1200:800",
+      "author": "Vicky Shaw",
+      "cleanedText": "Your support helps us to tell the story From reproductive rights to climate change to Big Tech, The Independent is on the ground when the story is developing. Whether it's investigating the financia…"
+    },
+    {
+      "id": "c52391ee38d00ce7",
+      "slug": "is-using-a-smartwatch-while-driving-illegal-motorists-urged--c52391ee",
+      "title": "Is using a smartwatch while driving illegal? Motorists urged to act or could ‘unwittingly pay the price’",
+      "sourceName": "The-independent.com",
+      "publishedAt": "2026-06-22T23:01:00.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.the-independent.com/life-style/motoring/drivers-uk-smartwatch-offence-rac-b3000644.html",
+      "summary": "The RAC has issued a plea urging motorists to be cautious about using smartwatches while driving to avoid potential penalties. According to the organization, drivers could violate handheld phone rules if they clear notifications on their devices.",
+      "summaryType": "ai",
+      "description": "The RAC, which issued the plea, said motorists could fall foul of handheld phone rules if they clear notifications on smartwatches",
+      "imageUrl": "https://static.the-independent.com/2026/06/22/16/51/iStock-1043926378.jpeg?trim=0,0,0,0&width=1200&height=800&crop=1200:800",
+      "author": "Neil Lancefield",
+      "cleanedText": "Your support helps us to tell the story From reproductive rights to climate change to Big Tech, The Independent is on the ground when the story is developing. Whether it's investigating the financia…"
+    },
+    {
+      "id": "84995ec32d0ba7e5",
+      "slug": "bottom-trawling-activists-getting-boulder-84995ec3",
+      "title": "Bottom trawling activists getting boulder",
+      "sourceName": "Theecologist.org",
+      "publishedAt": "2026-06-22T23:00:01.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://theecologist.org/2026/jun/23/bottom-trawling-activists-getting-boulder",
+      "summary": "Bottom trawling activists getting boulder. Bottom trawling activists getting boulder Channel News brendan 23rd June 2026 Teaser Media",
+      "summaryType": "fallback",
+      "description": "Bottom trawling activists getting boulder Channel News brendan 23rd June 2026 Teaser Media",
+      "imageUrl": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-06/gp1suvb6_pressmedia.jpg?h=41f55a5b&itok=XI-ejJ3n",
+      "author": "brendan",
+      "cleanedText": "Greenpeace has announced plans to drop boulders into areas of the sea protected for wildlife in an attempt to block what it describes as destructive industrial fishing. READ: THE CATCH The campaign…"
+    },
     {
       "id": "d08671ab79be7205",
       "slug": "national-portrait-gallery-display-withdrawn-after-churchill--d08671ab",
@@ -1859,53 +1907,6 @@
       "imageUrl": "https://i.dailymail.com/1s/2026/06/21/08/109495537-0-image-m-20_1782028236778.jpg",
       "author": "Lily Jobson",
       "cleanedText": "Peter Andre has revealed he struggled to adjust to his daughter Princess having a boyfriend after he was raised a strict Jehovah's Witness. The Mysterious Girl singer, 53, said he used to be very st…"
-    },
-    {
-      "id": "0f7e74fddd343675",
-      "slug": "where-to-watch-belgium-vs-iran-live-stream-tv-channel-start--0f7e74fd",
-      "title": "Where to watch Belgium vs. Iran live stream, TV channel, start time for World Cup Group G match",
-      "sourceName": "Sporting News",
-      "publishedAt": "2026-06-21T07:00:01.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://www.sportingnews.com/us/soccer/news/watch-belgium-vs-iran-live-stream-tv-channel-start-time-world-cup/aac6d6ddf6647bab584cdaaa",
-      "summary": "Where to watch Belgium vs. Iran live stream, TV channel, start time for World Cup Group G match. Here's how to tune into the Belgium vs. Iran World Cup match for free.",
-      "summaryType": "fallback",
-      "description": "Here's how to tune into the Belgium vs. Iran World Cup match for free.",
-      "imageUrl": "https://s.yimg.com/lo/mysterio/api/e13ebca54ecf08870d0f7ea3fb8aae098a11e93ccddc8cf51044ccc10539cdca/lightyear_networkapi/resizefill_w760_h428;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_sporting_news_articles_584%2F32c45bb8d28a7840b3e021bc211ee086",
-      "author": "Jake Mozarsky",
-      "cleanedText": "Where to watch Belgium vs. Iran live stream, TV channel, start time for World Cup Group G match originally appeared on The Sporting News. Add The Sporting News as a Preferred Source by clicking here.…"
-    },
-    {
-      "id": "ae025bed6e882008",
-      "slug": "2026-sks-weekly-climate-change-global-warming-news-roundup-2-ae025bed",
-      "title": "2026 SkS Weekly Climate Change & Global Warming News Roundup #25",
-      "sourceName": "Skepticalscience.com",
-      "publishedAt": "2026-06-21T06:51:08.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://skepticalscience.com/2026-SkS-Weekly-News-Roundup_25.html",
-      "summary": "2026 SkS Weekly Climate Change & Global Warming News Roundup #25. A listing of 28 news and opinion articles we found interesting and shared on social media during the past week: Sun, June 14, 2026 thru Sat, June 20, 2026. Stories we promoted this week, by category: Climate Change Impacts (8 articles) What's driving…",
-      "summaryType": "fallback",
-      "description": "A listing of 28 news and opinion articles we found interesting and shared on social media during the past week: Sun, June 14, 2026 thru Sat, June 20, 2026. Stories we promoted this week, by category: Climate Change Impacts (8 articles) What's driving…",
-      "imageUrl": "https://skepticalscience.com/public/assets/images/og/button_sks_200.jpg",
-      "cleanedText": "Posted on 21 June 2026 by BaerbelW, Doug Bostrom A listing of 28 news and opinion articles we found interesting and shared on social media during the past week: Sun, June 14, 2026 thru Sat, June 20,…"
-    },
-    {
-      "id": "f2d4bb58dcbf973f",
-      "slug": "breaking-down-potential-foes-for-usmnt-in-world-cup-round-of-f2d4bb58",
-      "title": "Breaking down potential foes for USMNT in World Cup round of 32",
-      "sourceName": "New York Post",
-      "publishedAt": "2026-06-21T06:41:46.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://nypost.com/2026/06/21/sports/breaking-down-potential-foes-for-usmnt-in-world-cup-round-of-32/",
-      "summary": "Breaking down potential foes for USMNT in World Cup round of 32. The United States men’s national team has spent decades trying to convince the world it belongs among soccer’s elite.",
-      "summaryType": "fallback",
-      "description": "The United States men’s national team has spent decades trying to convince the world it belongs among soccer’s elite.",
-      "imageUrl": "https://nypost.com/wp-content/uploads/sites/2/2026/06/newspress-collage-kginrq13n-1782023999210.jpg?quality=75&strip=all&1782009608&w=1200",
-      "author": "Michael Duarte",
-      "cleanedText": "The United States mens national team has spent decades trying to convince the world it belongs among soccers elite. Now, after two matches at the 2026 FIFA World Cup, it is forcing everyone to pay a…"
     }
   ]
 }
