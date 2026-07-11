@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T17:50:23.316Z",
+  "generatedAt": "2026-07-11T18:52:21.696Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -11,11 +11,74 @@
     "normalized": 9,
     "dropped": 0,
     "deduped": 9,
-    "summarizedWithAi": 17,
-    "fallbackSummaries": 78,
-    "finalArticles": 95
+    "summarizedWithAi": 19,
+    "fallbackSummaries": 85,
+    "finalArticles": 104
   },
   "articles": [
+    {
+      "id": "694281f5c4ae2786",
+      "slug": "how-can-that-error-be-so-big-byd-admits-selling-wrong-year-c-694281f5",
+      "title": "'How can that error be so big?' BYD admits selling wrong year car",
+      "sourceName": "ABC News (AU)",
+      "publishedAt": "2026-07-10T18:43:17.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.abc.net.au/news/2026-07-11/byd-offers-full-refunds-after-customers-given-wrong-car/106891590",
+      "summary": "Chinese car maker BYD will offer full refunds to more than 1,200 customers who bought electric and hybrid cars. This offer follows the company's admission that it sold these customers vehicles from the wrong year.",
+      "summaryType": "ai",
+      "description": "More than 1,200 customers who bought electric and hybrid cars from Chinese maker BYD will be offered a full refund after the company admitted to selling them vehicles from the wrong year.",
+      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/67555c4f956786dbd632099436963b6e?impolicy=wcms_watermark_news&cropH=2813&cropW=5000&xPos=0&yPos=120&width=862&height=485&imformat=generic",
+      "author": "Michael Atkin",
+      "cleanedText": "More than 1,200 customers who bought electric and hybrid cars from Chinese maker BYD will be offered a full refund after the company admitted to selling them vehicles from the wrong year. BYD, short…"
+    },
+    {
+      "id": "f7d055920bc036b9",
+      "slug": "coffee-break-more-on-american-science-thomas-jefferson-and-a-f7d05592",
+      "title": "Coffee Break: More on American Science, Thomas Jefferson and AI, and Natural History for the Ages",
+      "sourceName": "Nakedcapitalism.com",
+      "publishedAt": "2026-07-10T18:00:16.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.nakedcapitalism.com/2026/07/science-troubles-contintue-and-ai-detection-flounders-but-natural-history-flourishes.html",
+      "summary": "Coffee Break: More on American Science, Thomas Jefferson and AI, and Natural History for the Ages. Part the First: Beware of Resting on the Shoulders of Atlas. Dr. Scott Atlas is a radiologist who is now ensconced in the Hoover Institution on War, Revolution, and Peace at Stanford (naturally, and in the tower, no less). One can only surmise from the gene…",
+      "summaryType": "fallback",
+      "description": "Part the First: Beware of Resting on the Shoulders of Atlas. Dr. Scott Atlas is a radiologist who is now ensconced in the Hoover Institution on War, Revolution, and Peace at Stanford (naturally, and in the tower, no less). One can only surmise from the gene…",
+      "author": "KLG",
+      "cleanedText": "Part the First: Beware of Resting on the Shoulders of Atlas. Dr. Scott Atlas is a radiologist who is now ensconced in the Hoover Institution on War, Revolution, and Peace at Stanford (naturally, and…"
+    },
+    {
+      "id": "1fc3b2dd836294e4",
+      "slug": "i-tested-psb-s-new-stereo-speaker-system-and-the-punchy-soun-1fc3b2dd",
+      "title": "I tested PSB's new stereo speaker system and the punchy sound and compact styling are a delight, but don't bother if you listen to a lot of vinyl",
+      "sourceName": "TechRadar",
+      "publishedAt": "2026-07-10T18:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.techradar.com/audio/wireless-bluetooth-speakers/psb-iq2-review",
+      "summary": "The PSB iQ2 is the largest model in the brand's stereo speaker range, featuring a compact design and punchy sound. While noted for its small size, the speaker system carries a high price-tag and is not recommended for frequent vinyl listeners.",
+      "summaryType": "ai",
+      "description": "The PSB iQ2 may be the largest model in the brand's stereo speaker range, but it's still pretty small — can it justify its big price-tag?",
+      "imageUrl": "https://cdn.mos.cms.futurecdn.net/psvE8eDwWcoEaKUWvKZGm4-2560-80.jpg",
+      "author": "Simon Lucas",
+      "cleanedText": "Why you can trust TechRadar We spend hours testing every product or service we review, so you can be sure you're buying the best. Find out more about how we test.PSB iQ2: Two-minute review ‘Larger’…"
+    },
+    {
+      "id": "2bd1b0ecaacaf264",
+      "slug": "peabody-energy-corporation-btu-faces-securities-class-action-2bd1b0ec",
+      "title": "Peabody Energy Corporation (BTU) Faces Securities Class Action Lawsuit – Hagens Berman Investigating Federal Securities Law Violations Related to Centurion Operations",
+      "sourceName": "GlobeNewswire",
+      "publishedAt": "2026-07-10T17:42:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.globenewswire.com/news-release/2026/07/10/3325697/32716/en/Peabody-Energy-Corporation-BTU-Faces-Securities-Class-Action-Lawsuit-Hagens-Berman-Investigating-Federal-Securities-Law-Violations-Related-to-Centurion-Operations.html",
+      "summary": "Peabody Energy Corporation (BTU) Faces Securities Class Action Lawsuit – Hagens Berman Investigating Federal Securities Law Violations Related to Centurion Operations. Investors who lost money in BTU after its stock plunged due to allegedly misleading financial statements are urged to contact Hagens Berman....",
+      "summaryType": "fallback",
+      "description": "Investors who lost money in BTU after its stock plunged due to allegedly misleading financial statements are urged to contact Hagens Berman....",
+      "imageUrl": "https://ml.globenewswire.com/Resource/Download/2c81cd72-0ffb-43c9-9d0f-b622c3e44e43",
+      "author": "Hagens Berman Sobol Shapiro LLP",
+      "cleanedText": "SAN FRANCISCO, July 10, 2026 (GLOBE NEWSWIRE) -- Peabody Energy Corporation (NYSE: BTU) faces a securities class action lawsuit related to surprise disclosures the company made to investors on March …"
+    },
     {
       "id": "a67578cbaf319e4f",
       "slug": "what-in-the-world-a67578cb",
@@ -79,6 +142,22 @@
       "cleanedText": "Popular variety retailer Flying Tiger Copenhagen opened its second store in the Greater Toronto Area (GTA) on Friday, just two weeks after launching its first Canadian location in downtown Toronto. …"
     },
     {
+      "id": "ed3d2815bf9af877",
+      "slug": "hundreds-give-hero-s-welcome-to-egypt-after-best-world-cup-r-ed3d2815",
+      "title": "Hundreds give hero’s welcome to Egypt after best World Cup run",
+      "sourceName": "Al Jazeera English",
+      "publishedAt": "2026-07-10T17:08:44.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.aljazeera.com/sports/2026/7/10/hundreds-give-heros-welcome-to-egypt-after-best-world-cup-run",
+      "summary": "Hundreds give hero’s welcome to Egypt after best World Cup run. Supporters waved Egyptian and Palestinian flags in support of Gaza as the Pharaohs boarded an open-top bus for a parade.",
+      "summaryType": "fallback",
+      "description": "Supporters waved Egyptian and Palestinian flags in support of Gaza as the Pharaohs boarded an open-top bus for a parade.",
+      "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2026/07/ap_6a511ad682b3e-1783700182.jpg?resize=1920%2C1440",
+      "author": "Al Jazeera",
+      "cleanedText": "Hundreds of euphoric supporters welcomed home Egypts national football team after the countrys best performance at a World Cup, which ended this time with a thrilling last-16 exit to Argentina. A se…"
+    },
+    {
       "id": "8243d5fddf45183f",
       "slug": "ukraine-says-it-hit-two-russian-refineries-slew-of-fuel-tank-8243d5fd",
       "title": "Ukraine Says It Hit Two Russian Refineries, Slew of Fuel Tankers",
@@ -92,6 +171,22 @@
       "description": "Ukraine said it hit two Russian refineries and over a dozen fuel tankers, the latest in a series of attacks on energy assets that are deepening a nationwide fuel crunch.",
       "author": "Bloomberg News",
       "cleanedText": "(Bloomberg) Ukraine said it hit two Russian refineries and over a dozen fuel tankers, the latest in a series of attacks on energy assets that are deepening a nationwide fuel crunch. THIS CONTENT IS…"
+    },
+    {
+      "id": "e19fd0d2fd9d59d8",
+      "slug": "kiwi-workers-go-backwards-as-nz-s-real-wage-growth-is-the-wo-e19fd0d2",
+      "title": "Kiwi workers go backwards, as NZ’s real wage growth is the worst in the OECD",
+      "sourceName": "New Zealand Herald",
+      "publishedAt": "2026-07-10T17:00:00.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.nzherald.co.nz/business/economy/employment/kiwi-workers-go-backwards-as-nzs-real-wage-growth-is-the-worst-in-the-oecd/premium/NKIB3KXJBJHFJDDQBQYXJXKHEQ/",
+      "summary": "Kiwi workers go backwards, as NZ’s real wage growth is the worst in the OECD. Kiwis are also working less and producing less per hour worked.",
+      "summaryType": "fallback",
+      "description": "Kiwis are also working less and producing less per hour worked.",
+      "imageUrl": "https://www.nzherald.co.nz/resizer/v2/ELX3GAY4JZC65G3746SAALJ6IU.jpg?auth=765f62aadf56f2ea3be7ad8416f4b97262f205233296bd10e73aa75ca932f62b&width=1200&height=675&quality=70&smart=true",
+      "author": "Jenée Tibshraeny",
+      "cleanedText": "While the coalition Government has implemented small minimum wage hikes, the Labour Government upped the minimum wage substantially. The gap between the minimum and median wage in New Zealand is the…"
     },
     {
       "id": "3102fde1540eaeeb",
@@ -235,6 +330,22 @@
       "cleanedText": "What happened The Bayeux Tapestry, a wool-on-linen depiction of the Norman conquest of Anglo-Saxon England in 1066, arrived in London this morning after a secret journey from France. It’s the first …"
     },
     {
+      "id": "731aa60ca517b644",
+      "slug": "traveloka-and-marriott-international-partner-to-bring-world--731aa60c",
+      "title": "Traveloka and Marriott International Partner to Bring World's Leading Hotel Brands Closer to Southeast Asia's Travelers",
+      "sourceName": "Antaranews.com",
+      "publishedAt": "2026-07-10T16:28:50.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://en.antaranews.com/news/422191/traveloka-and-marriott-international-partner-to-bring-worlds-leading-hotel-brands-closer-to-southeast-asias-travelers",
+      "summary": "Traveloka and Marriott International Partner to Bring World's Leading Hotel Brands Closer to Southeast Asia's Travelers. Traveloka, Southeast Asia&#39;s leading all-in-one travel tech platform, today announced a signed agreement with Marriott International, the world&#39;s ...",
+      "summaryType": "fallback",
+      "description": "Traveloka, Southeast Asia&#39;s leading all-in-one travel tech platform, today announced a signed agreement with Marriott International, the world&#39;s ...",
+      "imageUrl": "https://cdn.antaranews.com/cache/1200x800/2026/07/10/Traveloka-and-Marriott-International-Partner-to-Bring-World-s-Leading-Hotel-Brands-Closer-to-Southeast-Asia-s-Travelers.jpg",
+      "author": "PR Wire",
+      "cleanedText": "Traveloka and Marriott International enter multi-year distribution agreement, making Marriott's full portfolio of properties more visible for travelers across Indonesia and Southeast Asia to discover…"
+    },
+    {
       "id": "9880b6f417ae890e",
       "slug": "comics-on-walls-joe-kessler-kat-chapman-olivia-ahmad-paul-gr-9880b6f4",
       "title": "Comics On Walls: Joe Kessler, Kat Chapman, Olivia Ahmad, Paul Gravett",
@@ -265,6 +376,38 @@
       "imageUrl": "https://images.dailycaller.com/image/width=1280,height=549,fit=cover,format=webp,f=auto/https://cdn01.dailycaller.com/wp-content/uploads/2026/07/GettyImages-2198565941-e1783696048362.jpg",
       "author": "Dylan Kresak",
       "cleanedText": "Police are investigating the suspicious death of British politician Ann Widdecombe, who was found dead at 78 with a head wound in her Devon home Friday morning. Widdecombe’s carer found the body of …"
+    },
+    {
+      "id": "6f94e48053bcefb5",
+      "slug": "spain-vs-belgium-free-live-stream-how-to-watch-world-cup-qua-6f94e480",
+      "title": "Spain vs. Belgium free live stream: How to watch World Cup quarterfinal match online without cable",
+      "sourceName": "Sporting News",
+      "publishedAt": "2026-07-10T16:03:02.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.sportingnews.com/us/soccer/news/spain-vs-belgium-free-live-stream-watch-world-cup/e7ccff8ff3dcbd1539060b11",
+      "summary": "Spain vs. Belgium free live stream: How to watch World Cup quarterfinal match online without cable. Here's everything you need to know to watch the Spain vs. Belgium World Cup quarterfinal match, including where to watch on TV or live stream, what time the game starts and more.",
+      "summaryType": "fallback",
+      "description": "Here's everything you need to know to watch the Spain vs. Belgium World Cup quarterfinal match, including where to watch on TV or live stream, what time the game starts and more.",
+      "imageUrl": "https://s.yimg.com/os/en/the_sporting_news_articles_584/7d49df3a9969d2b1557fcf8281eb9406",
+      "author": "Tyler Greenawalt",
+      "cleanedText": "Spain vs. Belgium free live stream: How to watch World Cup quarterfinal match online without cable originally appeared on The Sporting News. Add The Sporting News as a Preferred Source by clicking he…"
+    },
+    {
+      "id": "37f27d95ff7814d0",
+      "slug": "spain-vs-belgium-stream-fifa-world-cup-2026-match-live-for-f-37f27d95",
+      "title": "Spain vs. Belgium: Stream FIFA World Cup 2026 Match Live for Free",
+      "sourceName": "CNET",
+      "publishedAt": "2026-07-10T16:00:47.000Z",
+      "category": "world",
+      "sourceCountry": "au",
+      "url": "https://www.cnet.com/tech/services-and-software/spain-vs-belgium-stream-fifa-world-cup-2026-match-live-for-free/",
+      "summary": "Spain vs. Belgium: Stream FIFA World Cup 2026 Match Live for Free. A semifinal showdown with France is at stake for the winners of this clash of the European giants.",
+      "summaryType": "fallback",
+      "description": "A semifinal showdown with France is at stake for the winners of this clash of the European giants.",
+      "imageUrl": "https://www.cnet.com/a/img/resize/0a20fc1158d04d7d29fb66d5f554d8a2c3d0a1e9/hub/2026/07/10/ae10d3d4-6a61-47f9-86b0-87112e5f0aec/gettyimages-2284947546.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "author": "Kevin Lynch",
+      "cleanedText": "Belgium will need to break a seemingly impenetrable Spanish defense if it's to reach the 2026 World Cup semifinals. It looks set to be an absorbing last-eight clash between the two European powerhous…"
     },
     {
       "id": "8bd387d954c3446c",
