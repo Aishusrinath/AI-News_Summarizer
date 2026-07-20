@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T22:44:15.684Z",
+  "generatedAt": "2026-07-20T03:07:00.211Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -17,6 +17,38 @@
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "fc484e34bfed3329",
+      "slug": "economic-digest-a-snapshot-of-nepal-s-business-news-fc484e34",
+      "title": "Economic Digest: A Snapshot of Nepal’s Business News",
+      "sourceName": "Khabarhub.com",
+      "publishedAt": "2026-07-19T02:15:47.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://english.khabarhub.com/2026/19/559209/",
+      "summary": "Economic Digest: A Snapshot of Nepal’s Business News. KATHMANDU: Economic Digest presents a brief yet comprehensive roundup of major business developments in Nepal, delivered in clear and accessible summaries. Nepal’s latest economic and policy developments present a mixed picture of progress and persistent stru…",
+      "summaryType": "fallback",
+      "description": "KATHMANDU: Economic Digest presents a brief yet comprehensive roundup of major business developments in Nepal, delivered in clear and accessible summaries. Nepal’s latest economic and policy developments present a mixed picture of progress and persistent stru…",
+      "imageUrl": "https://english.khabarhub.com/wp-content/uploads/2024/05/Economic-Digest.jpg",
+      "author": "Khabarhub",
+      "cleanedText": "KATHMANDU: Economic Digest presents a brief yet comprehensive roundup of major business developments in Nepal, delivered in clear and accessible summaries. Nepal’s latest economic and policy develop…"
+    },
+    {
+      "id": "5ec8e479659b2138",
+      "slug": "london-weather-forecast-for-england-vs-india-chances-of-rain-5ec8e479",
+      "title": "London weather forecast for England vs India: Chances of rain, average temperatures for 3rd ODI",
+      "sourceName": "Sporting News",
+      "publishedAt": "2026-07-18T23:30:01.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://www.sportingnews.com/in/cricket/news/london-weather-forecast-england-india-chances-rain-average-temperatures-3rd-odi/510d5255db447881b91aae73",
+      "summary": "London weather forecast for England vs India: Chances of rain, average temperatures for 3rd ODI. With England ready to win the ODI series as well as Lord's, here's a look at what kind of weather India might expect from London ahead of the series-deciding 3rd ODI.",
+      "summaryType": "fallback",
+      "description": "With England ready to win the ODI series as well as Lord's, here's a look at what kind of weather India might expect from London ahead of the series-deciding 3rd ODI.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/477e8b7ce9d3f9f664486e62c4a7646cac72f0dc16ab3eb1705cb3892a033a6a/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fthe_sporting_news_articles_584%2F61e85eb5c237bcedf9740e367dfe663b",
+      "author": "Deepanjan Mitra",
+      "cleanedText": "India head to Lord's for the third and final ODI against England on Sunday, with the three-match series delicately poised at 1-1 after two contrasting contests. India struck first with a commanding …"
+    },
     {
       "id": "865186d34d3c6ba1",
       "slug": "where-to-watch-england-vs-india-live-stream-tv-channel-start-865186d3",
@@ -1886,37 +1918,6 @@
       "imageUrl": "https://bl-i.thgim.com/public/incoming/irm2ta/article71236968.ece/alternates/LANDSCAPE_1200/2026-07-17T214045Z_1825837518_RC2XFMABX5Y0_RTRMADP_3_CANADA-WILDFIRES-USA.JPG",
       "author": "AP- PTI",
       "cleanedText": "Millions of people in the Great Lakes, Northeast and Mid-Atlantic states muddled through another day of unhealthy air from uncontrolled wildfires on Friday. The thick smoke enveloped the nation's ca…"
-    },
-    {
-      "id": "3afcf6fbe6c9773d",
-      "slug": "the-most-common-type-of-planet-in-the-known-galaxy-is-one-th-3afcf6fb",
-      "title": "The most common type of planet in the known galaxy is one that does not exist in our solar system — a world larger than Earth but smaller than Neptune, a size our own neighbourhood entirely skipped, now counted in the thousands across NASA's confirmed - Space Daily",
-      "sourceName": "Space Daily",
-      "publishedAt": "2026-07-18T02:30:51.000Z",
-      "category": "science",
-      "sourceCountry": "us",
-      "url": "https://spacedaily.com/t-the-most-common-type-of-planet-in-the-known-galaxy-is-one-that-does-not-exist-in-our-solar-system-a-world-larger-than-earth-but-smaller-than-neptune-a-size-our-own-neighbourhood-entirely-skipped-now/",
-      "summary": "The most common type of planet in the known galaxy is one that does not exist in our solar system — a world larger than Earth but smaller than Neptune, a size our own neighbourhood entirely skipped, now counted in the thousands across NASA's confirmed - Space Daily. The strangest thing about our solar system may be what it is missing.",
-      "summaryType": "fallback",
-      "description": "The strangest thing about our solar system may be what it is missing.",
-      "imageUrl": "https://spacedaily.com/wp-content/uploads/2026/07/spacedaily_super_earth_neptune_comparison.png",
-      "cleanedText": "The strangest thing about our solar system may be what it is missing. Line up the planets by size and there is a clean jump. Earth is the largest rocky planet. Neptune is nearly four times wider. Be…"
-    },
-    {
-      "id": "d71a534326a4d265",
-      "slug": "scientists-solve-the-40-year-mystery-of-a-giant-structure-to-d71a5343",
-      "title": "Scientists Solve The 40-Year Mystery of a Giant Structure Towering Over The Milky Way - ScienceAlert",
-      "sourceName": "ScienceAlert",
-      "publishedAt": "2026-07-18T02:02:31.000Z",
-      "category": "science",
-      "sourceCountry": "us",
-      "url": "https://www.sciencealert.com/scientists-solve-the-40-year-mystery-of-a-giant-structure-towering-over-the-milky-way",
-      "summary": "Scientists Solve The 40-Year Mystery of a Giant Structure Towering Over The Milky Way - ScienceAlert. Scientists have just discovered the Milky Way's equivalent of a giant fake mustache.",
-      "summaryType": "fallback",
-      "description": "Scientists have just discovered the Milky Way's equivalent of a giant fake mustache.",
-      "imageUrl": "https://www.sciencealert.com/images/2026/07/loop.jpg",
-      "author": "Michelle Starr",
-      "cleanedText": "Scientists have just discovered the Milky Way's equivalent of a giant fake mustache. For four decades, astronomers have puzzled over a giant loop apparently ballooning out of the center of the Milky…"
     }
   ]
 }
