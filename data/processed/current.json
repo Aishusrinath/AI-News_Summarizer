@@ -1,20 +1,36 @@
 {
-  "generatedAt": "2026-08-02T23:53:11.493Z",
+  "generatedAt": "2026-08-03T02:10:16.789Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
     "business"
   ],
   "counts": {
-    "fetched": 8,
-    "normalized": 8,
+    "fetched": 10,
+    "normalized": 10,
     "dropped": 0,
-    "deduped": 8,
-    "summarizedWithAi": 22,
-    "fallbackSummaries": 98,
+    "deduped": 10,
+    "summarizedWithAi": 23,
+    "fallbackSummaries": 97,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "8c46eaaf3b32e4d2",
+      "slug": "what-the-future-of-cancer-care-means-for-you-8c46eaaf",
+      "title": "What the future of cancer care means for you",
+      "sourceName": "The Punch",
+      "publishedAt": "2026-08-01T23:20:35.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://punchng.com/what-the-future-of-cancer-care-means-for-you/",
+      "summary": "Experts in Nigeria specializing in cancer diagnosis and treatment have voiced concerns regarding the current state of patient care. The future of cancer care in the country involves addressing challenges such as treatment access and preventable cases. Additionally, there is a focus on how lifestyle changes can impact the disease.",
+      "summaryType": "ai",
+      "description": "Explore the future of cancer care in Nigeria, including challenges, preventable cases, and access to treatment. Learn how lifestyle changes can impact canc Read More: https://punchng.com/what-the-future-of-cancer-care-means-for-you/",
+      "imageUrl": "https://punchng.com/wp-content/uploads/2026/06/Dr.-Sylvester-Ikhisemojie.webp",
+      "author": "Punch Newspapers",
+      "cleanedText": "Notable experts working in the sub-specialty that deals with the diagnosis, treatment and further care of patients diagnosed with cancer in Nigeria have recently voiced their concerns about the inade…"
+    },
     {
       "id": "d7e5a7eca5d5ecfd",
       "slug": "mideast-on-brink-trump-may-order-fresh-strikes-on-iran-tehra-d7e5a7ec",
@@ -46,6 +62,22 @@
       "imageUrl": "https://cdn.mos.cms.futurecdn.net/kz7AssXhMuupZXDGqd9LvP-2560-80.jpg",
       "author": "jacob.krol@futurenet.com (Jacob Krol) , Jacob Krol",
       "cleanedText": "\"It takes close to eight months to produce the topiaries,\" explained Debbie Mola Mickler, area manager at Disney's Horticulture — for installations that were on display for just a few weeks. On that…"
+    },
+    {
+      "id": "f51602707eb9fcbb",
+      "slug": "zepto-to-raise-funds-amid-delayed-listing-f5160270",
+      "title": "Zepto to raise funds amid delayed listing",
+      "sourceName": "The Times of India",
+      "publishedAt": "2026-08-01T22:41:02.000Z",
+      "category": "world",
+      "sourceCountry": "in",
+      "url": "https://timesofindia.indiatimes.com/business/india-business/zepto-to-raise-funds-amid-delayed-listing/articleshow/132798503.cms",
+      "summary": "Zepto to raise funds amid delayed listing. India Business News: MUMBAI: Zepto on Saturday said that it will raise funds through a pre-IPO financing amid tepid response from investors to its public listing.Zepto did.",
+      "summaryType": "fallback",
+      "description": "India Business News: MUMBAI: Zepto on Saturday said that it will raise funds through a pre-IPO financing amid tepid response from investors to its public listing.Zepto did.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-132798505,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+      "author": "TNN",
+      "cleanedText": "EMI CalculatorDetermine the monthly installment amount for a loan"
     },
     {
       "id": "a97a049da1aa76b5",
@@ -1891,37 +1923,6 @@
       "imageUrl": "https://s.yimg.com/lo/mysterio/api/7ede5f9f6556df7c8901e1b9c14728a264014e3eb3bf78507f86b3d871cc2cc9/lightyear_networkapi/resizefill_w1200;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Ff1_chronicle_874%2Facb064338c1b42c60f23739ca369dd39",
       "author": "Jack Renn",
       "cleanedText": "The main differences between F1 and NASCAR are their car types, tracks, and racing styles, with F1 cars being lightweight, open-wheel, high-downforce machines that race on road and street courses, wh…"
-    },
-    {
-      "id": "df8f98287ec9928b",
-      "slug": "news-summary-intelligence-report-7-31-2026-newsdump-friday-i-df8f9828",
-      "title": "News Summary Intelligence Report 7/31/2026*Newsdump Friday*Israel Attacks Gaza*Russia Attacks Kiev*US, Israel To Attack Iran*DC Pool Vandalism Case Dropped*More US War Casualties*Netanyahu Rival Blasts Gaza Deal*UK High Court OK's New China Embassy UK*...",
-      "sourceName": "Freerepublic.com",
-      "publishedAt": "2026-08-01T06:54:26.000Z",
-      "category": "world",
-      "sourceCountry": "gb",
-      "url": "https://freerepublic.com/focus/f-bloggers/4390152/posts",
-      "summary": "News Summary Intelligence Report 7/31/2026*Newsdump Friday*Israel Attacks Gaza*Russia Attacks Kiev*US, Israel To Attack Iran*DC Pool Vandalism Case Dropped*More US War Casualties*Netanyahu Rival Blasts Gaza Deal*UK High Court OK's New China Embassy UK*.... Senate Judicary Committee scheduled a meeting next Tuesday...may involve vote...Todd Blanche... tanker hit in its engine room near the coast of Oman... At least 20 injuries reported...earthquake struck Naples... The international football (soccer) federation …",
-      "summaryType": "fallback",
-      "description": "Senate Judicary Committee scheduled a meeting next Tuesday...may involve vote...Todd Blanche... tanker hit in its engine room near the coast of Oman... At least 20 injuries reported...earthquake struck Naples... The international football (soccer) federation …",
-      "author": "Nextrush Free",
-      "cleanedText": "Skip to comments. News Summary Intelligence Report 7/31/2026*Newsdump Friday*Israel Attacks Gaza*Russia Attacks Kiev*US, Israel To Attack Iran*DC Pool Vandalism Case Dropped*More US War Casualties*N…"
-    },
-    {
-      "id": "b56e412fa820b8e3",
-      "slug": "churches-can-help-women-navigate-life-changing-motherhood-re-b56e412f",
-      "title": "Churches can help women navigate ‘life-changing’ motherhood, report says",
-      "sourceName": "Christiantoday.com",
-      "publishedAt": "2026-08-01T06:39:00.000Z",
-      "category": "world",
-      "sourceCountry": "gb",
-      "url": "https://www.christiantoday.com/news/churches-can-help-women-navigate-life-changing-motherhood-report-says",
-      "summary": "Churches can help women navigate ‘life-changing’ motherhood, report says. Many women reported thinking more deeply about faith, mortality and the meaning of life after having children.",
-      "summaryType": "fallback",
-      "description": "Many women reported thinking more deeply about faith, mortality and the meaning of life after having children.",
-      "imageUrl": "https://www.christiantoday.com/media/original/thumbnail/14/53/145348.jpg",
-      "author": "Obianuju Mbah",
-      "cleanedText": "(Photo: Getty/iStock) A new report is calling for a fundamental rethink of how society supports new mothers, arguing that the transition into motherhood is far more than a medical event and should b…"
     }
   ]
 }
