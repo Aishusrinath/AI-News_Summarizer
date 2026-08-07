@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T07:04:24.920Z",
+  "generatedAt": "2026-08-07T08:50:52.073Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -8,15 +8,62 @@
     "business"
   ],
   "counts": {
-    "fetched": 18,
-    "normalized": 18,
+    "fetched": 4,
+    "normalized": 4,
     "dropped": 0,
-    "deduped": 18,
-    "summarizedWithAi": 15,
-    "fallbackSummaries": 105,
+    "deduped": 3,
+    "summarizedWithAi": 16,
+    "fallbackSummaries": 104,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "73b72b2564a98aef",
+      "slug": "silverstone-to-continue-hosting-motogp-s-british-gp-after-ne-73b72b25",
+      "title": "Silverstone to continue hosting MotoGP's British GP after new deal",
+      "sourceName": "autosport.com",
+      "publishedAt": "2026-08-06T08:41:13.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.autosport.com/motogp/news/silverstone-to-continue-hosting-motogp-british-gp/10844423/",
+      "summary": "Silverstone to continue hosting MotoGP's British GP after new deal. MotoGP has announced a new two-year contract with Silverstone, ensuring the British Grand Prix will remain on the calendar until at least 2028.The news was made official on the eve of this year’s United Kingdom round of MotoGP, which marks the start of the se…",
+      "summaryType": "fallback",
+      "description": "MotoGP has announced a new two-year contract with Silverstone, ensuring the British Grand Prix will remain on the calendar until at least 2028.The news was made official on the eve of this year’s United Kingdom round of MotoGP, which marks the start of the se…",
+      "imageUrl": "https://cdn-1.motorsport.com/images/amp/6n7bKal0/s6/silverstone-wing-3.jpg",
+      "author": "Rachit Thukral",
+      "cleanedText": "MotoGP has announced a new two-year contract with Silverstone, ensuring the British Grand Prix will remain on the calendar until at least 2028. The news was made official on the eve of this years Un…"
+    },
+    {
+      "id": "2a41917fca6ce202",
+      "slug": "motogp-agrees-new-two-year-deal-with-silverstone-for-british-2a41917f",
+      "title": "MotoGP agrees new two-year deal with Silverstone for British GP",
+      "sourceName": "Motorsport.com",
+      "publishedAt": "2026-08-06T08:36:02.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.motorsport.com/motogp/news/motogp-agrees-new-two-year-deal-with-silverstone-for-british-gp/10844418/",
+      "summary": "MotoGP has announced a new two-year contract extension with Silverstone to host the British Grand Prix. The agreement ensures the event will remain on the racing calendar until at least 2028. This news was made official on the eve of this year's race.",
+      "summaryType": "ai",
+      "description": "The short-to-mid-term future of the British GP is now secure following a two-year extension",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/1e88024a3089fd5e2e7f35085ac40b579bf85dfcfbe94b609f9543fc11568810/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmotorsport_articles_445%2F6ec1d44c0b7471acf0fd5b297ee5a04e",
+      "author": "Rachit Thukral",
+      "cleanedText": "MotoGP has announced a new two-year contract with Silverstone, ensuring the British Grand Prix will remain on the calendar until at least 2028. The news was made official on the eve of this year's U…"
+    },
+    {
+      "id": "00a6dae8ae997982",
+      "slug": "efl-latest-boro-agree-20m-deal-to-sign-phillips-from-spurs-00a6dae8",
+      "title": "EFL latest: Boro agree £20m deal to sign Phillips from Spurs",
+      "sourceName": "Sky Sports",
+      "publishedAt": "2026-08-06T08:34:00.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.skysports.com/football/live-blog/11095/13163353/championship-news-transfer-latest-and-gossip-plus-efl-updates-from-league-one-and-league-two",
+      "summary": "EFL latest: Boro agree £20m deal to sign Phillips from Spurs. Championship news, transfer latest and gossip plus EFL updates from League One and League Two",
+      "summaryType": "fallback",
+      "description": "Championship news, transfer latest and gossip plus EFL updates from League One and League Two",
+      "imageUrl": "https://e0.365dm.com/26/08/1600x900/skysports-ashley-phillips-stoke_7314283.jpg?20260805090517",
+      "cleanedText": "Thursday 6 August 2026 09:43, UK"
+    },
     {
       "id": "e53341e579c6d009",
       "slug": "economic-summit-we-are-ready-to-invest-in-delta-brazil-malay-e53341e5",
@@ -1852,52 +1899,6 @@
       "imageUrl": "https://img.etimg.com/thumb/msid-132877911,width-1200,height-630,imgsize-113128,overlay-economictimes/articleshow.jpg",
       "author": "Global Desk",
       "cleanedText": "(Catch all the US News, UK News, Canada News, International Breaking News Events, and Latest News Updates on The Economic Times.) Download The Economic Times News App to get Daily International News…"
-    },
-    {
-      "id": "6512a7fd89c0f0a7",
-      "slug": "spacex-s-revenue-rises-as-its-once-soaring-stock-price-drift-6512a7fd",
-      "title": "SpaceX’s revenue rises as its once-soaring stock price drifts back to Earth - NPR",
-      "sourceName": "NPR",
-      "publishedAt": "2026-08-04T22:02:03.000Z",
-      "category": "business",
-      "sourceCountry": "us",
-      "url": "https://www.npr.org/2026/08/04/nx-s1-5918536/spacex-first-earnings-report-since-ipo",
-      "summary": "SpaceX’s revenue rises as its once-soaring stock price drifts back to Earth - NPR. On their first earnings call since SpaceX's June public offering, executives said the company is pouring funds into rocket development, Starlink satellites and AI.",
-      "summaryType": "fallback",
-      "description": "On their first earnings call since SpaceX's June public offering, executives said the company is pouring funds into rocket development, Starlink satellites and AI.",
-      "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5736x3226+0+299/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Faf%2F4e%2F3912ff5c4e3da13248a292d69f52%2Fgettyimages-2280563095.jpg",
-      "author": "John Ruwitch",
-      "cleanedText": "In its first quarterly report since offering shares to the public, Elon Musk's SpaceX announced soaring revenues and shrinking losses but still not a profit. On Tuesday the aerospace and artificial …"
-    },
-    {
-      "id": "62243d37543e7c91",
-      "slug": "molecular-orbitals-imaged-in-3d-opening-path-to-femtosecond--62243d37",
-      "title": "Molecular orbitals imaged in 3D, opening path to femtosecond videos - Phys.org",
-      "sourceName": "Phys.Org",
-      "publishedAt": "2026-08-04T22:00:01.000Z",
-      "category": "science",
-      "sourceCountry": "us",
-      "url": "https://phys.org/news/2026-08-molecular-orbitals-imaged-3d-path.html",
-      "summary": "Molecular orbitals imaged in 3D, opening path to femtosecond videos - Phys.org. One of the most famous and intriguing results of quantum mechanics is the finding that fundamental particles, such as electrons, cannot be pinned down to one single location. Instead, a particle is described by its \"wavefunction,\" which allows researchers to …",
-      "summaryType": "fallback",
-      "description": "One of the most famous and intriguing results of quantum mechanics is the finding that fundamental particles, such as electrons, cannot be pinned down to one single location. Instead, a particle is described by its \"wavefunction,\" which allows researchers to …",
-      "imageUrl": "https://scx2.b-cdn.net/gfx/news/hires/2026/zooming-in-electron-or.jpg",
-      "cleanedText": "One of the most famous and intriguing results of quantum mechanics is the finding that fundamental particles, such as electrons, cannot be pinned down to one single location. Instead, a particle is d…"
-    },
-    {
-      "id": "d667abacdd8c438e",
-      "slug": "dxp-enterprises-inc-announces-acquisition-of-mequipco-ltd-d667abac",
-      "title": "DXP Enterprises, Inc. Announces Acquisition of Mequipco Ltd.",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-08-04T21:58:03.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/dxp-enterprises-inc-announces-acquisition-of-mequipco-ltd",
-      "summary": "DXP Enterprises, Inc. Announces Acquisition of Mequipco Ltd.. Creates a beach head for DXP Water in Canada Establishes DXP Water Across Western Canada – – Alberta, British Columbia, Saskatchewan, and Manitoba Attractive Margins and Cash Flow HOUSTON — DXP Enterprises, Inc. (NASDAQ: DXPE) today announced that it has comp…",
-      "summaryType": "fallback",
-      "description": "Creates a beach head for DXP Water in Canada Establishes DXP Water Across Western Canada – – Alberta, British Columbia, Saskatchewan, and Manitoba Attractive Margins and Cash Flow HOUSTON — DXP Enterprises, Inc. (NASDAQ: DXPE) today announced that it has comp…",
-      "author": "Business Wire",
-      "cleanedText": "THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to read the latest news in your city and across Canada. Exclusive articles from Barbara Shecter, Joe O'Connor, Gabriel Friedman, …"
     }
   ]
 }
