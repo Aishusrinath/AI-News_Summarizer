@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T04:49:47.164Z",
+  "generatedAt": "2026-08-08T05:37:16.709Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,15 +7,31 @@
     "health"
   ],
   "counts": {
-    "fetched": 9,
-    "normalized": 9,
+    "fetched": 10,
+    "normalized": 10,
     "dropped": 0,
-    "deduped": 9,
-    "summarizedWithAi": 13,
-    "fallbackSummaries": 107,
+    "deduped": 10,
+    "summarizedWithAi": 12,
+    "fallbackSummaries": 108,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "5b490d26e9942392",
+      "slug": "czech-billionaires-play-outsized-role-in-european-m-a-market-5b490d26",
+      "title": "Czech Billionaires Play Outsized Role in European M&A Market",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-08-07T05:06:49.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://financialpost.com/pmn/business-pmn/czech-billionaires-play-outsized-role-in-european-ma-market",
+      "summary": "Czech billionaires are playing an increasingly prominent role in the European mergers and acquisitions market as they expand beyond their domestic borders. This shift is driven by a new generation of wealthy individuals who are outgrowing their home market and influencing the local economy. Recently, Czech billionaire Michal Strnad acquired a stake in the Italian tire manufacturer Pirelli & C. SpA.",
+      "summaryType": "ai",
+      "description": "A new generation of superrich is helping drive a shift in the local economy as they outgrow their home market.",
+      "imageUrl": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/08/775481829.jpg",
+      "author": "Bloomberg News",
+      "cleanedText": "(Bloomberg) When Czech billionaire Michal Strnad bought a stake in Italian tire giant Pirelli &amp; C. SpA last week, the transaction was heralded as a key moment for the company. It also cemented hi…"
+    },
     {
       "id": "c38142c4de87e3f4",
       "slug": "joan-jett-cancels-september-shows-after-surgery-for-spinal-f-c38142c4",
@@ -39,7 +55,7 @@
       "sourceName": "Financial Post",
       "publishedAt": "2026-08-07T04:35:18.000Z",
       "category": "world",
-      "sourceCountry": "gb",
+      "sourceCountry": "ca",
       "url": "https://financialpost.com/pmn/business-pmn/europe-sugar-output-set-for-10-year-low-amid-tight-world-supply",
       "summary": "Europe Sugar Output Set for 10-Year Low Amid Tight World Supply. Europe’s sugar output is set to fall to the lowest in more than a decade as hot weather damages an already smaller beet crop, tightening global supplies under pressure from a powerful El Niño.",
       "summaryType": "fallback",
@@ -47,6 +63,22 @@
       "imageUrl": "https://smartcdn.gprod.postmedia.digital/financialpost/wp-content/uploads/2026/08/eu-sugar-prices-may-rebound-as-supply-tightens-weak-demand-.jpg",
       "author": "Bloomberg News",
       "cleanedText": "(Bloomberg) Europes sugar output is set to fall to the lowest in more than a decade as hot weather damages an already smaller beet crop, tightening global supplies under pressure from a powerful El N…"
+    },
+    {
+      "id": "31b9d69cb9af0671",
+      "slug": "mexico-crush-panama-to-qualify-for-2027-u20-world-cup-31b9d69c",
+      "title": "Mexico crush Panama to qualify for 2027 U20 World Cup",
+      "sourceName": "Fmfstateofmind.com",
+      "publishedAt": "2026-08-07T04:27:19.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.fmfstateofmind.com/international-news/27414/mexico-crush-panama-to-qualify-for-2027-u20-world-cup",
+      "summary": "Mexico crush Panama to qualify for 2027 U20 World Cup. Mexico defeated Panama by a 4-0 score to qualify to the Semifinals of the 2026 U20 CONCACAF Championship.",
+      "summaryType": "fallback",
+      "description": "Mexico defeated Panama by a 4-0 score to qualify to the Semifinals of the 2026 U20 CONCACAF Championship.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/a488b8687bb8520f80e647393213dd7efd4e73ecc55191a8d1d18c071b57de93/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fsb_nation_articles_115%2Fe05268cfab411434255314def6908523",
+      "author": "Rafael Hernandez",
+      "cleanedText": "Mexico demolished Panama by a 4-0 score in their Quarterfinals matchup to qualify to the 2027 U20 World Cup. Mexico was once again the clearly superior team although not as clear as prior matches as …"
     },
     {
       "id": "e5e721b139977156",
@@ -71,7 +103,7 @@
       "sourceName": "DW (English)",
       "publishedAt": "2026-08-07T04:02:00.000Z",
       "category": "world",
-      "sourceCountry": "gb",
+      "sourceCountry": "ca",
       "url": "https://www.dw.com/en/us-judge-orders-meta-to-pay-567-million-over-harm-to-children/a-78272884",
       "summary": "US judge orders Meta to pay $567 million over harm to children. A New Mexico judge ruled Meta created a \"public nuisance\" that harmed children's mental health, ordering the company to pay over half a billion dollars in damages and overhaul safety features on Facebook and Instagram. A judge in the US state of New Mexico ha…",
       "summaryType": "fallback",
@@ -128,6 +160,21 @@
       "cleanedText": "A year ago the end of a winning streak for punters prompted Paddy Power owner Flutter Entertainment to boost its full-year profit forecast for 2025 to $3.3 billion (2.9 billion) from an earlier predi…"
     },
     {
+      "id": "0bc25fc1725c13de",
+      "slug": "copper-heads-for-record-close-in-london-on-tighter-global-ma-0bc25fc1",
+      "title": "Copper Heads for Record Close in London on Tighter Global Market",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-08-07T03:38:17.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://financialpost.com/pmn/business-pmn/copper-heads-for-record-close-in-london-on-tighter-global-market",
+      "summary": "Copper Heads for Record Close in London on Tighter Global Market. Copper headed for a record close in London after strong gains fueled by signs of tighter supply across the global market.",
+      "summaryType": "fallback",
+      "description": "Copper headed for a record close in London after strong gains fueled by signs of tighter supply across the global market.",
+      "author": "Bloomberg News",
+      "cleanedText": "(Bloomberg) Copper headed for a record close in London after strong gains fueled by signs of tighter supply across the global market. THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to …"
+    },
+    {
       "id": "09feebef751a8d02",
       "slug": "caitlin-clark-makes-feelings-clear-after-team-usa-world-cup--09feebef",
       "title": "Caitlin Clark makes feelings clear after Team USA World Cup decision",
@@ -166,7 +213,7 @@
       "sourceName": "Fox News",
       "publishedAt": "2026-08-07T03:05:12.000Z",
       "category": "world",
-      "sourceCountry": "us",
+      "sourceCountry": "ca",
       "url": "https://www.foxnews.com/sports/trump-praises-team-usa-winter-olympians-paralympians-white-house-record-medal-haul",
       "summary": "Trump praises Team USA Winter Olympians and Paralympians at White House after record medal haul. Trump hosted over 120 Team USA Winter Olympians and Paralympians at the White House, celebrating a historic medal haul from the Milano Cortina Games.",
       "summaryType": "fallback",
@@ -191,6 +238,21 @@
       "cleanedText": "It's time for the 2026 DCI World Championship Prelims, when open class and world class drum corps will take the field in Indianapolis in the largest DCI event of the season. Ensembles have worked th…"
     },
     {
+      "id": "f85fc392d8d3cb6c",
+      "slug": "court-grants-final-order-approving-acquisition-of-kneat-by-t-f85fc392",
+      "title": "Court Grants Final Order Approving Acquisition of Kneat by Thoma Bravo",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-08-07T02:47:49.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://financialpost.com/globe-newswire/court-grants-final-order-approving-acquisition-of-kneat-by-thoma-bravo",
+      "summary": "Court Grants Final Order Approving Acquisition of Kneat by Thoma Bravo. LIMERICK, Ireland, Aug. 06, 2026 (GLOBE NEWSWIRE) — kneat.com, inc. (TSX: KSI) (OTCQX: KSIOF), (“Kneat” or the “Company”), the global leader in digital validation and quality process automation, today announced that the Ontario Superior Court of Justice (Comm…",
+      "summaryType": "fallback",
+      "description": "LIMERICK, Ireland, Aug. 06, 2026 (GLOBE NEWSWIRE) — kneat.com, inc. (TSX: KSI) (OTCQX: KSIOF), (“Kneat” or the “Company”), the global leader in digital validation and quality process automation, today announced that the Ontario Superior Court of Justice (Comm…",
+      "author": "GlobeNewswire",
+      "cleanedText": "LIMERICK, Ireland, Aug. 06, 2026 (GLOBE NEWSWIRE) kneat.com, inc. (TSX: KSI) (OTCQX: KSIOF), (Kneat or the Company), the global leader in digital validation and quality process automation, today anno…"
+    },
+    {
       "id": "178b710dabbfa68e",
       "slug": "kentucky-wide-receiver-hardley-gilmore-dismissed-from-team-v-178b710d",
       "title": "Kentucky wide receiver Hardley Gilmore dismissed from team, violated rules",
@@ -205,6 +267,21 @@
       "imageUrl": "https://s.yimg.com/lo/mysterio/api/873091dd38658966b678ac0a49f57129f09a50a8d48b565defb59711839dba7f/lightyear_networkapi/resizefill_w900_h506%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fwdky_lexington_articles_751%2Fb5bcb679c644348e641f876a17281ccc",
       "author": "Kelly Horyczun",
       "cleanedText": "LEXINGTON, Ky. (FOX 56) Wide receiver Hardley Gilmore was dismissed from the University of Kentucky football team, a spokesperson told FOX 56. Gilmore was accused of violating team rules, resulting …"
+    },
+    {
+      "id": "e419a84f1a38229a",
+      "slug": "philippine-economy-grows-at-slowest-pace-since-2009-ex-covid-e419a84f",
+      "title": "Philippine Economy Grows at Slowest Pace Since 2009 Ex-Covid",
+      "sourceName": "Financial Post",
+      "publishedAt": "2026-08-07T02:37:01.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://financialpost.com/pmn/business-pmn/philippine-economy-grows-at-slowest-pace-since-2009-ex-covid",
+      "summary": "Philippine Economy Grows at Slowest Pace Since 2009 Ex-Covid. Philippine economic growth dramatically slowed in the second quarter, defying expectations of a pickup, as the protracted Middle East conflict stokes inflation and drags down consumer spending and investment.",
+      "summaryType": "fallback",
+      "description": "Philippine economic growth dramatically slowed in the second quarter, defying expectations of a pickup, as the protracted Middle East conflict stokes inflation and drags down consumer spending and investment.",
+      "author": "Bloomberg News",
+      "cleanedText": "(Bloomberg) Philippine economic growth dramatically slowed in the second quarter, defying expectations of a pickup, as the protracted Middle East conflict stokes inflation and drags down consumer spe…"
     },
     {
       "id": "78317102e37e76a5",
@@ -229,7 +306,7 @@
       "sourceName": "Vanguard",
       "publishedAt": "2026-08-07T02:26:00.000Z",
       "category": "world",
-      "sourceCountry": "us",
+      "sourceCountry": "ca",
       "url": "https://www.vanguardngr.com/2026/08/infantile-infantino-should-exit-for-trying-to-sell-the-world-cup-by-owei-lakemfa/",
       "summary": "Infantile Infantino should exit for trying to sell the World Cup, by Owei Lakemfa. Gianni Infantino, the Federation Internationale de Football Association, FIFA President who stole into office about a dozen years ago on the back of a coup against Sepp Blatter, may be on his way out. He has become like an orphan caught with his hand in the t…",
       "summaryType": "fallback",
@@ -237,6 +314,21 @@
       "imageUrl": "https://cdn.vanguardngr.com/wp-content/uploads/2025/12/Owei-Lakemfa-e1766992914515.jpeg",
       "author": "Emmanuel Okogba",
       "cleanedText": "Gianni Infantino, the Federation Internationale de Football Association, FIFA President who stole into office about a dozen years ago on the back of a coup against Sepp Blatter, may be on his way out…"
+    },
+    {
+      "id": "6291dcdcff21f2c9",
+      "slug": "2-correctional-officers-offender-dead-after-tragic-accident--6291dcdc",
+      "title": "2 correctional officers, offender dead after 'tragic accident' during Edmonton transfer: CSC",
+      "sourceName": "CBC News",
+      "publishedAt": "2026-08-07T02:25:00.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://www.cbc.ca/news/canada/edmonton/edmonton-correctional-facility-transfer-deaths-9.7299187",
+      "summary": "2 correctional officers, offender dead after 'tragic accident' during Edmonton transfer: CSC. Correctional Service Canada (CSC) says two of its officers and an offender died in a \"tragic accident\" during a transfer from Edmonton Institution for Women.",
+      "summaryType": "fallback",
+      "description": "Correctional Service Canada (CSC) says two of its officers and an offender died in a \"tragic accident\" during a transfer from Edmonton Institution for Women.",
+      "imageUrl": "https://i.cbc.ca/ais/1.4346899,1786068831495/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620",
+      "cleanedText": "Correctional Service Canada (CSC) says two of its officers and an offender died in a \"tragic accident\" during a transfer from Edmonton Institution for Women. The federal agency announced the deaths …"
     },
     {
       "id": "1083128f15d9fcbb",
@@ -1802,97 +1894,6 @@
       "imageUrl": "https://static.toiimg.com/thumb/msid-133010965,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
       "author": "Suman Chakraborti",
       "cleanedText": "News City News kolkata News Honouring Syama Prasad legacy: State renames Banglar Bari as Paschim Banga Awas, releases 2nd instalment Follow Us On Soci…"
-    },
-    {
-      "id": "bea860942717f95f",
-      "slug": "today-s-news-in-a-nutshell-bea86094",
-      "title": "Today’s News in a Nutshell",
-      "sourceName": "Khabarhub.com",
-      "publishedAt": "2026-08-06T16:15:41.000Z",
-      "category": "world",
-      "sourceCountry": "in",
-      "url": "https://english.khabarhub.com/2026/06/562093/",
-      "summary": "Former Nepali Congress President Sher Bahadur Deuba is scheduled to return to Nepal from Hong Kong on August 11. This news is among the major daily developments reported by Khabarhub covering politics, business, and other sectors in Nepal.",
-      "summaryType": "ai",
-      "description": "KATHMANDU: Khabarhub brings you a glimpse of major developments of the day in Nepal, including politics, business/economy, sports, entertainment, and more. Deuba to return to Nepal from Hong Kong on August 11 Former Nepali Congress President Sher Bahadur Deub…",
-      "imageUrl": "https://english.khabarhub.com/wp-content/uploads/2024/05/News-Nutshell.jpg",
-      "author": "Khabarhub",
-      "cleanedText": "KATHMANDU: Khabarhub brings you a glimpse of major developments of the day in Nepal, including politics, business/economy, sports, entertainment, and more. Deuba to return to Nepal from Hong Kong on…"
-    },
-    {
-      "id": "f79cc3802852eddc",
-      "slug": "the-best-way-to-eat-broccoli-for-maximum-cancer-fighting-com-f79cc380",
-      "title": "The Best Way to Eat Broccoli for Maximum Cancer-Fighting Compounds, According to Dietitians - EatingWell",
-      "sourceName": "Eatingwell.com",
-      "publishedAt": "2026-08-06T16:01:34.000Z",
-      "category": "health",
-      "sourceCountry": "us",
-      "url": "https://www.eatingwell.com/best-way-to-eat-broccoli-for-cancer-fighting-compounds-12034150",
-      "summary": "The Best Way to Eat Broccoli for Maximum Cancer-Fighting Compounds, According to Dietitians - EatingWell. If you’re looking to maximize the cancer-fighting compounds in broccoli, dietitians agree that steamed broccoli is best.",
-      "summaryType": "fallback",
-      "description": "If you’re looking to maximize the cancer-fighting compounds in broccoli, dietitians agree that steamed broccoli is best.",
-      "imageUrl": "https://www.eatingwell.com/thmb/h_rkExczA8UPyajJjz4MtIUuV0k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/The-Best-Way-to-Eat-Broccoli-for-Maximum-Cancer-Fighting-Compounds-According-to-Dietitians-v2-3645da6ee6f54adba66f916058c86e26.jpg",
-      "author": "https://www.facebook.com/EatingWell/",
-      "cleanedText": "Your mom was right: Broccoli really is good for you. These charmingly tree-shaped veggies provide fiber, vitamins C and K, and plenty of antioxidants. But theres another reason to add broccoli to you…"
-    },
-    {
-      "id": "03852231b64cf704",
-      "slug": "measles-exposure-reported-at-universal-studios-hollywood-abc-03852231",
-      "title": "Measles exposure reported at Universal Studios Hollywood - ABC News - Breaking News, Latest News and Videos",
-      "sourceName": "Abcnews.com",
-      "publishedAt": "2026-08-06T16:00:42.000Z",
-      "category": "health",
-      "sourceCountry": "us",
-      "url": "https://abcnews.com/US/measles-exposure-reported-universal-studios-hollywood/story?id\\\\u003d135422560",
-      "summary": "Measles exposure reported at Universal Studios Hollywood - ABC News - Breaking News, Latest News and Videos",
-      "summaryType": "fallback",
-      "author": "ABC News - Breaking News, Latest News and Videos"
-    },
-    {
-      "id": "25c671e64a460422",
-      "slug": "india-successfully-test-fires-n-capable-agni-4-ballistic-mis-25c671e6",
-      "title": "India successfully test-fires N-capable Agni-4 ballistic missile with strike range of 4,000km",
-      "sourceName": "The Times of India",
-      "publishedAt": "2026-08-06T15:58:18.000Z",
-      "category": "world",
-      "sourceCountry": "in",
-      "url": "https://timesofindia.indiatimes.com/defence/india-successfully-test-fires-n-capable-agni-4-ballistic-missile-with-strike-range-of-4000km/articleshow/133010436.cms",
-      "summary": "India successfully test-fires N-capable Agni-4 ballistic missile with strike range of 4,000km. Defence News: NEW DELHI: India on Thursday successfully test-fired the medium range ballistic missile (MRBM) nuclear-capable Agni-4, with a strike range of 4,000km,.",
-      "summaryType": "fallback",
-      "description": "Defence News: NEW DELHI: India on Thursday successfully test-fired the medium range ballistic missile (MRBM) nuclear-capable Agni-4, with a strike range of 4,000km,.",
-      "imageUrl": "https://static.toiimg.com/thumb/msid-133010541,width-1280,height-720,imgsize-28138,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-      "author": "Surendra Singh"
-    },
-    {
-      "id": "b0999b530fdde9b0",
-      "slug": "el-sayed-s-threat-against-gop-rival-backfires-as-conservativ-b0999b53",
-      "title": "El-Sayed's threat against GOP rival backfires as conservatives bring receipts: 'Is Dubai in Florida?'",
-      "sourceName": "Freerepublic.com",
-      "publishedAt": "2026-08-06T15:47:05.000Z",
-      "category": "world",
-      "sourceCountry": "in",
-      "url": "https://freerepublic.com/focus/f-news/4390831/posts",
-      "summary": "El-Sayed's threat against GOP rival backfires as conservatives bring receipts: 'Is Dubai in Florida?'. Abdul El-Sayed sparked online controversy moments after capturing the Democratic Party’s nomination in Michigan's Senate race for his word choice in challenging Republican nominee Mike Rogers to a series of five debates. \"I know you're going to say no because…",
-      "summaryType": "fallback",
-      "description": "Abdul El-Sayed sparked online controversy moments after capturing the Democratic Party’s nomination in Michigan's Senate race for his word choice in challenging Republican nominee Mike Rogers to a series of five debates. \"I know you're going to say no because…",
-      "author": "Fox News",
-      "cleanedText": "Skip to comments. El-Sayed's threat against GOP rival backfires as conservatives bring receipts: 'Is Dubai in Florida?'Fox News ^ | 08/05/2026 | Leo Briceno Posted on 08/06/2026 8:47:05 AM PDT…"
-    },
-    {
-      "id": "41d3ad9a78cb860f",
-      "slug": "when-and-where-is-the-community-shield-date-time-of-2026-cur-41d3ad9a",
-      "title": "When and where is the Community Shield? Date, time of 2026 curtain-raiser and why it's not at Wembley Stadium",
-      "sourceName": "Sporting News",
-      "publishedAt": "2026-08-06T15:46:39.000Z",
-      "category": "world",
-      "sourceCountry": "in",
-      "url": "https://www.sportingnews.com/us/soccer/news/when-where-community-shield-date-time-location-2026-stadium/293053090cf4e2251a942f4e",
-      "summary": "Fans look to the FA Community Shield as an annual marker that the English top-flight season has finally arrived. The 2026 curtain-raiser for the event will not be held at Wembley Stadium. The Sporting News provides details regarding the specific date, time, and location of the match.",
-      "summaryType": "ai",
-      "description": "Every year, fans look to the FA Community Shield for a marker that the coming English top-flight season has finally arrived.",
-      "imageUrl": "https://s.yimg.com/lo/mysterio/api/21485d778e916c62b5bd5f4421c7713a9cbd1e4980cfec35e47646b6ef01227a/lightyear_networkapi/resizefill_w760_h428%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_sporting_news_articles_584%2F22000462f5b92ded38849b4de543d3ef",
-      "author": "Kyle Bonn",
-      "cleanedText": "When and where is the Community Shield? Date, time of 2026 curtain-raiser and why it's not at Wembley Stadium originally appeared on The Sporting News. Add The Sporting News as a Preferred Source by …"
     }
   ]
 }
