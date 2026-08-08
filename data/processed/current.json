@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T08:32:45.686Z",
+  "generatedAt": "2026-08-08T09:30:52.592Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,15 +7,47 @@
     "business"
   ],
   "counts": {
-    "fetched": 17,
-    "normalized": 17,
+    "fetched": 3,
+    "normalized": 3,
     "dropped": 0,
-    "deduped": 17,
-    "summarizedWithAi": 11,
-    "fallbackSummaries": 109,
+    "deduped": 3,
+    "summarizedWithAi": 13,
+    "fallbackSummaries": 107,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "2384a1ad26c4603e",
+      "slug": "moment-heroic-cafe-owner-plunges-into-the-waves-to-save-thre-2384a1ad",
+      "title": "Moment heroic cafe owner plunges into the waves to save three children he spotted getting into difficulty in rough sea",
+      "sourceName": "Dailymail.com",
+      "publishedAt": "2026-08-07T09:23:50.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.dailymail.com/news/article-16035843/cafe-owner-waves-save-children-sea.html",
+      "summary": "Steven Doorey-Williams, a 56-year-old cafe owner and chef, sprinted into the sea fully clothed to rescue three children in difficulty. After hearing screams, he entered the rough water with a buoyancy ring to reach the children. Video footage captured the moment he plunged into the waves to perform the rescue.",
+      "summaryType": "ai",
+      "description": "Dramatic footage shows the moment Steven Doorey-Williams, 56, rushed into the water with a buoyancy ring after hearing the children's screams.",
+      "imageUrl": "https://i.dailymail.com/1s/2026/08/07/09/110494549-0-image-m-16_1786093050922.jpg",
+      "author": "Robert Folker",
+      "cleanedText": "A heroic cafe chef sprinted into the sea fully clothed to save three children he spotted in difficulty in the water. Dramatic footage shows the moment Steven Doorey-Williams, 56, rushed into the wat…"
+    },
+    {
+      "id": "1d52a363857dff38",
+      "slug": "inside-tom-holland-and-zendaya-s-secret-500-000-wedding-at-u-1d52a363",
+      "title": "Inside Tom Holland and Zendaya’s secret £500,000 wedding at UK estate",
+      "sourceName": "The-independent.com",
+      "publishedAt": "2026-08-07T09:22:43.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.the-independent.com/arts-entertainment/films/news/tom-holland-zendaya-wedding-b3029158.html",
+      "summary": "Tom Holland and Zendaya reportedly held a secret £500,000 wedding at an estate in the UK. The Hollywood couple is described as having a blockbuster summer.",
+      "summaryType": "ai",
+      "description": "Hollywood’s most bankable couple are having a blockbuster summer",
+      "imageUrl": "https://static.the-independent.com/2026/08/03/11/45/Screenshot-2026-08-03-at-12-16-05.png?trim=26,0,26,0&width=1200&height=800&crop=1200:800",
+      "author": "Rachel McGrath",
+      "cleanedText": "Your support helps us to tell the story From reproductive rights to climate change to Big Tech, The Independent is on the ground when the story is developing. Whether it's investigating the financia…"
+    },
     {
       "id": "37bc07b2d31c66f6",
       "slug": "trump-threatens-leakers-over-munition-shortage-reports-37bc07b2",
@@ -47,6 +79,22 @@
       "imageUrl": "https://assets.irinnews.org/s3fs-public/styles/responsive_large/public/tnh-cheat_sheet-thumbnail.jpg?axxrhR1mRZqruMGlgVzlx69txNvhChzZ&itok=TZp-0OEv",
       "author": "sofia",
       "cleanedText": "Our editors weekly take on humanitarian news, trends, and developments from around the globe. On our radar Calls grow to scale up community-led Ebola response The Ebola outbreak in the eastern Dem…"
+    },
+    {
+      "id": "33736b7187a096f7",
+      "slug": "the-stack-ai-fuels-business-33736b71",
+      "title": "The Stack: AI Fuels Business",
+      "sourceName": "ExchangeWire",
+      "publishedAt": "2026-08-07T08:14:16.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.exchangewire.com/blog/2026/08/07/the-stack-ai-fuels-business/",
+      "summary": "The Stack: AI Fuels Business. This week, AI remained at the centre of the digital economy even as legal and regulatory battles continued to reshape the competitive landscape. In today's MadTech Daily, we discuss Amazon's ad revenue reaching USD$76bn (£57.04bn), Disney's TikTok creator con…",
+      "summaryType": "fallback",
+      "description": "This week, AI remained at the centre of the digital economy even as legal and regulatory battles continued to reshape the competitive landscape. In today's MadTech Daily, we discuss Amazon's ad revenue reaching USD$76bn (£57.04bn), Disney's TikTok creator con…",
+      "imageUrl": "https://cdn.exchangewire.com/wp-content/uploads/2023/11/the-stack-logo-1.jpg",
+      "author": "Sheila Obeng-King",
+      "cleanedText": "This week, AI remained at the centre of the digital economy even as legal and regulatory battles continued to reshape the competitive landscape. In today's MadTech Daily, we discuss Nielsen to acquir…"
     },
     {
       "id": "0faa89f188ca471c",
@@ -1854,53 +1902,6 @@
       "imageUrl": "https://www.comingsoon.net/wp-content/uploads/sites/3/2026/08/Untitled-design-2026-08-07T005249.489.png?resize=1200,630",
       "author": "Namrata Ghosh",
       "cleanedText": "HBO Max has just released the official trailer for Conan OBrien Must Go Season 3. The former late-night talk show returns for more globe-trotting adventures in the new installment of his critically a…"
-    },
-    {
-      "id": "71b73d4a1071e143",
-      "slug": "coded-to-chinese-hongkongers-unable-to-list-their-ancestry-o-71b73d4a",
-      "title": "'Coded to Chinese': Hongkongers unable to list their ancestry on census night",
-      "sourceName": "ABC News (AU)",
-      "publishedAt": "2026-08-06T19:24:13.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://www.abc.net.au/news/2026-08-07/census-2026-hong-kong-ancestry-chinese-community/106998196",
-      "summary": "'Coded to Chinese': Hongkongers unable to list their ancestry on census night. People with Hong Kong heritage are frustrated that their ancestry will not be recognised as distinct from Chinese in the upcoming Australian census, despite years of lobbying and political turmoil.",
-      "summaryType": "fallback",
-      "description": "People with Hong Kong heritage are frustrated that their ancestry will not be recognised as distinct from Chinese in the upcoming Australian census, despite years of lobbying and political turmoil.",
-      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/840bbcf0684667e3ed863593c1539da9?impolicy=wcms_watermark_news&cropH=523&cropW=930&xPos=0&yPos=0&width=862&height=485&imformat=generic",
-      "author": "Jason Fang and Erin Handley",
-      "cleanedText": "On Tuesday night, Australian citizen Kevin Yam will fill out the census for the first time. When he comes to the ancestry question, he plans to proudly write \"Hongkonger\" a nod to the place he was b…"
-    },
-    {
-      "id": "f6cf82950ff5503e",
-      "slug": "canada-tells-un-it-s-taking-robust-action-to-disrupt-threats-f6cf8295",
-      "title": "Canada tells UN it's 'taking robust action' to disrupt threats against Sikh activist",
-      "sourceName": "CBC News",
-      "publishedAt": "2026-08-06T19:22:38.000Z",
-      "category": "world",
-      "sourceCountry": "in",
-      "url": "https://www.cbc.ca/news/politics/canada-writes-un-sikh-threats-9.7298499",
-      "summary": "Canada tells UN it's 'taking robust action' to disrupt threats against Sikh activist. The federal government has written to the UN to say it remains \"deeply concerned\" about the threats facing B.C.-based Sikh activist Moninder Singh and is taking action to disrupt all credible threats made by by foreign actors against those on Canadian soil.",
-      "summaryType": "fallback",
-      "description": "The federal government has written to the UN to say it remains \"deeply concerned\" about the threats facing B.C.-based Sikh activist Moninder Singh and is taking action to disrupt all credible threats made by by foreign actors against those on Canadian soil.",
-      "imageUrl": "https://i.cbc.ca/ais/1.7514461,1786041676875/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1919%2C1079%29%3BResize%3D620",
-      "cleanedText": "The federal government has written to the UN to say it remains \"deeply concerned\" about the threats facing B.C.-based Sikh activist Moninder Singh and is taking action to disrupt all credible threats…"
-    },
-    {
-      "id": "536eb75ef4ba0905",
-      "slug": "massive-mountain-to-climb-duniam-s-departing-advice-for-libe-536eb75e",
-      "title": "'Massive mountain to climb': Duniam's departing advice for Liberals",
-      "sourceName": "ABC News (AU)",
-      "publishedAt": "2026-08-06T19:20:02.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://www.abc.net.au/news/2026-08-07/jonathon-duniam-whats-next-for-the-liberals-stateline/107003620",
-      "summary": "'Massive mountain to climb': Duniam's departing advice for Liberals. Liberal senator Jonathon Duniam surprised voters by announcing his resignation from politics at a time his party faces an \"existential threat\" from One Nation. Speaking with Stateline, he gives his parting advice to an embattled party.",
-      "summaryType": "fallback",
-      "description": "Liberal senator Jonathon Duniam surprised voters by announcing his resignation from politics at a time his party faces an \"existential threat\" from One Nation. Speaking with Stateline, he gives his parting advice to an embattled party.",
-      "imageUrl": "https://live-production.wcms.abc-cdn.net.au/17d629bb33bcf3a98a6a6fc5cfafb501?impolicy=wcms_watermark_news&cropH=3942&cropW=7008&xPos=0&yPos=365&width=862&height=485&imformat=generic",
-      "author": "Sophie Jaggers",
-      "cleanedText": "With an \"orange wave\" looming and the federal opposition languishing in the polls, outgoing senator for Tasmania Jonathon Duniam says the Liberals have \"a massive mountain to climb\". The shadow home…"
     }
   ]
 }
