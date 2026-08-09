@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T09:32:55.912Z",
+  "generatedAt": "2026-08-09T10:26:22.817Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,15 +7,47 @@
     "business"
   ],
   "counts": {
-    "fetched": 20,
-    "normalized": 20,
+    "fetched": 5,
+    "normalized": 5,
     "dropped": 0,
-    "deduped": 20,
-    "summarizedWithAi": 12,
-    "fallbackSummaries": 108,
+    "deduped": 5,
+    "summarizedWithAi": 14,
+    "fallbackSummaries": 106,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "cf23f821885af523",
+      "slug": "art-laffer-of-the-laffer-curve-sounds-warning-on-uk-taxes-pu-cf23f821",
+      "title": "Art Laffer, of the Laffer Curve, Sounds Warning on UK Taxes Pushing Away Talent and Strangling the Economy",
+      "sourceName": "Breitbart News",
+      "publishedAt": "2026-08-08T10:10:06.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.breitbart.com/europe/2026/08/08/art-laffer-of-the-laffer-curve-warns-uk-taxes-strangling-economy/",
+      "summary": "Economist Art Laffer, creator of the Laffer Curve, has warned UK Prime Minister Andy Burnham that Britain is currently being held back by being grossly overtaxed. Laffer stated that these tax levels are strangling the economy and pushing away talent. He suggested that while the country has the potential to be wealthy and great again, its current fiscal policies are preventing that growth.",
+      "summaryType": "ai",
+      "description": "Britain could be wealthy and great again, but is held back by being grossly overtaxed, famed economist Art Laffer, the creator of the Laffer Curve, has warned the UK's new left-wing Prime Minister Andy Burnham. The post Art Laffer, of the Laffer Curve, Sounds…",
+      "imageUrl": "https://media.breitbart.com/media/2026/08/GettyImages-1180050074-e1786124306581-640x335.jpg",
+      "author": "Oliver JJ Lane",
+      "cleanedText": "Britain could be wealthy and great again, but is held back by being grossly overtaxed, famed economist Art Laffer, the creator of the Laffer Curve, has warned the UK’s new left-wing Prime Minister An…"
+    },
+    {
+      "id": "38e97ec022b47293",
+      "slug": "what-is-the-trump-administration-doing-with-foreign-aid-mone-38e97ec0",
+      "title": "What is the Trump Administration doing with foreign aid money?",
+      "sourceName": "Salon",
+      "publishedAt": "2026-08-08T10:00:13.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.salon.com/2026/08/08/what-is-the-trump-administration-doing-with-foreign-aid-money-partner/",
+      "summary": "Since returning to office, the Trump administration has upended foreign aid by labeling well-established, long-running programs as not aligned with American interests and slashing them. One proposal from the administration suggested using funds to research crime against Afrikaners in South Africa.",
+      "summaryType": "ai",
+      "description": "One proposal from the Trump administration suggested funding research on crime against Afrikaners in South Africa",
+      "imageUrl": "https://www.salon.com/app/uploads/2025/05/ramaphosa-trump-2216313099.jpg",
+      "author": "Anna Maria Barry-Jester, Sharon Lerner",
+      "cleanedText": "Since he returned to office, President Donald Trumps administration has upended foreign aid. Its labeled well-established, long-running programs as not aligned with American interests and slashed the…"
+    },
     {
       "id": "1947b46923543af9",
       "slug": "us-senators-head-for-the-exits-without-meeting-trump-s-deman-1947b469",
@@ -31,6 +63,20 @@
       "imageUrl": "https://img.etimg.com/thumb/msid-133049860,width-1200,height-630,imgsize-90532,overlay-economictimes/articleshow.jpg",
       "author": "AP",
       "cleanedText": "Washignton: Senators headed for the exits in the predawn hours Saturday, ending for now a crushing standoff over President Donald Trump's demands that they stay in session to pass a strict proof-of-c…"
+    },
+    {
+      "id": "fa5d7592f24655c9",
+      "slug": "best-graphic-design-software-for-print-and-production-work-2-fa5d7592",
+      "title": "Best Graphic Design Software for Print and Production Work (2026): CorelDRAW Recognized for Print-Friendly, Production-Ready Workflows by Better Business Advice",
+      "sourceName": "PRNewswire",
+      "publishedAt": "2026-08-08T09:30:00.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.prnewswire.com/news-releases/best-graphic-design-software-for-print-and-production-work-2026-coreldraw-recognized-for-print-friendly-production-ready-workflows-by-better-business-advice-302846232.html",
+      "summary": "Best Graphic Design Software for Print and Production Work (2026): CorelDRAW Recognized for Print-Friendly, Production-Ready Workflows by Better Business Advice. NEW YORK, Aug. 8, 2026 /PRNewswire/ -- Better Business Advice has recognized CorelDRAW in a review of the best graphic design software for print and production work. The recognition highlights a production-centered workflow built for print shops, sign shops, …",
+      "summaryType": "fallback",
+      "description": "NEW YORK, Aug. 8, 2026 /PRNewswire/ -- Better Business Advice has recognized CorelDRAW in a review of the best graphic design software for print and production work. The recognition highlights a production-centered workflow built for print shops, sign shops, …",
+      "cleanedText": "NEW YORK, Aug. 8, 2026 /PRNewswire/ -- Better Business Advice has recognized CorelDRAW in a review of the best graphic design software for print and production work. The recognition highlights a prod…"
     },
     {
       "id": "503ebd5d6e71f8b1",
@@ -125,6 +171,22 @@
       "imageUrl": "https://s.yimg.com/lo/mysterio/api/c3228d48c84398519c60e9fb1e97e1b437c09a1a62478243f0f3ba0ac6d43836/lightyear_networkapi/resizefill_w1125_h960%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fthe_celtic_star_articles_180%2F59d747e8b57560cb06aec0dff6a9c46c",
       "author": "The Celtic Star",
       "cleanedText": "While most of his team mates were enjoying a relaxing summer, Celtic centre-back Auston Trusty had a particularly hectic summer. Trusty was called up to the United States squad for the recent World C…"
+    },
+    {
+      "id": "8267d92b97c10600",
+      "slug": "james-norton-s-captivating-british-spy-thriller-is-the-netfl-8267d92b",
+      "title": "James Norton's \"captivating\" British spy thriller is the Netflix movie to watch this weekend",
+      "sourceName": "digitalspy.com",
+      "publishedAt": "2026-08-08T08:38:48.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.digitalspy.com/movies/a73381510/james-norton-rogue-agent-watch-this-weekend/",
+      "summary": "James Norton's \"captivating\" British spy thriller is the Netflix movie to watch this weekend. James Norton's \"captivating\" British spy thriller is the Netflix movie to watch this weekenddigitalspy.com",
+      "summaryType": "fallback",
+      "description": "James Norton's \"captivating\" British spy thriller is the Netflix movie to watch this weekenddigitalspy.com",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/efbf174e-1ed9-4f38-8a0d-b4efc323e05a.jpg?crop=1.00xw:0.750xh;0,0.0230xh&resize=1200:*",
+      "author": "Joe Anderton",
+      "cleanedText": "The third season of House of the Dragon wraps up tomorrow/the early hours of Monday morning, but if you're in the mood to see James Norton who joined the show this season as the endlessly entertainin…"
     },
     {
       "id": "b6ca4f8f6ef0ba01",
@@ -268,6 +330,22 @@
       "imageUrl": "https://cdn.vanguardngr.com/wp-content/uploads/2023/01/Artboard-1.png",
       "author": "Henry Oduah",
       "cleanedText": "Two Nigerian women have been taken into custody by railway police in Delhi, India, after officers allegedly recovered 2.28 kilograms of cocaine estimated to be worth about Rs20 crore, roughly N380 mi…"
+    },
+    {
+      "id": "e4ba02b949dba4a0",
+      "slug": "figs-q2-earnings-call-highlights-e4ba02b9",
+      "title": "FIGS Q2 Earnings Call Highlights",
+      "sourceName": "MarketBeat",
+      "publishedAt": "2026-08-08T08:03:59.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.marketbeat.com/instant-alerts/figs-q2-earnings-call-highlights-2026-08-08/?utm_source=yahoofinance&amp;utm_medium=yahoofinance",
+      "summary": "FIGS Q2 Earnings Call Highlights. FIGS (NYSE:FIGS) reported second-quarter fiscal 2026 revenue growth of 29% as demand increased across scrub wear, non-scrub apparel, international markets, i...",
+      "summaryType": "fallback",
+      "description": "FIGS (NYSE:FIGS) reported second-quarter fiscal 2026 revenue growth of 29% as demand increased across scrub wear, non-scrub apparel, international markets, i...",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/A3C98F211294DD767E7A716F9390F2C17492274B511E7B2243A6FB055CE60A32/subgraphmysterio/resizefill_w1200_h675;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fmarketbeat_955%2Fcbb0435cabc89146c71a1486396fdcc5",
+      "author": "MarketBeat",
+      "cleanedText": "Key Points Interested in FIGS, Inc.? Here are five stocks we like better. FIGS reported strong Q2 growth: Revenue increased 29% year over year to $196.6 million, driven by growth a…"
     },
     {
       "id": "fd16b87b8c7d7604",
@@ -1824,81 +1902,6 @@
       "imageUrl": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-08/260807-bill-cassidy-16x9-mn-1120-272905.jpg",
       "author": "Sahil Kapur, Rebecca Shabad, Brennan Leach",
       "cleanedText": "WASHINGTON Sen. Bill Cassidy, R-La., announced Friday he will vote for President Donald Trumps pick of Todd Blanche for attorney general, likely assuring his confirmation. All considered, I will vot…"
-    },
-    {
-      "id": "605ab91a1b936c25",
-      "slug": "western-metallica-resources-corp-announces-exclusivity-and-b-605ab91a",
-      "title": "Western Metallica Resources Corp. Announces Exclusivity and Binding Option Agreement for Nueva Celti Copper Project",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-08-07T20:03:00.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/western-metallica-resources-corp-announces-exclusivity-and-binding-option-agreement-for-nueva-celti-copper-project",
-      "summary": "Western Metallica Resources Corp. Announces Exclusivity and Binding Option Agreement for Nueva Celti Copper Project. TORONTO — Western Metallica Resources Corp. (TSXV: WMS) (“Western Metallica” or the “Company”) is pleased to announce that it has entered into an Exclusivity and Binding Option Agreement (the “Option Agreement“) with AJAX Resources PLC. (AQSE: AJAX) (“AJAX“),…",
-      "summaryType": "fallback",
-      "description": "TORONTO — Western Metallica Resources Corp. (TSXV: WMS) (“Western Metallica” or the “Company”) is pleased to announce that it has entered into an Exclusivity and Binding Option Agreement (the “Option Agreement“) with AJAX Resources PLC. (AQSE: AJAX) (“AJAX“),…",
-      "author": "Business Wire",
-      "cleanedText": "TORONTO Western Metallica Resources Corp. (TSXV: WMS)(Western Metallica or the Company) is pleased to announce that it has entered into an Exclusivity and Binding Option Agreement (the Option Agreeme…"
-    },
-    {
-      "id": "20cd1ee4628b48f5",
-      "slug": "primaris-reit-announces-distribution-for-august-2026-20cd1ee4",
-      "title": "Primaris REIT Announces Distribution for August 2026",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-08-07T20:02:50.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/primaris-reit-announces-distribution-for-august-2026",
-      "summary": "Primaris REIT Announces Distribution for August 2026. TORONTO — Primaris Real Estate Investment Trust (“Primaris” or the “Trust”) (TSX: PMZ.UN) announced today that its Board of Trustees has declared a distribution of $0.07333 per unit for the month of August 2026, representing $0.88 per unit on an annualized ba…",
-      "summaryType": "fallback",
-      "description": "TORONTO — Primaris Real Estate Investment Trust (“Primaris” or the “Trust”) (TSX: PMZ.UN) announced today that its Board of Trustees has declared a distribution of $0.07333 per unit for the month of August 2026, representing $0.88 per unit on an annualized ba…",
-      "author": "Business Wire",
-      "cleanedText": "THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to read the latest news in your city and across Canada. Exclusive articles from Barbara Shecter, Joe O'Connor, Gabriel Friedman, …"
-    },
-    {
-      "id": "cd7c87f9dfcfed13",
-      "slug": "congress-eyes-boosting-quantum-funds-as-global-race-heats-up-cd7c87f9",
-      "title": "Congress Eyes Boosting Quantum Funds as Global Race Heats Up",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-08-07T20:02:26.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/pmn/business-pmn/congress-eyes-boosting-quantum-funds-as-global-race-heats-up",
-      "summary": "Congress Eyes Boosting Quantum Funds as Global Race Heats Up. US lawmakers from both parties are seeking to boost federal funding for quantum computing as China and other countries race to transition from research to deployment of the nascent technology across defense, intelligence and cybersecurity.",
-      "summaryType": "fallback",
-      "description": "US lawmakers from both parties are seeking to boost federal funding for quantum computing as China and other countries race to transition from research to deployment of the nascent technology across defense, intelligence and cybersecurity.",
-      "author": "Bloomberg News",
-      "cleanedText": "(Bloomberg) US lawmakers from both parties are seeking to boost federal funding for quantum computing as China and other countries race to transition from research to deployment of the nascent techno…"
-    },
-    {
-      "id": "5834d7bca9948a48",
-      "slug": "trump-touts-3-billion-in-minerals-projects-to-counter-china-5834d7bc",
-      "title": "Trump Touts $3 Billion in Minerals Projects to Counter China",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-08-07T20:02:18.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://financialpost.com/pmn/business-pmn/trump-touts-3-billion-in-minerals-projects-to-counter-china",
-      "summary": "Trump Touts $3 Billion in Minerals Projects to Counter China. President Donald Trump touted $3 billion in US investments in critical minerals mining at a meeting Friday with top industry executives aimed at weaning the US off supply chains dominated by China.",
-      "summaryType": "fallback",
-      "description": "President Donald Trump touted $3 billion in US investments in critical minerals mining at a meeting Friday with top industry executives aimed at weaning the US off supply chains dominated by China.",
-      "author": "Bloomberg News",
-      "cleanedText": "(Bloomberg) President Donald Trump touted $3 billion in US investments in critical minerals mining at a meeting Friday with top industry executives aimed at weaning the US off supply chains dominated…"
-    },
-    {
-      "id": "3e3450b0d31cb8f4",
-      "slug": "terra-balcanica-announces-extension-to-private-placement-fin-3e3450b0",
-      "title": "Terra Balcanica Announces Extension to Private Placement Financing",
-      "sourceName": "Financial Post",
-      "publishedAt": "2026-08-07T20:01:53.000Z",
-      "category": "world",
-      "sourceCountry": "ca",
-      "url": "https://financialpost.com/globe-newswire/terra-balcanica-announces-extension-to-private-placement-financing",
-      "summary": "Terra Balcanica Announces Extension to Private Placement Financing. NOT FOR DISSEMINATION IN THE UNITED STATES OR THROUGH U.S. NEWSWIRE SERVICES Vancouver, British Columbia, Aug. 07, 2026 (GLOBE NEWSWIRE) — Terra Balcanica Resources Corp. (“Terra” or the “Company”) (CSE:TERA; FRA:UB1; OTCQB:TEBAF) announces an extension to it…",
-      "summaryType": "fallback",
-      "description": "NOT FOR DISSEMINATION IN THE UNITED STATES OR THROUGH U.S. NEWSWIRE SERVICES Vancouver, British Columbia, Aug. 07, 2026 (GLOBE NEWSWIRE) — Terra Balcanica Resources Corp. (“Terra” or the “Company”) (CSE:TERA; FRA:UB1; OTCQB:TEBAF) announces an extension to it…",
-      "author": "GlobeNewswire",
-      "cleanedText": "NOT FOR DISSEMINATION IN THE UNITED STATES OR THROUGH U.S. NEWSWIRE SERVICES THIS CONTENT IS RESERVED FOR SUBSCRIBERS ONLY Subscribe now to read the latest news in your city and across Canada. <ul…"
     }
   ]
 }
