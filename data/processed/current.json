@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T22:33:30.277Z",
+  "generatedAt": "2026-08-12T23:34:19.974Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -7,15 +7,47 @@
     "science"
   ],
   "counts": {
-    "fetched": 19,
-    "normalized": 19,
+    "fetched": 2,
+    "normalized": 2,
     "dropped": 0,
-    "deduped": 19,
+    "deduped": 2,
     "summarizedWithAi": 16,
     "fallbackSummaries": 104,
     "finalArticles": 120
   },
   "articles": [
+    {
+      "id": "215b9580af228c79",
+      "slug": "what-s-fg-s-business-with-almajiri-education-by-ochereome-nn-215b9580",
+      "title": "What’s FG’s business with Almajiri “education”? By Ochereome Nnanna",
+      "sourceName": "Vanguard",
+      "publishedAt": "2026-08-11T23:32:07.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.vanguardngr.com/2026/08/whats-fgs-business-with-almajiri-education-by-ochereome-nnanna/",
+      "summary": "What’s FG’s business with Almajiri “education”? By Ochereome Nnanna. A couple of weeks ago, a friend from Abuja sent me an article on the armed atrocities of the various Northern-bred jihadist groups, especially Fulani terrorists masquerading as herdsmen. We got talking about it, and he said, by the grace of God, a good leader…",
+      "summaryType": "fallback",
+      "description": "A couple of weeks ago, a friend from Abuja sent me an article on the armed atrocities of the various Northern-bred jihadist groups, especially Fulani terrorists masquerading as herdsmen. We got talking about it, and he said, by the grace of God, a good leader…",
+      "imageUrl": "https://cdn.vanguardngr.com/wp-content/uploads/2021/12/Ochereome-Nnanna-e1708451691304.jpg",
+      "author": "Emmanuel Okogba",
+      "cleanedText": "A couple of weeks ago, a friend from Abuja sent me an article on the armed atrocities of the various Northern-bred jihadist groups, especially Fulani terrorists masquerading as herdsmen. We got talki…"
+    },
+    {
+      "id": "31a7a5e72b0d12e0",
+      "slug": "shocked-surprised-and-upset-now-jesus-will-get-your-car-insu-31a7a5e7",
+      "title": "‘Shocked, surprised and upset:’ Now ‘Jesus’ will get your car insurance canceled",
+      "sourceName": "Wnd.com",
+      "publishedAt": "2026-08-11T23:18:09.000Z",
+      "category": "world",
+      "sourceCountry": "gb",
+      "url": "https://www.wnd.com/2026/08/shocked-surprised-upset-now-jesus-will-get-your/",
+      "summary": "‘Shocked, surprised and upset:’ Now ‘Jesus’ will get your car insurance canceled. Company declares sign on automobile won't be allowed",
+      "summaryType": "fallback",
+      "description": "Company declares sign on automobile won't be allowed",
+      "imageUrl": "https://www.wnd.com/wp-content/uploads/2026/08/jesus-loves-you-car-jpg-1200x630.jpg",
+      "author": "Bob Unruh",
+      "cleanedText": "Too many accidents will get your car insurance canceled. So can too many tickets. Reckless also will hit you hard. Get the hottest, most important news stories on the Internet delivered FREE to yo…"
+    },
     {
       "id": "c5b40762f293c625",
       "slug": "nasa-assures-humanity-earth-s-gravity-will-not-disappear-thi-c5b40762",
@@ -1877,36 +1909,6 @@
       "description": "While fighter aircraft dominated the skies during Exercise Pitch Black, air-to-air refuelling aircraft kept air power in the fight across northern Australia.",
       "author": "John Pike",
       "cleanedText": "Royal Australian Air Force News By SQNLDR Tina Turner 11 Aug 26 While fighter aircraft dominated the skies during Exercise Pitch Black, air-to-air refuelling aircraft kept air power in the fight ac…"
-    },
-    {
-      "id": "39bc2aef2f4dd237",
-      "slug": "green-street-launches-its-mcp-server-powered-by-greenstreeta-39bc2aef",
-      "title": "Green Street Launches Its MCP Server, Powered by GreenStreetAI™, Connecting CRE Intelligence Directly to Corporate Instances of Claude, ChatGPT, Gemini, and Other AI Platforms",
-      "sourceName": "PRNewswire",
-      "publishedAt": "2026-08-11T10:36:00.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://www.prnewswire.com/news-releases/green-street-launches-its-mcp-server-powered-by-greenstreetai-connecting-cre-intelligence-directly-to-corporate-instances-of-claude-chatgpt-gemini-and-other-ai-platforms-302848322.html",
-      "summary": "Green Street Launches Its MCP Server, Powered by GreenStreetAI™, Connecting CRE Intelligence Directly to Corporate Instances of Claude, ChatGPT, Gemini, and Other AI Platforms. New MCP Server brings Green Street's proprietary research, data, and forecasts inside the AI tools organizations already use. NEWPORT BEACH, Calif., Aug. 11, 2026 /PRNewswire/ -- Green Street, the leading provider of Real Assets intelligence, data, news, and …",
-      "summaryType": "fallback",
-      "description": "New MCP Server brings Green Street's proprietary research, data, and forecasts inside the AI tools organizations already use. NEWPORT BEACH, Calif., Aug. 11, 2026 /PRNewswire/ -- Green Street, the leading provider of Real Assets intelligence, data, news, and …",
-      "imageUrl": "https://mmx.prnewswire.com/media/MS228885/green-street-Logo.jpg?id=OA2856207&p=facebook",
-      "cleanedText": "New MCP Server brings Green Street's proprietary research, data, and forecasts inside the AI tools organizations already use. NEWPORT BEACH, Calif., Aug. 11, 2026 /PRNewswire/ -- Green Street, the …"
-    },
-    {
-      "id": "6f591cc20c0a3d31",
-      "slug": "green-street-launches-its-mcp-server-powered-by-greenstreeta-6f591cc2",
-      "title": "Green Street Launches Its MCP Server, Powered by GreenStreetAI™, Connecting CRE Intelligence Directly to Corporate Instances of Claude, ChatGPT, Gemini, and Other AI Platforms",
-      "sourceName": "PRNewswire",
-      "publishedAt": "2026-08-11T10:24:00.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://www.prnewswire.com/news-releases/green-street-launches-its-mcp-server-powered-by-greenstreetai-connecting-cre-intelligence-directly-to-corporate-instances-of-claude-chatgpt-gemini-and-other-ai-platforms-302848309.html",
-      "summary": "Green Street Launches Its MCP Server, Powered by GreenStreetAI™, Connecting CRE Intelligence Directly to Corporate Instances of Claude, ChatGPT, Gemini, and Other AI Platforms. New MCP Server brings Green Street's proprietary research, data, and forecasts inside the AI tools organizations already use. NEWPORT BEACH, Calif., Aug. 11, 2026 /PRNewswire/ -- Green Street, the leading provider of Real Assets intelligence, data, news, and …",
-      "summaryType": "fallback",
-      "description": "New MCP Server brings Green Street's proprietary research, data, and forecasts inside the AI tools organizations already use. NEWPORT BEACH, Calif., Aug. 11, 2026 /PRNewswire/ -- Green Street, the leading provider of Real Assets intelligence, data, news, and …",
-      "imageUrl": "https://mmx.prnewswire.com/media/MS228885/green-street-Logo.jpg?id=OA2853906&p=facebook",
-      "cleanedText": "New MCP Server brings Green Street's proprietary research, data, and forecasts inside the AI tools organizations already use. NEWPORT BEACH, Calif., Aug. 11, 2026 /PRNewswire/ -- Green Street, the …"
     }
   ]
 }
