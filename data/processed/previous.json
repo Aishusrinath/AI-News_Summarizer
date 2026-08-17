@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T03:43:22.978Z",
+  "generatedAt": "2026-08-17T04:34:29.884Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -11,8 +11,8 @@
     "normalized": 9,
     "dropped": 0,
     "deduped": 9,
-    "summarizedWithAi": 17,
-    "fallbackSummaries": 103,
+    "summarizedWithAi": 18,
+    "fallbackSummaries": 102,
     "finalArticles": 120
   },
   "articles": [
@@ -55,10 +55,10 @@
       "sourceName": "Business Standard",
       "publishedAt": "2026-08-16T02:15:52.000Z",
       "category": "world",
-      "sourceCountry": "gb",
+      "sourceCountry": "ca",
       "url": "https://www.business-standard.com/world-news/uk-inflation-set-to-rise-as-ai-chip-crunch-energy-costs-add-pressure-126081600048_1.html",
-      "summary": "UK inflation set to rise as AI chip crunch, energy costs add pressure. Data on Wednesday are set to show inflation accelerating for the first time in four months, with the median economist estimate in a Bloomberg survey predicting a 2.9% jump in July",
-      "summaryType": "fallback",
+      "summary": "UK inflation is expected to accelerate for the first time in four months, driven by energy costs and an AI chip shortage. According to a Bloomberg survey of economists, data scheduled for release on Wednesday is projected to show a 2.9% jump for July.",
+      "summaryType": "ai",
       "description": "Data on Wednesday are set to show inflation accelerating for the first time in four months, with the median economist estimate in a Bloomberg survey predicting a 2.9% jump in July",
       "imageUrl": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/16/thumb/fitandfill/1200X628/1786846448-8379.jpg",
       "author": "Bloomberg",
@@ -158,6 +158,22 @@
       "imageUrl": "https://img.etimg.com/thumb/msid-133268713,width-1200,height-630,imgsize-154688,overlay-economictimes/articleshow.jpg",
       "author": "Reuters",
       "cleanedText": "BOGOTA, Colombia - Hopes of finding survivors of the earthquake that struck western Colombia five days ago were dwindling on Saturday, as more bodies were pulled from buildings that collapsed due to …"
+    },
+    {
+      "id": "b68fd5f7a116bec0",
+      "slug": "boston-red-sox-announce-official-roman-anthony-news-during-p-b68fd5f7",
+      "title": "Boston Red Sox Announce Official Roman Anthony News During Pirates Series",
+      "sourceName": "Heavy.com",
+      "publishedAt": "2026-08-16T01:10:26.000Z",
+      "category": "world",
+      "sourceCountry": "ca",
+      "url": "https://heavy.com/sports/mlb/boston-red-sox/roman-anthony-news-during-pirates-series/",
+      "summary": "Boston Red Sox Announce Official Roman Anthony News During Pirates Series. The Boston Red Sox have announced major news on outfielder Roman Anthony during the Pittsburgh Pirates series. The post Boston Red Sox Announce Official Roman Anthony News During Pirates Series appeared first on HEAVY.",
+      "summaryType": "fallback",
+      "description": "The Boston Red Sox have announced major news on outfielder Roman Anthony during the Pittsburgh Pirates series. The post Boston Red Sox Announce Official Roman Anthony News During Pirates Series appeared first on HEAVY.",
+      "imageUrl": "https://s.yimg.com/lo/mysterio/api/8cca34cbc1616d15d5bc01e17302dc7ee86b4a908a4c1ee028e77355810e227a/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fheavy_214%2F12341f1a455b90b2e87f17dc7afba019.jpg",
+      "author": "Jackson Kruse",
+      "cleanedText": "BOSTON, MASSACHUSETTS - MAY 23: Roman Anthony #19 of the Boston Red Sox looks on from the dugout during game against the Minnesota Twins at Fenway Park on May 23, 2026 in Boston, Massachusetts. (Phot…"
     },
     {
       "id": "b9266d3f75aad46a",
@@ -389,7 +405,7 @@
       "sourceName": "Edmonton Journal",
       "publishedAt": "2026-08-15T23:00:37.000Z",
       "category": "world",
-      "sourceCountry": "au",
+      "sourceCountry": "ca",
       "url": "https://edmontonjournal.com/entertainment/edmonton-fringe-review-andrew-silverwood-love-thy-neighbour",
       "summary": "The Edmonton Journal published a Fringe review titled \"Andrew Silverwood: Love Thy Neighbour.\" Access to the full content of the article is currently reserved for subscribers. The review is part of a series of exclusive articles that includes writing by David Staple.",
       "summaryType": "ai",
@@ -1902,22 +1918,6 @@
       "imageUrl": "https://static.toiimg.com/thumb/msid-133263811,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
       "author": "etimes.in",
       "cleanedText": "News tv Indira Krishna on 80th Independence Day: Youth are no longer just the audience of progress Follow Us On Social Media In a world of virality, it is time…"
-    },
-    {
-      "id": "1b080d7bd715e79e",
-      "slug": "airbnb-cartrawler-partnership-details-1-month-in-scoop-1b080d7b",
-      "title": "Airbnb-CarTrawler Partnership Details 1 Month In: Scoop",
-      "sourceName": "Skift",
-      "publishedAt": "2026-08-15T13:39:21.000Z",
-      "category": "world",
-      "sourceCountry": "au",
-      "url": "https://skift.com/2026/08/15/airbnb-cartrawler-partnership-details-1-month-in-scoop/",
-      "summary": "Airbnb-CarTrawler Partnership Details 1 Month In: Scoop. Airbnb's car rental business would be more of a win if it did the hard work to establish direct relationships with the car-rental companies themselves.",
-      "summaryType": "fallback",
-      "description": "Airbnb's car rental business would be more of a win if it did the hard work to establish direct relationships with the car-rental companies themselves.",
-      "imageUrl": "https://skift.com/wp-content/uploads/2026/05/cartrawler-interior.jpg?resize=1024,683",
-      "author": "Dennis Schaal",
-      "cleanedText": "One month after Skift broke the news that Airbnb partnered with Ireland-based CarTrawler for car rentals, here's a behind-the-scenes update and how the partnership works, according to a source famili…"
     }
   ]
 }
