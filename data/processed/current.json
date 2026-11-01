@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T15:40:59.941Z",
+  "generatedAt": "2026-11-01T20:03:51.769Z",
   "source": "NewsAPI + Gemini pipeline",
   "categories": [
     "world",
@@ -10,8 +10,8 @@
     "normalized": 9,
     "dropped": 0,
     "deduped": 9,
-    "summarizedWithAi": 16,
-    "fallbackSummaries": 87,
+    "summarizedWithAi": 18,
+    "fallbackSummaries": 85,
     "finalArticles": 103
   },
   "articles": [
@@ -56,8 +56,8 @@
       "category": "world",
       "sourceCountry": "ca",
       "url": "https://www.cbc.ca/news/canada/edmonton/enoch-cree-nation-home-construction-9.7404012",
-      "summary": "Enoch Cree Nation breaks ground on 166 new affordable homes for members. Enoch Cree Nation has begun development on 166 single-family homes for its members. First Nation leadership says the project is aiming to address the needs of roughly 350 families who have been on a waitlist for housing.",
-      "summaryType": "fallback",
+      "summary": "Enoch Cree Nation has broken ground on a project to build 166 affordable single-family homes for its members. Leadership states that the development aims to address the needs of approximately 350 families currently on a housing waitlist. An official groundbreaking ceremony for the project took place on Friday.",
+      "summaryType": "ai",
       "description": "Enoch Cree Nation has begun development on 166 single-family homes for its members. First Nation leadership says the project is aiming to address the needs of roughly 350 families who have been on a waitlist for housing.",
       "imageUrl": "https://i.cbc.ca/ais/741cd856-055e-453b-9cbd-c40a6b45dd49,1793414912811/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C4032%2C2268%29%3BResize%3D620",
       "author": "Sara Sheydwasser",
@@ -72,8 +72,8 @@
       "category": "world",
       "sourceCountry": "ca",
       "url": "https://www.cbc.ca/news/canada/calgary/alberta-permanent-time-change-what-to-expect-9.7402991",
-      "summary": "Alberta’s clocks won’t fall back this weekend. Here’s how that might impact your daily life. After years of grumbling about the biannual time change, Albertans will get their first taste this weekend of what it’s like to keep clocks the same year-round. Here’s a look at what will change and what won’t.",
-      "summaryType": "fallback",
+      "summary": "Alberta residents will not set their clocks back this weekend, marking the first time the province will maintain the same time year-round. This change follows decades of following biannual time shifts and years of public grumbling about the practice. The move provides Albertans with their first experience of keeping clocks the same throughout the entire year.",
+      "summaryType": "ai",
       "description": "After years of grumbling about the biannual time change, Albertans will get their first taste this weekend of what it’s like to keep clocks the same year-round. Here’s a look at what will change and what won’t.",
       "imageUrl": "https://i.cbc.ca/ais/09458ee9-7d9a-4c12-a4be-c15392b4db77,1793378885290/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C340%2C1989%2C1118%29%3BResize%3D620",
       "author": "Jennifer Keiller",
